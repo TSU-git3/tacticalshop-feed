@@ -1,6 +1,6 @@
 # Stock refresh — runbook for the scheduled run
 
-Runs at about 08:00 and 16:00 Kyiv time. Updates **stock only** in `stock.xml` (prices stay as in `refresh/catalog.json`). Source: MyDrop connector, vendor KIBORG_drop (id 521223).
+Runs at 07:45, 15:45 and 23:45 Kyiv time; each run should finish within ~15 minutes (by 08:00, 16:00, 00:00). Updates **stock only** in `stock.xml` (prices stay as in `refresh/catalog.json`). Source: MyDrop connector, vendor KIBORG_drop (id 521223).
 
 Goal: exact stock with the fewest MyDrop calls. Never guess: a code gets stock only from a MyDrop size whose sku equals the code exactly.
 
