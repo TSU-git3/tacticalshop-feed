@@ -20,8 +20,9 @@ PIDS = json.load(open(PIDS_PATH, encoding='utf-8'))
 PRODUCTS = CAT['products']
 
 
-def sweep_flags(max_age_h=4):
-    """product_id -> in_stock flag, from search_products results saved to files this run."""
+def sweep_flags(max_age_h=4, parents=None):
+    """product_id -> in_stock flag, from search_products results saved to files this run.
+    If `parents` is a dict, it is filled with product_id -> parent sku."""
     flags = {}
     pats = [os.path.expanduser('~/.claude/projects/**/tool-results/*search_products*'),
             os.path.expanduser('~/.claude/projects/**/tool-results/*.json'),
@@ -40,13 +41,27 @@ def sweep_flags(max_age_h=4):
                 for it in d.get('items', []):
                     if it.get('vendor_id') == 521223:
                         flags[str(it['product_id'])] = bool(it.get('in_stock'))
+                        if parents is not None and it.get('sku'):
+                            parents[str(it['product_id'])] = str(it['sku']).strip()
             except Exception:
                 continue
     return flags
 
 
 def plan():
-    flags = sweep_flags()
+    parents = {}
+    flags = sweep_flags(parents=parents)
+    # Self-heal the product list: a sweep product whose parent sku equals one of our codes EXACTLY
+    # is ours (added 19 Oct 2026 after 34 codes were missed because their product ids weren't listed).
+    pmap = PIDS.setdefault('parent', {})
+    added = 0
+    for pid, sku in parents.items():
+        if sku in PRODUCTS:
+            pmap[sku] = pid
+            if pid not in PIDS['pids']:
+                PIDS['pids'][pid] = sku
+                added += 1
+    json.dump(PIDS, open(PIDS_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     todo, skipped = [], []
     for pid in PIDS['pids']:
         if flags.get(pid) is False:
@@ -55,6 +70,7 @@ def plan():
             todo.append(pid)
     json.dump({'todo': todo, 'out_of_stock_by_sweep': skipped, 'flags_seen': len(flags)},
               open(os.path.join(ROOT, 'todo.json'), 'w'), ensure_ascii=False)
+    print(f'product ids added from sweeps (exact parent sku): {added}')
     print(f'flags from sweeps: {len(flags)}; get_product needed: {len(todo)}; skipped (sweep says out of stock): {len(skipped)}')
 
 
@@ -80,6 +96,10 @@ def build():
             continue
         d = json.loads(line)
         looked.add(str(d['pid']))
+        if d.get('sku'):
+            PIDS.setdefault('parent', {})
+            if str(d['sku']).strip() in PRODUCTS:
+                PIDS['parent'][str(d['sku']).strip()] = str(d['pid'])
         for sku, stock in d['sizes']:
             sizes[str(sku).strip()] = (stock, str(d['pid']))
     need = set(todo['todo'])
@@ -87,19 +107,24 @@ def build():
     if len(missing) > 0.1 * max(1, len(need)):
         sys.exit(f'ABORT: only {len(need) - len(missing)} of {len(need)} products looked up — stock.xml NOT changed. Missing ids: {sorted(missing)[:50]}')
     cmap = PIDS.get('map', {})
+    pmap = PIDS.get('parent', {})
     prev = {}
     try:
         prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
     except Exception:
         pass
-    result, unmapped, changes = {}, [], []
+    result, unmapped, changes, on_md_out = {}, [], [], []
     for code in PRODUCTS:
         if code in sizes:
             st, pid = sizes[code]
             cmap[code] = pid
             result[code] = status_for(code, st)
-        elif cmap.get(code) in out_pids:
+        elif cmap.get(code) in out_pids or cmap.get(code) in looked \
+                or pmap.get(code) in out_pids or pmap.get(code) in looked:
+            # on MyDrop (exact sku known) but no size with stock: sweep says out of stock,
+            # or get_product lists no size with this sku -> out of stock, NOT "not found"
             result[code] = status_for(code, 0)
+            on_md_out.append(code)
         else:
             result[code] = status_for(code, None)
             unmapped.append(code)
@@ -111,11 +136,12 @@ def build():
     if plus_prev and plus_now < 0.5 * plus_prev and '--force' not in sys.argv:
         sys.exit(f'ABORT: in-stock items fell from {plus_prev} to {plus_now} — looks like a data problem, stock.xml NOT changed. Re-run with --force only if MyDrop really shows this.')
     # prune: keep pids that matched a code, or not yet looked up
-    matched = set(cmap.values())
+    matched = set(cmap.values()) | set(pmap.values())
     keep = {pid: s for pid, s in PIDS['pids'].items() if pid in matched or pid not in looked}
     dropped = [pid for pid in PIDS['pids'] if pid not in keep]
     PIDS['pids'] = keep
     PIDS['map'] = cmap
+    PIDS['parent'] = pmap
     json.dump(PIDS, open(PIDS_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     json.dump({k: list(v) for k, v in result.items()}, open(os.path.join(ROOT, 'last_state.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     write_xml(result)
@@ -127,6 +153,7 @@ def build():
            f'- Offers: {len(result)}; status counts: {cnt}',
            f'- get_product lookups: {len(looked)}; skipped as out of stock by sweep: {len(out_pids)}',
            f'- Changed since last run: {len(changes)}',
+           f'- On MyDrop but out of stock (no size with stock): {len(on_md_out)}',
            f'- Codes not found on MyDrop (written as out of stock / nets made to order): {len(unmapped)}',
            f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}', '',
            '## Changes', ''] + [f'- {c}: {a[0]} {a[1]} → {b[0]} {b[1]}' for c, a, b in changes[:300]] + \
