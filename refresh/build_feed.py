@@ -18,6 +18,12 @@ CAT = json.load(open(os.path.join(ROOT, 'catalog.json'), encoding='utf-8'))
 PIDS_PATH = os.path.join(ROOT, 'pids.json')
 PIDS = json.load(open(PIDS_PATH, encoding='utf-8'))
 PRODUCTS = CAT['products']
+# Kits built from separately listed MyDrop parts (owner, 19 Oct 2026): refresh/kits.json
+_K = json.load(open(os.path.join(ROOT, 'kits.json'), encoding='utf-8'))
+KITS = {k: v['parts'] for k, v in _K['kits'].items() if k in PRODUCTS}
+EXTRA_PARTS = _K.get('extra_parts', {})          # part sku (not one of our codes) -> MyDrop product id
+EXTRA_PIDS = sorted(set(EXTRA_PARTS.values()))
+PARTS_STATE_PATH = os.path.join(ROOT, 'kit_parts_state.json')
 
 
 def sweep_flags(max_age_h=4, parents=None):
@@ -63,12 +69,18 @@ def plan():
                 added += 1
     json.dump(PIDS, open(PIDS_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     small = '--small' in sys.argv
-    scope = PIDS['pids']
+    scope = sorted(set(PIDS['pids']) | set(EXTRA_PIDS))
     if small:
         # small check: only products that hold a code currently in stock («+») in last_state.json
         prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
         cm, pm = PIDS.get('map', {}), PIDS.get('parent', {})
-        scope = sorted({cm.get(c) or pm.get(c) for c, v in prev.items() if v and v[0] == '+'} - {None})
+        plus = {c for c, v in prev.items() if v and v[0] == '+'}
+        # a kit in stock from its parts: re-check all its parts too
+        for kit in [k for k in KITS if k in plus]:
+            for sku, _n in KITS[kit]:
+                plus.add(sku)
+        scope = {cm.get(c) or pm.get(c) for c in plus} | {EXTRA_PARTS[c] for c in plus if c in EXTRA_PARTS}
+        scope = sorted(scope - {None})
     todo, skipped = [], []
     for pid in scope:
         if flags.get(pid) is False:
@@ -152,13 +164,20 @@ def build():
         p = prev.get(code)
         if p and tuple(p) != tuple(result[code]):
             changes.append((code, p, result[code]))
+    kit_lines, pstate = apply_kits(result, sizes, out_pids, looked)
+    changes = [ch for ch in changes if ch[0] not in KITS]
+    for code in KITS:
+        p = prev.get(code)
+        if p and tuple(p) != tuple(result[code]):
+            changes.append((code, p, result[code]))
     plus_prev = sum(1 for v in prev.values() if v and v[0] == '+')
     plus_now = sum(1 for v in result.values() if v[0] == '+')
     if plus_prev and plus_now < 0.5 * plus_prev and '--force' not in sys.argv:
         sys.exit(f'ABORT: in-stock items fell from {plus_prev} to {plus_now} — looks like a data problem, stock.xml NOT changed. Re-run with --force only if MyDrop really shows this.')
+    save_parts_state(pstate)
     # prune: keep pids that matched a code, or not yet looked up
     matched = set(cmap.values()) | set(pmap.values())
-    keep = {pid: s for pid, s in PIDS['pids'].items() if small or pid in matched or pid not in looked}
+    keep = {pid: s for pid, s in PIDS['pids'].items() if small or pid in matched or pid not in looked or pid in EXTRA_PIDS}
     dropped = [pid for pid in PIDS['pids'] if pid not in keep]
     PIDS['pids'] = keep
     PIDS['map'] = cmap
@@ -178,9 +197,63 @@ def build():
            f'- Codes not found on MyDrop (written as out of stock «-»): {len(unmapped)}',
            f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}', '',
            '## Changes', ''] + [f'- {c}: {a[0]} {a[1]} → {b[0]} {b[1]}' for c, a, b in changes[:300]] + \
+          ['', '## Kits in stock from their parts (kits.json)', ''] + kit_lines + \
           ['', '## Not found on MyDrop', '', ' '.join(unmapped)]
     open(os.path.join(ROOT, 'report.md'), 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
     print('\n'.join(rep[:8]))
+
+
+def part_status(stock):
+    if isinstance(stock, (int, float)) and stock > 0:
+        return '+', int(stock)
+    if isinstance(stock, str) and 'наявн' in stock.lower() and 'очіку' not in stock.lower():
+        return '+', None
+    return OTHER_DAYS, None
+
+
+def apply_kits(result, sizes, out_pids=(), looked=()):
+    """Kit with no stock of its own on MyDrop but every part in stock -> in stock (owner, 19 Oct 2026).
+    Quantity = number of complete kits (lowest part stock / parts needed); no number if a part has none.
+    A kit that is not on MyDrop at all ('-') stays '-'."""
+    try:
+        pstate = json.load(open(PARTS_STATE_PATH, encoding='utf-8'))
+    except Exception:
+        pstate = {}
+    for sku, pid in EXTRA_PARTS.items():
+        if sku in sizes:
+            pstate[sku] = list(part_status(sizes[sku][0]))
+        elif pid in out_pids or pid in looked:
+            pstate[sku] = [OTHER_DAYS, None]      # product out of stock / size not listed
+    lines = []
+    for kit, parts in KITS.items():
+        own = result[kit]
+        if own[0] == '+' and kit not in sizes:
+            # MyDrop kits have no sizes, so a '+' here was derived from parts earlier -> recompute
+            own = result[kit] = (OTHER_DAYS, None)
+        if own[0] == '+' or own[0] == '-':
+            continue
+        counts, ok = [], True
+        for sku, n in parts:
+            st = result.get(sku) if sku in PRODUCTS else tuple(pstate.get(sku, ('?', None)))
+            if not st or st[0] != '+':
+                ok = False
+                break
+            if st[1] is not None:
+                if st[1] // n < 1:
+                    ok = False
+                    break
+                counts.append(st[1] // n)
+            else:
+                counts.append(None)
+        if ok:
+            q = None if (not counts or None in counts) else min(counts)
+            result[kit] = ('+', q)
+            lines.append(f'- {kit}: + {q if q is not None else "(no number)"}')
+    return lines, pstate
+
+
+def save_parts_state(pstate):
+    json.dump(pstate, open(PARTS_STATE_PATH, 'w', encoding='utf-8'), ensure_ascii=False)
 
 
 def write_xml(result):
@@ -278,5 +351,17 @@ def restate():
 
 
 
+def kits():
+    """Re-apply the kit rule to refresh/last_state.json without new look-ups (parts from last_state /
+    kit_parts_state.json). MyDrop kits have no sizes of their own, so a kit's own status is never '+'."""
+    prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
+    res = {c: tuple(prev[c]) for c in PRODUCTS}
+    lines, pstate = apply_kits(res, {})
+    save_parts_state(pstate)
+    json.dump({k: list(v) for k, v in res.items()}, open(os.path.join(ROOT, 'last_state.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    write_xml(res)
+    print('\n'.join(lines) or 'no kit in stock from parts')
+
+
 if __name__ == '__main__':
-    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate}[sys.argv[1]]()
+    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits}[sys.argv[1]]()
