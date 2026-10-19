@@ -208,5 +208,47 @@ def write_xml(result):
     open(os.path.join(os.path.dirname(ROOT), 'stock.xml'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 
 
+def split():
+    """Split todo.json into batches of ~28 ids for parallel haiku sub-agents (refresh/work/ids_<n>.txt)."""
+    size = int(sys.argv[2]) if len(sys.argv) > 2 else 28
+    todo = json.load(open(os.path.join(ROOT, 'todo.json'), encoding='utf-8'))['todo']
+    work = os.path.join(ROOT, 'work')
+    os.makedirs(work, exist_ok=True)
+    for f in glob.glob(os.path.join(work, '*')):
+        os.remove(f)
+    n = 0
+    for i in range(0, len(todo), size):
+        n += 1
+        open(os.path.join(work, f'ids_{n}.txt'), 'w').write('\n'.join(todo[i:i + size]) + '\n')
+    print(f'{len(todo)} ids -> {n} batches in refresh/work/ (ids_1.txt … ids_{n}.txt). '
+          f'Start one haiku sub-agent per batch with: "Read refresh/LOOKUP_AGENT.md and do it with N=<n>."')
+
+
+def merge():
+    """Concatenate refresh/work/raw_<n>.jsonl into refresh/stock_raw.jsonl; list ids still missing."""
+    todo = json.load(open(os.path.join(ROOT, 'todo.json'), encoding='utf-8'))['todo']
+    seen, lines, bad = {}, [], 0
+    for f in sorted(glob.glob(os.path.join(ROOT, 'work', 'raw_*.jsonl'))):
+        for line in open(f, encoding='utf-8'):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except Exception:
+                bad += 1
+                continue
+            if 'error' in d or 'sizes' not in d:
+                continue
+            seen[str(d['pid'])] = line
+    missing = [p for p in todo if p not in seen]
+    open(os.path.join(ROOT, 'stock_raw.jsonl'), 'w', encoding='utf-8').write('\n'.join(seen[p] for p in todo if p in seen) + '\n')
+    open(os.path.join(ROOT, 'work', 'missing.txt'), 'w').write('\n'.join(missing) + ('\n' if missing else ''))
+    print(f'merged {len(seen)} of {len(todo)} products; bad lines {bad}; missing {len(missing)}' +
+          (' -> re-run them: one haiku sub-agent with N=missing (ids in refresh/work/ids_missing.txt)' if missing else ''))
+    if missing:
+        open(os.path.join(ROOT, 'work', 'ids_missing.txt'), 'w').write('\n'.join(missing) + '\n')
+
+
 if __name__ == '__main__':
-    {'plan': plan, 'build': build}[sys.argv[1]]()
+    {'plan': plan, 'build': build, 'split': split, 'merge': merge}[sys.argv[1]]()
