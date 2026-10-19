@@ -1,6 +1,9 @@
 # Stock refresh — runbook for the scheduled run
 
-Runs at 07:45, 15:45 and 23:45 Kyiv time; each run should finish within ~15 minutes (by 08:00, 16:00, 00:00). Updates **stock only** in `stock.xml` (prices stay as in `refresh/catalog.json`). Source: MyDrop connector, vendor KIBORG_drop (id 521223).
+Schedule (owner, 19 Oct 2026 — each run gets a 30-minute window and must be pushed by the delivery time):
+- **BIG checks** (all products, in and out of stock) start 07:30, 15:30, 23:30 Kyiv → pushed by 08:00, 16:00, 00:00.
+- **SMALL checks** (only products that are in stock «+» in `refresh/last_state.json`) start 03:30, 11:30, 19:30 Kyiv → pushed by 04:00, 12:00, 20:00.
+The steps are the same for both; a SMALL check passes `--small` to `plan` (step 3) and skips step 6. Updates **stock only** in `stock.xml` (prices stay as in `refresh/catalog.json`). Source: MyDrop connector, vendor KIBORG_drop (id 521223).
 
 Goal: exact stock with the fewest MyDrop calls. Never guess: a code gets stock only from a MyDrop size whose sku equals the code exactly.
 
@@ -8,15 +11,15 @@ Goal: exact stock with the fewest MyDrop calls. Never guess: a code gets stock o
 
 1. **Repo.** Make sure `TSU-git3/tacticalshop-feed` is cloned with push access (add it to the session if needed), `git pull`, work from the repo root.
 2. **Sweeps (cheap).** Call MyDrop `search_products` with `vendor=521223`, `in_stock=false`, `limit=300`, once for each query: `Kiborg`, `Militex`, `сітка`, `пакет`, `захист`, `Мультикам`. These results are large, so they are saved to files automatically — **do not read them**; the script reads them.
-3. **Plan.** `python3 refresh/build_feed.py plan` → `refresh/todo.json` lists the product ids that still need `get_product` (products the sweep already shows as out of stock are skipped).
+3. **Plan.** `python3 refresh/build_feed.py plan` (SMALL check: `python3 refresh/build_feed.py plan --small` — only products holding an in-stock code; everything else keeps its last value) → `refresh/todo.json` lists the product ids that still need `get_product` (products the sweep already shows as out of stock are skipped).
 4. **Look-ups.** For every id in `todo.json["todo"]`, call MyDrop `get_product(product_id)`. From each result take only `sizes` → `[sku, stock]` pairs (stock = the number, or the exact text such as «В наявності» / «Очікується надходження»). Append one line per product to `refresh/stock_raw.jsonl`:
    `{"pid":"4172414","sku":"<parent sku>","sizes":[["1004-0101-M-L",5]]}` — include the parent `sku` (needed for products with an empty `sizes` list, e.g. armour kits, so they count as «on MyDrop, out of stock» instead of «not found»).
    Append in batches of ~10 lines (Bash heredoc `>>`), so nothing is lost if the run stops. Don't copy descriptions anywhere.
    Fastest: split `todo.json["todo"]` into ~6 parts and give each to a parallel sub-agent that appends to `refresh/stock_raw_<n>.jsonl`; then `cat` them into `stock_raw.jsonl` (≈4 min for ~330 products, 19 Oct 2026).
 5. **Build.** `python3 refresh/build_feed.py build`. It writes `stock.xml`, `refresh/report.md`, `refresh/last_state.json` and prunes `refresh/pids.json` (ids that matched none of our codes are dropped, so later runs need fewer look-ups).
    - If it prints `ABORT`, do **not** commit `stock.xml`. Report the reason.
-6. **Missing codes (only while `report.md` lists codes not found on MyDrop, max 40 searches per run).** For a not-found code that isn't a camo net (`20…`), call `search_products(query=<code>, vendor=521223, in_stock=false, limit=20)`. Add to `refresh/pids.json["pids"]` any result whose sku equals the code, or whose sku starts with the same model-colour (e.g. `2205-0123-00-1` for `2205-0121-00`). Don't call `get_product` for them in this run — the next run picks them up.
-7. **Publish.** `git add stock.xml refresh/pids.json refresh/last_state.json refresh/report.md`, commit «Stock refresh <date time Kyiv>», push to `main`. Delete `refresh/stock_raw.jsonl` and `refresh/todo.json` before committing (not tracked).
+6. **Missing codes (BIG checks only) (only while `report.md` lists codes not found on MyDrop, max 40 searches per run).** For a not-found code that isn't a camo net (`20…`), call `search_products(query=<code>, vendor=521223, in_stock=false, limit=20)`. Add to `refresh/pids.json["pids"]` any result whose sku equals the code, or whose sku starts with the same model-colour (e.g. `2205-0123-00-1` for `2205-0121-00`). Don't call `get_product` for them in this run — the next run picks them up.
+7. **Publish.** `git add stock.xml refresh/pids.json refresh/last_state.json refresh/report.md`, commit «Stock refresh <BIG|SMALL> <date time Kyiv>», push to `main`. Delete `refresh/stock_raw.jsonl` and `refresh/todo.json` before committing (not tracked).
 8. **Report** in 2–4 lines: number of look-ups, changes since last run, codes not found, anything aborted.
 
 ## Rules

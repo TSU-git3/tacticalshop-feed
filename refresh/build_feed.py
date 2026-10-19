@@ -62,13 +62,21 @@ def plan():
                 PIDS['pids'][pid] = sku
                 added += 1
     json.dump(PIDS, open(PIDS_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    small = '--small' in sys.argv
+    scope = PIDS['pids']
+    if small:
+        # small check: only products that hold a code currently in stock («+») in last_state.json
+        prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
+        cm, pm = PIDS.get('map', {}), PIDS.get('parent', {})
+        scope = sorted({cm.get(c) or pm.get(c) for c, v in prev.items() if v and v[0] == '+'} - {None})
     todo, skipped = [], []
-    for pid in PIDS['pids']:
+    for pid in scope:
         if flags.get(pid) is False:
             skipped.append(pid)
         else:
             todo.append(pid)
-    json.dump({'todo': todo, 'out_of_stock_by_sweep': skipped, 'flags_seen': len(flags)},
+    json.dump({'todo': todo, 'out_of_stock_by_sweep': skipped, 'flags_seen': len(flags),
+               'mode': 'small' if small else 'big'},
               open(os.path.join(ROOT, 'todo.json'), 'w'), ensure_ascii=False)
     print(f'product ids added from sweeps (exact parent sku): {added}')
     print(f'flags from sweeps: {len(flags)}; get_product needed: {len(todo)}; skipped (sweep says out of stock): {len(skipped)}')
@@ -87,6 +95,7 @@ def status_for(code, stock):
 def build():
     todo = json.load(open(os.path.join(ROOT, 'todo.json'), encoding='utf-8'))
     out_pids = set(todo['out_of_stock_by_sweep'])
+    small = todo.get('mode') == 'small' 
     sizes = {}            # sku -> (stock, pid)
     looked = set()
     raw = os.path.join(ROOT, 'stock_raw.jsonl')
@@ -115,6 +124,10 @@ def build():
         pass
     result, unmapped, changes, on_md_out = {}, [], [], []
     for code in PRODUCTS:
+        if small and code not in sizes and prev.get(code) and not (
+                {cmap.get(code), pmap.get(code)} & (looked | out_pids)):
+            result[code] = tuple(prev[code])      # not part of this small check: keep last value
+            continue
         if code in sizes:
             st, pid = sizes[code]
             cmap[code] = pid
@@ -137,7 +150,7 @@ def build():
         sys.exit(f'ABORT: in-stock items fell from {plus_prev} to {plus_now} — looks like a data problem, stock.xml NOT changed. Re-run with --force only if MyDrop really shows this.')
     # prune: keep pids that matched a code, or not yet looked up
     matched = set(cmap.values()) | set(pmap.values())
-    keep = {pid: s for pid, s in PIDS['pids'].items() if pid in matched or pid not in looked}
+    keep = {pid: s for pid, s in PIDS['pids'].items() if small or pid in matched or pid not in looked}
     dropped = [pid for pid in PIDS['pids'] if pid not in keep]
     PIDS['pids'] = keep
     PIDS['map'] = cmap
@@ -149,7 +162,7 @@ def build():
     cnt = {}
     for a, q in result.values():
         cnt[a] = cnt.get(a, 0) + 1
-    rep = [f'# Stock refresh {now} (Kyiv)', '',
+    rep = [f'# Stock refresh {now} (Kyiv) — ' + ('SMALL check (in-stock items only)' if small else 'BIG check'), '',
            f'- Offers: {len(result)}; status counts: {cnt}',
            f'- get_product lookups: {len(looked)}; skipped as out of stock by sweep: {len(out_pids)}',
            f'- Changed since last run: {len(changes)}',
