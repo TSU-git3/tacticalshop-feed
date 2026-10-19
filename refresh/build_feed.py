@@ -10,7 +10,7 @@ Usage (run from the repo root):
 Matching is by exact supplier article only (size sku == our code). No guessing.
 Prices are NOT refreshed (owner, 18 Oct 2026): price comes from refresh/catalog.json.
 """
-import json, glob, os, sys, time, datetime
+import json, glob, os, re, sys, time, datetime
 from xml.sax.saxutils import escape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -26,7 +26,57 @@ EXTRA_PIDS = sorted(set(EXTRA_PARTS.values()))
 PARTS_STATE_PATH = os.path.join(ROOT, 'kit_parts_state.json')
 
 
-def sweep_flags(max_age_h=4, parents=None):
+TITLES_PATH = os.path.join(ROOT, 'mydrop_titles.json')
+NAME_OK_PATH = os.path.join(ROOT, 'name_check_ok.json')
+# product-type words: a listing's first type word must also appear in the MyDrop title of its product
+# (added 19 Oct 2026 after 18000 «Бронековдра» had been listed as «Бронежилет»)
+TYPE_GROUPS = {
+    'жилет/плитоноска': r'бронежилет|плитоноск|модульн', 'ковдра': r'ковдр|одеял',
+    'пояс/РПС': r'пояс|рпс|розвантаж', 'підсумок': r'підсум|pouch|аптечк', 'напашник': r'напашник',
+    'камербанд': r'камербанд', 'каремат/сидушка': r'каремат|сидушк|килим', 'сітка': r'сітк|сетк',
+    'пакет/плита': r'пакет|бронекомплект|пластин|бронеплит', 'захист': r'захист',
+    'ремінь/антабка': r'ремін|ремен|антабк|\bqd\b|вертлюг', 'наколінники': r'наколін|налокіт',
+    'кофта': r'кофт|фліс|windblock', 'рюкзак/сумка': r'рюкзак|баул|сумк|bag', 'панель': r'панел',
+    'кавер/чохол/кейс': r'кавер|чохол|кейс|case', 'лямки': r'лямк',
+}
+
+
+def type_groups(s):
+    s = s.lower().replace('c', 'с')          # Latin c in some MyDrop titles («Cумка»)
+    return {g for g, rx in TYPE_GROUPS.items() if re.search(rx, s)}
+
+
+def name_check(cmap, pmap):
+    """Compare each listing's product type with the MyDrop title of its product."""
+    try:
+        titles = json.load(open(TITLES_PATH, encoding='utf-8'))
+    except Exception:
+        return ['- no MyDrop titles saved yet (plan saves them from the sweeps)']
+    try:
+        ok = json.load(open(NAME_OK_PATH, encoding='utf-8'))
+    except Exception:
+        ok = {}
+    code2pid = {c: p for p, c in PIDS.get('pids', {}).items()}
+    code2pid.update(cmap); code2pid.update(pmap)
+    bad, unclear = [], []
+    for code, p in PRODUCTS.items():
+        t = titles.get(code2pid.get(code) or '')
+        if not t or code in ok:
+            continue
+        ours = p['name'].lower().replace('c', 'с')
+        hits = [(re.search(rx, ours).start(), g) for g, rx in TYPE_GROUPS.items() if re.search(rx, ours)]
+        if not hits:
+            continue
+        first = min(hits)[1]
+        theirs = type_groups(t)
+        if not theirs:
+            unclear.append(f'- {code}: «{p["name"]}» — MyDrop: «{t.strip()}» (no type word)')
+        elif first not in theirs:
+            bad.append(f'- **{code}: «{p["name"]}» — MyDrop: «{t.strip()}»**')
+    return (bad or ['- none']) + ([''] + ['Not checkable (MyDrop title has no type word):'] + unclear if unclear else [])
+
+
+def sweep_flags(max_age_h=4, parents=None, titles=None):
     """product_id -> in_stock flag, from search_products results saved to files this run.
     If `parents` is a dict, it is filled with product_id -> parent sku."""
     flags = {}
@@ -47,6 +97,8 @@ def sweep_flags(max_age_h=4, parents=None):
                 for it in d.get('items', []):
                     if it.get('vendor_id') == 521223:
                         flags[str(it['product_id'])] = bool(it.get('in_stock'))
+                        if titles is not None and it.get('title'):
+                            titles[str(it['product_id'])] = it['title']
                         if parents is not None and it.get('sku'):
                             parents[str(it['product_id'])] = str(it['sku']).strip()
             except Exception:
@@ -55,8 +107,15 @@ def sweep_flags(max_age_h=4, parents=None):
 
 
 def plan():
-    parents = {}
-    flags = sweep_flags(parents=parents)
+    parents, titles = {}, {}
+    flags = sweep_flags(parents=parents, titles=titles)
+    if titles:
+        try:
+            old_t = json.load(open(TITLES_PATH, encoding='utf-8'))
+        except Exception:
+            old_t = {}
+        old_t.update(titles)
+        json.dump(old_t, open(TITLES_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     # Self-heal the product list: a sweep product whose parent sku equals one of our codes EXACTLY
     # is ours (added 19 Oct 2026 after 34 codes were missed because their product ids weren't listed).
     pmap = PIDS.setdefault('parent', {})
@@ -198,6 +257,7 @@ def build():
            f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}', '',
            '## Changes', ''] + [f'- {c}: {a[0]} {a[1]} → {b[0]} {b[1]}' for c, a, b in changes[:300]] + \
           ['', '## Kits in stock from their parts (kits.json)', ''] + kit_lines + \
+          ['', '## Name check — listing type vs MyDrop title (fix any line in bold before it sells)', ''] + name_check(cmap, pmap) + \
           ['', '## Not found on MyDrop', '', ' '.join(unmapped)]
     open(os.path.join(ROOT, 'report.md'), 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
     print('\n'.join(rep[:8]))
