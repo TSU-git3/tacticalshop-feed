@@ -82,14 +82,22 @@ def plan():
     print(f'flags from sweeps: {len(flags)}; get_product needed: {len(todo)}; skipped (sweep says out of stock): {len(skipped)}')
 
 
+NET_DAYS = '5'     # camo nets made to order (owner, 18 Oct 2026)
+OTHER_DAYS = '3'   # every other product made to order (owner, 19 Oct 2026)
+
+
 def status_for(code, stock):
-    """stock: int, 'В наявності', 'Очікується надходження', None (not found)."""
+    """stock: int, 'В наявності', 'Очікується надходження', or None = code NOT on MyDrop.
+    In stock -> '+'. On MyDrop but out of stock -> made to order: nets 5 days, others 3 days.
+    Not on MyDrop at all -> '-' (owner, 19 Oct 2026: not on MyDrop = not sold)."""
     net = PRODUCTS[code]['net']
     if isinstance(stock, (int, float)) and stock > 0:
         return '+', int(stock)
     if isinstance(stock, str) and 'наявн' in stock.lower() and 'очіку' not in stock.lower():
         return '+', None
-    return ('5', None) if net else ('-', 0)
+    if stock is None:
+        return '-', 0
+    return (NET_DAYS if net else OTHER_DAYS), None
 
 
 def build():
@@ -167,7 +175,7 @@ def build():
            f'- get_product lookups: {len(looked)}; skipped as out of stock by sweep: {len(out_pids)}',
            f'- Changed since last run: {len(changes)}',
            f'- On MyDrop but out of stock (no size with stock): {len(on_md_out)}',
-           f'- Codes not found on MyDrop (written as out of stock / nets made to order): {len(unmapped)}',
+           f'- Codes not found on MyDrop (written as out of stock «-»): {len(unmapped)}',
            f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}', '',
            '## Changes', ''] + [f'- {c}: {a[0]} {a[1]} → {b[0]} {b[1]}' for c, a, b in changes[:300]] + \
           ['', '## Not found on MyDrop', '', ' '.join(unmapped)]
@@ -208,5 +216,23 @@ def write_xml(result):
     open(os.path.join(os.path.dirname(ROOT), 'stock.xml'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 
 
+def restate():
+    """Re-apply the stock rules to refresh/last_state.json without new look-ups
+    (codes listed under «Not found on MyDrop» in report.md count as not on MyDrop)."""
+    prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
+    rep = open(os.path.join(ROOT, 'report.md'), encoding='utf-8').read()
+    nf = set(rep.split('## Not found on MyDrop', 1)[1].split()) if '## Not found on MyDrop' in rep else set()
+    res = {}
+    for code in PRODUCTS:
+        a, q = prev[code]
+        res[code] = (a, q) if a == '+' else status_for(code, None if code in nf else 0)
+    json.dump({k: list(v) for k, v in res.items()}, open(os.path.join(ROOT, 'last_state.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    write_xml(res)
+    cnt = {}
+    for a, q in res.values():
+        cnt[a] = cnt.get(a, 0) + 1
+    print('restated:', cnt, '; not on MyDrop:', len(nf & set(PRODUCTS)))
+
+
 if __name__ == '__main__':
-    {'plan': plan, 'build': build}[sys.argv[1]]()
+    {'plan': plan, 'build': build, 'restate': restate}[sys.argv[1]]()

@@ -26,7 +26,7 @@ Goal: exact stock with the fewest MyDrop calls. Never guess: a code gets stock o
 
 - «Not found on MyDrop» in report.md means no MyDrop product has this exact code (neither a size sku nor the product sku). Codes whose product exists but is out of stock are counted separately («On MyDrop but out of stock»). `plan` adds any sweep product whose product sku equals one of our codes exactly to `pids.json` automatically; `pids.json["parent"]` maps code → product id for those (19 Oct 2026 fix: the first run missed 34 codes, 22 of them in stock, because their product ids weren't listed).
 
-- Stock 0 or «Очікується надходження» → out of stock (`quantity_in_stock` 0). Camo nets (`20…`) out of stock → «під замовлення 5 дн.» (owner, 18 Oct 2026).
+- Code on MyDrop with stock 0 or «Очікується надходження» → made to order: camo nets (`20…`) «під замовлення 5 дн.» (owner, 18 Oct 2026), **every other product «під замовлення 3 дн.»** (owner, 19 Oct 2026). Code NOT on MyDrop at all → out of stock «-» (`quantity_in_stock` 0) — owner, 19 Oct 2026: not on MyDrop = not sold.
 - Number > 0 → in stock with that quantity. «В наявності» without a number → in stock, no quantity.
 - No drop/partner prices in any file in this repo (it is public).
 - If the MyDrop connector is missing or asks to sign in again, stop without changing `stock.xml` and say so.
