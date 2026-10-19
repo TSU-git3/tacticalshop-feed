@@ -473,20 +473,6 @@ null
 "avail": "+",
 "qty": null
 },
-"20200-СМ": {
-"name": "Маскувальна сітка Militex під індивідуальний розмір, ціна за 1 м², степовий мультикам",
-"price": 50,
-"cat": 9400,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
 "20200-ТМ": {
 "name": "Маскувальна сітка Militex під індивідуальний розмір, ціна за 1 м², темний мультикам",
 "price": 50,
@@ -1292,26 +1278,6 @@ null
 "avail": "-",
 "qty": null
 },
-"1003-0126-00": {
-"name": "Плитоноска Kiborg GU Gen.2 з системою MOLLE, швидкий скид, Cordura 1000D, чорний мультикам",
-"price": 5200,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1003-0126-00/Frame%201321316198.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/70/plitonoska_kiborg_gu_gen_2_black_multicam_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "1003-0125-00": {
 "name": "Плитоноска Kiborg GU Gen.2 з системою MOLLE, швидкий скид, Cordura 1000D, чорний",
 "price": 5200,
@@ -1663,26 +1629,6 @@ null
 "net": false,
 "avail": "+",
 "qty": 1
-},
-"0802-0126-L": {
-"name": "Пояс РПС Kiborg R-1 GEN.2 з IRR-покриттям, Cordura 1000D, чорний мультикам, розмір L",
-"price": 2150,
-"cat": 9202,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/298/poyas_rps_gen_2_l_kiborg_r_1_chernyy_multikam_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
 },
 "0802-0125-M": {
 "name": "Пояс РПС Kiborg R-1 GEN.2 з IRR-покриттям, Cordura 1000D, чорний, розмір M",
@@ -8815,230 +8761,6 @@ null
 "avail": "5",
 "qty": null
 },
-"20225-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 2×2,5 м",
-"price": 250,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20325-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 3×2,5 м",
-"price": 375,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20205-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 2×5 м",
-"price": 500,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20305-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 3×5 м",
-"price": 750,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20505-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 5×5 м",
-"price": 1250,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20408-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 4×8 м",
-"price": 1600,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20507-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 5×7 м",
-"price": 1750,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20508-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 5×8 м",
-"price": 2000,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20608-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 6×8 м",
-"price": 2400,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20510-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 5×10 м",
-"price": 2500,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20610-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 6×10 м",
-"price": 3000,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20810-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 8×10 м",
-"price": 4000,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20101-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 10×10 м",
-"price": 5000,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20115-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 10×15 м",
-"price": 7500,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20120-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 10×20 м",
-"price": 10000,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
-"20202-СМ": {
-"name": "Маскувальна сітка Militex, степовий мультикам, 20×20 м",
-"price": 20000,
-"cat": 9401,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2812/maskiruyushchaya_setka_militex_stepnoy_multikam_5h5m_ploshchad_25_kv_m.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%202.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/20200-%D0%A1%D0%9C/%D0%9C%D0%B0%D1%81%D0%BA%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%20%D1%81%D1%96%D1%82%D0%BA%D0%B0%203.png"
-],
-"net": true,
-"avail": "-",
-"qty": null
-},
 "20225-ТМ": {
 "name": "Маскувальна сітка Militex, темний мультикам, 2×2,5 м",
 "price": 250,
@@ -11125,26 +10847,6 @@ null
 "avail": "-",
 "qty": null
 },
-"60604-2-К": {
-"name": "Плитоноска Kiborg GU Gen.2 з бронеплитами NIJ IV і балістичними пакетами Militex, 2 клас захисту, чорний мультикам",
-"price": 19630,
-"cat": 9102,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60604-2-%D0%9A/copy_komplekt-5-plytonoska-kiborg-gu-gen.2-chornyi-multykam-z-balistychnym-zakhystom-militex-1-klas-zakhystu-ta-broneplytamy-95388934101235.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60604-2-%D0%9A/39490951363487.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60604-2-%D0%9A/54057652646574.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60604-2-%D0%9A/60481751879364.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60604-2-%D0%9A/29449561930516.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60600-2-%D0%9A/77150624424860.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60600-2-%D0%9A/32397917842478.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60600-2-%D0%9A/komplekt-5-plytonoska-kiborg-gu-gen.2-multykam-z-balistychnym-zakhystom-militex-2-klas-zakhystu-ta-broneplytamy-55992401767488.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/60600-2-%D0%9A/komplekt-5-plytonoska-kiborg-gu-gen.2-multykam-z-balistychnym-zakhystom-militex-2-klas-zakhystu-ta-broneplytamy-76281077617613.png"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "45006-2-К": {
 "name": "Плитоноска Kiborg GU Gen.2 + 2 підсумки з балістичним захистом Militex, 2 клас захисту, мультикам",
 "price": 8830,
@@ -11218,26 +10920,6 @@ null
 "https://kiborg.com.ua/image/catalog/unixml/49/8901/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_haki_4.jpg",
 "https://kiborg.com.ua/image/catalog/unixml/49/8901/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_haki_5.jpg",
 "https://kiborg.com.ua/image/catalog/unixml/49/8901/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_haki_6.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"77000-2-К": {
-"name": "Плитоноска Kiborg GU Gen.2 + 2 підсумки з балістичним захистом Militex, 2 клас захисту, чорний мультикам",
-"price": 8830,
-"cat": 9102,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/8903/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_2_klassa_chernyy_multikam_8.jpg"
 ],
 "net": false,
 "avail": "-",
@@ -13740,26 +13422,6 @@ null
 "avail": "-",
 "qty": null
 },
-"77000": {
-"name": "Плитоноска Kiborg GU Gen.2 + 2 підсумки з балістичним захистом Militex, 1 клас захисту, чорний мультикам",
-"price": 8265,
-"cat": 9102,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/100/plitonoska_kiborg_gu_gen_2_2_podsumka_s_ballisticheskoy_zashchitoy_1_klassa_chernyy_multikam_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "88000": {
 "name": "Плитоноска Kiborg GU Gen.2 + 2 підсумки з балістичним захистом Militex, 1 клас захисту, чорний",
 "price": 8265,
@@ -14625,37 +14287,6 @@ null
 "avail": "-",
 "qty": null
 },
-"1002-0126-00": {
-"name": "Плитоноска Kiborg GU Gen.1 з системою MOLLE, Cordura 1000D, чорний мультикам",
-"price": 4800,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1002-0126-00/Frame%201321316198.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/221/plitonoska_kiborg_gu_gen_1_black_multicam_9.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"85000-2-К": {
-"name": "Захист попереку Kiborg з балістичним пакетом Militex, 2 клас захисту, кріплення MOLLE, мультикам",
-"price": 1880,
-"cat": 9104,
-"vendor": "Kiborg",
-"pics": [],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "85003-2-К": {
 "name": "Захист попереку Kiborg з балістичним пакетом Militex, 2 клас захисту, кріплення MOLLE, койот",
 "price": 1880,
@@ -15344,16 +14975,6 @@ null
 "avail": "-",
 "qty": null
 },
-"17017-2-К": {
-"name": "Захист попереку Kiborg з балістичним пакетом Militex, 2 клас захисту, велкро і MOLLE, койот",
-"price": 1880,
-"cat": 9104,
-"vendor": "Kiborg",
-"pics": [],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "17016-2-К": {
 "name": "Захист попереку Kiborg з балістичним пакетом Militex, 2 клас захисту, велкро і MOLLE, хакі",
 "price": 1880,
@@ -15371,16 +14992,6 @@ null
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/17016/P1180402.JPG",
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/17016/P1180399.JPG"
 ],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"17002-2-К": {
-"name": "Захист попереку Militex з балістичним пакетом, 2 клас захисту, Cordura USA, мультикам",
-"price": 2230,
-"cat": 9104,
-"vendor": "Militex",
-"pics": [],
 "net": false,
 "avail": "-",
 "qty": null
@@ -16894,27 +16505,6 @@ null
 "avail": "-",
 "qty": null
 },
-"81233": {
-"name": "Сидушка тактична Kiborg з балістичним пакетом Militex, 1 клас захисту, чорний мультикам",
-"price": 3490,
-"cat": 9601,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/113/karemat_sidushka_kiborg_s_ballisticheskim_paketom_1_klass_zashchity_militex_20mm_cordura_black_multicam.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/113/karemat_sidushka_kiborg_s_ballisticheskim_paketom_1_klass_zashchity_militex_20mm_cordura_black_multicam_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/113/karemat_sidushka_kiborg_s_ballisticheskim_paketom_1_klass_zashchity_militex_20mm_cordura_black_multicam_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/113/karemat_sidushka_kiborg_s_ballisticheskim_paketom_1_klass_zashchity_militex_20mm_cordura_black_multicam_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/113/karemat_sidushka_kiborg_s_ballisticheskim_paketom_1_klass_zashchity_militex_20mm_cordura_black_multicam_5.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490388%201.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490398.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490402.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490407.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490413.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "0804-0121-00": {
 "name": "Лямки для пояса РПС Kiborg плечові м'які, мультикам",
 "price": 1440,
@@ -17375,27 +16965,6 @@ null
 "avail": "+",
 "qty": 4
 },
-"2611-0126-00": {
-"name": "Сидушка тактична Kiborg 20 мм під бронепакет, Cordura, чорний мультикам",
-"price": 1000,
-"cat": 9601,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/503/karemat_sidushka_kiborg_20mm_cordura_black_multicam_pod_bronyu.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/503/karemat_sidushka_kiborg_20mm_cordura_black_multicam_pod_bronyu_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/503/karemat_sidushka_kiborg_20mm_cordura_black_multicam_pod_bronyu_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/503/karemat_sidushka_kiborg_20mm_cordura_black_multicam_pod_bronyu_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/503/karemat_sidushka_kiborg_20mm_cordura_black_multicam_pod_bronyu_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/503/karemat_sidushka_kiborg_20mm_cordura_black_multicam_pod_bronyu_5.png",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490388%201.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490398.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490407.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/81233/P1490402.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "2321-0121-00": {
 "name": "Підсумок для магазину Kiborg GU Single Mag Pouch жорсткий посилений, Cordura 1000D, мультикам",
 "price": 550,
@@ -17541,27 +17110,6 @@ null
 "avail": "+",
 "qty": null
 },
-"2804-0204-00": {
-"name": "Рюкзак для пострілів РПГ-7 Kiborg, піксель",
-"price": 2850,
-"cat": 9501,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_6.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_7.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_8.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/351/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_oksford_piksel_9.png"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "2804-0123-00": {
 "name": "Рюкзак для пострілів РПГ-7 Kiborg, койот",
 "price": 3500,
@@ -17581,27 +17129,6 @@ null
 ],
 "net": false,
 "avail": "+",
-"qty": null
-},
-"2804-0124-00": {
-"name": "Рюкзак для пострілів РПГ-7 Kiborg, хакі",
-"price": 3500,
-"cat": 9501,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_6.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_7.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_8.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/348/takticheskiy_ryukzak_dlya_vystrelov_rpg_7_kordura_haki_9.png"
-],
-"net": false,
-"avail": "-",
 "qty": null
 },
 "110102": {
@@ -17656,112 +17183,6 @@ null
 "https://kiborg.com.ua/image/catalog/unixml/49/9/ballisticheskiy_paket_dlya_rps_kiborg_r_1_razmer_l_100_9_22_9_1_klass_zashchity_5.png",
 "https://kiborg.com.ua/image/catalog/unixml/49/9/ballisticheskiy_paket_dlya_rps_kiborg_r_1_razmer_l_100_9_22_9_1_klass_zashchity_6.png",
 "https://kiborg.com.ua/image/catalog/unixml/49/9/ballisticheskiy_paket_dlya_rps_kiborg_r_1_razmer_l_100_9_22_9_1_klass_zashchity_7.png"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"1111-S": {
-"name": "Набір РПС Kiborg R-1 GEN.2: пояс + підсумки, мультикам, розмір S",
-"price": 4840,
-"cat": 9201,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/281/nabor_poyas_rps_kiborg_r_1_gen_2_s_multikam_podsumki_6.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"1111-M": {
-"name": "Набір РПС Kiborg R-1 GEN.2: пояс + підсумки, мультикам, розмір M",
-"price": 5040,
-"cat": 9201,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/301/nabor_poyas_rps_kiborg_r_1_gen_2_m_multikam_podsumki_6.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"1111-L": {
-"name": "Набір РПС Kiborg R-1 GEN.2: пояс + підсумки, мультикам, розмір L",
-"price": 5140,
-"cat": 9201,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/302/nabor_poyas_rps_kiborg_r_1_gen_2_l_multikam_podsumki_6.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"2222-S": {
-"name": "Набір РПС Kiborg R-1 GEN.2: пояс + підсумки, піксель, розмір S",
-"price": 4840,
-"cat": 9201,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/307/nabor_poyas_rps_kiborg_r_1_gen_2_s_piksel_podsumki_6.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"2222-M": {
-"name": "Набір РПС Kiborg R-1 GEN.2: пояс + підсумки, піксель, розмір M",
-"price": 5040,
-"cat": 9201,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/308/nabor_poyas_rps_kiborg_r_1_gen_2_m_piksel_podsumki.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/308/nabor_poyas_rps_kiborg_r_1_gen_2_m_piksel_podsumki_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/308/nabor_poyas_rps_kiborg_r_1_gen_2_m_piksel_podsumki_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/308/nabor_poyas_rps_kiborg_r_1_gen_2_m_piksel_podsumki_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/308/nabor_poyas_rps_kiborg_r_1_gen_2_m_piksel_podsumki_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/308/nabor_poyas_rps_kiborg_r_1_gen_2_m_piksel_podsumki_5.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"2222-L": {
-"name": "Набір РПС Kiborg R-1 GEN.2: пояс + підсумки, піксель, розмір L",
-"price": 5140,
-"cat": 9201,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/309/nabor_poyas_rps_kiborg_r_1_gen_2_l_piksel_podsumki.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/309/nabor_poyas_rps_kiborg_r_1_gen_2_l_piksel_podsumki_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/309/nabor_poyas_rps_kiborg_r_1_gen_2_l_piksel_podsumki_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/309/nabor_poyas_rps_kiborg_r_1_gen_2_l_piksel_podsumki_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/309/nabor_poyas_rps_kiborg_r_1_gen_2_l_piksel_podsumki_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/309/nabor_poyas_rps_kiborg_r_1_gen_2_l_piksel_podsumki_5.jpg"
 ],
 "net": false,
 "avail": "-",
@@ -17953,26 +17374,6 @@ null
 "avail": "+",
 "qty": null
 },
-"2308-0126-XL": {
-"name": "Підсумок для скидання магазинів Kiborg рулонний, 35×25 см, чорний мультикам",
-"price": 900,
-"cat": 9302,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4898/takticheskiy_podsumok_pod_sbros_rulonnyy_35x25_kiborg_xl_dark_multicam_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "2308-0125-XL": {
 "name": "Підсумок для скидання магазинів Kiborg рулонний, 35×25 см, чорний",
 "price": 900,
@@ -18084,25 +17485,6 @@ null
 "avail": "+",
 "qty": null
 },
-"2303-0126-00": {
-"name": "Передня панель для плитоноски Kiborg з 3 підсумками під магазини, чорний мультикам",
-"price": 900,
-"cat": 9309,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4909/semnaya_perednyaya_panel_k_plitonoske_s_podsumkami_pod_3_magazina_chernyy_multikam_7.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "2303-0125-00": {
 "name": "Передня панель для плитоноски Kiborg з 3 підсумками під магазини, чорний",
 "price": 900,
@@ -18207,27 +17589,6 @@ null
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1045/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D1%96%20%D0%BD%D0%B0%D0%BA%D0%BE%D0%BB%D1%96%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BE%D0%BB%D0%B8%D0%B2%D0%B0%202.jpg",
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1045/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D1%96%20%D0%BD%D0%B0%D0%BA%D0%BE%D0%BB%D1%96%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BE%D0%BB%D0%B8%D0%B2%D0%B0%203.jpg",
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1045/%D0%92%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D1%96%20%D0%BD%D0%B0%D0%BA%D0%BE%D0%BB%D1%96%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BE%D0%BB%D0%B8%D0%B2%D0%B0%205.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"0306-0224-00": {
-"name": "Наколінники Kiborg «метелик», камуфляж",
-"price": 530,
-"cat": 9700,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2012/nakolenniki_babochka_kamuflyazh_9.jpg"
 ],
 "net": false,
 "avail": "-",
@@ -18504,26 +17865,6 @@ null
 "avail": "+",
 "qty": 5
 },
-"8001": {
-"name": "Ремінь 3-х точковий Kiborg для АК, РПК чорний",
-"price": 580,
-"cat": 9901,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/6222/remen_trehtochechnyy_dlya_ak_rpk_chernyy_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "3207-6366-00": {
 "name": "Ремінь 3-х точковий Kiborg для АК, РПК койот",
 "price": 290,
@@ -18749,27 +18090,6 @@ null
 "avail": "-",
 "qty": null
 },
-"77003": {
-"name": "Плитоноска Kiborg GU Gen.2 + знімна панель на 3 магазини, чорний мультикам",
-"price": 5795,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/102/plitonoska_kiborg_gu_gen_2_semnaya_panel_s_3_mya_podsumkami_pod_1_magazin_chernyy_multikam_9.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "45003": {
 "name": "Плитоноска Kiborg GU Gen.2 + 6 підсумків, комплект, мультикам",
 "price": 7895,
@@ -18848,27 +18168,6 @@ null
 "https://kiborg.com.ua/image/catalog/unixml/49/92/plitonoska_kiborg_gu_gen_2_6_podsumkov_haki_7.jpg",
 "https://kiborg.com.ua/image/catalog/unixml/49/92/plitonoska_kiborg_gu_gen_2_6_podsumkov_haki_8.jpg",
 "https://kiborg.com.ua/image/catalog/unixml/49/92/plitonoska_kiborg_gu_gen_2_6_podsumkov_haki_9.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"77002": {
-"name": "Плитоноска Kiborg GU Gen.2 + 6 підсумків, комплект, чорний мультикам",
-"price": 7895,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/101/plitonoska_kiborg_gu_gen_2_6_podsumkov_chernyy_multikam_9.jpg"
 ],
 "net": false,
 "avail": "-",
@@ -18958,26 +18257,6 @@ null
 "avail": "-",
 "qty": null
 },
-"77001": {
-"name": "Плитоноска Kiborg GU Gen.2 + 8 підсумків, комплект, чорний мультикам",
-"price": 10145,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/99/plitonoska_kiborg_gu_gen_2_8_podsumkov_chernyy_multikam_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "0806-0121-00": {
 "name": "Лямки для РПС Kiborg плечові, Cordura, мультикам",
 "price": 1510,
@@ -19047,48 +18326,6 @@ null
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/3052/DSC05980.jpg",
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/3052/DSC05987.jpg",
 "https://kiborg.com.ua/image/catalog/FOTO%20tovariv/3052/DSC05985.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"3019": {
-"name": "Пояс РПС Kiborg R-3 розвантажувальний, мультикам",
-"price": 2500,
-"cat": 9202,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/282/poyas_rps_kiborg_r_3_multikam_9.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"3022": {
-"name": "Пояс РПС Kiborg R-3 розвантажувальний, хакі",
-"price": 2500,
-"cat": 9202,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/284/poyas_rps_kiborg_r_3_haki_9.jpg"
 ],
 "net": false,
 "avail": "-",
@@ -19234,26 +18471,6 @@ null
 "avail": "+",
 "qty": 13
 },
-"2309-0116-00": {
-"name": "Підсумок для 2 магазинів Kiborg Military, MOLLE, мультикам",
-"price": 770,
-"cat": 9301,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4878/takticheskiy_podsumok_pod_2_magazina_kiborg_military_multicam_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "2302-0121-00": {
 "name": "Підсумок для магазину Kiborg M-1 з велкро, MOLLE, мультикам",
 "price": 520,
@@ -19393,25 +18610,6 @@ null
 "net": false,
 "avail": "+",
 "qty": 21
-},
-"2305-0126-00": {
-"name": "Підсумок для 2 магазинів Kiborg GU Double Mag Pouch, MOLLE, чорний мультикам",
-"price": 580,
-"cat": 9301,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4876/takticheskiy_podsumok_pod_2_magazina_kiborg_gu_double_mag_pouch_dark_multicam_7.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
 },
 "2306-0121-00": {
 "name": "Підсумок для скидання магазинів Kiborg GU Mag Reset Pouch, MOLLE, мультикам",
@@ -19577,23 +18775,6 @@ null
 "avail": "+",
 "qty": 3
 },
-"2307-0126-00": {
-"name": "Підсумок утилітарний Kiborg для дрібного спорядження, MOLLE, чорний мультикам",
-"price": 700,
-"cat": 9308,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/4859/podsumok_utilitarnyy_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4859/podsumok_utilitarnyy_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4859/podsumok_utilitarnyy_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4859/podsumok_utilitarnyy_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4859/podsumok_utilitarnyy_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/4859/podsumok_utilitarnyy_chernyy_multikam_5.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "2045": {
 "name": "Плитоноска Kiborg Modular X-1 зі збільшеною площею захисту, без підсумків, чорний мультикам",
 "price": 7700,
@@ -19614,26 +18795,6 @@ null
 "net": false,
 "avail": "+",
 "qty": 1
-},
-"2044": {
-"name": "Плитоноска Kiborg Modular X-1 зі збільшеною площею захисту, без підсумків, койот",
-"price": 6900,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"2043": {
-"name": "Плитоноска Kiborg Modular X-1 зі збільшеною площею захисту, без підсумків, хакі",
-"price": 6900,
-"cat": 9101,
-"vendor": "Kiborg",
-"pics": [],
-"net": false,
-"avail": "-",
-"qty": null
 },
 "2046": {
 "name": "Плитоноска Militex Modular X-1 зі збільшеною площею захисту, без підсумків, Cordura USA, мультикам",
@@ -21198,27 +20359,6 @@ null
 "avail": "-",
 "qty": null
 },
-"0302-0126-00": {
-"name": "Наколінники тактичні Kiborg USA захисні, чорний мультикам",
-"price": 1340,
-"cat": 9700,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2022/nakolenniki_kiborg_usa_tactical_chernyy_multikam.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2022/nakolenniki_kiborg_usa_tactical_chernyy_multikam_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2022/nakolenniki_kiborg_usa_tactical_chernyy_multikam_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2022/nakolenniki_kiborg_usa_tactical_chernyy_multikam_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2022/nakolenniki_kiborg_usa_tactical_chernyy_multikam_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2022/nakolenniki_kiborg_usa_tactical_chernyy_multikam_5.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1043/DSC06804.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1043/DSC06806.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1043/DSC06811.jpg",
-"https://kiborg.com.ua/image/catalog/FOTO%20tovariv/1043/DSC06808.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "0302-0215-00": {
 "name": "Наколінники тактичні Kiborg USA захисні, чорний",
 "price": 1340,
@@ -21339,47 +20479,6 @@ null
 "https://kiborg.com.ua/image/catalog/unixml/49/2018/komplekt_kiborg_chernyy_7.jpg",
 "https://kiborg.com.ua/image/catalog/unixml/49/2018/komplekt_kiborg_chernyy_8.jpg",
 "https://kiborg.com.ua/image/catalog/unixml/49/2018/komplekt_kiborg_chernyy_9.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"0307-0224-00": {
-"name": "Налокітники тактичні Kiborg, камуфляж",
-"price": 470,
-"cat": 9700,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2016/nalokotniki_kamuflyazh_8.jpg"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
-"1017": {
-"name": "Налокітники тактичні Kiborg з системою швидкого скидання, піксель",
-"price": 440,
-"cat": 9700,
-"vendor": "Kiborg",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_1.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_2.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_3.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_4.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_5.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_6.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_7.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_8.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/2015/nalokotniki_s_bystrym_sbrosom_9.jpg"
 ],
 "net": false,
 "avail": "-",
