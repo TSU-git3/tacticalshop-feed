@@ -1,39 +1,55 @@
-# Stock refresh 2026-10-20 11:30 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-10-20 15:30 (Kyiv) — BIG check
 
-- Offers: 1029; status counts: {'5': 332, '+': 347, '3': 350}
-- get_product lookups: 186; skipped as out of stock by sweep: 33
-- Changed since last run: 15
-- On MyDrop but out of stock (no size with stock): 38
+- Offers: 1029; status counts: {'5': 332, '+': 346, '3': 351}
+- get_product lookups: 337; skipped as out of stock by sweep: 212
+- Changed since last run: 33
+- On MyDrop but out of stock (no size with stock): 283
 - Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 
 ## Changes
 
-- 110110: + 3 → + 2
-- 110108: + 2 → + 1
-- 20325-ЛО: + None → 5 None
-- 2405-0101-M: + 4 → + 3
-- 2404-0101-M: + 10 → + 9
-- 2320-0122-00: + 6 → + 5
-- 2316-0122-00: + 26 → + 25
-- 112530-2-К: + 2 → 3 None
-- 3209-6322-00: + 4 → + 3
-- 2305-0122-00: + 35 → + 33
-- 2307-0122-00: + 1 → 3 None
-- 2609-0211-00: + 16 → + 15
-- 45002: + None → 3 None
-- 17042: + 2 → + 1
-- 17041: + 3 → + 2
+- 2202-6321-00: + 124 → + 123
+- 2202-6356-00: + 13 → + 12
+- 0802-0121-M: 3 None → + 5
+- 0802-0121-L: + 10 → + 9
+- 0802-0122-L: + 5 → + 4
+- 2311-0122-00: + 9 → + 8
+- 2316-0125-00: 3 None → + 1
+- 5703-0612-S: + 3 → + 4
+- 2401-0122-XL: + 34 → + 33
+- 2401-0123-M: + 7 → + 8
+- 0804-0121-00: + 17 → + 16
+- 2321-0121-00: + 250 → + 243
+- 2321-0122-00: + 76 → + 73
+- 3201-0122-00: + 6 → + 4
+- 0806-0122-00: + 23 → + 22
+- 2201-0122-00: + 1 → 3 None
+- 2306-0121-00: + 15 → + 14
+- 2307-0122-00: 3 None → + 10
+- 111430: + 1 → 3 None
+- 2609-0211-00: + 15 → + 14
+- 2609-0212-00: + 11 → + 10
+- 2609-0214-00: + 1 → 3 None
+- 3702-0121-00: + 4 → + 2
+- 2604-0211-00: + 3 → + 15
+- 2608-0211-00: + 12 → + 15
+- 2608-0214-00: + 5 → + 15
+- 2802-0214-00: + 1 → + 6
+- 3204-0110-00: + 15 → + 14
+- 45002: 3 None → + None
+- 45008: + None → 3 None
+- 60600-2-К: + None → 3 None
+- 60601-2-К: + None → 3 None
+- 87000: 3 None → + 1
 
 ## Kits in stock from their parts (kits.json)
 
 - 45000: + (no number)
 - 45001: + (no number)
 - 45003: + (no number)
+- 45002: + (no number)
 - 45004: + (no number)
-- 45008: + (no number)
-- 60600-2-К: + (no number)
-- 60601-2-К: + (no number)
 - 90000: + 1
 - 90001: + 1
 - 90002: + 1
@@ -50,6 +66,7 @@
 - 86000-2-К: + 3
 - 86001-2-К: + 3
 - 86002-2-К: + 2
+- 87000: + 1
 - 87001: + 1
 - 87002: + 1
 - 89000-2-К: + 2
