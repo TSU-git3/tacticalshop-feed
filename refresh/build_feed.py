@@ -347,6 +347,44 @@ def write_xml(result):
         out.append(''.join(o))
     out += ['</offers>', '</shop>', '</yml_catalog>']
     open(os.path.join(os.path.dirname(ROOT), 'stock.xml'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
+    write_prom_csv(result)
+
+
+PROM_DIR = os.path.join(os.path.dirname(ROOT), 'prom')
+PROM_HDR = ['Код_товару', 'Унікальний_ідентифікатор', 'Ідентифікатор_товару', 'ID_групи_різновидів',
+            'Ціна', 'Валюта', 'Одиниця_виміру', 'Наявність', 'Кількість']
+
+
+def write_prom_csv(result):
+    """prom/prom_stock.csv — pulled by Prom's import-by-link (owner, 20 Oct 2026: XML can't carry
+    «під замовлення», Prom's CSV can). Наявність: '+' / days ('3', '5') / '-'. Only rows that exist
+    on Prom (prom/uid_map.json, matched by Унікальний_ідентифікатор). Stock and price only — the
+    names / phrases / HTML fields belong to the SEO project and are never written here."""
+    import csv
+    umap = json.load(open(os.path.join(PROM_DIR, 'uid_map.json'), encoding='utf-8'))['map']
+    rows = []
+    for code, u in umap.items():
+        if code not in result:
+            continue
+        a, q = result[code]
+        if a == '+':
+            nal, kil = '+', ('' if q is None else str(q))
+        elif a.isdigit():
+            nal, kil = a, ''
+        else:
+            nal, kil = '-', '0'
+        rows.append([code, u['uid'], 'KIB-' + code, u['grp'], str(PRODUCTS[code]['price']), 'UAH', u['unit'], nal, kil])
+    with open(os.path.join(PROM_DIR, 'prom_stock.csv'), 'w', encoding='utf-8', newline='') as f:
+        w = csv.writer(f, quoting=csv.QUOTE_ALL)
+        w.writerow(PROM_HDR)
+        w.writerows(rows)
+
+
+def prom():
+    """Rewrite prom/prom_stock.csv from refresh/last_state.json (no look-ups)."""
+    prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
+    write_prom_csv({c: tuple(v) for c, v in prev.items()})
+    print('prom_stock.csv written')
 
 
 def split():
@@ -424,4 +462,4 @@ def kits():
 
 
 if __name__ == '__main__':
-    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits}[sys.argv[1]]()
+    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits, 'prom': prom}[sys.argv[1]]()
