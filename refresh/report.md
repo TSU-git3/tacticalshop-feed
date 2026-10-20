@@ -1,9 +1,9 @@
-# Stock refresh 2026-10-20 03:29 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-10-20 07:29 (Kyiv) — BIG check
 
 - Offers: 1029; status counts: {'5': 331, '+': 351, '3': 347}
-- get_product lookups: 186; skipped as out of stock by sweep: 33
+- get_product lookups: 337; skipped as out of stock by sweep: 212
 - Changed since last run: 0
-- On MyDrop but out of stock (no size with stock): 38
+- On MyDrop but out of stock (no size with stock): 283
 - Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 
