@@ -18020,26 +18020,6 @@ null
 "avail": "-",
 "qty": null
 },
-"114400": {
-"name": "Балістичний бронекомплект Militex для бронежилета: спина, груди, камербанди, 1 клас захисту, 114400",
-"price": 14200,
-"cat": 9103,
-"vendor": "Militex",
-"pics": [
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband.jpg",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_1.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_2.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_3.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_4.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_5.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_6.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_7.png",
-"https://kiborg.com.ua/image/catalog/unixml/49/103/ballisticheskiy_bronekomplekt_dlya_bronezhileta_zashchita_spiny_grudnogo_otdela_i_kamerband_8.png"
-],
-"net": false,
-"avail": "-",
-"qty": null
-},
 "45000": {
 "name": "Плитоноска Kiborg GU Gen.2 + знімна панель на 3 магазини, мультикам",
 "price": 5795,

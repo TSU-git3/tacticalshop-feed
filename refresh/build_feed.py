@@ -374,9 +374,32 @@ def write_prom_csv(result):
         else:
             nal, kil = '-', '0'
         rows.append([code, u['uid'], 'KIB-' + code, u['grp'], str(PRODUCTS[code]['price']), 'UAH', u['unit'], nal, kil])
+    content_path = os.path.join(PROM_DIR, 'content.csv')
+    if os.path.exists(content_path):
+        # FIRST-IMPORT MODE (owner, 20 Oct 2026): the first link import also updates names, phrases,
+        # descriptions and groups. prom/content.csv = SEO master + Import fixes (no photos, no
+        # characteristics, no private notes); price / Наявність / Кількість are overlaid here.
+        # Delete prom/content.csv once the owner confirms that import -> back to stock + price only,
+        # so a later run can never put back old names over SEO's newer ones.
+        live = {r[1]: r for r in rows}
+        with open(content_path, encoding='utf-8', newline='') as f:
+            crow = list(csv.reader(f))
+        ch, body = crow[0], crow[1:]
+        ci = {k: n for n, k in enumerate(ch)}
+        out = []
+        for r in body:
+            s = live.get(r[ci['Унікальний_ідентифікатор']])
+            if not s:
+                continue
+            r = list(r)
+            r[ci['Ціна']], r[ci['Наявність']], r[ci['Кількість']] = s[4], s[7], s[8]
+            out.append(r)
+        hdr, rows = ch, out
+    else:
+        hdr = PROM_HDR
     with open(os.path.join(PROM_DIR, 'prom_stock.csv'), 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, quoting=csv.QUOTE_ALL)
-        w.writerow(PROM_HDR)
+        w.writerow(hdr)
         w.writerows(rows)
 
 
