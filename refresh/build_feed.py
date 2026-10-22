@@ -155,6 +155,7 @@ def plan():
 
 NET_DAYS = '5'     # camo nets made to order (owner, 18 Oct 2026)
 OTHER_DAYS = '3'   # every other product made to order (owner, 19 Oct 2026)
+READY_MIN = 2      # Prom CSV: in stock with MORE than this many units -> '!' «Готово до відправки» (owner, 22 Oct 2026)
 
 
 def status_for(code, stock):
@@ -368,7 +369,11 @@ def write_prom_csv(result):
             continue
         a, q = result[code]
         if a == '+':
-            nal, kil = '+', ('' if q is None else str(q))
+            # Owner, 22 Oct 2026: more than READY_MIN units -> '!' («Готово до відправки»);
+            # 2 or fewer, or no count from MyDrop -> '+' («В наявності»). Re-applied on every run,
+            # so items move both ways as stock changes. stock.xml (HugeProfit) is not affected.
+            nal = '!' if (q is not None and q > READY_MIN) else '+'
+            kil = '' if q is None else str(q)
         elif a.isdigit():
             nal, kil = a, ''
         else:
