@@ -1,0 +1,494 @@
+{
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>.",
+ "products": {
+  "14261": {
+   "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
+   "name_ua": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра",
+   "brand": "Tennier Industries",
+   "vg": 612001,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Front-Edit-3.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Side.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Back.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Detail.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2025/03/Newlayer7sizeChart-1.png"
+   ],
+   "sizes": {
+    "2000000144887": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 13950
+    },
+    "2000000211244": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 13950
+    },
+    "2000000211251": {
+     "size": "XS/R",
+     "label": "X-Small Regular",
+     "price": 13950
+    },
+    "2000000157702": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 13950
+    },
+    "2000000123172": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 13950
+    },
+    "2000000123189": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 13950
+    },
+    "2000000123196": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 13950
+    },
+    "2000000144870": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 13950
+    },
+    "2000000144894": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 13950
+    },
+    "2000000144900": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 13950
+    },
+    "2000000144917": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 13500
+    },
+    "2000000219271": {
+     "size": "XL/XL",
+     "label": "X-Large X-Long",
+     "price": 13499
+    },
+    "2000000219288": {
+     "size": "XXL/L",
+     "label": "XX-Large Long",
+     "price": 13500
+    }
+   }
+  },
+  "16728": {
+   "url": "/tennier-ecwcs-gen-iii-level-7-multicam-oryhinal-ssha-zymovi-shtany-small-short/",
+   "name_ua": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам",
+   "brand": "Tennier Industries",
+   "vg": 612002,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2026/02/7.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/02/Layer-7-Multicam-Trouser.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/02/Screenshot-2026-03-23-081834-1.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/02/L7TrouserNEWNEW-1.png"
+   ],
+   "sizes": {
+    "2000000070919": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 10350
+    },
+    "2000000212319": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 10350
+    },
+    "2000000212326": {
+     "size": "XS/R",
+     "label": "X-Small Regular",
+     "price": 10350
+    },
+    "2000000069036": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 10350
+    },
+    "2000000068992": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 10350
+    },
+    "2000000070858": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 10350
+    },
+    "2000000070780": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 10350
+    },
+    "2000000069005": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 10350
+    },
+    "2000000070773": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 10350
+    },
+    "2000000069012": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 10350
+    },
+    "2000000070889": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 10350
+    }
+   }
+  },
+  "16856": {
+   "url": "/tennier-ecwcs-gen-iii-level-7-trousers-oryhinal-ssha-zymovi-shtany-small-regular/",
+   "name_ua": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі",
+   "brand": "Tennier Industries",
+   "vg": 612003,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Front.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Side.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Back.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Detail.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2024/02/NEWLAYER7TROUSERSIZE.png"
+   ],
+   "sizes": {
+    "2000000148540": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 10350
+    },
+    "2000000176819": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 10350
+    },
+    "2000000184708": {
+     "size": "XS/R",
+     "label": "X-Small Regular",
+     "price": 8753
+    },
+    "2000000184715": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 10350
+    },
+    "2000000148526": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 10350
+    },
+    "2000000148533": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 9900
+    },
+    "2000000148557": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 10350
+    },
+    "2000000157719": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 10350
+    },
+    "2000000148564": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 10350
+    },
+    "2000000148571": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 10350
+    },
+    "2000000148588": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 10350
+    }
+   }
+  },
+  "23191": {
+   "url": "/tennier-ecwcs-gen-iii-level-7-oryhinal-ssha-zymovyi-komplekt-small-regular/",
+   "name_ua": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий",
+   "brand": "Tennier Industries",
+   "vg": 612004,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Front-Edit-3.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Front.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Side.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Side.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Back.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Back.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/05/Layer-7-Parka-Detail.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/07/Layer-7-Trouser-Detail.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2025/03/Newlayer7sizeChart-1.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2024/02/NEWLAYER7TROUSERSIZE.png"
+   ],
+   "sizes": {
+    "2000000182292": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 22999
+    },
+    "2000000172156": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 22999
+    },
+    "2000000182308": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 22999
+    },
+    "2000000182384": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 22999
+    },
+    "2000000182322": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 22999
+    },
+    "2000000182445": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 22950
+    },
+    "2000000246222": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 22999
+    },
+    "2000000246239": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 22999
+    }
+   }
+  },
+  "16720": {
+   "url": "/tennier-ecwcs-gen-iii-level-7-multicam-oryhinal-ssha-zymova-kurtka-small-regular/",
+   "name_ua": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам",
+   "brand": "Tennier Industries",
+   "vg": 612005,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2023/11/multicam-jacket-4.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2023/11/multicam-jacket-1.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2023/11/multicam-jacket-2.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2023/11/multicam-jacket-3.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2023/12/NEWLAYER-7-MULTICAM-JACKET.png"
+   ],
+   "sizes": {
+    "2000000065489": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 13499
+    },
+    "2000000212340": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 13499
+    },
+    "2000000184722": {
+     "size": "XS/R",
+     "label": "X-Small Regular",
+     "price": 13500
+    },
+    "2000000066561": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 13050
+    },
+    "2000000065885": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 13499
+    },
+    "2000000065908": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 13499
+    },
+    "2000000066035": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 13499
+    },
+    "2000000066059": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 13500
+    },
+    "2000000069647": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 13500
+    },
+    "2000000065496": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 13499
+    },
+    "2000000069494": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 13499
+    }
+   }
+  },
+  "26345": {
+   "url": "/komplekt-zymovyi-carinthia-mig-4.0-m/",
+   "name_ua": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий",
+   "brand": "Carinthia",
+   "vg": 612006,
+   "pics": [
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/903995_23_mig_4-0_jacket_olive_01.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/11581_23_mig_4-0_trousers_olive_01.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/77666_23_mig_4-0_jacket_olive_03.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/303979_23_mig_4-0_trousers_olive_02.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/847716_23_mig_4-0_jacket_olive_04.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/842788_23_mig_4-0_jacket_olive_05.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/577008_23_mig_4-0_trousers_olive_04.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/694403_23_mig_4-0_trousers_olive_05.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/976074_23_mig_4-0_jacket_olive_08.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/761040_23_mig_4-0_jacket_olive_01-2.png"
+   ],
+   "sizes": {
+    "2000000252650": {
+     "size": "S",
+     "label": "Small",
+     "price": 25875
+    },
+    "2000000214993": {
+     "size": "M",
+     "label": "Medium",
+     "price": 25875
+    },
+    "2000000215006": {
+     "size": "L",
+     "label": "Large",
+     "price": 27000
+    },
+    "2000000252643": {
+     "size": "XL",
+     "label": "X-Large",
+     "price": 25875
+    },
+    "2000000252667": {
+     "size": "XXL",
+     "label": "XX-Large",
+     "price": 25875
+    }
+   }
+  },
+  "27130": {
+   "url": "/zymovyi-utepliuiuchyi-komplekt-tennier-ind-ecwcs-gen-iii-level-7-coyote-brown-sr/",
+   "name_ua": "Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот",
+   "brand": "Tennier Industries",
+   "vg": 612007,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2026/06/Coyote-Parka.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/11/COYOTE.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/06/Layer7CoyoteParka.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/06/GEN-III-LAYER-7-PARKA-COYOTE.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2021/11/1-GEN-III-LAYER-7-TROUSER-COYOTE-.png"
+   ],
+   "sizes": {
+    "2000000224800": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 22999
+    },
+    "2000000224794": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 22999
+    },
+    "2000000224817": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 22999
+    }
+   }
+  },
+  "27294": {
+   "url": "/zymova-taktychna-kurtka-tennier-ind-ecwcs-gen-iii-level-7-small-regular-coyote-brown/",
+   "name_ua": "Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот",
+   "brand": "Tennier Industries",
+   "vg": 612008,
+   "pics": [
+    "https://www.tennierindustries.com/wp-content/uploads/2026/06/Coyote-Parka.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/06/Layer7CoyoteParka.png",
+    "https://www.tennierindustries.com/wp-content/uploads/2026/06/GEN-III-LAYER-7-PARKA-COYOTE.png"
+   ],
+   "sizes": {
+    "2000000211206": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 13499
+    },
+    "2000000222004": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 13499
+    },
+    "2000000221175": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 13499
+    }
+   }
+  },
+  "26425": {
+   "url": "/kurtka-zymova-carinthia-mig-4.0-g-loft-small-multicam/",
+   "name_ua": "Зимова тактична куртка Carinthia MIG 4.0 G-Loft, мультикам",
+   "brand": "Carinthia",
+   "vg": 612009,
+   "pics": [
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/31272_23_mig_4-0_jacket_multicam_01.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/133656_23_mig_4-0_jacket_multicam_03.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/81597_23_mig_4-0_jacket_multicam_04.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/565003_23_mig_4-0_jacket_multicam_06.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/22915_23_mig_4-0_jacket_multicam_07.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/794371_23_mig_4-0_jacket_multicam_08.png",
+    "https://www.carinthia.eu/userdata/dcshop/images/normal/483327_23_mig_4-0_jacket_multicam_09.png"
+   ],
+   "sizes": {
+    "2000000215341": {
+     "size": "S",
+     "label": "Small",
+     "price": 24300
+    },
+    "2000000215327": {
+     "size": "M",
+     "label": "Medium",
+     "price": 24300
+    },
+    "2000000215334": {
+     "size": "L",
+     "label": "Large",
+     "price": 23625
+    },
+    "2000000218489": {
+     "size": "XL",
+     "label": "X-Large",
+     "price": 23625
+    }
+   }
+  }
+ }
+}

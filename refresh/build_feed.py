@@ -329,7 +329,11 @@ def write_xml(result):
         if cid in cats:
             n, p = cats[cid]
             out.append(f'<category id="{cid}"' + (f' parentId="{p}"' if p else '') + f'>{escape(n)}</category>')
+    bal = ballistic_offers()
+    if bal:
+        out.append('<category id="9810">Зимовий одяг Level 7</category>')
     out += ['</categories>', '<offers>']
+    out += bal
     for code, p in PRODUCTS.items():
         a, q = result[code]
         if a == '+':
@@ -349,6 +353,35 @@ def write_xml(result):
     out += ['</offers>', '</shop>', '</yml_catalog>']
     open(os.path.join(os.path.dirname(ROOT), 'stock.xml'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
     write_prom_csv(result)
+
+
+def ballistic_offers():
+    """Ballistic Level 7 offers for stock.xml (owner, 24 Oct 2026: HugeProfit gets this supplier too).
+    Data: ballistic/catalog.json + ballistic/state.json, written by ballistic/build_ballistic.py.
+    Every Kiborg run keeps them as last written; only the Ballistic run changes them."""
+    bdir = os.path.join(os.path.dirname(ROOT), 'ballistic')
+    try:
+        bcat = json.load(open(os.path.join(bdir, 'catalog.json'), encoding='utf-8'))['products']
+        bst = json.load(open(os.path.join(bdir, 'state.json'), encoding='utf-8'))['state']
+    except (OSError, ValueError, KeyError):
+        return []
+    out = []
+    for pid, p in bcat.items():
+        for code, s in p['sizes'].items():
+            a, q, price = bst.get(code, ['-', 0, s['price']])
+            avail = 'true' if a == '+' else 'false'
+            status = 'в наявності' if a == '+' else 'немає в наявності'
+            o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(p["name_ua"] + ", " + s["size"] + ", оригінал")}</name>',
+                 f'<price>{price}</price>', '<currencyId>UAH</currencyId>', '<categoryId>9810</categoryId>',
+                 f'<vendor>{escape(p["brand"])}</vendor>', f'<vendorCode>{escape(code)}</vendorCode>']
+            o += [f'<picture>{escape(u)}</picture>' for u in p['pics']]
+            if a == '+' and q is not None:
+                o.append(f'<quantity_in_stock>{q}</quantity_in_stock>')
+            elif a != '+':
+                o.append('<quantity_in_stock>0</quantity_in_stock>')
+            o.append(f'<param name="Наявність Prom">{escape(status)}</param></offer>')
+            out.append(''.join(o))
+    return out
 
 
 PROM_DIR = os.path.join(os.path.dirname(ROOT), 'prom')
