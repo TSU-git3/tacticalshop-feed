@@ -1,9 +1,9 @@
-# Ballistic stock check 2026-10-25 15:39 Kyiv
+# Ballistic stock check 2026-10-25 19:39 Kyiv
 
 Codes: 77 · read: 77 · CSV: «!» 37, «+» 12, «-» 20
 
 ## Stock changes since last run
-none
+2000000182292 Зимовий комплект Tennier ECWCS Gen III Level …, S/R: ['+', 17, 22999] → ['+', 16]
 
 ## Price changes (Ballistic РРЦ)
 none
