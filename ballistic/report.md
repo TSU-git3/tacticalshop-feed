@@ -1,4 +1,4 @@
-# Ballistic stock check 2026-10-25 11:40 Kyiv
+# Ballistic stock check 2026-10-25 15:39 Kyiv
 
 Codes: 77 · read: 77 · CSV: «!» 37, «+» 12, «-» 20
 
