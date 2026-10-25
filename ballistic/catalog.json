@@ -1,5 +1,5 @@
 {
- "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>.",
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895).",
  "products": {
   "14261": {
    "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
@@ -22,69 +22,96 @@
     "2000000144887": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, L/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, L/R, оригінал"
     },
     "2000000211244": {
      "size": "XS/S",
      "label": "X-Small Short",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, XS/S, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, XS/S, оригінал"
     },
     "2000000211251": {
      "size": "XS/R",
      "label": "X-Small Regular",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, XS/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, XS/R, оригінал"
     },
     "2000000157702": {
      "size": "S/S",
      "label": "Small Short",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, S/S, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, S/S, оригінал"
     },
     "2000000123172": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, S/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, S/R, оригінал"
     },
     "2000000123189": {
      "size": "S/L",
      "label": "Small Long",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, S/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, S/L, оригінал"
     },
     "2000000123196": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, M/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, M/R, оригінал"
     },
     "2000000144870": {
      "size": "M/L",
      "label": "Medium Long",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, M/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, M/L, оригінал"
     },
     "2000000144894": {
      "size": "L/L",
      "label": "Large Long",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, L/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, L/L, оригінал"
     },
     "2000000144900": {
      "size": "XL/R",
      "label": "X-Large Regular",
-     "price": 13950
+     "price": 13950,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, XL/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, XL/R, оригінал"
     },
     "2000000144917": {
      "size": "XL/L",
      "label": "X-Large Long",
-     "price": 13500
+     "price": 13500,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, XL/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, XL/L, оригінал"
     },
     "2000000219271": {
      "size": "XL/XL",
      "label": "X-Large X-Long",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, XL/XL, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, XL/XL, оригінал"
     },
     "2000000219288": {
      "size": "XXL/L",
      "label": "XX-Large Long",
-     "price": 13500
+     "price": 13500,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 Parka армии США, серая, XXL/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра, XXL/L, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "16728": {
    "url": "/tennier-ecwcs-gen-iii-level-7-multicam-oryhinal-ssha-zymovi-shtany-small-short/",
@@ -104,59 +131,82 @@
     "2000000070919": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, M/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, M/R, оригінал"
     },
     "2000000212319": {
      "size": "XS/S",
      "label": "X-Small Short",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, XS/S, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, XS/S, оригінал"
     },
     "2000000212326": {
      "size": "XS/R",
      "label": "X-Small Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, XS/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, XS/R, оригінал"
     },
     "2000000069036": {
      "size": "S/S",
      "label": "Small Short",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, S/S, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, S/S, оригінал"
     },
     "2000000068992": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, S/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, S/R, оригінал"
     },
     "2000000070858": {
      "size": "S/L",
      "label": "Small Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, S/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, S/L, оригінал"
     },
     "2000000070780": {
      "size": "M/L",
      "label": "Medium Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, M/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, M/L, оригінал"
     },
     "2000000069005": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, L/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, L/R, оригінал"
     },
     "2000000070773": {
      "size": "L/L",
      "label": "Large Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, L/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, L/L, оригінал"
     },
     "2000000069012": {
      "size": "XL/R",
      "label": "X-Large Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, XL/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, XL/R, оригінал"
     },
     "2000000070889": {
      "size": "XL/L",
      "label": "X-Large Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, мультикам, XL/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам, XL/L, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "16856": {
    "url": "/tennier-ecwcs-gen-iii-level-7-trousers-oryhinal-ssha-zymovi-shtany-small-regular/",
@@ -179,59 +229,82 @@
     "2000000148540": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, M/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, M/R, оригінал"
     },
     "2000000176819": {
      "size": "XS/S",
      "label": "X-Small Short",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, XS/S, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, XS/S, оригінал"
     },
     "2000000184708": {
      "size": "XS/R",
      "label": "X-Small Regular",
-     "price": 8753
+     "price": 8753,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, XS/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, XS/R, оригінал"
     },
     "2000000184715": {
      "size": "S/S",
      "label": "Small Short",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, S/S, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, S/S, оригінал"
     },
     "2000000148526": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, S/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, S/R, оригінал"
     },
     "2000000148533": {
      "size": "S/L",
      "label": "Small Long",
-     "price": 9900
+     "price": 9900,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, S/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, S/L, оригінал"
     },
     "2000000148557": {
      "size": "M/L",
      "label": "Medium Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, M/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, M/L, оригінал"
     },
     "2000000157719": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, L/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, L/R, оригінал"
     },
     "2000000148564": {
      "size": "L/L",
      "label": "Large Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, L/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, L/L, оригінал"
     },
     "2000000148571": {
      "size": "XL/R",
      "label": "X-Large Regular",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, XL/R, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, XL/R, оригінал"
     },
     "2000000148588": {
      "size": "XL/L",
      "label": "X-Large Long",
-     "price": 10350
+     "price": 10350,
+     "name_ru": "Зимние тактические штаны Tennier ECWCS Gen III Level 7 армии США, серые, XL/L, оригинал",
+     "name_uk": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі, XL/L, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "23191": {
    "url": "/tennier-ecwcs-gen-iii-level-7-oryhinal-ssha-zymovyi-komplekt-small-regular/",
@@ -254,44 +327,61 @@
     "2000000182292": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, S/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, S/R, оригінал"
     },
     "2000000172156": {
      "size": "S/L",
      "label": "Small Long",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, S/L, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, S/L, оригінал"
     },
     "2000000182308": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, M/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, M/R, оригінал"
     },
     "2000000182384": {
      "size": "M/L",
      "label": "Medium Long",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, M/L, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, M/L, оригінал"
     },
     "2000000182322": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, L/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, L/R, оригінал"
     },
     "2000000182445": {
      "size": "L/L",
      "label": "Large Long",
-     "price": 22950
+     "price": 22950,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, L/L, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, L/L, оригінал"
     },
     "2000000246222": {
      "size": "XL/R",
      "label": "X-Large Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, XL/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, XL/R, оригінал"
     },
     "2000000246239": {
      "size": "XL/L",
      "label": "X-Large Long",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 армии США (куртка + штаны), серый, XL/L, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий, XL/L, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "16720": {
    "url": "/tennier-ecwcs-gen-iii-level-7-multicam-oryhinal-ssha-zymova-kurtka-small-regular/",
@@ -312,59 +402,82 @@
     "2000000065489": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, L/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, L/R, оригінал"
     },
     "2000000212340": {
      "size": "XS/S",
      "label": "X-Small Short",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, XS/S, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, XS/S, оригінал"
     },
     "2000000184722": {
      "size": "XS/R",
      "label": "X-Small Regular",
-     "price": 13500
+     "price": 13500,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, XS/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, XS/R, оригінал"
     },
     "2000000066561": {
      "size": "S/S",
      "label": "Small Short",
-     "price": 13050
+     "price": 13050,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, S/S, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, S/S, оригінал"
     },
     "2000000065885": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, S/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, S/R, оригінал"
     },
     "2000000065908": {
      "size": "S/L",
      "label": "Small Long",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, S/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, S/L, оригінал"
     },
     "2000000066035": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, M/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, M/R, оригінал"
     },
     "2000000066059": {
      "size": "M/L",
      "label": "Medium Long",
-     "price": 13500
+     "price": 13500,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, M/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, M/L, оригінал"
     },
     "2000000069647": {
      "size": "L/L",
      "label": "Large Long",
-     "price": 13500
+     "price": 13500,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, L/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, L/L, оригінал"
     },
     "2000000065496": {
      "size": "XL/R",
      "label": "X-Large Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, XL/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, XL/R, оригінал"
     },
     "2000000069494": {
      "size": "XL/L",
      "label": "X-Large Long",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7 армии США, мультикам, XL/L, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам, XL/L, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "26345": {
    "url": "/komplekt-zymovyi-carinthia-mig-4.0-m/",
@@ -387,29 +500,40 @@
     "2000000252650": {
      "size": "S",
      "label": "Small",
-     "price": 25875
+     "price": 25875,
+     "name_ru": "Зимний тактический комплект Carinthia MIG 4.0 G-Loft (куртка + штаны), оливковый, S, оригинал",
+     "name_uk": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий, S, оригінал"
     },
     "2000000214993": {
      "size": "M",
      "label": "Medium",
-     "price": 25875
+     "price": 25875,
+     "name_ru": "Зимний тактический комплект Carinthia MIG 4.0 G-Loft (куртка + штаны), оливковый, M, оригинал",
+     "name_uk": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий, M, оригінал"
     },
     "2000000215006": {
      "size": "L",
      "label": "Large",
-     "price": 27000
+     "price": 27000,
+     "name_ru": "Зимний тактический комплект Carinthia MIG 4.0 G-Loft (куртка + штаны), оливковый, L, оригинал",
+     "name_uk": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий, L, оригінал"
     },
     "2000000252643": {
      "size": "XL",
      "label": "X-Large",
-     "price": 25875
+     "price": 25875,
+     "name_ru": "Зимний тактический комплект Carinthia MIG 4.0 G-Loft (куртка + штаны), оливковый, XL, оригинал",
+     "name_uk": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий, XL, оригінал"
     },
     "2000000252667": {
      "size": "XXL",
      "label": "XX-Large",
-     "price": 25875
+     "price": 25875,
+     "name_ru": "Зимний тактический комплект Carinthia MIG 4.0 G-Loft (куртка + штаны), оливковый, XXL, оригинал",
+     "name_uk": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий, XXL, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "27130": {
    "url": "/zymovyi-utepliuiuchyi-komplekt-tennier-ind-ecwcs-gen-iii-level-7-coyote-brown-sr/",
@@ -432,19 +556,26 @@
     "2000000224800": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 (куртка + штаны), койот, M/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот, M/R, оригінал"
     },
     "2000000224794": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 (куртка + штаны), койот, S/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот, S/R, оригінал"
     },
     "2000000224817": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 22999
+     "price": 22999,
+     "name_ru": "Зимний комплект Tennier ECWCS Gen III Level 7 (куртка + штаны), койот, L/R, оригинал",
+     "name_uk": "Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот, L/R, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "27294": {
    "url": "/zymova-taktychna-kurtka-tennier-ind-ecwcs-gen-iii-level-7-small-regular-coyote-brown/",
@@ -467,19 +598,26 @@
     "2000000211206": {
      "size": "M/R",
      "label": "Medium Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7, койот, M/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот, M/R, оригінал"
     },
     "2000000222004": {
      "size": "S/R",
      "label": "Small Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7, койот, S/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот, S/R, оригінал"
     },
     "2000000221175": {
      "size": "L/R",
      "label": "Large Regular",
-     "price": 13499
+     "price": 13499,
+     "name_ru": "Зимняя тактическая куртка Tennier ECWCS Gen III Level 7, койот, L/R, оригинал",
+     "name_uk": "Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот, L/R, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "26425": {
    "url": "/kurtka-zymova-carinthia-mig-4.0-g-loft-small-multicam/",
@@ -502,24 +640,33 @@
     "2000000215341": {
      "size": "S",
      "label": "Small",
-     "price": 24300
+     "price": 24300,
+     "name_ru": "Зимняя тактическая куртка Carinthia MIG 4.0 G-Loft, мультикам, S, оригинал",
+     "name_uk": "Зимова тактична куртка Carinthia MIG 4.0 G-Loft, мультикам, S, оригінал"
     },
     "2000000215327": {
      "size": "M",
      "label": "Medium",
-     "price": 24300
+     "price": 24300,
+     "name_ru": "Зимняя тактическая куртка Carinthia MIG 4.0 G-Loft, мультикам, M, оригинал",
+     "name_uk": "Зимова тактична куртка Carinthia MIG 4.0 G-Loft, мультикам, M, оригінал"
     },
     "2000000215334": {
      "size": "L",
      "label": "Large",
-     "price": 23625
+     "price": 23625,
+     "name_ru": "Зимняя тактическая куртка Carinthia MIG 4.0 G-Loft, мультикам, L, оригинал",
+     "name_uk": "Зимова тактична куртка Carinthia MIG 4.0 G-Loft, мультикам, L, оригінал"
     },
     "2000000218489": {
      "size": "XL",
      "label": "X-Large",
-     "price": 23625
+     "price": 23625,
+     "name_ru": "Зимняя тактическая куртка Carinthia MIG 4.0 G-Loft, мультикам, XL, оригинал",
+     "name_uk": "Зимова тактична куртка Carinthia MIG 4.0 G-Loft, мультикам, XL, оригінал"
     }
-   }
+   },
+   "in_csv": true
   },
   "27502": {
    "url": "/vohnestiikyi-taktychnyi-zymovyi-komplekt-carinthia-fr-kurtka-slj-ta-shtany-fjt-m/",
@@ -542,24 +689,33 @@
     "2000000229966": {
      "size": "L",
      "label": "Large",
-     "price": 23175
+     "price": 23175,
+     "name_ru": "Огнестойкий зимний тактический комплект Carinthia FR: куртка SLJ + штаны FJT, оливковый, L, оригинал",
+     "name_uk": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий, L, оригінал"
     },
     "2000000252599": {
      "size": "S",
      "label": "Small",
-     "price": 23175
+     "price": 23175,
+     "name_ru": "Огнестойкий зимний тактический комплект Carinthia FR: куртка SLJ + штаны FJT, оливковый, S, оригинал",
+     "name_uk": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий, S, оригінал"
     },
     "2000000231723": {
      "size": "M",
      "label": "Medium",
-     "price": 23175
+     "price": 23175,
+     "name_ru": "Огнестойкий зимний тактический комплект Carinthia FR: куртка SLJ + штаны FJT, оливковый, M, оригинал",
+     "name_uk": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий, M, оригінал"
     },
     "2000000252636": {
      "size": "XL",
      "label": "X-Large",
-     "price": 23175
+     "price": 23175,
+     "name_ru": "Огнестойкий зимний тактический комплект Carinthia FR: куртка SLJ + штаны FJT, оливковый, XL, оригинал",
+     "name_uk": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий, XL, оригінал"
     }
-   }
+   },
+   "in_csv": false
   },
   "29895": {
    "url": "/vohnestiika-taktychna-zymova-kurtka-carinthia-fr-slj/29895/",
@@ -580,24 +736,33 @@
     "2000000254791": {
      "size": "M",
      "label": "Medium",
-     "price": 11250
+     "price": 11250,
+     "name_ru": "Огнестойкая зимняя тактическая куртка Carinthia FR SLJ, оливковая, M, оригинал",
+     "name_uk": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова, M, оригінал"
     },
     "2000000254807": {
      "size": "S",
      "label": "Small",
-     "price": 11250
+     "price": 11250,
+     "name_ru": "Огнестойкая зимняя тактическая куртка Carinthia FR SLJ, оливковая, S, оригинал",
+     "name_uk": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова, S, оригінал"
     },
     "2000000254784": {
      "size": "L",
      "label": "Large",
-     "price": 11250
+     "price": 11250,
+     "name_ru": "Огнестойкая зимняя тактическая куртка Carinthia FR SLJ, оливковая, L, оригинал",
+     "name_uk": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова, L, оригінал"
     },
     "2000000254777": {
      "size": "XL",
      "label": "X-Large",
-     "price": 11250
+     "price": 11250,
+     "name_ru": "Огнестойкая зимняя тактическая куртка Carinthia FR SLJ, оливковая, XL, оригинал",
+     "name_uk": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова, XL, оригінал"
     }
-   }
+   },
+   "in_csv": false
   }
  }
 }

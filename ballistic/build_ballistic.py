@@ -18,7 +18,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 CATP, STATEP, UIDP = (os.path.join(HERE, n) for n in ('catalog.json', 'state.json', 'uid_map.json'))
 READY_MIN = 2
-HDR = ['Код_товару', 'Унікальний_ідентифікатор', 'Ідентифікатор_товару', 'ID_групи_різновидів',
+HDR = ['Код_товару', 'Назва_позиції', 'Назва_позиції_укр', 'Унікальний_ідентифікатор', 'Ідентифікатор_товару', 'ID_групи_різновидів',
        'Ціна', 'Валюта', 'Одиниця_виміру', 'Наявність', 'Кількість']
 
 
@@ -64,13 +64,15 @@ def write_csv(cat, state):
     uids = load(UIDP).get('map', {})
     rows = []
     for pid, p in cat.items():
-        for art in p['sizes']:
+        if not p.get('in_csv', True):
+            continue  # Excel import not confirmed yet -> a link row would create a bare product
+        for art, sz in p['sizes'].items():
             a, q, price = state[art]
             if a == '+':
                 nal, kil = ('!' if (q is not None and q > READY_MIN) else '+'), ('' if q is None else str(q))
             else:
                 nal, kil = '-', '0'
-            rows.append([art, uids.get(art, ''), 'BAL-' + art, str(p['vg']), str(price), 'UAH', 'шт.', nal, kil])
+            rows.append([art, sz['name_ru'], sz['name_uk'], uids.get(art, ''), 'BAL-' + art, str(p['vg']), str(price), 'UAH', 'шт.', nal, kil])
     with open(os.path.join(REPO, 'prom', 'ballistic_stock.csv'), 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, quoting=csv.QUOTE_ALL)
         w.writerow(HDR)
@@ -120,7 +122,7 @@ def build(raw):
     json.dump({'checked': now_kyiv(), 'state': state}, open(STATEP, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     rows = write_csv(cat, state)
     rebuild_stock_xml()
-    cnt = {k: sum(1 for r in rows if r[7] == k) for k in ('!', '+', '-')}
+    cnt = {k: sum(1 for r in rows if r[HDR.index('Наявність')] == k) for k in ('!', '+', '-')}
     rep = [f'# Ballistic stock check {now_kyiv()} Kyiv', '',
            f'Codes: {len(codes)} · read: {len(found)} · CSV: «!» {cnt["!"]}, «+» {cnt["+"]}, «-» {cnt["-"]}', '',
            '## Stock changes since last run', *(changes or ['none']), '',
