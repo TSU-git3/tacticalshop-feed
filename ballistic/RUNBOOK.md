@@ -4,8 +4,11 @@ Supplier: Ballistic (ballistic.com.ua) — Level 7 winter clothing (Tennier Indu
 so stock and prices are read from the owner's signed-in Ballistic account in **his Chrome** (Claude in Chrome tools).
 The scheduled task requires the owner's computer (Chrome open and signed in to ballistic.com.ua).
 
-Schedule (owner, 24 Oct 2026: 6 times a day): 06:40, 09:40, 12:40, 14:40, 17:40, 20:40 Kyiv — outside the Kiborg
-BIG/SMALL windows (xx:27–xx:00 at 03, 07, 11, 15, 19, 23).
+Schedule (owner, 25 Oct 2026: same time frame as the Kiborg/Militex checks): starts 03:35, 07:35, 11:35, 15:35, 19:35,
+23:35 Kyiv — 8 minutes after the Kiborg BIG/SMALL start (xx:27), which usually pushes by ~xx:30 — and MUST be pushed by
+04:00, 08:00, 12:00, 16:00, 20:00, 00:00 (the same delivery times as Kiborg). If the push is rejected, follow step 6
+(pull --rebase; on a stock.xml conflict take theirs and rebuild) — never force-push. (24 Oct 2026 schedule was
+06:40, 09:40, 12:40, 14:40, 17:40, 20:40 Kyiv.)
 
 Outputs (same data):
 - `prom/ballistic_stock.csv` — pulled by Prom's import-by-link (second link; ticks: price, Наявність, Кількість only;
