@@ -11,12 +11,19 @@ Ballistic gives no XML; stock is read from the owner's signed-in Ballistic accou
 
 Rules (owner, 24 Oct 2026): price = Ballistic РРЦ for that exact size; in stock with more than 2 units -> «!»
 («Готово до відправки»), 1–2 or no count -> «+», sold out -> «-». Match only by Ballistic article (exact).
+Market price (owner, 27 Oct 2026): when at least 2 other Prom sellers offer the same model + colour in stock (new, not
+discounted) and the cheapest of them is above our РРЦ, we sell just under the cheapest (−1 %, rounded down to 50 ₴);
+never below РРЦ. Targets live in ballistic/market_prices.json (written by `python3 ballistic/market.py`, re-checked twice
+a week); every run applies price = max(РРЦ of the size, listing target).
+
+  python3 ballistic/build_ballistic.py prices        -> re-applies РРЦ + market targets to state, CSV and stock.xml (no Ballistic read)
 """
 import json, os, sys, csv, datetime, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 CATP, STATEP, UIDP = (os.path.join(HERE, n) for n in ('catalog.json', 'state.json', 'uid_map.json'))
+MARKETP = os.path.join(HERE, 'market_prices.json')
 READY_MIN = 2
 HDR = ['Код_товару', 'Назва_позиції', 'Назва_позиції_укр', 'Унікальний_ідентифікатор', 'Ідентифікатор_товару', 'ID_групи_різновидів',
        'Ціна', 'Валюта', 'Одиниця_виміру', 'Наявність', 'Кількість']
@@ -29,6 +36,18 @@ def load(p):
 def now_kyiv():
     from zoneinfo import ZoneInfo
     return datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
+
+
+def market_targets():
+    try:
+        return {pid: v.get('target') for pid, v in load(MARKETP).get('listings', {}).items() if v.get('target')}
+    except (OSError, ValueError):
+        return {}
+
+
+def sell_price(rrp, pid, targets):
+    t = targets.get(pid)
+    return max(rrp, t) if t else rrp
 
 
 def js():
@@ -98,10 +117,13 @@ def build(raw):
     if len(found) < 0.8 * len(codes):
         sys.exit(f'ABORT: only {len(found)} of {len(codes)} Ballistic codes read (signed out? site changed?) — nothing changed. Errors: {errors[:10]}')
     state, changes, prices, missing, odd = {}, [], [], [], []
+    targets = market_targets()
     for pid, p in cat.items():
         for art, s in p['sizes'].items():
             if art not in got:
-                state[art] = old.get(art, ['-', 0, s['price']])
+                st = list(old.get(art, ['-', 0, s['price']]))
+                st[2] = sell_price(s['price'], pid, targets)
+                state[art] = st
                 missing.append(f'{art} ({p["name_ua"][:40]}…, {s["size"]}) — not read this run, last value kept')
                 continue
             _, label, status, rrp = got[art]
@@ -113,7 +135,10 @@ def build(raw):
                 prices.append(f'{art} {s["size"]}: {price} → {rrp}')
                 price = int(rrp)
                 s['price'] = price
-            state[art] = [a, q, price]
+            sp = sell_price(price, pid, targets)
+            if old.get(art) and old[art][2] != sp:
+                prices.append(f'{art} {s["size"]}: selling price {old[art][2]} → {sp} (РРЦ {price}' + (f', market target {targets[pid]})' if pid in targets else ')'))
+            state[art] = [a, q, sp]
             if old.get(art, [None, None])[:2] != [a, q]:
                 changes.append(f'{art} {p["name_ua"][:45]}…, {s["size"]}: {old.get(art)} → {[a, q]}')
     known = set(codes)
@@ -126,13 +151,31 @@ def build(raw):
     rep = [f'# Ballistic stock check {now_kyiv()} Kyiv', '',
            f'Codes: {len(codes)} · read: {len(found)} · CSV: «!» {cnt["!"]}, «+» {cnt["+"]}, «-» {cnt["-"]}', '',
            '## Stock changes since last run', *(changes or ['none']), '',
-           '## Price changes (Ballistic РРЦ)', *(prices or ['none']), '',
+           '## Price changes (Ballistic РРЦ / market target)', *(prices or ['none']), '',
            '## Not read this run', *(missing or ['none']), '',
            '## Sizes on Ballistic that are not on Prom (need an import)', *(new_sizes or ['none']), '',
            '## Unusual statuses', *(odd or ['none']), '', '## Collector errors', *(errors or ['none'])]
     open(os.path.join(HERE, 'report.md'), 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
     print('\n'.join(rep[:4]))
     print(f'{len(changes)} stock changes, {len(prices)} price changes, {len(missing)} not read, {len(new_sizes)} new sizes on Ballistic')
+
+
+def reprice():
+    cat = load(CATP)['products']
+    st_all = load(STATEP)
+    targets = market_targets()
+    ch = []
+    for pid, p in cat.items():
+        for art, s in p['sizes'].items():
+            if art in st_all['state']:
+                sp = sell_price(s['price'], pid, targets)
+                if st_all['state'][art][2] != sp:
+                    ch.append(f'{art} {s["size"]}: {st_all["state"][art][2]} → {sp}')
+                    st_all['state'][art][2] = sp
+    json.dump(st_all, open(STATEP, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    write_csv(cat, st_all['state'])
+    rebuild_stock_xml()
+    print(f'{len(ch)} selling prices changed'); print('\n'.join(ch))
 
 
 def csv_only():
@@ -147,6 +190,8 @@ if __name__ == '__main__':
         js()
     elif cmd == 'build' and len(sys.argv) > 2:
         build(sys.argv[2])
+    elif cmd == 'prices':
+        reprice()
     elif cmd == 'csv':
         csv_only()
     else:

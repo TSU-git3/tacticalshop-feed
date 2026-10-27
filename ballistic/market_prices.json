@@ -1,0 +1,446 @@
+{
+ "note": "Prom competitor targets (see ballistic/market.py)",
+ "checked": "2026-10-27 17:41",
+ "colour_checked": {
+  "2858589556": "olive",
+  "2853185899": "grey"
+ },
+ "listings": {
+  "14261": {
+   "name": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра",
+   "rrp": 13950,
+   "target": 13970,
+   "cheapest": 14120,
+   "sellers": 2,
+   "why": "cheapest competitor 14120 (2 sellers) −1 % → 13970",
+   "offers": [
+    [
+     14120,
+     "\"Vartovy\" - інтерн",
+     "2937581226",
+     "Зимова тактична куртка ECWCS Gen III Level 7 "
+    ],
+    [
+     15686,
+     "ЕКОБОКС",
+     "3163858620",
+     "Зимова тактична куртка ECWCS Gen III Level 7 "
+    ]
+   ],
+   "review": [
+    [
+     14900,
+     "US military store",
+     "2273056185",
+     "Зимова куртка Level 7 армії США ECWCS Gen III"
+    ]
+   ]
+  },
+  "16728": {
+   "name": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам",
+   "rrp": 10350,
+   "target": null,
+   "cheapest": 10460,
+   "sellers": 3,
+   "why": "cheapest 10460 −1 % rounds to 10350 ≤ РРЦ 10350",
+   "offers": [
+    [
+     10460,
+     "\"Vartovy\" - інтерн",
+     "2937581246",
+     "Зимові штани Tennier ECWCS Gen III level 7 Mu"
+    ],
+    [
+     11532,
+     "ТМ EKOSTAR",
+     "3158037624",
+     "Зимові штани Tennier ECWCS Gen III level 7 Mu"
+    ],
+    [
+     11638,
+     "ЕКОБОКС",
+     "3163858640",
+     "Зимові штани Tennier ECWCS Gen III level 7 Mu"
+    ]
+   ],
+   "review": [
+    [
+     11532,
+     "ТМ EKOSTAR",
+     "3158037625",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ],
+    [
+     11638,
+     "ЕКОБОКС",
+     "3163858641",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ]
+   ]
+  },
+  "16856": {
+   "name": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі",
+   "rrp": 10350,
+   "target": null,
+   "cheapest": 10460,
+   "sellers": 5,
+   "why": "cheapest 10460 −1 % rounds to 10350 ≤ РРЦ 10350",
+   "offers": [
+    [
+     10460,
+     "\"Vartovy\" - інтерн",
+     "2937581250",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ],
+    [
+     10765,
+     "Громовержець",
+     "2739038603",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ],
+    [
+     11069,
+     "Каратель",
+     "2021413112",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ],
+    [
+     11532,
+     "ТМ EKOSTAR",
+     "3158037625",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ],
+    [
+     11638,
+     "ЕКОБОКС",
+     "3163858641",
+     "Зимові штани Tennier ECWCS Gen III level 7 Tr"
+    ]
+   ],
+   "review": []
+  },
+  "23191": {
+   "name": "Зимовий комплект Tennier ECWCS Gen III Level 7 армії США (куртка + штани), сірий",
+   "rrp": 22999,
+   "target": null,
+   "cheapest": 19600,
+   "sellers": 4,
+   "why": "cheapest competitor 19600 ≤ our РРЦ 22999",
+   "offers": [
+    [
+     19600,
+     "Usa-Ukraine-ua",
+     "2853185899",
+     "Комплект куртка+штани Tennier Industries ECWC"
+    ],
+    [
+     22500,
+     "FORSTEP",
+     "3120901040",
+     "Зимовий костюм Tennier Gen III ECWCS level 7 "
+    ],
+    [
+     24050,
+     "\"Vartovy\" - інтерн",
+     "2937581288",
+     "Зимовий комплект Tennier ECWCS Gen III level "
+    ],
+    [
+     24755,
+     "Громовержець",
+     "2810329246",
+     "Зимовий комплект Tennier ECWCS Gen III level "
+    ]
+   ],
+   "review": []
+  },
+  "16720": {
+   "name": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам",
+   "rrp": 13499,
+   "target": null,
+   "cheapest": 13380,
+   "sellers": 4,
+   "why": "cheapest competitor 13380 ≤ our РРЦ 13499",
+   "offers": [
+    [
+     13380,
+     "Usa-Ukraine-ua",
+     "2390434093",
+     "Куртка Tennier ECWCS Gen III level 7 Multicam"
+    ],
+    [
+     14120,
+     "\"Vartovy\" - інтерн",
+     "2937581240",
+     "Зимова Куртка Tennier ECWCS Gen III level 7 M"
+    ],
+    [
+     14535,
+     "Громовержець",
+     "2736413110",
+     "Зимова куртка Tennier ECWCS Gen III level 7 M"
+    ],
+    [
+     14939,
+     "Каратель",
+     "2735632241",
+     "Зимова куртка Tennier ECWCS Gen III level 7 M"
+    ]
+   ],
+   "review": [
+    [
+     14900,
+     "US military store",
+     "2273056185",
+     "Зимова куртка Level 7 армії США ECWCS Gen III"
+    ]
+   ]
+  },
+  "27130": {
+   "name": "Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот",
+   "rrp": 22999,
+   "target": 23800,
+   "cheapest": 24050,
+   "sellers": 3,
+   "why": "cheapest competitor 24050 (3 sellers) −1 % → 23800",
+   "offers": [
+    [
+     24050,
+     "\"Vartovy\" - інтерн",
+     "2937581353",
+     "Зимовий утеплюючий комплект Tennier Ind ECWCS"
+    ],
+    [
+     25626,
+     "ТМ EKOSTAR",
+     "3158037670",
+     "Зимовий утеплюючий комплект Tennier Ind ECWCS"
+    ],
+    [
+     25861,
+     "ЕКОБОКС",
+     "3163858686",
+     "Зимовий утеплюючий комплект Tennier Ind ECWCS"
+    ]
+   ],
+   "review": []
+  },
+  "27294": {
+   "name": "Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот",
+   "rrp": 13499,
+   "target": 13970,
+   "cheapest": 14120,
+   "sellers": 3,
+   "why": "cheapest competitor 14120 (3 sellers) −1 % → 13970",
+   "offers": [
+    [
+     14120,
+     "\"Vartovy\" - інтерн",
+     "2937581363",
+     "Зимова тактична куртка Tennier Ind ECWCS Gen "
+    ],
+    [
+     14939,
+     "Каратель",
+     "2912635321",
+     "Зимова тактична куртка Tennier Ind ECWCS Gen "
+    ],
+    [
+     15041,
+     "ТМ EKOSTAR",
+     "3158037672",
+     "Зимова тактична куртка Tennier Ind ECWCS Gen "
+    ]
+   ],
+   "review": [
+    [
+     14900,
+     "US military store",
+     "2273056185",
+     "Зимова куртка Level 7 армії США ECWCS Gen III"
+    ]
+   ]
+  },
+  "26345": {
+   "name": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий",
+   "rrp": 25875,
+   "target": null,
+   "cheapest": 21560,
+   "sellers": 4,
+   "why": "cheapest competitor 21560 ≤ our РРЦ 25875",
+   "offers": [
+    [
+     21560,
+     "Интернет- магазин ",
+     "2858589556",
+     "Комплект зимовий Carinthia MIG 4.0. Оригінал"
+    ],
+    [
+     28240,
+     "\"Vartovy\" - інтерн",
+     "3004863592",
+     "Комплект зимовий Carinthia MIG 4.0, Olive, Me"
+    ],
+    [
+     28831,
+     "ТМ EKOSTAR",
+     "3158037657",
+     "Комплект зимовий Carinthia MIG 4.0 (ЕКОБОКС)"
+    ],
+    [
+     29095,
+     "ЕКОБОКС",
+     "3163858673",
+     "Комплект зимовий Carinthia MIG 4.0 EKOBOX"
+    ]
+   ],
+   "review": []
+  },
+  "26425": {
+   "name": "Зимова тактична куртка Carinthia MIG 4.0 G-Loft, мультикам",
+   "rrp": 24300,
+   "target": null,
+   "cheapest": 9500,
+   "sellers": 10,
+   "why": "cheapest competitor 9500 ≤ our РРЦ 24300",
+   "offers": [
+    [
+     9500,
+     "TovarKa1654",
+     "2570222138",
+     "Куртка Carinthia MIG 4.0 - MultiCam"
+    ],
+    [
+     21320,
+     "Yarshop_ua",
+     "2452787725",
+     "Куртка Карентія Carinthia MIG 4.0 Мультикам 1"
+    ],
+    [
+     21997,
+     "Rechovyk",
+     "3215390072",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam"
+    ],
+    [
+     22000,
+     "GenerALL",
+     "3047105831",
+     "Куртка Carinthia MIG 4.0, MultiCam, S"
+    ],
+    [
+     22000,
+     "Military Style",
+     "3155885021",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, S "
+    ],
+    [
+     22000,
+     "MilitaryStrong",
+     "2503826993",
+     "Тактична зимова куртка Карінтія Carinthia MIG"
+    ],
+    [
+     22000,
+     "Іграшка Мрії (дитя",
+     "3208663796",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X"
+    ],
+    [
+     22000,
+     "Драйв Сенс",
+     "3208612866",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X"
+    ],
+    [
+     22000,
+     "Ліхтар",
+     "3208617342",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X"
+    ],
+    [
+     22000,
+     "Непереможні",
+     "3195049862",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, S "
+    ]
+   ],
+   "review": [
+    [
+     21229,
+     "ANTABKA - інтернет",
+     "2827605259",
+     "Тактична Куртка Carinthia MIG 4.0 зимова, Зим"
+    ],
+    [
+     21280,
+     "СТАЛЕВИЙ КРОК",
+     "3195430043",
+     "Куртка Carinthia MIG 4.0 зимова, Зимовий каму"
+    ],
+    [
+     21767,
+     "SHMOTMEN",
+     "3178096368",
+     "Куртка Carinthia MIG 4.0 зимова, Зимовий каму"
+    ],
+    [
+     21950,
+     "Contractor.UA",
+     "2804566261",
+     "Куртка Carinthia MIG 4.0 G-Loft"
+    ]
+   ]
+  },
+  "27502": {
+   "name": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий",
+   "rrp": 23175,
+   "target": null,
+   "cheapest": 24240,
+   "sellers": 3,
+   "why": "blocked by offer(s) with no colour in the name, below the target: p2940593098 Contractor.UA 22190 — open the page, record the colour in colour_checked",
+   "offers": [
+    [
+     24240,
+     "\"Vartovy\" - інтерн",
+     "3004863642",
+     "Вогнестійкий тактичний зимовий комплект Carin"
+    ],
+    [
+     24945,
+     "Громовержець",
+     "2942991878",
+     "Вогнестійкий тактичний зимовий комплект Carin"
+    ],
+    [
+     25822,
+     "ТМ EKOSTAR",
+     "3158037675",
+     "Вогнестійкий тактичний зимовий комплект Carin"
+    ]
+   ],
+   "review": [
+    [
+     22190,
+     "Contractor.UA",
+     "2940593098",
+     "Вогнестійкий тактичний комплект Carinthia JET"
+    ]
+   ]
+  },
+  "29895": {
+   "name": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова",
+   "rrp": 11250,
+   "target": null,
+   "cheapest": null,
+   "sellers": 0,
+   "why": "only 0 other seller(s) with this model + colour in stock",
+   "offers": [],
+   "review": []
+  }
+ },
+ "colour_notes": {
+  "2858589556": "page «Колір: Оливковий» (27 Oct 2026)",
+  "2853185899": "page has no colour; standard grey Gen III L7 «Parka» set, not labelled coyote (Claude's reading, 27 Oct 2026) — owner may override"
+ }
+}

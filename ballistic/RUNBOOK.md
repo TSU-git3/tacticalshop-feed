@@ -41,6 +41,8 @@ Outputs (same data):
 
 - Match only by Ballistic article (= our Код_товару; Prom Ідентифікатор_товару `BAL-<article>`). Never guess.
 - Price = Ballistic «РРЦ» for that exact size (owner, 24 Oct 2026) — never the partner price shown next to it.
+  Since 27 Oct 2026 (owner): selling price = max(РРЦ, market target from `ballistic/market_prices.json`) — the target
+  is set by the twice-weekly Prom competitor check (`ballistic/MARKET_RUNBOOK.md`); the stock run never edits targets.
 - «В наявності: N» → in stock N; more than 2 → «!» («Готово до відправки»), 1–2 or no count → «+»; «Розпродано» or
   anything else → «-» (unusual statuses are listed in report.md).
 - A size that appears on Ballistic but is not in `ballistic/catalog.json` is only reported — new rows need a Prom import first.
