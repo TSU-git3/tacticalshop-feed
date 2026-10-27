@@ -1,18 +1,22 @@
 {
  "note": "Prom competitor targets (see ballistic/market.py)",
- "checked": "2026-10-27 17:41",
+ "checked": "2026-10-27 17:46",
  "colour_checked": {
   "2858589556": "olive",
   "2853185899": "grey"
+ },
+ "colour_notes": {
+  "2858589556": "page «Колір: Оливковий» (27 Oct 2026)",
+  "2853185899": "page has no colour; standard grey Gen III L7 «Parka» set, not labelled coyote (Claude's reading, 27 Oct 2026) — owner may override"
  },
  "listings": {
   "14261": {
    "name": "Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра",
    "rrp": 13950,
-   "target": 13970,
+   "target": 13999,
    "cheapest": 14120,
    "sellers": 2,
-   "why": "cheapest competitor 14120 (2 sellers) −1 % → 13970",
+   "why": "cheapest competitor 14120 (2 sellers) −1 % → …99 = 13999",
    "offers": [
     [
      14120,
@@ -39,10 +43,10 @@
   "16728": {
    "name": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам",
    "rrp": 10350,
-   "target": null,
+   "target": 10399,
    "cheapest": 10460,
    "sellers": 3,
-   "why": "cheapest 10460 −1 % rounds to 10350 ≤ РРЦ 10350",
+   "why": "cheapest competitor 10460 (3 sellers) −1 % → …99 = 10399",
    "offers": [
     [
      10460,
@@ -81,10 +85,10 @@
   "16856": {
    "name": "Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі",
    "rrp": 10350,
-   "target": null,
+   "target": 10399,
    "cheapest": 10460,
    "sellers": 5,
-   "why": "cheapest 10460 −1 % rounds to 10350 ≤ РРЦ 10350",
+   "why": "cheapest competitor 10460 (5 sellers) −1 % → …99 = 10399",
    "offers": [
     [
      10460,
@@ -199,10 +203,10 @@
   "27130": {
    "name": "Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот",
    "rrp": 22999,
-   "target": 23800,
+   "target": 23899,
    "cheapest": 24050,
    "sellers": 3,
-   "why": "cheapest competitor 24050 (3 sellers) −1 % → 23800",
+   "why": "cheapest competitor 24050 (3 sellers) −1 % → …99 = 23899",
    "offers": [
     [
      24050,
@@ -228,10 +232,10 @@
   "27294": {
    "name": "Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот",
    "rrp": 13499,
-   "target": 13970,
+   "target": 13999,
    "cheapest": 14120,
    "sellers": 3,
-   "why": "cheapest competitor 14120 (3 sellers) −1 % → 13970",
+   "why": "cheapest competitor 14120 (3 sellers) −1 % → …99 = 13999",
    "offers": [
     [
      14120,
@@ -438,9 +442,5 @@
    "offers": [],
    "review": []
   }
- },
- "colour_notes": {
-  "2858589556": "page «Колір: Оливковий» (27 Oct 2026)",
-  "2853185899": "page has no colour; standard grey Gen III L7 «Parka» set, not labelled coyote (Claude's reading, 27 Oct 2026) — owner may override"
  }
 }

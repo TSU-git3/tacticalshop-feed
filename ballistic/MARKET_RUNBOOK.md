@@ -3,7 +3,7 @@
 Owner, 27 Oct 2026: Ballistic Level 7 prices follow the cheapest Prom competitor when it sits above our РРЦ.
 - Same model + colour only (maker's name in the offer, or the offer uses our Ballistic article as its SKU); in stock
   («Готово до відправки» / «В наявності»); new (no б/у / уцінка); at least 2 other sellers.
-- Cheapest of them above our РРЦ → our price = cheapest −1 %, rounded down to 10 ₴. Never below РРЦ
+- Cheapest of them above our РРЦ → our price = cheapest −1 %, rounded UP to the next …99 (owner, 27 Oct 2026), still below the cheapest. Never below РРЦ
   (build_ballistic.py: price = max(РРЦ of the size, listing target)). Any same-model offer at/below РРЦ → stay at РРЦ.
 - An offer of the same model whose name has no colour and that is cheaper than the target blocks the raise until its
   colour is read on its page and recorded in `ballistic/market_prices.json` → `colour_checked` (+ `colour_notes`).

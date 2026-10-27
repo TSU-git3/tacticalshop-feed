@@ -1,15 +1,15 @@
-# Ballistic market check 2026-10-27 17:41 Kyiv
+# Ballistic market check 2026-10-27 17:46 Kyiv
 
-Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ → cheapest −1 %, rounded down to 10 ₴; never below РРЦ.
+Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ → cheapest −1 %, rounded up to …99 (below the cheapest); never below РРЦ.
 
 ## 14261 Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра
-РРЦ 13950 → selling target: 13970 (cheapest competitor 14120 (2 sellers) −1 % → 13970)
+РРЦ 13950 → selling target: 13999 (cheapest competitor 14120 (2 sellers) −1 % → …99 = 13999)
 - 14120 "Vartovy" - інтерн (p2937581226) Зимова тактична куртка ECWCS Gen III Level 7 
 - 15686 ЕКОБОКС (p3163858620) Зимова тактична куртка ECWCS Gen III Level 7 
 - colour not in name: 14900 US military store (p2273056185) Зимова куртка Level 7 армії США ECWCS Gen III
 
 ## 16728 Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам
-РРЦ 10350 → selling target: РРЦ (cheapest 10460 −1 % rounds to 10350 ≤ РРЦ 10350)
+РРЦ 10350 → selling target: 10399 (cheapest competitor 10460 (3 sellers) −1 % → …99 = 10399)
 - 10460 "Vartovy" - інтерн (p2937581246) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - 11532 ТМ EKOSTAR (p3158037624) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - 11638 ЕКОБОКС (p3163858640) Зимові штани Tennier ECWCS Gen III level 7 Mu
@@ -17,7 +17,7 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - colour not in name: 11638 ЕКОБОКС (p3163858641) Зимові штани Tennier ECWCS Gen III level 7 Tr
 
 ## 16856 Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, сірі
-РРЦ 10350 → selling target: РРЦ (cheapest 10460 −1 % rounds to 10350 ≤ РРЦ 10350)
+РРЦ 10350 → selling target: 10399 (cheapest competitor 10460 (5 sellers) −1 % → …99 = 10399)
 - 10460 "Vartovy" - інтерн (p2937581250) Зимові штани Tennier ECWCS Gen III level 7 Tr
 - 10765 Громовержець (p2739038603) Зимові штани Tennier ECWCS Gen III level 7 Tr
 - 11069 Каратель (p2021413112) Зимові штани Tennier ECWCS Gen III level 7 Tr
@@ -40,13 +40,13 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - colour not in name: 14900 US military store (p2273056185) Зимова куртка Level 7 армії США ECWCS Gen III
 
 ## 27130 Зимовий комплект Tennier ECWCS Gen III Level 7 (куртка + штани), койот
-РРЦ 22999 → selling target: 23800 (cheapest competitor 24050 (3 sellers) −1 % → 23800)
+РРЦ 22999 → selling target: 23899 (cheapest competitor 24050 (3 sellers) −1 % → …99 = 23899)
 - 24050 "Vartovy" - інтерн (p2937581353) Зимовий утеплюючий комплект Tennier Ind ECWCS
 - 25626 ТМ EKOSTAR (p3158037670) Зимовий утеплюючий комплект Tennier Ind ECWCS
 - 25861 ЕКОБОКС (p3163858686) Зимовий утеплюючий комплект Tennier Ind ECWCS
 
 ## 27294 Зимова тактична куртка Tennier ECWCS Gen III Level 7, койот
-РРЦ 13499 → selling target: 13970 (cheapest competitor 14120 (3 sellers) −1 % → 13970)
+РРЦ 13499 → selling target: 13999 (cheapest competitor 14120 (3 sellers) −1 % → …99 = 13999)
 - 14120 "Vartovy" - інтерн (p2937581363) Зимова тактична куртка Tennier Ind ECWCS Gen 
 - 14939 Каратель (p2912635321) Зимова тактична куртка Tennier Ind ECWCS Gen 
 - 15041 ТМ EKOSTAR (p3158037672) Зимова тактична куртка Tennier Ind ECWCS Gen 

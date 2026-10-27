@@ -12,7 +12,7 @@ Ballistic gives no XML; stock is read from the owner's signed-in Ballistic accou
 Rules (owner, 24 Oct 2026): price = Ballistic РРЦ for that exact size; in stock with more than 2 units -> «!»
 («Готово до відправки»), 1–2 or no count -> «+», sold out -> «-». Match only by Ballistic article (exact).
 Market price (owner, 27 Oct 2026): when at least 2 other Prom sellers offer the same model + colour in stock (new, not
-discounted) and the cheapest of them is above our РРЦ, we sell just under the cheapest (−1 %, rounded down to 50 ₴);
+discounted) and the cheapest of them is above our РРЦ, we sell just under the cheapest (−1 %, rounded up to the next …99, still below it);
 never below РРЦ. Targets live in ballistic/market_prices.json (written by `python3 ballistic/market.py`, re-checked twice
 a week); every run applies price = max(РРЦ of the size, listing target).
 

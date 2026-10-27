@@ -2,7 +2,8 @@
 """Prom competitor prices for the Ballistic Level 7 listings (owner, 27 Oct 2026).
 
 Rule: if at least 2 OTHER Prom sellers offer the same model + colour, in stock («Готово до відправки» / «В наявності»),
-new (no б/у / уцінка), and the cheapest of them is above our РРЦ, we sell at cheapest −1 %, rounded down to 10 ₴.
+new (no б/у / уцінка), and the cheapest of them is above our РРЦ, we sell at cheapest −1 %, rounded UP to the next …99 (owner, 27 Oct 2026),
+but always below the cheapest.
 Never below РРЦ: build_ballistic.py applies price = max(РРЦ of the size, listing target). Any same-model offer at or
 below our РРЦ keeps us at РРЦ. Re-checked twice a week (scheduled task, owner's Chrome) — ballistic/MARKET_RUNBOOK.md.
 
@@ -56,6 +57,15 @@ def now_kyiv():
     return datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
 
 
+def price99(cheapest):
+    """Owner, 27 Oct 2026: prices end in 99. cheapest −1 %, rounded UP to the next …99, but always below the cheapest."""
+    import math
+    t = math.ceil((cheapest * 0.99 + 1) / 100) * 100 - 1
+    if t >= cheapest:
+        t = math.ceil(cheapest / 100) * 100 - 101 if cheapest % 100 else int(cheapest) - 101
+    return int(t)
+
+
 def js():
     print(open(os.path.join(HERE, 'market_collect.js'), encoding='utf-8').read().replace('__QUERIES__', json.dumps(QUERIES, ensure_ascii=False)))
 
@@ -80,7 +90,7 @@ def apply(raw):
     old = load(MARKETP, {}) or {}
     checked = old.get('colour_checked', {})
     out, rep = {}, [f'# Ballistic market check {now_kyiv()} Kyiv', '',
-                    'Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ → cheapest −1 %, rounded down to 10 ₴; never below РРЦ.', '']
+                    'Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ → cheapest −1 %, rounded up to …99 (below the cheapest); never below РРЦ.', '']
     for pid, (kind, model_rx, colour) in LISTINGS.items():
         p = cat[pid]
         rrp = statistics.mode(s['price'] for s in p['sizes'].values())
@@ -99,15 +109,15 @@ def apply(raw):
         elif cheapest <= rrp:
             why = f'cheapest competitor {cheapest:.0f} ≤ our РРЦ {rrp}'
         else:
-            t_ = int(cheapest * 0.99) // 10 * 10
+            t_ = price99(cheapest)
             blockers = [o for o in unknown if o[0] < t_]
             if t_ <= rrp:
-                why = f'cheapest {cheapest:.0f} −1 % rounds to {t_} ≤ РРЦ {rrp}'
+                why = f'cheapest {cheapest:.0f} −1 % → …99 = {t_} ≤ РРЦ {rrp}'
             elif blockers:
                 why = ('blocked by offer(s) with no colour in the name, below the target: '
                        + ', '.join(f'p{b[2]} {b[1]} {b[0]:.0f}' for b in blockers) + ' — open the page, record the colour in colour_checked')
             else:
-                target, why = t_, f'cheapest competitor {cheapest:.0f} ({len(shops)} sellers) −1 % → {t_}'
+                target, why = t_, f'cheapest competitor {cheapest:.0f} ({len(shops)} sellers) −1 % → …99 = {t_}'
         out[pid] = {'name': p['name_ua'], 'rrp': rrp, 'target': target, 'cheapest': cheapest, 'sellers': len(shops), 'why': why,
                     'offers': sorted(same)[:12], 'review': sorted(unknown)[:8]}
         rep += [f'## {pid} {p["name_ua"]}', f'РРЦ {rrp} → selling target: {target or "РРЦ"} ({why})',
