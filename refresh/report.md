@@ -1,15 +1,55 @@
-# Stock refresh 2026-10-28 12:30 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-10-28 16:39 (Kyiv) — BIG check
 
-- Offers: 1021; status counts: {'5': 326, '+': 379, '3': 315, '-': 1}
-- get_product lookups: 198; skipped as out of stock by sweep: 45
-- Changed since last run: 1
-- On MyDrop but out of stock (no size with stock): 53
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- Offers: 1021; status counts: {'5': 323, '+': 375, '3': 322, '-': 1}
+- get_product lookups: 330; skipped as out of stock by sweep: 213
+- Changed since last run: 41
+- On MyDrop but out of stock (no size with stock): 277
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 
 ## Changes
 
-- 3206-0126-00: + 1 → 3 None
+- 20200-П-О: 5 None → + None
+- 20200-ЗМ: 5 None → + None
+- 2205-0216-00: + 3 → + 2
+- 2202-6331-00: + 198 → + 196
+- 2202-6321-00: + 108 → + 104
+- 2301-0203-00: + 5 → + 1
+- 2301-0204-00: + 20 → + 14
+- 1003-0123-00: + 2 → + 1
+- 1003-0125-00: + 3 → + 2
+- 0802-0121-S: + 27 → + 26
+- 0802-0121-M: + 6 → + 5
+- 110106: + 1 → 3 None
+- 110110-2-К: + 3 → + 2
+- 20408-ДЛ: 5 None → + 6
+- 2405-0101-M: + 1 → 3 None
+- 0807-0121-M: + 9 → + 8
+- 5704-0612-M: + 1 → + 3
+- 5704-0614-L: 3 None → + 5
+- 2316-0121-00: + 69 → + 67
+- 2401-0121-XL: + 11 → + 8
+- 111430-2-К: + 11 → + 10
+- 2611-0121-00: + 5 → + 4
+- 2611-0122-00: + 16 → + 17
+- 2321-0121-00: + 303 → + 323
+- 0803-0121-00: + 5 → + 4
+- 2302-0121-00: + 20 → + 28
+- 2305-0122-00: + 23 → + 21
+- 111430: + 1 → 3 None
+- 3702-0121-00: + 2 → + 1
+- 0305-0201-00: + 6 → + 5
+- 2601-0212-00: + 11 → + 10
+- 2601-0214-00: + 2 → + 1
+- 2802-0211-00: 3 None → + 1
+- 2801-0211-00: + 5 → + 4
+- 3204-0110-00: + 11 → + 12
+- 91000: + 1 → 3 None
+- 91001: + 1 → 3 None
+- 91002: + 1 → 3 None
+- 91003: + 1 → 3 None
+- 17041: + 1 → 3 None
+- 17041-2-К: + 1 → 3 None
 
 ## Kits in stock from their parts (kits.json)
 
@@ -22,10 +62,6 @@
 - 90001: + 1
 - 90002: + 1
 - 90003: + 1
-- 91000: + 1
-- 91001: + 1
-- 91002: + 1
-- 91003: + 1
 - 92000: + 1
 - 92000-2-К: + 1
 - 92001: + 1
@@ -54,11 +90,9 @@
 - 82006-2-К: + 1
 - 82007-2-К: + 4
 - 17042: + 1
-- 17041: + 1
 - 17040: + 2
 - 17034-2-К: + 4
 - 17043-2-К: + 1
-- 17041-2-К: + 1
 - 17040-2-К: + 2
 - 17056-2-К: + 5
 - 17057-2-К: + 5
@@ -73,4 +107,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
