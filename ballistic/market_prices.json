@@ -1,13 +1,15 @@
 {
  "note": "Prom competitor targets (see ballistic/market.py)",
- "checked": "2026-10-27 17:46",
+ "checked": "2026-10-30 13:24",
  "colour_checked": {
   "2858589556": "olive",
-  "2853185899": "grey"
+  "2853185899": "grey",
+  "2940593098": "olive"
  },
  "colour_notes": {
   "2858589556": "page «Колір: Оливковий» (27 Oct 2026)",
-  "2853185899": "page has no colour; standard grey Gen III L7 «Parka» set, not labelled coyote (Claude's reading, 27 Oct 2026) — owner may override"
+  "2853185899": "page has no colour; standard grey Gen III L7 «Parka» set, not labelled coyote (Claude's reading, 27 Oct 2026) — owner may override",
+  "2940593098": "page «Колір: Classic Olive (Класична олива)», Carinthia JET FR SLJ+FJT set (30 Oct 2026)"
  },
  "listings": {
   "14261": {
@@ -45,13 +47,19 @@
    "rrp": 10350,
    "target": 10399,
    "cheapest": 10460,
-   "sellers": 3,
-   "why": "cheapest competitor 10460 (3 sellers) −1 % → …99 = 10399",
+   "sellers": 4,
+   "why": "cheapest competitor 10460 (4 sellers) −1 % → …99 = 10399",
    "offers": [
     [
      10460,
      "\"Vartovy\" - інтерн",
-     "2937581246",
+     "2937581247",
+     "Зимові штани Tennier ECWCS Gen III level 7 Mu"
+    ],
+    [
+     10765,
+     "Громовержець",
+     "2810342162",
      "Зимові штани Tennier ECWCS Gen III level 7 Mu"
     ],
     [
@@ -269,12 +277,18 @@
    "name": "Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий",
    "rrp": 25875,
    "target": null,
-   "cheapest": 21560,
-   "sellers": 4,
-   "why": "cheapest competitor 21560 ≤ our РРЦ 25875",
+   "cheapest": 20000,
+   "sellers": 5,
+   "why": "cheapest competitor 20000 ≤ our РРЦ 25875",
    "offers": [
     [
-     21560,
+     20000,
+     "Флеш Оригінал",
+     "2600181441",
+     "Комплект зимовий Carinthia MIG 4.0, Розмір: S"
+    ],
+    [
+     24500,
      "Интернет- магазин ",
      "2858589556",
      "Комплект зимовий Carinthia MIG 4.0. Оригінал"
@@ -334,48 +348,42 @@
     ],
     [
      22000,
-     "Military Style",
-     "3155885021",
-     "Куртка Carinthia MIG 4.0 зимова, MultiCam, S "
-    ],
-    [
-     22000,
      "MilitaryStrong",
      "2503826993",
      "Тактична зимова куртка Карінтія Carinthia MIG"
     ],
     [
      22000,
-     "Іграшка Мрії (дитя",
-     "3208663796",
-     "Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X"
+     "Вартовий (туризм, ",
+     "3155896384",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, S "
     ],
     [
      22000,
-     "Драйв Сенс",
-     "3208612866",
-     "Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X"
-    ],
-    [
-     22000,
-     "Ліхтар",
-     "3208617342",
-     "Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X"
+     "Націоналіст",
+     "3155896950",
+     "Куртка Carinthia MIG 4.0 зимова, MultiCam, S "
     ],
     [
      22000,
      "Непереможні",
      "3195049862",
      "Куртка Carinthia MIG 4.0 зимова, MultiCam, S "
+    ],
+    [
+     26360,
+     "\"Vartovy\" - інтерн",
+     "2937581330",
+     "Куртка зимова Carinthia MIG 4.0 G-loft Multic"
+    ],
+    [
+     26999,
+     "Військторг Гайдама",
+     "2392366864",
+     "Куртка зимова Carinthia MIG 4.0 G-Loft Multic"
     ]
    ],
    "review": [
-    [
-     21229,
-     "ANTABKA - інтернет",
-     "2827605259",
-     "Тактична Куртка Carinthia MIG 4.0 зимова, Зим"
-    ],
     [
      21280,
      "СТАЛЕВИЙ КРОК",
@@ -383,9 +391,9 @@
      "Куртка Carinthia MIG 4.0 зимова, Зимовий каму"
     ],
     [
-     21767,
-     "SHMOTMEN",
-     "3178096368",
+     21480,
+     "Tactical Arsenal",
+     "2827493901",
      "Куртка Carinthia MIG 4.0 зимова, Зимовий каму"
     ],
     [
@@ -400,10 +408,16 @@
    "name": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий",
    "rrp": 23175,
    "target": null,
-   "cheapest": 24240,
-   "sellers": 3,
-   "why": "blocked by offer(s) with no colour in the name, below the target: p2940593098 Contractor.UA 22190 — open the page, record the colour in colour_checked",
+   "cheapest": 22190,
+   "sellers": 4,
+   "why": "cheapest competitor 22190 ≤ our РРЦ 23175",
    "offers": [
+    [
+     22190,
+     "Contractor.UA",
+     "2940593098",
+     "Вогнестійкий тактичний комплект Carinthia JET"
+    ],
     [
      24240,
      "\"Vartovy\" - інтерн",
@@ -423,14 +437,7 @@
      "Вогнестійкий тактичний зимовий комплект Carin"
     ]
    ],
-   "review": [
-    [
-     22190,
-     "Contractor.UA",
-     "2940593098",
-     "Вогнестійкий тактичний комплект Carinthia JET"
-    ]
-   ]
+   "review": []
   },
   "29895": {
    "name": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова",

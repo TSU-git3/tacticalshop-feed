@@ -1,4 +1,4 @@
-# Ballistic market check 2026-10-27 17:46 Kyiv
+# Ballistic market check 2026-10-30 13:24 Kyiv
 
 Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ → cheapest −1 %, rounded up to …99 (below the cheapest); never below РРЦ.
 
@@ -9,8 +9,9 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - colour not in name: 14900 US military store (p2273056185) Зимова куртка Level 7 армії США ECWCS Gen III
 
 ## 16728 Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам
-РРЦ 10350 → selling target: 10399 (cheapest competitor 10460 (3 sellers) −1 % → …99 = 10399)
-- 10460 "Vartovy" - інтерн (p2937581246) Зимові штани Tennier ECWCS Gen III level 7 Mu
+РРЦ 10350 → selling target: 10399 (cheapest competitor 10460 (4 sellers) −1 % → …99 = 10399)
+- 10460 "Vartovy" - інтерн (p2937581247) Зимові штани Tennier ECWCS Gen III level 7 Mu
+- 10765 Громовержець (p2810342162) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - 11532 ТМ EKOSTAR (p3158037624) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - 11638 ЕКОБОКС (p3163858640) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - colour not in name: 11532 ТМ EKOSTAR (p3158037625) Зимові штани Tennier ECWCS Gen III level 7 Tr
@@ -53,8 +54,9 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - colour not in name: 14900 US military store (p2273056185) Зимова куртка Level 7 армії США ECWCS Gen III
 
 ## 26345 Зимовий тактичний комплект Carinthia MIG 4.0 G-Loft (куртка + штани), оливковий
-РРЦ 25875 → selling target: РРЦ (cheapest competitor 21560 ≤ our РРЦ 25875)
-- 21560 Интернет- магазин  (p2858589556) Комплект зимовий Carinthia MIG 4.0. Оригінал
+РРЦ 25875 → selling target: РРЦ (cheapest competitor 20000 ≤ our РРЦ 25875)
+- 20000 Флеш Оригінал (p2600181441) Комплект зимовий Carinthia MIG 4.0, Розмір: S
+- 24500 Интернет- магазин  (p2858589556) Комплект зимовий Carinthia MIG 4.0. Оригінал
 - 28240 "Vartovy" - інтерн (p3004863592) Комплект зимовий Carinthia MIG 4.0, Olive, Me
 - 28831 ТМ EKOSTAR (p3158037657) Комплект зимовий Carinthia MIG 4.0 (ЕКОБОКС)
 - 29095 ЕКОБОКС (p3163858673) Комплект зимовий Carinthia MIG 4.0 EKOBOX
@@ -65,23 +67,22 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - 21320 Yarshop_ua (p2452787725) Куртка Карентія Carinthia MIG 4.0 Мультикам 1
 - 21997 Rechovyk (p3215390072) Куртка Carinthia MIG 4.0 зимова, MultiCam
 - 22000 GenerALL (p3047105831) Куртка Carinthia MIG 4.0, MultiCam, S
-- 22000 Military Style (p3155885021) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
 - 22000 MilitaryStrong (p2503826993) Тактична зимова куртка Карінтія Carinthia MIG
-- 22000 Іграшка Мрії (дитя (p3208663796) Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X
-- 22000 Драйв Сенс (p3208612866) Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X
-- 22000 Ліхтар (p3208617342) Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X
+- 22000 Вартовий (туризм,  (p3155896384) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
+- 22000 Націоналіст (p3155896950) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
 - 22000 Непереможні (p3195049862) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
-- colour not in name: 21229 ANTABKA - інтернет (p2827605259) Тактична Куртка Carinthia MIG 4.0 зимова, Зим
+- 26360 "Vartovy" - інтерн (p2937581330) Куртка зимова Carinthia MIG 4.0 G-loft Multic
+- 26999 Військторг Гайдама (p2392366864) Куртка зимова Carinthia MIG 4.0 G-Loft Multic
 - colour not in name: 21280 СТАЛЕВИЙ КРОК (p3195430043) Куртка Carinthia MIG 4.0 зимова, Зимовий каму
-- colour not in name: 21767 SHMOTMEN (p3178096368) Куртка Carinthia MIG 4.0 зимова, Зимовий каму
+- colour not in name: 21480 Tactical Arsenal (p2827493901) Куртка Carinthia MIG 4.0 зимова, Зимовий каму
 - colour not in name: 21950 Contractor.UA (p2804566261) Куртка Carinthia MIG 4.0 G-Loft
 
 ## 27502 Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий
-РРЦ 23175 → selling target: РРЦ (blocked by offer(s) with no colour in the name, below the target: p2940593098 Contractor.UA 22190 — open the page, record the colour in colour_checked)
+РРЦ 23175 → selling target: РРЦ (cheapest competitor 22190 ≤ our РРЦ 23175)
+- 22190 Contractor.UA (p2940593098) Вогнестійкий тактичний комплект Carinthia JET
 - 24240 "Vartovy" - інтерн (p3004863642) Вогнестійкий тактичний зимовий комплект Carin
 - 24945 Громовержець (p2942991878) Вогнестійкий тактичний зимовий комплект Carin
 - 25822 ТМ EKOSTAR (p3158037675) Вогнестійкий тактичний зимовий комплект Carin
-- colour not in name: 22190 Contractor.UA (p2940593098) Вогнестійкий тактичний комплект Carinthia JET
 
 ## 29895 Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова
 РРЦ 11250 → selling target: РРЦ (only 0 other seller(s) with this model + colour in stock)
