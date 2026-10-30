@@ -1,38 +1,37 @@
-# Stock refresh 2026-10-30 16:51 (Kyiv) — BIG check
+# Stock refresh 2026-10-30 20:28 (Kyiv) — SMALL check (in-stock items only)
 
-- Offers: 1021; status counts: {'5': 320, '+': 371, '3': 329, '-': 1}
-- get_product lookups: 330; skipped as out of stock by sweep: 213
-- Changed since last run: 24
-- On MyDrop but out of stock (no size with stock): 283
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- Offers: 1021; status counts: {'5': 320, '+': 373, '3': 327, '-': 1}
+- get_product lookups: 194; skipped as out of stock by sweep: 35
+- Changed since last run: 23
+- On MyDrop but out of stock (no size with stock): 45
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 
 ## Changes
 
-- 2202-6331-00: + 185 → + 235
-- 2202-0216-00: + 11 → + 6
-- 2301-0203-00: + 1 → + 15
-- 110109-2-К: 3 None → + 1
-- 20305-КЗ: 5 None → + 1
-- 20225-П-О: 5 None → + 4
-- 20507-АК: + 1 → 5 None
-- 20305-М: 5 None → + 1
-- 2405-0101-L: + 6 → + 12
-- 2404-0101-L: + 18 → + 19
-- 1005-0121-M: 3 None → + 2
-- 5703-0613-S: + 2 → + 4
-- 2401-0121-XL: + 16 → + 36
-- 0804-0121-00: + 16 → + 21
-- 2321-0121-00: + 322 → + 352
-- 2812-0124-00: + 21 → + 20
-- 3206-0126-00: 3 None → + 2
-- 3209-6332-00: 3 None → + None
-- 2201-0121-00: + 60 → + 70
-- 2606-0212-11: + 2 → 3 None
-- 2609-0211-00: + 20 → + 22
-- 2604-0121-00: + 2 → + 1
-- 2801-0214-00: + 5 → + 4
-- 17043-2-К: 3 None → + 1
+- 110110-2-К: + 1 → + 2
+- 2404-0101-M: + 7 → + 8
+- 5703-0611-XL: + 1 → + 5
+- 5703-0612-S: + 6 → + 7
+- 5703-0612-M: 3 None → + 3
+- 5703-0613-M: + 2 → + 5
+- 2401-0121-M: 3 None → + 2
+- 2401-0124-XL: + 13 → + 9
+- 5702-0603-L: + 6 → + 5
+- 2321-0121-00: + 352 → + 382
+- 2812-0121-00: + 2 → + 1
+- 3206-0121-00: 3 None → + 9
+- 3206-0126-00: + 2 → 3 None
+- 3209-6351-00: + 1 → 3 None
+- 3207-6366-00: + 6 → + 4
+- 3207-6370-00: + 4 → + 2
+- 3201-0123-00: + 5 → + 4
+- 3201-0122-00: + 4 → + 3
+- 2606-0211-11: 3 None → + 12
+- 2609-0211-00: + 22 → + 24
+- 2802-0214-00: + 11 → + 10
+- 2801-0211-00: + 1 → + 7
+- 2801-0214-00: + 4 → + 3
 
 ## Kits in stock from their parts (kits.json)
 
@@ -86,4 +85,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
