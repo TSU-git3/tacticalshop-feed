@@ -14,7 +14,8 @@ Rules (owner, 24 Oct 2026): price = Ballistic РРЦ for that exact size; in sto
 Market price (owner, 27 Oct 2026): when at least 2 other Prom sellers offer the same model + colour in stock (new, not
 discounted) and the cheapest of them is above our РРЦ, we sell just under the cheapest (−1 %, rounded up to the next …99, still below it);
 never below РРЦ. Targets live in ballistic/market_prices.json (written by `python3 ballistic/market.py`, re-checked twice
-a week); every run applies price = max(РРЦ of the size, listing target).
+a week); every run applies price = max(РРЦ of the size, listing target, catalog price_fixed).
+Fixed price (owner, 30 Oct 2026): catalog «price_fixed» (ECWCS/PCU braces 1,099 ₴) — never below РРЦ.
 
   python3 ballistic/build_ballistic.py prices        -> re-applies РРЦ + market targets to state, CSV and stock.xml (no Ballistic read)
 """
@@ -45,9 +46,9 @@ def market_targets():
         return {}
 
 
-def sell_price(rrp, pid, targets):
-    t = targets.get(pid)
-    return max(rrp, t) if t else rrp
+def sell_price(rrp, pid, targets, fixed=None):
+    """max(РРЦ, market target, owner's fixed price). price_fixed in catalog.json (braces 1099, owner 30 Oct 2026)."""
+    return max([rrp] + [x for x in (targets.get(pid), fixed) if x])
 
 
 def js():
@@ -122,7 +123,7 @@ def build(raw):
         for art, s in p['sizes'].items():
             if art not in got:
                 st = list(old.get(art, ['-', 0, s['price']]))
-                st[2] = sell_price(s['price'], pid, targets)
+                st[2] = sell_price(s['price'], pid, targets, p.get('price_fixed'))
                 state[art] = st
                 missing.append(f'{art} ({p["name_ua"][:40]}…, {s["size"]}) — not read this run, last value kept')
                 continue
@@ -135,7 +136,7 @@ def build(raw):
                 prices.append(f'{art} {s["size"]}: {price} → {rrp}')
                 price = int(rrp)
                 s['price'] = price
-            sp = sell_price(price, pid, targets)
+            sp = sell_price(price, pid, targets, p.get('price_fixed'))
             if old.get(art) and old[art][2] != sp:
                 prices.append(f'{art} {s["size"]}: selling price {old[art][2]} → {sp} (РРЦ {price}' + (f', market target {targets[pid]})' if pid in targets else ')'))
             state[art] = [a, q, sp]
@@ -168,7 +169,7 @@ def reprice():
     for pid, p in cat.items():
         for art, s in p['sizes'].items():
             if art in st_all['state']:
-                sp = sell_price(s['price'], pid, targets)
+                sp = sell_price(s['price'], pid, targets, p.get('price_fixed'))
                 if st_all['state'][art][2] != sp:
                     ch.append(f'{art} {s["size"]}: {st_all["state"][art][2]} → {sp}')
                     st_all['state'][art][2] = sp

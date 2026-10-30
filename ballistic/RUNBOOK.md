@@ -4,6 +4,12 @@ Supplier: Ballistic (ballistic.com.ua) — Level 7 winter clothing (Tennier Indu
 so stock and prices are read from the owner's signed-in Ballistic account in **his Chrome** (Claude in Chrome tools).
 The scheduled task requires the owner's computer (Chrome open and signed in to ballistic.com.ua).
 
+Braces (owner, 30 Oct 2026): «Оригінальні підтяжки ECWCS і PCU» — 5 colour pages (catalog keys braces-fg / -tan / -grey /
+-coyote / -black), 14 articles, one Prom variant group 612012 (switches Колір + Розмір). Selling price fixed at 1,099 ₴
+(catalog «price_fixed»; never below РРЦ). Coyote and black pages have only Regular — their other size buttons are
+«Схожа модель» links and return the same article (harmless). in_csv=false until the owner confirms the Excel import.
+
+
 Schedule (owner, 25 Oct 2026: same time frame as the Kiborg/Militex checks): starts 03:35, 07:35, 11:35, 15:35, 19:35,
 23:35 Kyiv — 8 minutes after the Kiborg BIG/SMALL start (xx:27), which usually pushes by ~xx:30 — and MUST be pushed by
 04:00, 08:00, 12:00, 16:00, 20:00, 00:00 (the same delivery times as Kiborg). If the push is rejected, follow step 6

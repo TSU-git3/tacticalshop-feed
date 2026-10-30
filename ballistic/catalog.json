@@ -1,5 +1,5 @@
 {
- "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895).",
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed.",
  "products": {
   "14261": {
    "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
@@ -758,6 +758,178 @@
     }
    },
    "in_csv": false
+  },
+  "braces-fg": {
+   "url": "/oryhynalnye-podtiazhky-ecwcs-y-pcu/2375/",
+   "name_ua": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Foliage Green",
+   "brand": "US Army (контрактний виробник)",
+   "vg": 612012,
+   "pics": [
+    "https://ballistic.com.ua/content/images/26/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu2375-95483717495171.jpg",
+    "https://ballistic.com.ua/content/images/26/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu2375-26264644771002.jpg"
+   ],
+   "sizes": {
+    "7700000027771": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Foliage Green, Regular, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Foliage Green, Regular, оригінал"
+    },
+    "2000000238562": {
+     "size": "Short",
+     "label": "Short",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Foliage Green, Short, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Foliage Green, Short, оригінал"
+    },
+    "2000000242903": {
+     "size": "Long",
+     "label": "Long",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Foliage Green, Long, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Foliage Green, Long, оригінал"
+    },
+    "2000000249674": {
+     "size": "X-Long",
+     "label": "X-Long",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Foliage Green, X-Long, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Foliage Green, X-Long, оригінал"
+    }
+   },
+   "in_csv": false,
+   "price_fixed": 1099
+  },
+  "braces-tan": {
+   "url": "/oryhinalni-pidtiazhky-ecwcs-i-pcu/",
+   "name_ua": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Tan",
+   "brand": "US Army (контрактний виробник)",
+   "vg": 612012,
+   "pics": [
+    "https://ballistic.com.ua/content/images/1/1800x1800l80nn0/oryhinalni-pidtiazhky-ecwcs-i-pcu17500-73351841071795.jpg",
+    "https://ballistic.com.ua/content/images/1/1800x1800l80nn0/oryhinalni-pidtiazhky-ecwcs-i-pcu17500-18312161321454.jpg",
+    "https://ballistic.com.ua/content/images/1/1800x1800l80nn0/oryhinalni-pidtiazhky-ecwcs-i-pcu17500-84171696680331.jpg",
+    "https://ballistic.com.ua/content/images/1/1800x1800l80nn0/oryhinalni-pidtiazhky-ecwcs-i-pcu17500-28215345692444.jpg",
+    "https://ballistic.com.ua/content/images/1/1800x1800l80nn0/oryhinalni-pidtiazhky-ecwcs-i-pcu17500-29657924057948.jpg",
+    "https://ballistic.com.ua/content/images/1/1800x1800l80nn0/oryhinalni-pidtiazhky-ecwcs-i-pcu17500-53555076234756.jpg"
+   ],
+   "sizes": {
+    "2000000150406": {
+     "size": "Short",
+     "label": "Short",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Tan, Short, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Tan, Short, оригінал"
+    },
+    "2000000150413": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Tan, Regular, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Tan, Regular, оригінал"
+    },
+    "2000000150420": {
+     "size": "Long",
+     "label": "Long",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Tan, Long, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Tan, Long, оригінал"
+    },
+    "2000000150437": {
+     "size": "X-Long",
+     "label": "X-Long",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Tan, X-Long, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Tan, X-Long, оригінал"
+    }
+   },
+   "in_csv": false,
+   "price_fixed": 1099
+  },
+  "braces-grey": {
+   "url": "/oryhinalni-pidtiazhky-ecwcs-i-pcu-grey-long/",
+   "name_ua": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, сірий",
+   "brand": "US Army (контрактний виробник)",
+   "vg": 612012,
+   "pics": [
+    "https://ballistic.com.ua/content/images/32/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu-51772535843451.jpg",
+    "https://ballistic.com.ua/content/images/32/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu-40174358613863.jpg"
+   ],
+   "sizes": {
+    "2000000202709": {
+     "size": "Short",
+     "label": "Short",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, серый, Short, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, сірий, Short, оригінал"
+    },
+    "2000000000268": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, серый, Regular, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, сірий, Regular, оригінал"
+    },
+    "2000000232195": {
+     "size": "Long",
+     "label": "Long",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, серый, Long, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, сірий, Long, оригінал"
+    },
+    "2000000212012": {
+     "size": "X-Long",
+     "label": "X-Long",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, серый, X-Long, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, сірий, X-Long, оригінал"
+    }
+   },
+   "in_csv": false,
+   "price_fixed": 1099
+  },
+  "braces-coyote": {
+   "url": "/oryhynalnye-podtiazhky-ecwcs-y-pcu/2379/",
+   "name_ua": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Coyote Brown",
+   "brand": "US Army (контрактний виробник)",
+   "vg": 612012,
+   "pics": [
+    "https://ballistic.com.ua/content/images/30/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu2379-91530726816984.jpg",
+    "https://ballistic.com.ua/content/images/30/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu2379-59426140293894.jpg"
+   ],
+   "sizes": {
+    "7700000027795": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, Coyote Brown, Regular, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, Coyote Brown, Regular, оригінал"
+    }
+   },
+   "in_csv": false,
+   "price_fixed": 1099
+  },
+  "braces-black": {
+   "url": "/oryhynalnye-podtiazhky-ecwcs-y-pcu/2377/",
+   "name_ua": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, чорний",
+   "brand": "US Army (контрактний виробник)",
+   "vg": 612012,
+   "pics": [
+    "https://ballistic.com.ua/content/images/28/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu2377-88411259404035.jpg",
+    "https://ballistic.com.ua/content/images/28/1800x1800l80nn0/originalnye-podtyazhki-ecwcs-i-pcu2377-30949941413661.jpg"
+   ],
+   "sizes": {
+    "7700000027788": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 900,
+     "name_ru": "Тактические подтяжки для штанов ECWCS и PCU (Level 5, Level 7) армии США, черный, Regular, оригинал",
+     "name_uk": "Тактичні підтяжки для штанів ECWCS і PCU (Level 5, Level 7) армії США, чорний, Regular, оригінал"
+    }
+   },
+   "in_csv": false,
+   "price_fixed": 1099
   }
  }
 }
