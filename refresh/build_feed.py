@@ -12,6 +12,7 @@ Prices are NOT refreshed (owner, 18 Oct 2026): price comes from refresh/catalog.
 """
 import json, glob, os, re, sys, time, datetime
 from xml.sax.saxutils import escape
+from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CAT = json.load(open(os.path.join(ROOT, 'catalog.json'), encoding='utf-8'))
@@ -245,7 +246,7 @@ def build():
     json.dump(PIDS, open(PIDS_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     json.dump({k: list(v) for k, v in result.items()}, open(os.path.join(ROOT, 'last_state.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     write_xml(result)
-    now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime('%Y-%m-%d %H:%M')
+    now = datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
     cnt = {}
     for a, q in result.values():
         cnt[a] = cnt.get(a, 0) + 1
@@ -318,7 +319,7 @@ def save_parts_state(pstate):
 
 
 def write_xml(result):
-    now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime('%Y-%m-%d %H:%M')
+    now = datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
     cats = CAT['categories']
     used = {str(p['cat']) for p in PRODUCTS.values()}
     used |= {str(cats[c][1]) for c in used if c in cats and cats[c][1]}
