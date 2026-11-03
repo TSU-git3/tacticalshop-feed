@@ -1,10 +1,10 @@
-# Stock refresh 2026-11-03 03:31 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-11-03 07:29 (Kyiv) — BIG check
 
 - Offers: 1021; status counts: {'5': 319, '+': 367, '3': 334, '-': 1}
-- get_product lookups: 194; skipped as out of stock by sweep: 33
+- get_product lookups: 330; skipped as out of stock by sweep: 213
 - Changed since last run: 0
-- On MyDrop but out of stock (no size with stock): 43
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- On MyDrop but out of stock (no size with stock): 284
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 
 ## Changes
@@ -60,4 +60,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
