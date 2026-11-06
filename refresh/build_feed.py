@@ -8,7 +8,8 @@ Usage (run from the repo root):
                                            writes stock.xml, refresh/report.md, updates refresh/pids.json
 
 Matching is by exact supplier article only (size sku == our code). No guessing.
-Prices are NOT refreshed (owner, 18 Oct 2026): price comes from refresh/catalog.json.
+Prices are NOT refreshed (owner, 18 Oct 2026): price comes from refresh/catalog.json, except the codes in
+refresh/price_override.json (owner's own prices below MyDrop RRP, 5 Nov 2026), which win in every output.
 """
 import json, glob, os, re, sys, time, datetime
 from xml.sax.saxutils import escape
@@ -19,6 +20,13 @@ CAT = json.load(open(os.path.join(ROOT, 'catalog.json'), encoding='utf-8'))
 PIDS_PATH = os.path.join(ROOT, 'pids.json')
 PIDS = json.load(open(PIDS_PATH, encoding='utf-8'))
 PRODUCTS = CAT['products']
+# Owner's own retail prices (owner, 5 Nov 2026 — plate carriers below MyDrop RRP): they replace the catalog
+# price in stock.xml and prom/prom_stock.csv. catalog.json keeps the MyDrop RRP and is never written back.
+OVERRIDE_PATH = os.path.join(ROOT, 'price_override.json')
+PRICE_OVERRIDE = json.load(open(OVERRIDE_PATH, encoding='utf-8'))['prices'] if os.path.exists(OVERRIDE_PATH) else {}
+for _c, _o in PRICE_OVERRIDE.items():
+    if _c in PRODUCTS:
+        PRODUCTS[_c]['price'] = _o['price']
 # Kits built from separately listed MyDrop parts (owner, 19 Oct 2026): refresh/kits.json
 _K = json.load(open(os.path.join(ROOT, 'kits.json'), encoding='utf-8'))
 KITS = {k: v['parts'] for k, v in _K['kits'].items() if k in PRODUCTS}
@@ -256,7 +264,8 @@ def build():
            f'- Changed since last run: {len(changes)}',
            f'- On MyDrop but out of stock (no size with stock): {len(on_md_out)}',
            f'- Codes not found on MyDrop (written as out of stock «-»): {len(unmapped)}',
-           f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}', '',
+           f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}',
+           f'- Owner price overrides applied (refresh/price_override.json): {sum(c in PRODUCTS for c in PRICE_OVERRIDE)} of {len(PRICE_OVERRIDE)}', '',
            '## Changes', ''] + [f'- {c}: {a[0]} {a[1]} → {b[0]} {b[1]}' for c, a, b in changes[:300]] + \
           ['', '## Kits in stock from their parts (kits.json)', ''] + kit_lines + \
           ['', '## Name check — listing type vs MyDrop title (fix any line in bold before it sells)', ''] + name_check(cmap, pmap) + \

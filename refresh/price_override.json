@@ -1,0 +1,156 @@
+{
+ "_about": "Owner's own retail prices below the MyDrop recommended retail (owner, 5 Nov 2026; passed on by SEO 6 Nov 2026). build_feed.py applies them over refresh/catalog.json to stock.xml and prom/prom_stock.csv on every run. rrp = the MyDrop recommended retail they replace (kept for reference). Remove an entry only on the owner's instruction. Pink 1003-0216-00 is not here: it stays at its MyDrop price 4,500.",
+ "since": "2026-11-05",
+ "prices": {
+  "1003-0121-00": {
+   "price": 4790,
+   "rrp": 5200,
+   "listing": "3238300077 Kiborg GU Gen.2"
+  },
+  "1003-0122-00": {
+   "price": 4790,
+   "rrp": 5200,
+   "listing": "3238300077 Kiborg GU Gen.2"
+  },
+  "1003-0123-00": {
+   "price": 4790,
+   "rrp": 5200,
+   "listing": "3238300077 Kiborg GU Gen.2"
+  },
+  "1003-0124-00": {
+   "price": 4790,
+   "rrp": 5200,
+   "listing": "3238300077 Kiborg GU Gen.2"
+  },
+  "1003-0125-00": {
+   "price": 4790,
+   "rrp": 5200,
+   "listing": "3238300077 Kiborg GU Gen.2"
+  },
+  "1002-0121-00": {
+   "price": 4490,
+   "rrp": 4800,
+   "listing": "3238301227 Kiborg GU Gen.1"
+  },
+  "1002-0122-00": {
+   "price": 4490,
+   "rrp": 4800,
+   "listing": "3238301227 Kiborg GU Gen.1"
+  },
+  "1002-0123-00": {
+   "price": 4490,
+   "rrp": 4800,
+   "listing": "3238301227 Kiborg GU Gen.1"
+  },
+  "1002-0124-00": {
+   "price": 4490,
+   "rrp": 4800,
+   "listing": "3238301227 Kiborg GU Gen.1"
+  },
+  "45000": {
+   "price": 5490,
+   "rrp": 5795,
+   "listing": "3238301531 Gen.2 kit №1 (panel 3 mags)"
+  },
+  "45001": {
+   "price": 5490,
+   "rrp": 5795,
+   "listing": "3238301531 Gen.2 kit №1 (panel 3 mags)"
+  },
+  "66003": {
+   "price": 5490,
+   "rrp": 5795,
+   "listing": "3238301531 Gen.2 kit №1 (panel 3 mags)"
+  },
+  "55003": {
+   "price": 5490,
+   "rrp": 5795,
+   "listing": "3238301531 Gen.2 kit №1 (panel 3 mags)"
+  },
+  "45003": {
+   "price": 7790,
+   "rrp": 7895,
+   "listing": "3238301536 Gen.2 kit №2 (6 pouches)"
+  },
+  "45002": {
+   "price": 7790,
+   "rrp": 7895,
+   "listing": "3238301536 Gen.2 kit №2 (6 pouches)"
+  },
+  "66002": {
+   "price": 7790,
+   "rrp": 7895,
+   "listing": "3238301536 Gen.2 kit №2 (6 pouches)"
+  },
+  "55000": {
+   "price": 7790,
+   "rrp": 7895,
+   "listing": "3238301536 Gen.2 kit №2 (6 pouches)"
+  },
+  "45004": {
+   "price": 9990,
+   "rrp": 10145,
+   "listing": "3238301541 Gen.2 kit №3 (8 pouches)"
+  },
+  "45008": {
+   "price": 9990,
+   "rrp": 10145,
+   "listing": "3238301541 Gen.2 kit №3 (8 pouches)"
+  },
+  "66001": {
+   "price": 9990,
+   "rrp": 10145,
+   "listing": "3238301541 Gen.2 kit №3 (8 pouches)"
+  },
+  "55001": {
+   "price": 9990,
+   "rrp": 10145,
+   "listing": "3238301541 Gen.2 kit №3 (8 pouches)"
+  },
+  "1004-0101-S-M": {
+   "price": 9290,
+   "rrp": 9990,
+   "listing": "3238301182 Militex Pro Series"
+  },
+  "1004-0101-M-L": {
+   "price": 9590,
+   "rrp": 10300,
+   "listing": "3238301182 Militex Pro Series"
+  },
+  "1005-0101-M": {
+   "price": 11690,
+   "rrp": 12400,
+   "listing": "3238301109 Militex Modular X-1"
+  },
+  "1005-0101-L": {
+   "price": 12190,
+   "rrp": 12900,
+   "listing": "3238301109 Militex Modular X-1"
+  },
+  "1005-0101-XL": {
+   "price": 13190,
+   "rrp": 13950,
+   "listing": "3238301109 Militex Modular X-1"
+  },
+  "2046": {
+   "price": 11290,
+   "rrp": 12000,
+   "listing": "3238301581 Militex Modular X-1 без підсумків"
+  },
+  "1005-0121-M": {
+   "price": 7990,
+   "rrp": 8490,
+   "listing": "3238301067 Kiborg Modular X-1"
+  },
+  "1005-0121-L": {
+   "price": 8290,
+   "rrp": 8800,
+   "listing": "3238301067 Kiborg Modular X-1"
+  },
+  "1005-0121-XL": {
+   "price": 8790,
+   "rrp": 9300,
+   "listing": "3238301067 Kiborg Modular X-1"
+  }
+ }
+}
