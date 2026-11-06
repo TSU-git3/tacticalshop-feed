@@ -1,33 +1,25 @@
-# Stock refresh 2026-11-06 15:30 (Kyiv) — BIG check
+# Stock refresh 2026-11-06 19:29 (Kyiv) — SMALL check (in-stock items only)
 
 - Offers: 1021; status counts: {'5': 317, '+': 390, '3': 313, '-': 1}
-- get_product lookups: 331; skipped as out of stock by sweep: 212
-- Changed since last run: 19
-- On MyDrop but out of stock (no size with stock): 283
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- get_product lookups: 204; skipped as out of stock by sweep: 46
+- Changed since last run: 10
+- On MyDrop but out of stock (no size with stock): 60
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
+- Owner price overrides applied (refresh/price_override.json): 30 of 30
 
 ## Changes
 
-- 20200-ЗМ: + None → 5 None
-- 20200-П: + None → 5 None
-- 20305-К: + 1 → + 2
-- 20305-М: + 1 → 5 None
-- 20608-М: 5 None → + 1
-- 2405-0101-L: + 12 → + 23
-- 2404-0101-L: + 19 → + 18
-- 1004-0101-S-M: + 5 → + 4
-- 2312-0121-00: + 8 → + 4
-- 5703-0611-M: 3 None → + 5
-- 111515-2-К: 3 None → + 1
-- 111430-2-К: + 1 → + 6
-- 3203-6345-00: + 11 → + 10
-- 3203-6351-00: + 2 → + 1
-- 2305-0123-00: + 15 → + 14
-- 2604-0212-00: + 11 → + 9
-- 2806-0205-00: + 1 → 3 None
-- 17056-2-К: 3 None → + 3
-- 17057-2-К: 3 None → + 3
+- 20200-ЗМ: 5 None → + None
+- 20200-П: 5 None → + None
+- 115533-2-К: + 2 → 3 None
+- 20305-К: + 2 → + 1
+- 20305-ЛО: + 1 → 5 None
+- 20305-Х: + 1 → 5 None
+- 111430-2-К: + 6 → + 11
+- 2812-0121-00: 3 None → + 1
+- 17056-2-К: + 3 → + 5
+- 17057-2-К: + 3 → + 5
 
 ## Kits in stock from their parts (kits.json)
 
@@ -84,8 +76,8 @@
 - 17034-2-К: + 3
 - 17043-2-К: + 1
 - 17040-2-К: + 1
-- 17056-2-К: + 3
-- 17057-2-К: + 3
+- 17056-2-К: + 5
+- 17057-2-К: + 5
 - 81222-2-К: + 1
 - 81200-2-К: + 1
 - 81211-2-К: + 1
@@ -96,4 +88,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
