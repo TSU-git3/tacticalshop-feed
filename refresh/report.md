@@ -1,25 +1,20 @@
-# Stock refresh 2026-11-06 19:29 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-11-06 23:30 (Kyiv) — BIG check
 
-- Offers: 1021; status counts: {'5': 317, '+': 390, '3': 313, '-': 1}
-- get_product lookups: 204; skipped as out of stock by sweep: 46
-- Changed since last run: 10
-- On MyDrop but out of stock (no size with stock): 60
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- Offers: 1021; status counts: {'5': 317, '+': 395, '3': 308, '-': 1}
+- get_product lookups: 331; skipped as out of stock by sweep: 212
+- Changed since last run: 5
+- On MyDrop but out of stock (no size with stock): 283
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
 
 ## Changes
 
-- 20200-ЗМ: 5 None → + None
-- 20200-П: 5 None → + None
-- 115533-2-К: + 2 → 3 None
-- 20305-К: + 2 → + 1
-- 20305-ЛО: + 1 → 5 None
-- 20305-Х: + 1 → 5 None
-- 111430-2-К: + 6 → + 11
-- 2812-0121-00: 3 None → + 1
-- 17056-2-К: + 3 → + 5
-- 17057-2-К: + 3 → + 5
+- 111530-2-К: 3 None → + 18
+- 0801-6331-00: 3 None → + 3
+- 0302-0124-00: 3 None → + 3
+- 0305-0215-00: 3 None → + None
+- 2601-0211-00: 3 None → + 2
 
 ## Kits in stock from their parts (kits.json)
 
@@ -88,4 +83,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
