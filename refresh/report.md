@@ -1,15 +1,16 @@
-# Stock refresh 2026-11-07 07:30 (Kyiv) — BIG check
+# Stock refresh 2026-11-07 11:29 (Kyiv) — SMALL check (in-stock items only)
 
 - Offers: 1021; status counts: {'5': 317, '+': 395, '3': 308, '-': 1}
-- get_product lookups: 331; skipped as out of stock by sweep: 212
-- Changed since last run: 0
-- On MyDrop but out of stock (no size with stock): 283
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- get_product lookups: 208; skipped as out of stock by sweep: 46
+- Changed since last run: 1
+- On MyDrop but out of stock (no size with stock): 61
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
 
 ## Changes
 
+- 2401-0121-M: + 5 → + 4
 
 ## Kits in stock from their parts (kits.json)
 
@@ -78,4 +79,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
