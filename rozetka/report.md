@@ -1,4 +1,4 @@
-# Rozetka feed report — 2026-11-08 20:24 (Kyiv)
+# Rozetka feed report — 2026-11-08 23:14 (Kyiv)
 
 - Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
 - Offers: 784 (359 available); by line {'sl': 26, 'kib': 689, 'bal': 69}
@@ -8,17 +8,17 @@
 
 ## Price overrides
 
-- BAL2000000144887: 14999 (override (listing); Prom 13999)
-- BAL2000000211244: 14999 (override (listing); Prom 13999)
-- BAL2000000211251: 14999 (override (listing); Prom 13999)
-- BAL2000000157702: 14999 (override (listing); Prom 13999)
-- BAL2000000123172: 14999 (override (listing); Prom 13999)
-- BAL2000000123189: 14999 (override (listing); Prom 13999)
-- BAL2000000123196: 14999 (override (listing); Prom 13999)
-- BAL2000000144870: 14999 (override (listing); Prom 13999)
-- BAL2000000144894: 14999 (override (listing); Prom 13999)
-- BAL2000000144900: 14999 (override (listing); Prom 13999)
-- BAL2000000144917: 14999 (override (listing); Prom 13999)
-- BAL2000000219271: 14999 (override (listing); Prom 13999)
-- BAL2000000219288: 14999 (override (listing); Prom 13999)
+- BAL2000000144887: 14999 (override (listing); Prom 13950)
+- BAL2000000211244: 14999 (override (listing); Prom 13950)
+- BAL2000000211251: 14999 (override (listing); Prom 13950)
+- BAL2000000157702: 14999 (override (listing); Prom 13950)
+- BAL2000000123172: 14999 (override (listing); Prom 13950)
+- BAL2000000123189: 14999 (override (listing); Prom 13950)
+- BAL2000000123196: 14999 (override (listing); Prom 13950)
+- BAL2000000144870: 14999 (override (listing); Prom 13950)
+- BAL2000000144894: 14999 (override (listing); Prom 13950)
+- BAL2000000144900: 14999 (override (listing); Prom 13950)
+- BAL2000000144917: 14999 (override (listing); Prom 13500)
+- BAL2000000219271: 14999 (override (listing); Prom 13499)
+- BAL2000000219288: 14999 (override (listing); Prom 13500)
 
