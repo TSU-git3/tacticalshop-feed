@@ -79,8 +79,19 @@ def chars_of(row, header):
     return out
 
 
-def snapshot(xlsx):
+def ua_chars(xlsx):
+    """Characteristic values per Prom id from a Ukrainian-language Prom export (values in Ukrainian)."""
     import openpyxl
+    ws = openpyxl.load_workbook(xlsx, read_only=True)['Export Products Sheet']
+    rows = ws.iter_rows(values_only=True)
+    header = list(next(rows))
+    iu = header.index('Унікальний_ідентифікатор')
+    return {str(r[iu]): {k: v[0] for k, v in chars_of(r, header).items()} for r in rows if r and r[iu]}
+
+
+def snapshot(xlsx, ua_xlsx=None):
+    import openpyxl
+    ua = ua_chars(ua_xlsx) if ua_xlsx else {}
     ws = openpyxl.load_workbook(xlsx, read_only=True)['Export Products Sheet']
     rows = ws.iter_rows(values_only=True)
     header = list(next(rows))
@@ -133,6 +144,8 @@ def snapshot(xlsx):
                     'name_ua': name_ua, 'name_ru': name_ru, 'desc_ua': d_ua, 'desc_ru': d_ru,
                     'photos': photos, 'vendor': str(g('Виробник') or ''),
                     'chars': {k: v[0] for k, v in chars_of(r, header).items()},
+                    'units': {k: v[1] for k, v in chars_of(r, header).items() if v[1]},
+                    'chars_ua': ua.get(uid, {}), 'country': str(g('Країна_виробник') or ''),
                     'prom_price': g('Ціна')}
     # Ballistic rows not in the export yet: names + photos from ballistic/catalog.json, no description
     have = {s['article'] for s in src.values() if s['line'] == 'bal'}
@@ -148,7 +161,8 @@ def snapshot(xlsx):
     meta = {'_note': 'Rozetka source snapshot: listing content per offer from a Prom export (Kiborg Опис from prom/content.csv). '
                      'Rebuild with `build_rozetka.py snapshot <export.xlsx>` after content changes. Stock and prices are NOT taken from here '
                      '(except Starlink price = Prom price).',
-            'export': os.path.basename(xlsx), 'built': now_kyiv(), 'skipped': skipped}
+            'export': os.path.basename(xlsx), 'export_ua': os.path.basename(ua_xlsx) if ua_xlsx else None,
+            'built': now_kyiv(), 'skipped': skipped}
     dump({'meta': meta, 'offers': src}, P('source.json'))
     by = {}
     for s in src.values():
@@ -296,10 +310,173 @@ def material_for(s, cat):
     return pick(cands, allowed)
 
 
-EXTRA_TEXT = {'2101392': 'Додаткові характеристики', '4674292': 'Додаткові характеристики', '4674894': 'Матеріал (склад)',
+OLD_EXTRA_TEXT = {'2101392': 'Додаткові характеристики', '4674292': 'Додаткові характеристики', '4674894': 'Матеріал (склад)',
               '449744': 'Додаткові характеристики', '290826': 'Особливості', '4674304': 'Додаткові характеристики',
               '4674355': 'Додаткові характеристики', '4674286': 'Додаткові характеристики', '454024': 'Додаткові характеристики',
               '4675899': 'Додаткові характеристики'}
+
+
+CHAR_NAMES = load(P('char_names.json'), {'names': {}})['names']
+RU_WORD = re.compile(r'[ыэёъ]|\b(и|с|со|от|из|при|или|есть|нет|да|не|для|мм|см|мбит|шт|год|сзади|спереди|сверху|снизу|внутри|сбоку)\b', re.I)
+VAL_FIX = {'Да': 'Так', 'Нет': 'Ні', 'Есть': 'Є', 'Новое': 'Новий', 'Зима': 'Зимовий', 'Магнитный': 'Магнітний'}
+FIELDS = {   # Rozetka's own fields per category (directory read 8 Nov 2026) that we fill from facts we have
+    'code': ['1100234', '2101392', '4674292', '4674286', '454024', '290826', '4674894', '4674304', '449744', '4674355',
+             '4674417', '4674402', '4674369', '4674310', '4675899'],
+    'extra': {'1100234': 'Додаткові характеристики', '2101392': 'Додаткові характеристики', '4674292': 'Додаткові характеристики',
+              '4674286': 'Додаткові характеристики', '454024': 'Додаткові характеристики', '290826': 'Особливості',
+              '4674304': 'Додаткові характеристики', '449744': 'Додаткові характеристики', '4674355': 'Додаткові характеристики',
+              '4674417': 'Додаткові характеристики', '4674402': 'Додаткові характеристики', '4674369': 'Додаткові характеристики',
+              '4674310': 'Додаткові характеристики', '4675899': 'Додаткові характеристики'},
+    'weight_text': ['1100234', '4674292', '4674286', '4674304'],
+    'kit': ['4674292', '4674286', '4674304'],
+    'molle': ['1100234', '4674292', '4674286'],
+    'fabric': ['4674417', '4674402', '4674369', '4674310'],
+}
+COUNTRIES = {'Україна', 'США', 'Австрія', 'Вірменія', 'Китай', 'Польща', 'Німеччина'}
+
+
+UA_LETTER = re.compile(r"[іїєґІЇЄҐ'’]")
+NEUTRAL_CYR = {'мм', 'см', 'м', 'г', 'кг', 'шт', 'л', 'вт', 'в', 'мах', 'до', 'х'}
+
+
+def is_ua(v):
+    """Safe to show as Ukrainian: has a Ukrainian letter and no Russian one, or only neutral Cyrillic (units)."""
+    if re.search(r'[ыэёъЫЭЁЪ]', v):
+        return False
+    if UA_LETTER.search(v):
+        return not RU_WORD.search(v)
+    return all(w.lower() in NEUTRAL_CYR for w in re.findall(r'[А-Яа-яІіЇїЄєҐґ]+', v))
+
+
+def cval(s, name):
+    """Characteristic value in Ukrainian: Ukrainian export first, then the export value only if it is safely Ukrainian."""
+    for k in ([name] if isinstance(name, str) else name):
+        v = s.get('chars_ua', {}).get(k)
+        if v not in (None, ''):
+            return VAL_FIX.get(str(v).strip(), str(v).strip())
+        v = s['chars'].get(k)
+        if v not in (None, ''):
+            v = VAL_FIX.get(str(v).strip(), str(v).strip())
+            if is_ua(v):
+                return v
+    return None
+
+
+def num(v):
+    m = re.search(r'\d+(?:[.,]\d+)?', str(v or ''))
+    return float(m.group(0).replace(',', '.')) if m else None
+
+
+def fmt(x):
+    return str(int(x)) if float(x).is_integer() else str(x)
+
+
+def enrich(s, cat, params):
+    """Fill Rozetka's own fields from our facts; the rest of the Prom characteristics go to «Додаткові характеристики»."""
+    used = set()
+    def put(field, value, *src):
+        if value not in (None, '') and field not in params:
+            params[field] = value
+        used.update(src)
+    if cat in FIELDS['code'] and s['line'] != 'bal':
+        put('Код виробника', s['article'])
+    if s.get('country') in COUNTRIES:
+        put('Країна-виробник товару', s['country'])
+    w = num(s['chars'].get('Вага'))
+    if w and s.get('units', {}).get('Вага') == 'г':
+        w = w / 1000
+    if w:
+        if cat in FIELDS['weight_text']:
+            put('Вага', fmt(w) + ' кг', 'Вага')
+        elif cat == '4675899':
+            put('Вага', fmt(round(w * 1000)), 'Вага')
+    if cat in FIELDS['kit']:
+        put('Комплектація', cval(s, 'Комплектация'), 'Комплектация')
+    if cat in FIELDS['molle']:
+        sk = ' '.join(str(s['chars'].get(k, '')) for k in ('Система крепления снаряжения', 'Система кріплення спорядження'))
+        if 'molle' in sk.lower():
+            put('Система кріплення спорядження', 'База для модульної системи (Molle)')
+    if 'Матеріал' in params:
+        used.add('Матеріал')       # Rozetka's own Матеріал already set from the maker's fabric
+    if cat == '1100234':
+        m = re.search(r'Cordura[^,]*', s['name_ua'])
+        put('Матеріал жилета', cval(s, 'Ткань') or (m.group(0).strip() if m else None), 'Ткань')
+        put('Розміри пластини', cval(s, 'Размер бронеплит'), 'Размер бронеплит')
+    if cat == '2101392':
+        put('Розміри', cval(s, ['Размеры', 'Габариты']), 'Размеры', 'Габариты')
+        v = num(s['chars'].get('Об`єм'))
+        if v:
+            put("Об'єм", fmt(v), 'Об`єм')
+    if cat == '4674286':
+        v = num(s['chars'].get('Об`єм'))
+        if v:
+            put("Об'єм", fmt(v), 'Об`єм')
+        put('Розмір', cval(s, ['Размеры', 'Габариты']), 'Размеры', 'Габариты')
+    if cat == '454024':
+        put('Розміри', cval(s, ['Габариты', 'Размеры']), 'Габариты', 'Размеры')
+        put('Сумісність', cval(s, ['Рассчитан на оружие', 'Совместимость']), 'Рассчитан на оружие', 'Совместимость')
+        put('Призначення', 'Для аксесуарів' if 'шолом' in s['name_ua'].lower() else 'Для рушниць')
+    if cat == '290826':
+        m = re.search(r'(\d+(?:,\d+)?)\s*[×х]\s*(\d+(?:,\d+)?)', str(s['chars'].get('Размер') or s['name_ua']))
+        if m:
+            a, b2 = sorted([float(m.group(1).replace(',', '.')), float(m.group(2).replace(',', '.'))])
+            if fmt(a * 100) in RZ_NET['Ширина']:
+                put('Ширина', fmt(a * 100))
+            if fmt(b2 * 100) in RZ_NET['Довжина']:
+                put('Довжина', fmt(b2 * 100))
+    if cat == '4674894':
+        put('Розміри (Д x Ш x В)', cval(s, ['Размеры сиденья', 'Размер в разложенном виде', 'Размеры']),
+            'Размеры сиденья', 'Размер в разложенном виде', 'Размеры')
+        mat = '; '.join(x for x in [cval(s, 'Ткань'), cval(s, 'Наполнитель'), cval(s, 'Материал коврика')] if x)
+        put('Матеріал (склад)', mat or None, 'Ткань', 'Наполнитель', 'Материал коврика')
+        if s['chars'].get('Количество секций') and 'Тип' not in params:
+            put('Тип', 'Складані')
+    if cat == '449744':
+        v = num(s['chars'].get('Ширина основной стропы') or s['chars'].get('Ширина стропы'))
+        if v and fmt(v / 10) in RZ_BELT:
+            put('Ширина ременя', fmt(v / 10), 'Ширина основной стропы', 'Ширина стропы')
+        if 'полиамид' in str(s['chars'].get('Материал изделия', '')).lower() or 'полиамид' in str(s['chars'].get('Стропа', '')).lower():
+            put('Матеріал', 'Поліамід')
+    if cat == '4674355':
+        if 'сталев' in s['name_ua'].lower():
+            put('Матеріал', 'Сталь')
+        elif 'алюмін' in str(s['chars'].get('Сплав', '')).lower() or 'алюмин' in str(s['chars'].get('Сплав', '')).lower():
+            put('Матеріал', 'Алюміній')
+    if cat in FIELDS['fabric']:
+        mat = '; '.join(x for x in [cval(s, ['Состав ткани', 'Тип тканини']), cval(s, 'Утеплитель')] if x)
+        put('Матеріал (склад)', mat or None, 'Состав ткани', 'Утеплитель')
+        if num(s['chars'].get('Сезон')) is None and str(s['chars'].get('Сезон', '')).startswith('Зим'):
+            put('Сезон', 'Зимовий')
+    if cat == '4675899':
+        put('Живлення', cval(s, 'Питание'), 'Питание')
+        put('Габарити (Д x Ш x В)', (cval(s, 'Размер (мм) (ДхШхВ):') or '').replace('*', 'x') or None, 'Размер (мм) (ДхШхВ):')
+        v = s['chars'].get('Среднее потребление')
+        if v:
+            put('Споживана потужність', re.sub(r'\s*W$', '', str(v).strip()), 'Среднее потребление')
+    # everything else that has a Ukrainian value → the category's free-text field
+    tgt = FIELDS['extra'].get(cat)
+    if tgt and tgt not in params:
+        lines, missed = [], []
+        for k in s['chars']:
+            nm = CHAR_NAMES.get(k)
+            if not nm or k in used:
+                continue
+            v = cval(s, k)
+            if v:
+                u = s.get('units', {}).get(k)
+                lines.append(f'{nm}: ' + v.replace('|', ', ') + (f' {u}' if u and not v.endswith(u) else ''))
+            else:
+                missed.append(k)
+        if lines:
+            params[tgt] = '\n'.join(dict.fromkeys(lines))[:3000]
+        if missed:
+            MISSED_RU.append((s['article'], missed))
+
+
+MISSED_RU = []
+RZ_NET = {'Довжина': ['20', '23', '125', '140', '170', '180', '190', '200', '210', '250', '300', '366', '400', '450', '500', '600', '700', '800', '900', '915', '1000', '1500', '2000'],
+          'Ширина': ['2.5', '4.5', '5', '6', '7', '22', '30', '40', '50', '80', '90', '100', '140', '150', '160', '180', '200', '300', '400', '500', '600', '700', '800', '900', '1000', '1200', '1500', '2000']}
+RZ_BELT = ['2', '2.5', '2.8', '3', '3.1', '3.4', '3.5', '3.6', '3.7', '3.8', '3.9', '4', '4.3', '4.4', '4.5', '4.6', '4.8', '5', '5.2', '5.3', '5.5', '6', '7', '7.9', '8', '9', '9.5', '10', '14', '25']
 
 
 def kind_of(s):
@@ -353,15 +530,8 @@ def category_and_params(s, bal_label=None):
     if cat == '4674304':
         n = s['name_ua'].lower()
         params['Тип'] = 'Комплекти' if 'комплект' in n else ('Налокотники' if 'налокітник' in n and 'наколінник' not in n else 'Наколінники')
-    if cat == '1100234':
-        m = re.search(r'Cordura[^,]*', s['name_ua'])
-        if m:
-            params['Матеріал жилета'] = m.group(0).strip()
     params = {a: b for a, b in params.items() if b}
-    if len(params) < 3 and cat in EXTRA_TEXT:      # top up with the listing's own Prom characteristics (real data)
-        extra = '; '.join(f'{a}: {b}' for a, b in s['chars'].items() if a not in ('Стан',) and b)
-        if extra:
-            params[EXTRA_TEXT[cat]] = extra[:1000]
+    enrich(s, cat, params)
     return cat, params, None
 
 
@@ -506,7 +676,7 @@ def build(draft=None):
               f'<name>{esc(name_ru)}</name>', f'<name_ua>{esc(name_ua)}</name_ua>',
               f'<description><![CDATA[{d_ru}]]></description>', f'<description_ua><![CDATA[{d_ua}]]></description_ua>']
         for pn, pv in params.items():
-            for v in str(pv).split('|'):
+            for v in (str(pv).split('|') if pn == 'Комплектація' and '\n' not in str(pv) else [str(pv)]):
                 o.append(f'<param name="{esc(pn)}">{esc(v)}</param>')
         o.append('</offer>')
         offers.append(('\n'.join(o), oid, price, prom_price, why, avail, qty))
@@ -536,6 +706,8 @@ def write_report(stats, issues, offers, ready, target, src):
     ov = [x for x in offers if x[4] != 'formula']
     if ov:
         L += ['## Price overrides', ''] + [f'- {x[1]}: {x[2]} ({x[4]}; Prom {x[3]})' for x in ov] + ['']
+    if MISSED_RU:
+        L += [f'- Characteristics left out (Russian value, no Ukrainian source): {sum(len(m[1]) for m in MISSED_RU)} values on {len(MISSED_RU)} offers', '']
     if issues:
         L += ['## Issues', ''] + [f'- {i}' for i in issues[:200]] + ([f'- … +{len(issues) - 200}'] if len(issues) > 200 else []) + ['']
     open(P('report.md'), 'w', encoding='utf-8').write('\n'.join(L) + '\n')
@@ -552,7 +724,7 @@ def hook():
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'build'
     if cmd == 'snapshot':
-        snapshot(sys.argv[2])
+        snapshot(sys.argv[2], sys.argv[sys.argv.index('--ua') + 1] if '--ua' in sys.argv else None)
     elif cmd == 'photos':
         print('main photos:', refresh_main_photos())
     elif cmd == 'build':
