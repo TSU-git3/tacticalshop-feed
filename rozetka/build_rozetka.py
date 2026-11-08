@@ -605,6 +605,21 @@ def live_stock():
     return kib, st
 
 
+def borrow(text, donor):
+    """A variant without its own text gets its group's description minus the donor's own lines
+    (its «Ця позиція» line and the intro that repeats the donor's name with its colour/size)."""
+    art, n_ua, n_ru = donor[2], donor[3], donor[4]
+    keys = [k for k in (art, n_ua.split(',')[0][:40], n_ru.split(',')[0][:40]) if k]
+    def drop(m):
+        inner = re.sub(r'<[^>]+>', ' ', m.group(0))
+        if re.search(r'Ця позиція|Эта позиция', inner) or any(k in inner for k in keys[:1]):
+            return ''
+        if any(k and k in inner for k in keys[1:]) and re.search(r'продукці[яї] українського|продукция украинского', inner):
+            return ''
+        return m.group(0)
+    return re.sub(r'<p\b[^>]*>.*?</p>', drop, text, flags=re.S | re.I)
+
+
 def build(draft=None):
     src = load(P('source.json'))
     if not src:
@@ -617,7 +632,7 @@ def build(draft=None):
     gdesc = {}
     for s0 in src['offers'].values():          # variants without their own text get the group's (base) description
         if s0['vgrp'] and s0['desc_ua'] and s0['vgrp'] not in gdesc:
-            gdesc[s0['vgrp']] = (s0['desc_ua'], s0['desc_ru'])
+            gdesc[s0['vgrp']] = (s0['desc_ua'], s0['desc_ru'], s0['article'], s0['name_ua'], s0['name_ru'])
     bcat = load(os.path.join(ROOT, 'ballistic', 'catalog.json'))['products']
     offers, issues, stats = [], [], {'offers': 0, 'available': 0, 'by_line': {}, 'provisional_names': 0,
                                     'no_main_photo': 0, 'clean_main': 0, 'no_desc': 0, 'few_params': 0, 'no_stock_row': 0}
@@ -665,7 +680,8 @@ def build(draft=None):
             stats['no_main_photo'] += 1; issues.append(f'{oid}: no usable photo')
         du, dr = s['desc_ua'], s['desc_ru']
         if (not du or not dr) and s['vgrp'] in gdesc:
-            du, dr = du or gdesc[s['vgrp']][0], dr or gdesc[s['vgrp']][1]
+            g = gdesc[s['vgrp']]
+            du, dr = du or borrow(g[0], g), dr or borrow(g[1], g)
         d_ua, d_ru = clean_desc(du), clean_desc(dr)
         if not d_ua or not d_ru:
             stats['no_desc'] += 1
