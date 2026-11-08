@@ -1,0 +1,4 @@
+{
+ "_note": "Substrings of photo URLs to leave out of the Rozetka feed (photos with text, Russian text, hangers, hands, contacts). Prom photo 1 is always replaced by the clean main photo.",
+ "contains": []
+}

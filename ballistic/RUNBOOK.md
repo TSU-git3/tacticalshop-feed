@@ -38,7 +38,7 @@ Outputs (same data):
 6. **Publish.** Delete `ballistic/raw.txt`. `git pull --rebase` first; if `stock.xml` conflicts (a Kiborg run pushed
    meanwhile), take theirs (`git checkout --theirs stock.xml`), re-run `python3 ballistic/build_ballistic.py csv` and
    `python3 -c "import sys;sys.path.insert(0,'ballistic');import build_ballistic as b;b.rebuild_stock_xml()"`.
-   `git add stock.xml prom/ballistic_stock.csv prom/prom_stock.csv ballistic/state.json ballistic/catalog.json ballistic/report.md`,
+   `git add stock.xml prom/ballistic_stock.csv prom/prom_stock.csv ballistic/state.json ballistic/catalog.json ballistic/report.md` and `git add -A rozetka/`,
    commit «Ballistic stock <date time Kyiv>», push to `main`.
 7. **Close** the tab you opened. **Report** in 2–4 lines: codes read, stock and price changes, sizes on Ballistic that
    are not on Prom, anything aborted.

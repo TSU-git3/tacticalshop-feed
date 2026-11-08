@@ -363,6 +363,17 @@ def write_xml(result):
     out += ['</offers>', '</shop>', '</yml_catalog>']
     open(os.path.join(os.path.dirname(ROOT), 'stock.xml'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
     write_prom_csv(result)
+    rozetka_hook()
+
+
+def rozetka_hook():
+    """Rozetka feed (rozetka/build_rozetka.py, owner 8 Nov 2026) from the files just written. Never fails the run."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(ROOT), 'rozetka'))
+        import build_rozetka
+        print(build_rozetka.hook())
+    except Exception as e:
+        print('rozetka: skipped (' + str(e)[:200] + ')')
 
 
 def ballistic_offers():
