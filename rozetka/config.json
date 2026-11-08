@@ -1,6 +1,6 @@
 {
  "_note": "Rozetka feed settings (owner decisions 8 Nov 2026; SEO hand-over For_Import_2026-11-08_Rozetka.md). Edit with care: offer ids never change once Rozetka loaded them.",
- "publish": false,
+ "publish": true,
  "feed_path": "rozetka/rozetka.xml",
  "shop": {
   "name": "Tactical Shop Ukraine",
@@ -8,7 +8,7 @@
   "url": "https://tacticalshop.com.ua"
  },
  "images_repo": "https://github.com/TSU-git3/tacticalshop-images",
- "main_photo_url": "https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/p{uid}.jpg",
+ "main_photo_url": "https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/{file}",
  "no_count_qty": 1,
  "starlink_qty": 5,
  "max_pictures": 15,
@@ -299,6 +299,27 @@
     "Вид": "Фліски",
     "Стать": "Чоловічі"
    }
+  },
+  "Карематы": {
+   "cat": "4674894",
+   "params": {
+    "Вид": "Килимок тактичний"
+   },
+   "name_cat": {
+    "п'ятиточка": {
+     "cat": "4674894",
+     "params": {
+      "Вид": "Сідачка тактична"
+     }
+    },
+    "розкладний": {
+     "cat": "4674894",
+     "params": {
+      "Вид": "Килимок тактичний",
+      "Тип": "Складані"
+     }
+    }
+   }
   }
  },
  "bal_kinds": {
@@ -488,5 +509,14 @@
   "WT": "Білий",
   "GR": "Сірий",
   "OL": "Зелений"
+ },
+ "vendors": {
+  "_note": "Our maker name → Rozetka brand directory (cabinet «Виробники», read 8 Nov 2026). Starlink kits = terminal + Setbox case → Starlink (SEO/owner); cases and adapters → SETBOX.",
+  "Kiborg": "Кіборг",
+  "Militex": "Militex",
+  "Tennier Industries": "Tennier Industries",
+  "Carinthia": "Carinthia",
+  "sl_kit": "Starlink",
+  "sl_other": "SETBOX"
  }
 }

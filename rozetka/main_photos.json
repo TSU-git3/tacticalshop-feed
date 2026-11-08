@@ -1,5 +1,32 @@
 {
-"_note": "Prom ids that have a clean Rozetka main photo in tacticalshop-images/rozetka/ (SEO renders them).",
-"checked": "2026-11-08 18:33",
-"uids": []
+"_note": "Clean Rozetka main photos in tacticalshop-images/rozetka/ (SEO): p<Prom id>.jpg = that row only, bal<variant group>.jpg = all sizes of that Ballistic listing.",
+"files": [
+"bal612001.jpg",
+"bal612002.jpg",
+"bal612003.jpg",
+"bal612004.jpg",
+"bal612005.jpg",
+"bal612006.jpg",
+"bal612007.jpg",
+"bal612008.jpg",
+"bal612009.jpg",
+"p3238295956.jpg",
+"p3238300056.jpg",
+"p3238300062.jpg",
+"p3238300077.jpg",
+"p3238300136.jpg",
+"p3238301067.jpg",
+"p3238301109.jpg",
+"p3238301114.jpg",
+"p3238301119.jpg",
+"p3238301122.jpg",
+"p3238301182.jpg",
+"p3238301227.jpg",
+"p3238301449.jpg",
+"p3238301531.jpg",
+"p3238301536.jpg",
+"p3238301541.jpg",
+"p3238301552.jpg",
+"p3238301581.jpg"
+]
 }

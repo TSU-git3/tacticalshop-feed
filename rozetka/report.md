@@ -1,10 +1,10 @@
-# Rozetka feed report — 2026-11-08 18:33 (Kyiv)
+# Rozetka feed report — 2026-11-08 19:37 (Kyiv)
 
-- Feed: written to ../../../tmp/claude-0/rz_draft.xml; ready to publish: **no**
+- Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
 - Offers: 784 (359 available); by line {'sl': 26, 'kib': 689, 'bal': 69}
-- Waiting for SEO: provisional names 784, no clean main photo 784
-- No description: 69; fewer than 3 params: 0; missing stock row: 0
-- Source snapshot: 909ac9c7-export-products-20-10-26_02-12-09.xlsx (2026-11-08 18:33); skipped at snapshot: 333
+- Names without SEO entry (provisional): 0; offers without any photo: 0; with SEO clean main photo: 87
+- No description: 0; fewer than 3 params: 0; missing stock row: 0
+- Source snapshot: 2455db61-export-products-08-11-26_19-30-13.xlsx (2026-11-08 19:33); skipped at snapshot: 347
 
 ## Price overrides
 

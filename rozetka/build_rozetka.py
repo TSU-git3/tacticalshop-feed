@@ -367,7 +367,7 @@ def category_and_params(s, bal_label=None):
 
 # ----------------------------------------------------------------------------- pictures
 def main_photos():
-    return set(load(P('main_photos.json'), {'uids': []})['uids'])
+    return set(load(P('main_photos.json'), {'files': []}).get('files', []))
 
 
 def refresh_main_photos():
@@ -377,10 +377,12 @@ def refresh_main_photos():
                        check=True, timeout=120)
         out = subprocess.run(['git', '-C', d, 'ls-tree', '-r', '--name-only', 'HEAD', 'rozetka/'], check=True,
                              capture_output=True, text=True, timeout=60).stdout.split()
-        uids = sorted({m.group(1) for f in out for m in [re.match(r'rozetka/p(\d+)\.jpg$', f)] if m})
-        dump({'_note': 'Prom ids that have a clean Rozetka main photo in tacticalshop-images/rozetka/ (SEO renders them).',
-              'checked': now_kyiv(), 'uids': uids}, P('main_photos.json'))
-        return len(uids)
+        files = sorted(f.split('/', 1)[1] for f in out if re.match(r'rozetka/(p\d+|bal\d+)\.jpg$', f))
+        old = load(P('main_photos.json'), {}).get('files')
+        if files != old:
+            dump({'_note': 'Clean Rozetka main photos in tacticalshop-images/rozetka/ (SEO): p<Prom id>.jpg = that row only, '
+                           'bal<variant group>.jpg = all sizes of that Ballistic listing.', 'files': files}, P('main_photos.json'))
+        return len(files)
     except Exception as e:
         print('main photos: could not read tacticalshop-images (' + str(e)[:120] + ') — kept the last list')
         return None
@@ -391,15 +393,25 @@ def pictures_for(s, mains, excl):
     if s['line'] == 'bal':     # size charts: English (Tennier) / Russian text (Carinthia) — not allowed on Rozetka
         pics = [u for u in pics if 'tennierindustries.com' not in u and 'size_chart' not in u]
     pics = [u for u in pics if not any(x in u for x in excl)]
-    main = None
-    if s['uid'] and s['uid'] in mains:
-        main = CFG['main_photo_url'].format(uid=s['uid'])
-        pics = pics[1:]        # Prom photo 1 is our text card; the clean version replaces it
-    out = ([main] if main else []) + pics
-    return out[:CFG['max_pictures']], bool(main)
+    clean = None
+    if s['uid'] and f"p{s['uid']}.jpg" in mains:
+        clean = f"p{s['uid']}.jpg"
+    elif s['line'] == 'bal' and f"bal{s['vgrp']}.jpg" in mains:
+        clean = f"bal{s['vgrp']}.jpg"
+    if clean:                  # SEO's clean version of Prom photo 1 replaces it
+        pics = [CFG['main_photo_url'].format(file=clean)] + pics[1:]
+    # without a clean version, Prom photo 1 is the supplier's own product photo (SEO check 8 Nov 2026)
+    return pics[:CFG['max_pictures']], bool(clean)
 
 
 # ----------------------------------------------------------------------------- build
+def vendor_for(s):
+    vm = CFG['vendors']
+    if s['line'] == 'sl':
+        return vm['sl_kit'] if s['name_ua'].lower().startswith('комплект') else vm['sl_other']
+    return vm.get(s['vendor'], s['vendor'] or '')
+
+
 def now_kyiv():
     return datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
 
@@ -431,7 +443,7 @@ def build(draft=None):
             gdesc[s0['vgrp']] = (s0['desc_ua'], s0['desc_ru'])
     bcat = load(os.path.join(ROOT, 'ballistic', 'catalog.json'))['products']
     offers, issues, stats = [], [], {'offers': 0, 'available': 0, 'by_line': {}, 'provisional_names': 0,
-                                    'no_main_photo': 0, 'no_desc': 0, 'few_params': 0, 'no_stock_row': 0}
+                                    'no_main_photo': 0, 'clean_main': 0, 'no_desc': 0, 'few_params': 0, 'no_stock_row': 0}
     used_cats = set()
     for oid, s in src['offers'].items():
         line = s['line']
@@ -470,8 +482,10 @@ def build(draft=None):
             name_ru, name_ua = provisional_name(s['name_ru']), provisional_name(s['name_ua'])
             stats['provisional_names'] += 1
         pics, has_main = pictures_for(s, mains, excl)
-        if not has_main:
-            stats['no_main_photo'] += 1
+        if has_main:
+            stats['clean_main'] += 1
+        if not pics:
+            stats['no_main_photo'] += 1; issues.append(f'{oid}: no usable photo')
         du, dr = s['desc_ua'], s['desc_ru']
         if (not du or not dr) and s['vgrp'] in gdesc:
             du, dr = du or gdesc[s['vgrp']][0], dr or gdesc[s['vgrp']][1]
@@ -487,7 +501,7 @@ def build(draft=None):
         o = [f'<offer id="{oid}" available="{"true" if avail else "false"}">',
              f'<price>{price}</price>', '<currencyId>UAH</currencyId>', f'<categoryId>{cat}</categoryId>']
         o += [f'<picture>{esc(u)}</picture>' for u in pics]
-        o += [f'<vendor>{esc(s["vendor"] or "")}</vendor>', f'<article>{esc(s["article"])}</article>',
+        o += [f'<vendor>{esc(vendor_for(s))}</vendor>', f'<article>{esc(s["article"])}</article>',
               f'<stock_quantity>{qty}</stock_quantity>',
               f'<name>{esc(name_ru)}</name>', f'<name_ua>{esc(name_ua)}</name_ua>',
               f'<description><![CDATA[{d_ru}]]></description>', f'<description_ua><![CDATA[{d_ua}]]></description_ua>']
@@ -516,7 +530,7 @@ def write_report(stats, issues, offers, ready, target, src):
          f'- Feed: {"written to " + os.path.relpath(target, ROOT) if target else "NOT published (config publish=false)"}; '
          f'ready to publish: **{"yes" if ready else "no"}**',
          f'- Offers: {stats["offers"]} ({stats["available"]} available); by line {stats["by_line"]}',
-         f'- Waiting for SEO: provisional names {stats["provisional_names"]}, no clean main photo {stats["no_main_photo"]}',
+         f'- Names without SEO entry (provisional): {stats["provisional_names"]}; offers without any photo: {stats["no_main_photo"]}; with SEO clean main photo: {stats["clean_main"]}',
          f'- No description: {stats["no_desc"]}; fewer than 3 params: {stats["few_params"]}; missing stock row: {stats["no_stock_row"]}',
          f'- Source snapshot: {src["meta"]["export"]} ({src["meta"]["built"]}); skipped at snapshot: {len(src["meta"]["skipped"])}', '']
     ov = [x for x in offers if x[4] != 'formula']
@@ -530,7 +544,7 @@ def write_report(stats, issues, offers, ready, target, src):
 def hook():
     """Called at the end of refresh/build_feed.write_xml() (Kiborg BIG/SMALL and Ballistic runs)."""
     if not CFG.get('publish'):
-        return 'rozetka: publish=false — feed not built (waiting for SEO names + clean main photos)'
+        return 'rozetka: publish=false — feed not built'
     refresh_main_photos()
     return build()
 

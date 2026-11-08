@@ -1,4 +1,12 @@
 {
- "_note": "Substrings of photo URLs to leave out of the Rozetka feed (photos with text, Russian text, hangers, hands, contacts). Prom photo 1 is always replaced by the clean main photo.",
- "contains": []
+ "_note": "Substrings of photo URLs to leave out of the Rozetka feed (photos with text, Russian text, hangers, hands, contacts, packaging).",
+ "contains": [
+  "7690158294",
+  "7690162996",
+  "7690165941",
+  "7690168450"
+ ],
+ "_why": {
+  "7690158294 7690162996 7690165941 7690168450": "Setbox Mini+P12V box photos with printed packaging text (SEO: skip the packaging photo; Claude checked all colours 8 Nov 2026)"
+ }
 }
