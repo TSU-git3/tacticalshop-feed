@@ -318,7 +318,7 @@ OLD_EXTRA_TEXT = {'2101392': 'Додаткові характеристики', 
 
 CHAR_NAMES = load(P('char_names.json'), {'names': {}})['names']
 RU_WORD = re.compile(r'[ыэёъ]|\b(и|с|со|от|из|при|или|есть|нет|да|не|для|мм|см|мбит|шт|год|сзади|спереди|сверху|снизу|внутри|сбоку)\b', re.I)
-VAL_FIX = {'Да': 'Так', 'Нет': 'Ні', 'Есть': 'Є', 'Новое': 'Новий', 'Зима': 'Зимовий', 'Магнитный': 'Магнітний'}
+VAL_FIX = {'Да': 'Так', 'Нет': 'Ні', 'Есть': 'Є', 'Новое': 'Новий', 'Зима': 'Зимовий', 'Магнитный': 'Магнітний', 'Без сверління': 'Без свердління'}
 FIELDS = {   # Rozetka's own fields per category (directory read 8 Nov 2026) that we fill from facts we have
     'code': ['1100234', '2101392', '4674292', '4674286', '454024', '290826', '4674894', '4674304', '449744', '4674355',
              '4674417', '4674402', '4674369', '4674310', '4675899'],
@@ -339,6 +339,9 @@ UA_LETTER = re.compile(r"[іїєґІЇЄҐ'’]")
 NEUTRAL_CYR = {'мм', 'см', 'м', 'г', 'кг', 'шт', 'л', 'вт', 'в', 'мах', 'до', 'х'}
 
 
+VALUE_UA = load(P('value_ua.json'), {'values': {}})['values']
+
+
 def is_ua(v):
     """Safe to show as Ukrainian: has a Ukrainian letter and no Russian one, or only neutral Cyrillic (units)."""
     if re.search(r'[ыэёъЫЭЁЪ]', v):
@@ -356,7 +359,10 @@ def cval(s, name):
             return VAL_FIX.get(str(v).strip(), str(v).strip())
         v = s['chars'].get(k)
         if v not in (None, ''):
-            v = VAL_FIX.get(str(v).strip(), str(v).strip())
+            v = str(v).strip()
+            if v in VALUE_UA:
+                return VALUE_UA[v]
+            v = VAL_FIX.get(v, v)
             if is_ua(v):
                 return v
     return None
@@ -456,11 +462,12 @@ def enrich(s, cat, params):
     # everything else that has a Ukrainian value → the category's free-text field
     tgt = FIELDS['extra'].get(cat)
     if tgt and tgt not in params:
-        lines, missed = [], []
+        lines, missed, seen = [], [], set()
         for k in s['chars']:
             nm = CHAR_NAMES.get(k)
-            if not nm or k in used:
+            if not nm or k in used or nm in seen:
                 continue
+            seen.add(nm)
             v = cval(s, k)
             if v:
                 u = s.get('units', {}).get(k)
