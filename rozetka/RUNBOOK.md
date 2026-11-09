@@ -38,4 +38,4 @@ Live stock and price are read on every build: Kiborg from `prom/prom_stock.csv` 
 ## Excluded Rozetka categories (owner 9 Nov 2026 — permanent)
 Rozetka bans military-purpose goods; the owner doesn't want masking nets or Starlink there either. `config.json` `exclude_categories` lists 290826 (Засоби для маскування), 4674292 (Розвантажувальні жилети), 1100234 (Бронежилети), 4675899 (Супутникові термінали); `build()` skips any offer mapped to them (count in report.md). Every other category stays. Don't remove an entry without the owner.
 - `config.json` `desc_remove`: per-offer [old, new] text edits on the Rozetka description (e.g. KIB2611012100 cross-sell sentence); a no-longer-matching edit shows in report.md Issues.
-- Helmet bags (2318-…) go to 4674289 «Каски та шоломи», Тип «Аксесуари» (config `kib_groups` name_cat «шолом»); weapon cases stay in 454024.
+- Helmet bags (2318-…) stay in 454024 «Чохли та кейси для зброї»: the better fit 4674289 «Каски та шоломи» (Тип «Аксесуари») is a stop-category for the shop (validator 9 Nov 2026). The mapping is parked in config `kib_groups` → `name_cat_parked`; rename it to `name_cat` once the manager opens 4674289.

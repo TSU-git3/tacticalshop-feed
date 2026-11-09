@@ -243,13 +243,13 @@
    "params": {
     "Тип": "Чохол"
    },
-   "name_cat": {
+   "name_cat_parked": {
     "шолом": {
      "cat": "4674289",
      "params": {
       "Тип": "Аксесуари"
      },
-     "_why": "owner 9 Nov 2026: helmet bags out of «Чохли та кейси для зброї»; Rozetka «Каски та шоломи» (Амуніція › Тактичне спорядження) has Тип «Аксесуари» (cabinet directory read 9 Nov 2026)"
+     "_why": "Better fit for helmet bags (Тип «Аксесуари»), but Rozetka's validator 9 Nov 2026 21:17 Kyiv lists 4674289 as a stop-category for the shop — bags would be blocked, 454024 is open. Rename this key back to name_cat once the manager opens 4674289."
     }
    }
   },
