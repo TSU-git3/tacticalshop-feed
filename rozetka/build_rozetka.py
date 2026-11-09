@@ -705,8 +705,10 @@ def build(draft=None):
               f'<name>{esc(name_ru)}</name>', f'<name_ua>{esc(name_ua)}</name_ua>',
               f'<description><![CDATA[{d_ru}]]></description>', f'<description_ua><![CDATA[{d_ua}]]></description_ua>']
         for pn, pv in params.items():
-            for v in (str(pv).split('|') if pn == 'Комплектація' and '\n' not in str(pv) else [str(pv)]):
-                o.append(f'<param name="{esc(pn)}">{esc(v)}</param>')
+            v = str(pv)
+            if pn == 'Комплектація' and '\n' not in v:   # multi-select list: one param, values joined by «;»
+                v = ';'.join(x.strip() for x in v.split('|') if x.strip())   # (validator 9 Nov: repeated params = «Дубль параметра»)
+            o.append(f'<param name="{esc(pn)}">{esc(v)}</param>')
         o.append('</offer>')
         offers.append(('\n'.join(o), oid, price, prom_price, why, avail, qty))
     head = ['<?xml version="1.0" encoding="UTF-8"?>', f'<yml_catalog date="{now_kyiv()}">', '<shop>',
