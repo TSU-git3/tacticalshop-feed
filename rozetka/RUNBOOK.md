@@ -34,3 +34,8 @@ Live stock and price are read on every build: Kiborg from `prom/prom_stock.csv` 
 - After a new Prom export: `python3 rozetka/build_rozetka.py snapshot export.xlsx`, then a draft build; commit `rozetka/source.json`.
 - Scheduled runs: nothing extra — `refresh/build_feed.write_xml()` calls the builder at the end. They commit with `git add -A rozetka/`. If a push conflicts in `rozetka/rozetka.xml`, take origin's files and rebuild with `python3 rozetka/build_rozetka.py build` (the feed is fully derived).
 - Not in a stock window (Kiborg xx:27–xx:00, Ballistic xx:35–xx:45 Kyiv) when editing by hand.
+
+## Excluded Rozetka categories (owner 9 Nov 2026 — permanent)
+Rozetka bans military-purpose goods; the owner doesn't want masking nets or Starlink there either. `config.json` `exclude_categories` lists 290826 (Засоби для маскування), 4674292 (Розвантажувальні жилети), 1100234 (Бронежилети), 4675899 (Супутникові термінали); `build()` skips any offer mapped to them (count in report.md). Every other category stays. Don't remove an entry without the owner.
+- `config.json` `desc_remove`: per-offer [old, new] text edits on the Rozetka description (e.g. KIB2611012100 cross-sell sentence); a no-longer-matching edit shows in report.md Issues.
+- Helmet bags (2318-…) go to 4674289 «Каски та шоломи», Тип «Аксесуари» (config `kib_groups` name_cat «шолом»); weapon cases stay in 454024.

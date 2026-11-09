@@ -106,7 +106,8 @@
   "4674402": "Тактичні куртки",
   "4674369": "Тактичні штани",
   "4674310": "Військова форма",
-  "4675899": "Супутникові термінали"
+  "4675899": "Супутникові термінали",
+  "4674289": "Каски та шоломи"
  },
  "kib_groups": {
   "Плитоноски": {
@@ -241,6 +242,15 @@
    "cat": "454024",
    "params": {
     "Тип": "Чохол"
+   },
+   "name_cat": {
+    "шолом": {
+     "cat": "4674289",
+     "params": {
+      "Тип": "Аксесуари"
+     },
+     "_why": "owner 9 Nov 2026: helmet bags out of «Чохли та кейси для зброї»; Rozetka «Каски та шоломи» (Амуніція › Тактичне спорядження) has Тип «Аксесуари» (cabinet directory read 9 Nov 2026)"
+    }
    }
   },
   "Каверы на шлем": {
@@ -518,5 +528,34 @@
   "Carinthia": "Carinthia",
   "sl_kit": "Starlink",
   "sl_other": "SETBOX"
+ },
+ "exclude_categories": [
+  "290826",
+  "4674292",
+  "1100234",
+  "4675899"
+ ],
+ "exclude_categories_note": {
+  "_why": "owner 9 Nov 2026: Rozetka bans military-purpose goods; no masking nets or Starlink on Rozetka either — permanently out of rozetka.xml",
+  "290826": "Засоби для маскування (nets, helmet covers)",
+  "4674292": "Розвантажувальні жилети (РПС, belts, straps)",
+  "1100234": "Бронежилети (plate carriers)",
+  "4675899": "Супутникові термінали (Starlink)"
+ },
+ "desc_remove": {
+  "_note": "Per-offer text edits in Rozetka descriptions: [old, new] exact substrings, UA and RU. Kept across snapshots; an edit that no longer matches shows in report.md.",
+  "KIB2611012100": [
+   [
+    "<strong>Бронепакет:</strong> можна придбати окремо або разом із сидінням. Розмір бронепакета: 36х26 см.",
+    "<strong>Розмір бронепакета:</strong> 36х26 см."
+   ],
+   [
+    "<p>Мягкая баллистическая защита может быть приобретена отдельно или вместе с карематом.</p>",
+    ""
+   ]
+  ],
+  "_why": {
+   "KIB2611012100": "owner 9 Nov 2026: remove the cross-sell sentence (armour pack sold separately / with the seat) — packs are not on Rozetka; pack size kept"
+  }
  }
 }

@@ -321,13 +321,13 @@ RU_WORD = re.compile(r'[ыэёъ]|\b(и|с|со|от|из|при|или|есть
 VAL_FIX = {'Да': 'Так', 'Нет': 'Ні', 'Есть': 'Є', 'Новое': 'Новий', 'Зима': 'Зимовий', 'Магнитный': 'Магнітний', 'Без сверління': 'Без свердління'}
 FIELDS = {   # Rozetka's own fields per category (directory read 8 Nov 2026) that we fill from facts we have
     'code': ['1100234', '2101392', '4674292', '4674286', '454024', '290826', '4674894', '4674304', '449744', '4674355',
-             '4674417', '4674402', '4674369', '4674310', '4675899'],
-    'extra': {'1100234': 'Додаткові характеристики', '2101392': 'Додаткові характеристики', '4674292': 'Додаткові характеристики',
+             '4674417', '4674402', '4674369', '4674310', '4675899', '4674289'],
+    'extra': {'4674289': 'Додаткові характеристики', '1100234': 'Додаткові характеристики', '2101392': 'Додаткові характеристики', '4674292': 'Додаткові характеристики',
               '4674286': 'Додаткові характеристики', '454024': 'Додаткові характеристики', '290826': 'Особливості',
               '4674304': 'Додаткові характеристики', '449744': 'Додаткові характеристики', '4674355': 'Додаткові характеристики',
               '4674417': 'Додаткові характеристики', '4674402': 'Додаткові характеристики', '4674369': 'Додаткові характеристики',
               '4674310': 'Додаткові характеристики', '4675899': 'Додаткові характеристики'},
-    'weight_text': ['1100234', '4674292', '4674286', '4674304'],
+    'weight_text': ['1100234', '4674292', '4674286', '4674304', '4674289'],
     'kit': ['4674292', '4674286', '4674304'],
     'molle': ['1100234', '4674292', '4674286'],
     'fabric': ['4674417', '4674402', '4674369', '4674310'],
@@ -660,6 +660,8 @@ def build(draft=None):
         cat, params, err = category_and_params(s, label)
         if err:
             issues.append(f'{oid}: {err} — left out'); continue
+        if cat in CFG.get('exclude_categories', []):          # owner 9 Nov 2026: banned / unwanted on Rozetka
+            stats['excluded_cat'] = stats.get('excluded_cat', 0) + 1; continue
         kind = 'clothing' if (line == 'bal' or CFG['kib_groups'].get(s['group_ru'], {}).get('clothing')) else 'gear'
         price = rz_price(prom_price, line, kind)
         why = 'formula'
@@ -682,6 +684,10 @@ def build(draft=None):
         if (not du or not dr) and s['vgrp'] in gdesc:
             g = gdesc[s['vgrp']]
             du, dr = du or borrow(g[0], g), dr or borrow(g[1], g)
+        for a, b in CFG.get('desc_remove', {}).get(oid, []):  # per-offer text edits (owner)
+            if a not in (du or '') and a not in (dr or ''):
+                issues.append(f'{oid}: description edit no longer matches — «{a[:60]}…»')
+            du, dr = (du or '').replace(a, b), (dr or '').replace(a, b)
         d_ua, d_ru = clean_desc(du), clean_desc(dr)
         if not d_ua or not d_ru:
             stats['no_desc'] += 1
@@ -725,6 +731,7 @@ def write_report(stats, issues, offers, ready, target, src):
          f'- Offers: {stats["offers"]} ({stats["available"]} available); by line {stats["by_line"]}',
          f'- Names without SEO entry (provisional): {stats["provisional_names"]}; offers without any photo: {stats["no_main_photo"]}; with SEO clean main photo: {stats["clean_main"]}',
          f'- No description: {stats["no_desc"]}; fewer than 3 params: {stats["few_params"]}; missing stock row: {stats["no_stock_row"]}',
+         f'- Left out by excluded Rozetka categories {CFG.get("exclude_categories", [])}: {stats.get("excluded_cat", 0)}',
          f'- Source snapshot: {src["meta"]["export"]} ({src["meta"]["built"]}); skipped at snapshot: {len(src["meta"]["skipped"])}', '']
     ov = [x for x in offers if x[4] != 'formula']
     if ov:

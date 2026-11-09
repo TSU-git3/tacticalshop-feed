@@ -2,9 +2,11 @@
  "_note": "Owner's Rozetka prices that replace the formula. offers: offer id -> price; bal_products: Ballistic product id -> price for all its sizes. SEO's later competitor revisions go here too.",
  "offers": {},
  "bal_products": {
-  "14261": 14999
+  "14261": 14999,
+  "27294": 14999
  },
  "_why": {
-  "14261": "owner 8 Nov 2026: Tennier ECWCS Gen III Level 7 Parka (grey, Prom p3247928774) 14,999 on Rozetka, all sizes; formula gave 15,009"
+  "14261": "owner 8 Nov 2026: Tennier ECWCS Gen III Level 7 Parka (grey, Prom p3247928774) 14,999 on Rozetka, all sizes; formula gave 15,009",
+  "27294": "owner 9 Nov 2026: Tennier ECWCS Gen III Level 7 jacket coyote 14,999 on Rozetka, like the grey one; formula gave 15,009"
  }
 }
