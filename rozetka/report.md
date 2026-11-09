@@ -1,7 +1,7 @@
-# Rozetka feed report — 2026-11-09 15:33 (Kyiv)
+# Rozetka feed report — 2026-11-09 19:29 (Kyiv)
 
 - Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
-- Offers: 784 (346 available); by line {'sl': 26, 'kib': 689, 'bal': 69}
+- Offers: 784 (347 available); by line {'sl': 26, 'kib': 689, 'bal': 69}
 - Names without SEO entry (provisional): 0; offers without any photo: 0; with SEO clean main photo: 87
 - No description: 0; fewer than 3 params: 0; missing stock row: 0
 - Source snapshot: 2455db61-export-products-08-11-26_19-30-13.xlsx (2026-11-08 19:45); skipped at snapshot: 347
