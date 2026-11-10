@@ -1,17 +1,41 @@
-# Stock refresh 2026-11-10 07:29 (Kyiv) — BIG check
+# Stock refresh 2026-11-10 11:29 (Kyiv) — SMALL check (in-stock items only)
 
-- Offers: 1021; status counts: {'5': 318, '+': 368, '3': 334, '-': 1}
-- get_product lookups: 331; skipped as out of stock by sweep: 212
-- Changed since last run: 2
-- On MyDrop but out of stock (no size with stock): 286
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- Offers: 1021; status counts: {'5': 317, '+': 369, '3': 334, '-': 1}
+- get_product lookups: 194; skipped as out of stock by sweep: 35
+- Changed since last run: 26
+- On MyDrop but out of stock (no size with stock): 45
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
 
 ## Changes
 
-- 110102-2-К: + 2 → + 1
-- 87001-2-К: + 2 → + 1
+- 2205-0216-00: + 2 → + 3
+- 2202-6331-00: + 289 → + 284
+- 2202-6321-00: + 98 → + 94
+- 0802-0121-L: + 6 → + 7
+- 110110-2-К: + 3 → + 2
+- 20225-ЛО: + 5 → + 8
+- 20325-Х: 5 None → + None
+- 2401-0121-XL: + 2 → + 1
+- 2401-0122-XL: + 25 → + 24
+- 2401-0124-XL: + 7 → + 6
+- 112516-2-К: + 3 → + 2
+- 2321-0121-00: + 310 → + 307
+- 2321-0122-00: + 66 → + 64
+- 3206-0126-00: 3 None → + 1
+- 3209-6322-00: + 10 → + 9
+- 2306-0121-00: + 4 → + 2
+- 2609-0211-00: + 28 → + 27
+- 0305-0122-00: + 2 → + 3
+- 2801-0211-00: + 2 → 3 None
+- 82001-2-К: + 2 → + 1
+- 82002-2-К: + 3 → + 2
+- 82003-2-К: + 3 → + 2
+- 82004-2-К: + 3 → + 2
+- 82007-2-К: + 3 → + 2
+- 17034-2-К: + 3 → + 2
+- 17041-2-К: + 3 → + 2
 
 ## Kits in stock from their parts (kits.json)
 
@@ -41,17 +65,17 @@
 - 87002: + 1
 - 87002-2-К: + 1
 - 89000-2-К: + 2
-- 82001-2-К: + 2
-- 82002-2-К: + 3
-- 82003-2-К: + 3
-- 82004-2-К: + 3
+- 82001-2-К: + 1
+- 82002-2-К: + 2
+- 82003-2-К: + 2
+- 82004-2-К: + 2
 - 82006-2-К: + 1
-- 82007-2-К: + 3
+- 82007-2-К: + 2
 - 17041: + 1
 - 17040: + 2
-- 17034-2-К: + 3
+- 17034-2-К: + 2
 - 17043-2-К: + 1
-- 17041-2-К: + 3
+- 17041-2-К: + 2
 - 17040-2-К: + 1
 - 17056-2-К: + 5
 - 17057-2-К: + 5
@@ -65,4 +89,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
