@@ -1,9 +1,9 @@
-# Ballistic stock check 2026-11-10 07:40 Kyiv
+# Ballistic stock check 2026-11-10 11:45 Kyiv
 
-Codes: 91 · read: 91 · CSV: «!» 34, «+» 11, «-» 24
+Codes: 91 · read: 91 · CSV: «!» 34, «+» 10, «-» 25
 
 ## Stock changes since last run
-none
+2000000144894 Зимова тактична куртка Tennier ECWCS Gen III …, L/L: ['+', 1, 13950] → ['-', 0]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
