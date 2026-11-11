@@ -1,6 +1,6 @@
-# Ballistic stock check 2026-11-10 23:40 Kyiv
+# Ballistic stock check 2026-11-11 03:41 Kyiv
 
-Codes: 91 · read: 91 · CSV: «!» 34, «+» 11, «-» 24
+Codes: 108 · read: 108 · CSV: «!» 35, «+» 11, «-» 24
 
 ## Stock changes since last run
 none
@@ -12,7 +12,7 @@ none
 none
 
 ## Sizes on Ballistic that are not on Prom (need an import)
-none
+ess-5b 2000000222271 «Розпродано» Розпродано
 
 ## Unusual statuses
 none
