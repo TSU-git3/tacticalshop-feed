@@ -1,10 +1,9 @@
-# Ballistic stock check 2026-11-11 14:26 Kyiv
+# Ballistic stock check 2026-11-11 15:43 Kyiv
 
-Codes: 108 · read: 108 · CSV: «!» 48, «+» 17, «-» 24
+Codes: 132 · read: 132 · CSV: «!» 49, «+» 17, «-» 24
 
 ## Stock changes since last run
-2000000182322 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 2, 22999] → ['+', 1]
-2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 8, 23899] → ['+', 7]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
 none
@@ -14,6 +13,9 @@ none
 
 ## Sizes on Ballistic that are not on Prom (need an import)
 ess-5b 2000000222271 «Розпродано» Розпродано
+ear-razor-slim 2000000027937 «Розпродано» Розпродано
+ear-razor-slim 2000000050874 «Розпродано» Розпродано
+ear-tactigrip 2000000111414 «Чорний» В наявності: 1
 
 ## Unusual statuses
 none
