@@ -1972,7 +1972,7 @@
        "code": "2000000130873",
        "name_ru": "Баллистические тактические очки Revision Sawfly, черная оправа, прозрачная линза, Large, оригинал",
        "name_uk": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, Large, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1998,7 +1998,7 @@
        "code": "7700000022479",
        "name_ru": "Баллистические тактические очки Revision Sawfly, черная оправа, прозрачная линза, Regular, оригинал",
        "name_uk": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, Regular, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2024,7 +2024,7 @@
        "code": "2000000141039",
        "name_ru": "Баллистические тактические очки Revision Sawfly, черная оправа, прозрачная линза, Small, оригинал",
        "name_uk": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, Small, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2051,7 +2051,7 @@
        "code": "2000000130781",
        "name_ru": "Баллистическая маска Revision Desert Locust Essential, оправа Tan, 2 линзы: прозрачная и дымчатая, оригинал",
        "name_uk": "Балістична маска Revision Desert Locust Essential, оправа Tan, 2 лінзи: прозора і димчаста, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2077,7 +2077,7 @@
        "code": "2000000130897",
        "name_ru": "Баллистическая маска Revision Desert Locust Deluxe Tan, 3 линзы: прозрачная, дымчатая и желтая, оригинал",
        "name_uk": "Балістична маска Revision Desert Locust Deluxe, оправа Tan, 3 лінзи: прозора, димчаста і жовта, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2103,7 +2103,7 @@
        "code": "2000000083544",
        "name_ru": "Баллистическая маска Revision Desert Locust, оправа Tan, темная линза, оригинал",
        "name_uk": "Балістична маска Revision Desert Locust, оправа Tan, темна лінза, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2129,7 +2129,7 @@
        "code": "2000000130224",
        "name_ru": "Баллистические очки Revision StingerHawk, черная оправа, 2 линзы: прозрачная и янтарная, Regular, оригинал",
        "name_uk": "Балістичні тактичні окуляри Revision StingerHawk, чорна оправа, 2 лінзи: прозора і бурштинова, Regular, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2156,7 +2156,7 @@
        "code": "2000000130675",
        "name_ru": "Баллистические очки Revision StingerHawk, черная оправа, 2 линзы: прозрачная и янтарная, Large, оригинал",
        "name_uk": "Балістичні тактичні окуляри Revision StingerHawk, чорна оправа, 2 лінзи: прозора і бурштинова, Large, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2182,7 +2182,7 @@
        "code": "2000000141695",
        "name_ru": "Баллистические очки Revision Sawfly Max-Wrap Deluxe Yellow Kit, Small, 3 линзы, оригинал",
        "name_uk": "Балістичні окуляри Revision Sawfly Max-Wrap Deluxe Yellow Kit, розмір Small, 3 лінзи: прозора, димчаста і жовта, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2208,7 +2208,7 @@
        "code": "2000000021874",
        "name_ru": "Баллистические очки Revision StingerHawk US Military Kit, 3 линзы, Regular, оригинал",
        "name_uk": "Балістичні окуляри Revision StingerHawk U.S. Military Kit, 3 лінзи: прозора, димчаста і Vermillion, Regular, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2234,7 +2234,7 @@
        "code": "2000000207728",
        "name_ru": "Тактические очки Wiley X Ozone с фотохромной линзой, черная оправа, оригинал",
        "name_uk": "Тактичні окуляри Wiley X Ozone з фотохромною лінзою, чорна оправа, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2286,7 +2286,7 @@
        "code": "2000000203423",
        "name_ru": "Баллистическая маска Wiley X Spear DUAL, оправа Tan, 3 двойные линзы: Smoke Grey, Clear, Light Rust, оригинал",
        "name_uk": "Балістична маска Wiley X Spear DUAL з подвійними лінзами, оправа Tan, 3 лінзи: Smoke Grey, Clear, Light Rust, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2313,7 +2313,7 @@
        "code": "2000000203416",
        "name_ru": "Баллистическая маска Wiley X Spear, оправа Tan, 3 линзы: Smoke Grey, Clear, Light Rust, оригинал",
        "name_uk": "Балістична маска Wiley X Spear, оправа Tan, 3 лінзи: Smoke Grey, Clear, Light Rust, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2340,7 +2340,7 @@
        "code": "2000000203560",
        "name_ru": "Очки для стрельбы Wiley X Detection, черная оправа, 5 сменных линз, оригинал",
        "name_uk": "Окуляри для стрільби Wiley X Detection, чорна оправа, 5 змінних лінз, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2367,7 +2367,7 @@
        "code": "2000000203393",
        "name_ru": "Тактические очки Wiley X Sierra со съемными щитками, черная оправа, темная линза, оригинал",
        "name_uk": "Тактичні окуляри Wiley X Sierra зі знімними щитками, чорна оправа, темна лінза, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2394,7 +2394,7 @@
        "code": "2000000203386",
        "name_ru": "Тактические очки Wiley X Recon со съемными щитками, черная оправа, линза Captivate Grey, оригинал",
        "name_uk": "Тактичні окуляри Wiley X Recon зі знімними щитками, чорна оправа, лінза Captivate Grey, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2420,7 +2420,7 @@
        "code": "2000000203362",
        "name_ru": "Баллистические очки Wiley X Saber Advanced, черная оправа, 2 линзы: Smoke Grey и Light Rust, оригинал",
        "name_uk": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, 2 лінзи: Smoke Grey і Light Rust, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2447,7 +2447,7 @@
        "code": "2000000203430",
        "name_ru": "Баллистическая маска Wiley X Nerve, черная оправа, 2 линзы: Smoke Grey и Clear, оригинал",
        "name_uk": "Балістична маска Wiley X Nerve, чорна оправа, 2 лінзи: Smoke Grey і Clear, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2473,7 +2473,7 @@
        "code": "2000000203324",
        "name_ru": "Баллистические очки Wiley X Saber Advanced, оливковая оправа, 3 линзы: Smoke Grey, Clear, Light Rust, оригинал",
        "name_uk": "Балістичні окуляри Wiley X Saber Advanced, оливкова оправа, 3 лінзи: Smoke Grey, Clear, Light Rust, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2499,7 +2499,7 @@
        "code": "2000000203379",
        "name_ru": "Баллистические очки Wiley X Saber Advanced, черные, 3 линзы: Smoke Grey, Light Rust, Vermillion, оригинал",
        "name_uk": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, 3 лінзи: Smoke Grey, Light Rust, Vermillion, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2525,7 +2525,7 @@
        "code": "7700000028273",
        "name_ru": "Баллистические тактические очки Wiley X Valor, черная оправа, 2 линзы: Smoke Grey и Clear, оригинал",
        "name_uk": "Балістичні тактичні окуляри Wiley X Valor, чорна оправа, 2 лінзи: Smoke Grey і Clear, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2551,7 +2551,7 @@
        "code": "7700000026477",
        "name_ru": "Двухточечный оружейный ремень Viking Tactics Wide Padded Sling Upgrade с накладкой, Coyote Brown, оригинал",
        "name_uk": "Двоточковий збройовий ремінь Viking Tactics Wide Padded Sling Upgrade з м'якою накладкою, Coyote Brown, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2577,7 +2577,7 @@
        "code": "2000000097008",
        "name_ru": "Двухточечный оружейный ремень Viking Tactics Back Pack Sling для ношения за спиной, мультикам, оригинал",
        "name_uk": "Двоточковий збройовий ремінь Viking Tactics Back Pack Sling для носіння за спиною, мультикам, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2603,7 +2603,7 @@
        "code": "2000000104300",
        "name_ru": "Ремень для охотничьего ружья Blue Force Gear Hunting Sling с антабками в комплекте, черный, оригинал",
        "name_uk": "Ремінь для мисливської рушниці Blue Force Gear Hunting Sling з антабками в комплекті, чорний, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2629,7 +2629,7 @@
        "code": "2000000080277",
        "name_ru": "Двухточечный оружейный ремень Blue Force Gear Vickers ONE Sling с быстрой регулировкой, Coyote Brown, оригинал",
        "name_uk": "Двоточковий збройовий ремінь Blue Force Gear Vickers ONE Sling зі швидким регулюванням, Coyote Brown, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2655,7 +2655,7 @@
        "code": "2000000080321",
        "name_ru": "Одноточечный оружейный ремень Blue Force Gear UDC Padded Bungee с амортизатором, мультикам, оригинал",
        "name_uk": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором і накладкою, мультикам, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2670,7 +2670,7 @@
        "code": "2000000080314",
        "name_ru": "Одноточечный оружейный ремень Blue Force Gear UDC Padded Bungee с амортизатором, Coyote Brown, оригинал",
        "name_uk": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором і накладкою, Coyote Brown, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2685,7 +2685,7 @@
        "code": "2000000144207",
        "name_ru": "Одноточечный оружейный ремень Blue Force Gear UDC Padded Bungee с амортизатором и накладкой, черный, оригинал",
        "name_uk": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором і накладкою, чорний, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2711,7 +2711,7 @@
        "code": "2000000144238",
        "name_ru": "Двухточечный оружейный ремень Blue Force Gear GMT Sling 1,25\" с быстрой регулировкой, мультикам, оригинал",
        "name_uk": "Двоточковий збройовий ремінь Blue Force Gear GMT Sling 1,25\" зі швидким регулюванням, мультикам, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2737,7 +2737,7 @@
        "code": "2000000097039",
        "name_ru": "Двухточечный оружейный ремень Viking Tactics Street Fighter Sling, складной, мультикам, оригинал",
        "name_uk": "Двоточковий збройовий ремінь Viking Tactics Street Fighter Sling, складаний, мультикам, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2763,7 +2763,7 @@
        "code": "2000000236315",
        "name_ru": "Двухточечный ремень Viking Tactics Sling No Pad Upgrade, металлические пряжки, Coyote Brown, оригинал",
        "name_uk": "Двоточковий збройовий ремінь Viking Tactics Sling Upgrade з металевими пряжками, без накладки, Coyote Brown, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2790,7 +2790,7 @@
        "code": "2000000123622",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, S/L, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, S/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2806,7 +2806,7 @@
        "code": "2000000123530",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, S/R, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, S/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2822,7 +2822,7 @@
        "code": "2000000123660",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, L/L, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2838,7 +2838,7 @@
        "code": "2000000123684",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XL/L, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XL/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2854,7 +2854,7 @@
        "code": "2000000181028",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XS/R, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XS/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2870,7 +2870,7 @@
        "code": "2000000123653",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, L/R, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2886,7 +2886,7 @@
        "code": "2000000123646",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, M/L, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, M/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2902,7 +2902,7 @@
        "code": "2000000181011",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XS/S, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XS/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2918,7 +2918,7 @@
        "code": "2000000123639",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, M/R, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2934,7 +2934,7 @@
        "code": "2000000123677",
        "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XL/R, оригинал",
        "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XL/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -2960,7 +2960,7 @@
        "code": "7700000012012",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, M/R, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2975,7 +2975,7 @@
        "code": "2000000249469",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, S/S, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, S/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -2990,7 +2990,7 @@
        "code": "7700000012029",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, M/L, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, M/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3005,7 +3005,7 @@
        "code": "7700000012050",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, L/L, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3020,7 +3020,7 @@
        "code": "7700000011985",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, S/R, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, S/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3035,7 +3035,7 @@
        "code": "7700000012043",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, L/R, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3050,7 +3050,7 @@
        "code": "2000000242767",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, S/L, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, S/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3065,7 +3065,7 @@
        "code": "2000000256535",
        "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, XL/L, оригинал",
        "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, XL/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3092,7 +3092,7 @@
        "code": "2000000172217",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, S/L, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, S/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3108,7 +3108,7 @@
        "code": "2000000172200",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, S/R, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, S/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3124,7 +3124,7 @@
        "code": "2000000172262",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, XL/R, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, XL/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3140,7 +3140,7 @@
        "code": "2000000172279",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, XL/L, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, XL/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3156,7 +3156,7 @@
        "code": "2000000172224",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, M/L, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, M/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3172,7 +3172,7 @@
        "code": "2000000172255",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, L/L, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3188,7 +3188,7 @@
        "code": "2000000172248",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, L/R, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3204,7 +3204,7 @@
        "code": "2000000172231",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, M/R, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3220,7 +3220,7 @@
        "code": "2000000187730",
        "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, S/S, оригинал",
        "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, S/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3247,7 +3247,7 @@
        "code": "2000000222813",
        "name_ru": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армии США, Scorpion W2 (OCP), L/R, оригинал",
        "name_uk": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армії США, Scorpion W2 (OCP), L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3263,7 +3263,7 @@
        "code": "2000000250281",
        "name_ru": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армии США, Scorpion W2 (OCP), L/L, оригинал",
        "name_uk": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армії США, Scorpion W2 (OCP), L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3289,7 +3289,7 @@
        "code": "2000000004921",
        "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, M/R, оригинал",
        "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3304,7 +3304,7 @@
        "code": "2000000249537",
        "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, L/R, оригинал",
        "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3319,7 +3319,7 @@
        "code": "2000000043463",
        "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, S/R, оригинал",
        "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, S/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3334,7 +3334,7 @@
        "code": "2000000249520",
        "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, L/L, оригинал",
        "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3349,7 +3349,7 @@
        "code": "2000000058665",
        "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, M/L, оригинал",
        "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, M/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3376,7 +3376,7 @@
        "code": "2000000172330",
        "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, S/L, оригинал",
        "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, S/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3392,7 +3392,7 @@
        "code": "2000000172361",
        "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, XL/L, оригинал",
        "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, XL/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3408,7 +3408,7 @@
        "code": "2000000197265",
        "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, M/R, оригинал",
        "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3424,7 +3424,7 @@
        "code": "2000000172347",
        "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, L/L, оригинал",
        "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3440,7 +3440,7 @@
        "code": "2000000256702",
        "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, XS/S, оригинал",
        "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, XS/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3466,7 +3466,7 @@
        "code": "2000000174075",
        "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, M/R, оригинал",
        "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3481,7 +3481,7 @@
        "code": "2000000213927",
        "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, M/S, оригинал",
        "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, M/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3496,7 +3496,7 @@
        "code": "7700000025784",
        "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, L/R, оригинал",
        "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3511,7 +3511,7 @@
        "code": "2000000256450",
        "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, XS/S, оригинал",
        "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, XS/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3526,7 +3526,7 @@
        "code": "2000000256443",
        "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, S/S, оригинал",
        "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, S/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3541,7 +3541,7 @@
        "code": "2000000224824",
        "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, L/S, оригинал",
        "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, L/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3568,7 +3568,7 @@
        "code": "2000000123004",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, L/L, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, L/L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3584,7 +3584,7 @@
        "code": "2000000202877",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, XS/R, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, XS/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3600,7 +3600,7 @@
        "code": "2000000123080",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, L/R, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, L/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3616,7 +3616,7 @@
        "code": "2000000202860",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, XS/S, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, XS/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3632,7 +3632,7 @@
        "code": "2000000122984",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, S/R, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, S/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3648,7 +3648,7 @@
        "code": "2000000123097",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, XL/R, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, XL/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3664,7 +3664,7 @@
        "code": "2000000177205",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, S/S, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, S/S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3680,7 +3680,7 @@
        "code": "2000000123066",
        "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, M/R, оригинал",
        "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, M/R, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3707,7 +3707,7 @@
        "code": "2000000119823",
        "name_ru": "Утепленная тактическая куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, L, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3723,7 +3723,7 @@
        "code": "2000000119816",
        "name_ru": "Утепленная тактическая куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, M, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, M, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3739,7 +3739,7 @@
        "code": "2000000154978",
        "name_ru": "Утепленная тактическая куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, S, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3766,7 +3766,7 @@
        "code": "2000000109879",
        "name_ru": "Утепленная тактическая куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, M, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, M, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3782,7 +3782,7 @@
        "code": "2000000109886",
        "name_ru": "Утепленная тактическая куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, L, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3798,7 +3798,7 @@
        "code": "2000000119724",
        "name_ru": "Утепленная тактическая куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, S, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3825,7 +3825,7 @@
        "code": "2000000154305",
        "name_ru": "Зимняя тактическая куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, M, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, M, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3841,7 +3841,7 @@
        "code": "2000000154312",
        "name_ru": "Зимняя тактическая куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, L, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3868,7 +3868,7 @@
        "code": "2000000117270",
        "name_ru": "Зимняя тактическая куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, M, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, M, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3884,7 +3884,7 @@
        "code": "2000000117287",
        "name_ru": "Зимняя тактическая куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, L, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3911,7 +3911,7 @@
        "code": "2000000154367",
        "name_ru": "Утепленная тактическая куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, L, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3927,7 +3927,7 @@
        "code": "2000000154350",
        "name_ru": "Утепленная тактическая куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, M, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, M, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3943,7 +3943,7 @@
        "code": "2000000154374",
        "name_ru": "Утепленная тактическая куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, XL, оригинал",
        "name_uk": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, XL, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -3970,7 +3970,7 @@
        "code": "2000000154411",
        "name_ru": "Зимняя тактическая куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, L, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -3986,7 +3986,7 @@
        "code": "2000000154428",
        "name_ru": "Зимняя тактическая куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, XL, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, XL, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -4013,7 +4013,7 @@
        "code": "2000000119670",
        "name_ru": "Зимняя тактическая куртка Snugpak SJ9 Softie WGTE, мультикам, комфорт до −10 °C, L, оригинал",
        "name_uk": "Зимова тактична куртка Snugpak SJ9 Softie WGTE, мультикам, комфорт до −10 °C, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -4040,7 +4040,7 @@
        "code": "2000000187563",
        "name_ru": "Утепленные тактические штаны Snugpak Parallax WGTE на подтяжках, мультикам, комфорт до −5 °C, M, оригинал",
        "name_uk": "Утеплені тактичні штани Snugpak Parallax WGTE на підтяжках, мультикам, комфорт до −5 °C, M, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
