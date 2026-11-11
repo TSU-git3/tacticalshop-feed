@@ -1402,6 +1402,555 @@
      ]
     }
    }
+  },
+  "ear-razor-slim": {
+   "url": "/aktyvnye-naushnyky-walkers-razor-slim-electronic-muffs/",
+   "name_ua": "Walker's Razor Slim",
+   "brand": "Walker's",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000027920": {
+     "size": "DE",
+     "label": "DE",
+     "price": 3375,
+     "price_fixed": 3375,
+     "prom": [
+      {
+       "uid": "3270707847",
+       "ident": "BAL-2000000027920",
+       "code": "GWP-RSEM-FDE",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim, койот (FDE), NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim, койот (FDE), NRR 23 дБ, оригінал",
+       "in_csv": true
+      }
+     ]
+    },
+    "2000000030821": {
+     "size": "Multicam",
+     "label": "Multicam",
+     "price": 4050,
+     "price_fixed": 4050,
+     "prom": [
+      {
+       "uid": "1816808241",
+       "ident": "1816808241",
+       "code": "GWP-RSEM-MCC",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim, мультикам (Multicam Green), NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim, мультикам (Multicam Green), NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000033532": {
+     "size": "Чорний",
+     "label": "Чорний",
+     "price": 3600,
+     "price_fixed": 3600,
+     "prom": [
+      {
+       "uid": "1667021197",
+       "ident": "1667021197",
+       "code": "GWP-RSEM",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim, черные, NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim, чорні, NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000111285": {
+     "size": "Коричневий",
+     "label": "Коричневий",
+     "price": 3375,
+     "price_fixed": 3375,
+     "prom": [
+      {
+       "uid": "3270707848",
+       "ident": "BAL-2000000111285",
+       "code": "GWP-RSEM-BB",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim, коричневые (Battle Brown), NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim, коричневі (Battle Brown), NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000132396": {
+     "size": "Multicam Black",
+     "label": "Multicam Black",
+     "price": 3735,
+     "price_fixed": 3735,
+     "prom": [
+      {
+       "uid": "3270707849",
+       "ident": "BAL-2000000132396",
+       "code": "GWP-RSEM-MCCG",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim, Multicam Black, NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim, Multicam Black, NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-razor-quad": {
+   "url": "/aktyvnye-naushnyky-walkers-razor-slim-quad-electronic-muffs/",
+   "name_ua": "Walker's Razor Slim Quad",
+   "brand": "Walker's",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000091549": {
+     "size": "Camouflage",
+     "label": "Camouflage",
+     "price": 4500,
+     "price_fixed": 4500,
+     "prom": [
+      {
+       "uid": "1801739039",
+       "ident": "1801739039",
+       "code": "GWP-RSEQM-CMO",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim Quad, 4 микрофона, Realtree Xtra, NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim Quad, 4 мікрофони, Realtree Xtra, NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-razor-punisher": {
+   "url": "/aktyvnye-naushnyky-walkers-razor-slim-electronic-muffs-punisher/",
+   "name_ua": "Walker's Razor Slim Punisher",
+   "brand": "Walker's",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000125671": {
+     "size": "Чорний",
+     "label": "Чорний",
+     "price": 4050,
+     "price_fixed": 4050,
+     "prom": [
+      {
+       "uid": "3270707850",
+       "ident": "BAL-2000000125671",
+       "code": "GWP-RSEMFS-PUN",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim Punisher, черные, NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim Punisher, чорні, NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-razor-rechargeable": {
+   "url": "/aktyvni-navushnyky-walkers-razor-rechargeable/",
+   "name_ua": "Walker's Razor Rechargeable",
+   "brand": "Walker's",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000162232": {
+     "size": "Чорний",
+     "label": "Чорний",
+     "price": 4500,
+     "price_fixed": 4500,
+     "prom": [
+      {
+       "uid": "3270707851",
+       "ident": "BAL-2000000162232",
+       "code": "GWP-RSEMRC",
+       "name_ru": "Активные тактические наушники Walker's Razor Rechargeable с аккумулятором, черные, NRR 21 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Rechargeable з акумулятором, чорні, NRR 21 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-razor-patriot": {
+   "url": "/aktyvnye-naushnyky-walkers-razor-patriot-series-slim-electronic-muffs/",
+   "name_ua": "Walker's Razor Patriot",
+   "brand": "Walker's",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000027913": {
+     "size": "Olive Drab",
+     "label": "Olive Drab",
+     "price": 4050,
+     "price_fixed": 4599,
+     "prom": [
+      {
+       "uid": "3270707852",
+       "ident": "BAL-2000000027913",
+       "code": "GWP-RSEMPAT-ODG",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim Patriot, олива (OD Green), NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim Patriot, олива (OD Green), NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000041469": {
+     "size": "DE",
+     "label": "DE",
+     "price": 4050,
+     "price_fixed": 4899,
+     "prom": [
+      {
+       "uid": "1695296626",
+       "ident": "",
+       "code": "GWP-RSEMPAT-FDE",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim Patriot, койот (FDE), NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim Patriot, койот (FDE), NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000117324": {
+     "size": "Чорний",
+     "label": "Чорний",
+     "price": 4050,
+     "price_fixed": 4199,
+     "prom": [
+      {
+       "uid": "1682664676",
+       "ident": "",
+       "code": "GWP-RSEMPAT",
+       "name_ru": "Активные тактические наушники Walker's Razor Slim Patriot, черные, NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Slim Patriot, чорні, NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-impact-mc": {
+   "url": "/aktyvnye-naushnyky-howard-impact-sport-multicam/",
+   "name_ua": "Howard Leight Impact Sport Multicam",
+   "brand": "Howard Leight",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000027661": {
+     "size": "Multicam",
+     "label": "Multicam",
+     "price": 4500,
+     "price_fixed": 4500,
+     "prom": [
+      {
+       "uid": "3270707854",
+       "ident": "BAL-2000000027661",
+       "code": "R-02526",
+       "name_ru": "Активные тактические наушники Howard Leight Impact Sport, мультикам (MultiCam), NRR 22 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Howard Leight Impact Sport, мультикам (MultiCam), NRR 22 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-impact": {
+   "url": "/aktyvnye-naushnyky-howard-impact-sport/",
+   "name_ua": "Howard Leight Impact Sport olive",
+   "brand": "Howard Leight",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000022103": {
+     "size": "Olive",
+     "label": "Olive",
+     "price": 2925,
+     "price_fixed": 3299,
+     "prom": [
+      {
+       "uid": "3270707855",
+       "ident": "BAL-7700000022103",
+       "code": "R-01526",
+       "name_ru": "Активные тактические наушники Howard Leight Impact Sport, олива, NRR 22 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Howard Leight Impact Sport, олива, NRR 22 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-sordin-t2": {
+   "url": "/aktyvni-navushnyky-sordin-suprema-t2/",
+   "name_ua": "Sordin Supreme T2",
+   "brand": "Sordin",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000225067": {
+     "size": "Olive",
+     "label": "Olive",
+     "price": 27900,
+     "price_fixed": 27900,
+     "prom": [
+      {
+       "uid": "3270707856",
+       "ident": "BAL-2000000225067",
+       "code": "303006-10P",
+       "name_ru": "Активные тактические наушники Sordin Supreme T2, кожаное оголовье, зеленые, SNR 29 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Sordin Supreme T2, шкіряне оголів'я, зелені, SNR 29 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-sordin-neckband": {
+   "url": "/aktyvni-navushnyky-msa-sordin-supreme-pro-x-neckband/",
+   "name_ua": "Sordin Supreme Pro-X Neckband",
+   "brand": "Sordin",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000196411": {
+     "size": "Multicam",
+     "label": "Multicam",
+     "price": 17100,
+     "price_fixed": 17799,
+     "prom": [
+      {
+       "uid": "3270707857",
+       "ident": "BAL-2000000196411",
+       "code": "76302-X-06-S",
+       "name_ru": "Активные тактические наушники Sordin Supreme Pro-X Neckband под шлем, камуфляж, SNR 24 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X Neckband під шолом, камуфляж, SNR 24 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000196404": {
+     "size": "Olive",
+     "label": "Olive",
+     "price": 16650,
+     "price_fixed": 16650,
+     "prom": [
+      {
+       "uid": "3270707858",
+       "ident": "BAL-2000000196404",
+       "code": "76302-X-S",
+       "name_ru": "Активные тактические наушники Sordin Supreme Pro-X Neckband под шлем, зеленые, SNR 24 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X Neckband під шолом, зелені, SNR 24 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-sordin-sfa": {
+   "url": "/navushnyky-msa-sordin-supreme-pro-x-sfa/",
+   "name_ua": "Sordin Supreme Pro-X SFA",
+   "brand": "Sordin",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000196466": {
+     "size": "Olive",
+     "label": "Olive",
+     "price": 20205,
+     "price_fixed": 21099,
+     "prom": [
+      {
+       "uid": "3270707859",
+       "ident": "BAL-2000000196466",
+       "code": "74502-06-S",
+       "name_ru": "Активные тактические наушники Sordin Supreme Pro-X SFA, кожаное оголовье, зеленые, SNR 31 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X SFA, шкіряне оголів'я, зелені, SNR 31 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-sordin-slim": {
+   "url": "/aktyvni-navushnyky-sordin-suprema-pro-x-slim/",
+   "name_ua": "Sordin Supreme Pro-X Slim",
+   "brand": "Sordin",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000210391": {
+     "size": "Olive",
+     "label": "Olive",
+     "price": 14175,
+     "price_fixed": 14199,
+     "prom": [
+      {
+       "uid": "3270707860",
+       "ident": "BAL-2000000210391",
+       "code": "74302-X/L-S",
+       "name_ru": "Активные тактические наушники Sordin Supreme Pro-X Slim, кожаное оголовье, зеленые, SNR 27 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X Slim, шкіряне оголів'я, зелені, SNR 27 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-sordin-prox": {
+   "url": "/naushnyky-msa-sordin-supreme-pro-x/",
+   "name_ua": "Sordin Supreme Pro-X",
+   "brand": "Sordin",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000100579": {
+     "size": "Olive",
+     "label": "Olive",
+     "price": 15525,
+     "price_fixed": 15525,
+     "prom": [
+      {
+       "uid": "3270707861",
+       "ident": "BAL-2000000100579",
+       "code": "75302-X-S",
+       "name_ru": "Активные тактические наушники Sordin Supreme Pro-X, зеленые, SNR 28 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X, зелені, SNR 28 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-sordin-milcc": {
+   "url": "/sordin-aktyvna-harnitura-msa-supreme-mil-cc/",
+   "name_ua": "Sordin Supreme MIL CC",
+   "brand": "Sordin",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000216713": {
+     "size": "Чорний",
+     "label": "Чорний",
+     "price": 27000,
+     "price_fixed": 27000,
+     "prom": [
+      {
+       "uid": "3270707862",
+       "ident": "BAL-2000000216713",
+       "code": "75332-S",
+       "name_ru": "Активные тактические наушники с микрофоном Sordin Supreme MIL CC, черные, SNR 26 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники з мікрофоном Sordin Supreme MIL CC, чорні, SNR 26 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-tactigrip": {
+   "url": "/aktyvnye-naushnyky-walkers-razor-tacti-grip-series/",
+   "name_ua": "Walker's Razor Tacti-Grip",
+   "brand": "Walker's",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000088334": {
+     "size": "Multicam Black",
+     "label": "Multicam Black",
+     "price": 4050,
+     "price_fixed": 4050,
+     "prom": [
+      {
+       "uid": "1659667922",
+       "ident": "1659667922",
+       "code": "GWP-RSEMRH-MCCG",
+       "name_ru": "Активные тактические наушники Walker's Razor Tacti-Grip, Multicam Black, NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Tacti-Grip, Multicam Black, NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000144115": {
+     "size": "DE",
+     "label": "DE",
+     "price": 4050,
+     "price_fixed": 4050,
+     "prom": [
+      {
+       "uid": "2073987039",
+       "ident": "2073987039",
+       "code": "GWP-RSEMRH-MFDE",
+       "name_ru": "Активные тактические наушники Walker's Razor Tacti-Grip, койот (FDE), NRR 23 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники Walker's Razor Tacti-Grip, койот (FDE), NRR 23 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ear-earmor-m32": {
+   "url": "/aktyvna-harnitura-earmor-m32-plus/",
+   "name_ua": "Earmor M32 PLUS",
+   "brand": "Earmor",
+   "line": "earmuffs",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000204635": {
+     "size": "Foliage Green",
+     "label": "Foliage Green",
+     "price": 3555,
+     "price_fixed": 3699,
+     "prom": [
+      {
+       "uid": "3270707863",
+       "ident": "BAL-2000000204635",
+       "code": "M32PLUS-FG",
+       "name_ru": "Активные тактические наушники с микрофоном Earmor M32 PLUS, зеленые (Foliage Green), NRR 22 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники з мікрофоном Earmor M32 PLUS, зелені (Foliage Green), NRR 22 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000244730": {
+     "size": "Coyote Brown",
+     "label": "Coyote Brown",
+     "price": 3555,
+     "price_fixed": 3555,
+     "prom": [
+      {
+       "uid": "3270707864",
+       "ident": "BAL-2000000244730",
+       "code": "M32PLUS-CB",
+       "name_ru": "Активные тактические наушники с микрофоном Earmor M32 PLUS, койот (Coyote Brown), NRR 22 дБ, оригинал",
+       "name_uk": "Активні тактичні навушники з мікрофоном Earmor M32 PLUS, койот (Coyote Brown), NRR 22 дБ, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
   }
  }
 }

@@ -19,6 +19,13 @@ also shows a black frame that is not on Prom (it is reported under «not on Prom
 («in_xml»: false) and NOT in Rozetka. Listings enter prom/ballistic_stock.csv only with «in_csv»: true (one-row link test
 first: p2246116560, 11 Nov 2026).
 
+Active earmuffs (owner, 11 Nov 2026): 15 Ballistic pages (catalog keys ear-*), 24 articles, 24 Prom listings (Walker's, Howard
+Leight, Sordin, Earmor; same «prom» structure and selling-price rule as ESS). One Walker's Razor Slim page carries 7 colour
+swatches (FDE, Multicam, black, Battle Brown, Multicam Black + sold-out Kryptek 2000000027937 and pink 2000000050874 — those two
+show under «not on Prom», expected); the Tacti-Grip page also shows black 2000000111414 (1 pc, not on Prom — expected). Patriot,
+Pro-X Neckband and M32 PLUS are one page each with swatches. Not in stock.xml, not in Rozetka. One-row link test: p3270707847
+(Razor Slim FDE), pushed 11 Nov 2026 ~15:00 Kyiv; the other 23 get «in_csv»: true after Prom's next pull is checked.
+
 Schedule (owner, 25 Oct 2026: same time frame as the Kiborg/Militex checks): starts 03:35, 07:35, 11:35, 15:35, 19:35,
 23:35 Kyiv — 8 minutes after the Kiborg BIG/SMALL start (xx:27), which usually pushes by ~xx:30 — and MUST be pushed by
 04:00, 08:00, 12:00, 16:00, 20:00, 00:00 (the same delivery times as Kiborg). If the push is rejected, follow step 6
