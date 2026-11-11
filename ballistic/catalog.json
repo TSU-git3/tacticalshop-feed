@@ -1,5 +1,5 @@
 {
- "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings).",
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings). | Batch 3 (owner, 11 Nov 2026): Revision / Wiley X glasses, Viking Tactics / Blue Force Gear slings, ECWCS Level 5/6, Snugpak — keys b3-*, one product per Ballistic page; glasses sizes Small/Large of Sawfly clear and Large of StingerHawk clear+amber are separate Ballistic pages (b3-1s, b3-1l, b3-5l); UDC colours on one page (b3-24). Snugpak shows no РРЦ: size «price» = Ballistic price, «price_fixed» = Prom-median price. in_xml false, not in Rozetka.",
  "products": {
   "14261": {
    "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
@@ -1947,6 +1947,2100 @@
        "name_ru": "Активные тактические наушники с микрофоном Earmor M32 PLUS, койот (Coyote Brown), NRR 22 дБ, оригинал",
        "name_uk": "Активні тактичні навушники з мікрофоном Earmor M32 PLUS, койот (Coyote Brown), NRR 22 дБ, оригінал",
        "in_csv": true
+      }
+     ]
+    }
+   }
+  },
+  "b3-1l": {
+   "url": "/ochky-s-prozrachnoi-lynzoi-revision-sawfly/15053/",
+   "name_ua": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, оригін",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612013,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000130873": {
+     "size": "Large",
+     "label": "Large",
+     "price": 2700,
+     "prom": [
+      {
+       "uid": "3271735765",
+       "ident": "BAL-2000000130873",
+       "code": "2000000130873",
+       "name_ru": "Баллистические тактические очки Revision Sawfly, черная оправа, прозрачная линза, Large, оригинал",
+       "name_uk": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, Large, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-1": {
+   "url": "/ochky-s-prozrachnoi-lynzoi-revision-sawfly/",
+   "name_ua": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, оригін",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612013,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000022479": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 2700,
+     "prom": [
+      {
+       "uid": "3271735766",
+       "ident": "BAL-7700000022479",
+       "code": "7700000022479",
+       "name_ru": "Баллистические тактические очки Revision Sawfly, черная оправа, прозрачная линза, Regular, оригинал",
+       "name_uk": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, Regular, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-1s": {
+   "url": "/okuliary-z-prozoroiu-linzoiu-revision-sawfly/",
+   "name_ua": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, оригін",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612013,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000141039": {
+     "size": "Small",
+     "label": "Small",
+     "price": 2700,
+     "prom": [
+      {
+       "uid": "3271735767",
+       "ident": "BAL-2000000141039",
+       "code": "2000000141039",
+       "name_ru": "Баллистические тактические очки Revision Sawfly, черная оправа, прозрачная линза, Small, оригинал",
+       "name_uk": "Балістичні тактичні окуляри Revision Sawfly, чорна оправа, прозора лінза, Small, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-2": {
+   "url": "/copy-zakhysna-maska-revision-desert-locust-z-prozoroiu-linzoiu/15277/",
+   "name_ua": "Балістична маска Revision Desert Locust Essential, оправа Tan, 2 лінзи: прозора ",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000130781": {
+     "size": "-",
+     "label": "-",
+     "price": 4050,
+     "price_fixed": 4699,
+     "prom": [
+      {
+       "uid": "3271735768",
+       "ident": "BAL-2000000130781",
+       "code": "2000000130781",
+       "name_ru": "Баллистическая маска Revision Desert Locust Essential, оправа Tan, 2 линзы: прозрачная и дымчатая, оригинал",
+       "name_uk": "Балістична маска Revision Desert Locust Essential, оправа Tan, 2 лінзи: прозора і димчаста, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-3": {
+   "url": "/komplekt-zakhysnoi-masky-revision-desert-locust-deluxe-z-zhovtoiu-linzoiu/",
+   "name_ua": "Балістична маска Revision Desert Locust Deluxe, оправа Tan, 3 лінзи: прозора, ди",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000130897": {
+     "size": "-",
+     "label": "-",
+     "price": 5310,
+     "prom": [
+      {
+       "uid": "3271735769",
+       "ident": "BAL-2000000130897",
+       "code": "2000000130897",
+       "name_ru": "Баллистическая маска Revision Desert Locust Deluxe Tan, 3 линзы: прозрачная, дымчатая и желтая, оригинал",
+       "name_uk": "Балістична маска Revision Desert Locust Deluxe, оправа Tan, 3 лінзи: прозора, димчаста і жовта, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-4": {
+   "url": "/zashchytnaia-maska-revision-desert-locust-goggle-z-temnoiu-linzoiu/",
+   "name_ua": "Балістична маска Revision Desert Locust, оправа Tan, темна лінза, оригінал",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000083544": {
+     "size": "-",
+     "label": "-",
+     "price": 2340,
+     "prom": [
+      {
+       "uid": "3271735770",
+       "ident": "BAL-2000000083544",
+       "code": "2000000083544",
+       "name_ru": "Баллистическая маска Revision Desert Locust, оправа Tan, темная линза, оригинал",
+       "name_uk": "Балістична маска Revision Desert Locust, оправа Tan, темна лінза, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-5": {
+   "url": "/balistychni-okuliary-revision-stingerhawk-z-prozorymy-y-burshtynovymy-linzamy/",
+   "name_ua": "Балістичні тактичні окуляри Revision StingerHawk, чорна оправа, 2 лінзи: прозора",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612014,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000130224": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 7200,
+     "prom": [
+      {
+       "uid": "3271735771",
+       "ident": "BAL-2000000130224",
+       "code": "2000000130224",
+       "name_ru": "Баллистические очки Revision StingerHawk, черная оправа, 2 линзы: прозрачная и янтарная, Regular, оригинал",
+       "name_uk": "Балістичні тактичні окуляри Revision StingerHawk, чорна оправа, 2 лінзи: прозора і бурштинова, Regular, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-5l": {
+   "url": "/balistychni-okuliary-revision-stingerhawk-z-prozorymy-y-burshtynovymy-linzamy/15217/",
+   "name_ua": "Балістичні тактичні окуляри Revision StingerHawk, чорна оправа, 2 лінзи: прозора",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612014,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000130675": {
+     "size": "Large",
+     "label": "Large",
+     "price": 6975,
+     "price_fixed": 7200,
+     "prom": [
+      {
+       "uid": "3271735772",
+       "ident": "BAL-2000000130675",
+       "code": "2000000130675",
+       "name_ru": "Баллистические очки Revision StingerHawk, черная оправа, 2 линзы: прозрачная и янтарная, Large, оригинал",
+       "name_uk": "Балістичні тактичні окуляри Revision StingerHawk, чорна оправа, 2 лінзи: прозора і бурштинова, Large, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-6": {
+   "url": "/komplekt-balistychnykh-okuliariv-revision-sawfly-max-wrap-eyewear-deluxe-yellow-kit/",
+   "name_ua": "Балістичні окуляри Revision Sawfly Max-Wrap Deluxe Yellow Kit, розмір Small, 3 л",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612015,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000141695": {
+     "size": "Small",
+     "label": "Small",
+     "price": 5175,
+     "prom": [
+      {
+       "uid": "3271735773",
+       "ident": "BAL-2000000141695",
+       "code": "2000000141695",
+       "name_ru": "Баллистические очки Revision Sawfly Max-Wrap Deluxe Yellow Kit, Small, 3 линзы, оригинал",
+       "name_uk": "Балістичні окуляри Revision Sawfly Max-Wrap Deluxe Yellow Kit, розмір Small, 3 лінзи: прозора, димчаста і жовта, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-7": {
+   "url": "/komplekt-ballystycheskykh-ochkov-revision-stingerhawk-u.s.-military-kit-3ls/",
+   "name_ua": "Балістичні окуляри Revision StingerHawk U.S. Military Kit, чорна оправа, 3 лінзи",
+   "brand": "Revision",
+   "line": "b3-glasses",
+   "vg": 612016,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000021874": {
+     "size": "Regular",
+     "label": "Regular",
+     "price": 6300,
+     "prom": [
+      {
+       "uid": "3271735774",
+       "ident": "BAL-2000000021874",
+       "code": "2000000021874",
+       "name_ru": "Баллистические очки Revision StingerHawk US Military Kit, 3 линзы, Regular, оригинал",
+       "name_uk": "Балістичні окуляри Revision StingerHawk U.S. Military Kit, 3 лінзи: прозора, димчаста і Vermillion, Regular, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-8": {
+   "url": "/taktychni-okuliary-wiley-x-ozone-z-fotokhromnoiu-linzoiu/",
+   "name_ua": "Тактичні окуляри Wiley X Ozone з фотохромною лінзою, чорна оправа, оригінал",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000207728": {
+     "size": "-",
+     "label": "-",
+     "price": 7425,
+     "prom": [
+      {
+       "uid": "3271735775",
+       "ident": "BAL-2000000207728",
+       "code": "2000000207728",
+       "name_ru": "Тактические очки Wiley X Ozone с фотохромной линзой, черная оправа, оригинал",
+       "name_uk": "Тактичні окуляри Wiley X Ozone з фотохромною лінзою, чорна оправа, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-9": {
+   "url": "/balistychni-okuliary-wiley-x-saber-advanced-z-zhovtoiu-linzoiu/",
+   "name_ua": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, жовта лінза, оригінал",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203317": {
+     "size": "-",
+     "label": "-",
+     "price": 2925,
+     "prom": [
+      {
+       "uid": "3271735776",
+       "ident": "BAL-2000000203317",
+       "code": "2000000203317",
+       "name_ru": "Баллистические очки Wiley X Saber Advanced, черная оправа, желтая линза, оригинал",
+       "name_uk": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, жовта лінза, оригінал",
+       "in_csv": true
+      }
+     ]
+    }
+   }
+  },
+  "b3-10": {
+   "url": "/komplekt-zakhysnoi-masky-wiley-x-spear-z-smoke-clear-light-rust-dual-linzamy/",
+   "name_ua": "Балістична маска Wiley X Spear DUAL з подвійними лінзами, оправа Tan, 3 лінзи: S",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203423": {
+     "size": "-",
+     "label": "-",
+     "price": 8145,
+     "prom": [
+      {
+       "uid": "3271735777",
+       "ident": "BAL-2000000203423",
+       "code": "2000000203423",
+       "name_ru": "Баллистическая маска Wiley X Spear DUAL, оправа Tan, 3 двойные линзы: Smoke Grey, Clear, Light Rust, оригинал",
+       "name_uk": "Балістична маска Wiley X Spear DUAL з подвійними лінзами, оправа Tan, 3 лінзи: Smoke Grey, Clear, Light Rust, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-11": {
+   "url": "/komplekt-zakhysnoi-masky-wiley-x-spear-z-smoke-clear-light-rust-linzamy/",
+   "name_ua": "Балістична маска Wiley X Spear, оправа Tan, 3 лінзи: Smoke Grey, Clear, Light Ru",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203416": {
+     "size": "-",
+     "label": "-",
+     "price": 6750,
+     "price_fixed": 7399,
+     "prom": [
+      {
+       "uid": "3271735778",
+       "ident": "BAL-2000000203416",
+       "code": "2000000203416",
+       "name_ru": "Баллистическая маска Wiley X Spear, оправа Tan, 3 линзы: Smoke Grey, Clear, Light Rust, оригинал",
+       "name_uk": "Балістична маска Wiley X Spear, оправа Tan, 3 лінзи: Smoke Grey, Clear, Light Rust, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-12": {
+   "url": "/komplekt-taktychnykh-okuliariv-wiley-x-detection-z-5-linzamy/",
+   "name_ua": "Окуляри для стрільби Wiley X Detection, чорна оправа, 5 змінних лінз, оригінал",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203560": {
+     "size": "-",
+     "label": "-",
+     "price": 10125,
+     "price_fixed": 10899,
+     "prom": [
+      {
+       "uid": "3271735779",
+       "ident": "BAL-2000000203560",
+       "code": "2000000203560",
+       "name_ru": "Очки для стрельбы Wiley X Detection, черная оправа, 5 сменных линз, оригинал",
+       "name_uk": "Окуляри для стрільби Wiley X Detection, чорна оправа, 5 змінних лінз, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-13": {
+   "url": "/taktychni-okuliary-wiley-x-sierra/",
+   "name_ua": "Тактичні окуляри Wiley X Sierra зі знімними щитками, чорна оправа, темна лінза, ",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203393": {
+     "size": "-",
+     "label": "-",
+     "price": 7650,
+     "price_fixed": 7999,
+     "prom": [
+      {
+       "uid": "3271735780",
+       "ident": "BAL-2000000203393",
+       "code": "2000000203393",
+       "name_ru": "Тактические очки Wiley X Sierra со съемными щитками, черная оправа, темная линза, оригинал",
+       "name_uk": "Тактичні окуляри Wiley X Sierra зі знімними щитками, чорна оправа, темна лінза, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-14": {
+   "url": "/taktychni-okuliary-wiley-kh-recon-captivate-grey/",
+   "name_ua": "Тактичні окуляри Wiley X Recon зі знімними щитками, чорна оправа, лінза Captivat",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203386": {
+     "size": "-",
+     "label": "-",
+     "price": 7650,
+     "price_fixed": 7999,
+     "prom": [
+      {
+       "uid": "3271735781",
+       "ident": "BAL-2000000203386",
+       "code": "2000000203386",
+       "name_ru": "Тактические очки Wiley X Recon со съемными щитками, черная оправа, линза Captivate Grey, оригинал",
+       "name_uk": "Тактичні окуляри Wiley X Recon зі знімними щитками, чорна оправа, лінза Captivate Grey, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-15": {
+   "url": "/komplekt-balistychnykh-okuliariv-wiley-x-saber-advanced-z-smoke-grey-light-rust-linzamy/",
+   "name_ua": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, 2 лінзи: Smoke Grey і L",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203362": {
+     "size": "-",
+     "label": "-",
+     "price": 4005,
+     "prom": [
+      {
+       "uid": "3271735782",
+       "ident": "BAL-2000000203362",
+       "code": "2000000203362",
+       "name_ru": "Баллистические очки Wiley X Saber Advanced, черная оправа, 2 линзы: Smoke Grey и Light Rust, оригинал",
+       "name_uk": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, 2 лінзи: Smoke Grey і Light Rust, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-16": {
+   "url": "/komplekt-zakhysnoi-masky-wiley-x-nerve-z-dvoma-linzamy/",
+   "name_ua": "Балістична маска Wiley X Nerve, чорна оправа, 2 лінзи: Smoke Grey і Clear, оригі",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203430": {
+     "size": "-",
+     "label": "-",
+     "price": 5850,
+     "price_fixed": 6699,
+     "prom": [
+      {
+       "uid": "3271735783",
+       "ident": "BAL-2000000203430",
+       "code": "2000000203430",
+       "name_ru": "Баллистическая маска Wiley X Nerve, черная оправа, 2 линзы: Smoke Grey и Clear, оригинал",
+       "name_uk": "Балістична маска Wiley X Nerve, чорна оправа, 2 лінзи: Smoke Grey і Clear, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-17": {
+   "url": "/komplekt-balistychnykh-okuliariv-wiley-x-saber-advanced-z-smoke-grey-clear-light-rust-linzamy/",
+   "name_ua": "Балістичні окуляри Wiley X Saber Advanced, оливкова оправа, 3 лінзи: Smoke Grey,",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203324": {
+     "size": "-",
+     "label": "-",
+     "price": 4950,
+     "prom": [
+      {
+       "uid": "3271735784",
+       "ident": "BAL-2000000203324",
+       "code": "2000000203324",
+       "name_ru": "Баллистические очки Wiley X Saber Advanced, оливковая оправа, 3 линзы: Smoke Grey, Clear, Light Rust, оригинал",
+       "name_uk": "Балістичні окуляри Wiley X Saber Advanced, оливкова оправа, 3 лінзи: Smoke Grey, Clear, Light Rust, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-18": {
+   "url": "/komplekt-balistychnykh-okuliariv-wiley-x-saber-advanced-z-smoke-grey-light-rust-vermillion-linzamy/",
+   "name_ua": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, 3 лінзи: Smoke Grey, Li",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000203379": {
+     "size": "-",
+     "label": "-",
+     "price": 4950,
+     "prom": [
+      {
+       "uid": "3271735785",
+       "ident": "BAL-2000000203379",
+       "code": "2000000203379",
+       "name_ru": "Баллистические очки Wiley X Saber Advanced, черные, 3 линзы: Smoke Grey, Light Rust, Vermillion, оригинал",
+       "name_uk": "Балістичні окуляри Wiley X Saber Advanced, чорна оправа, 3 лінзи: Smoke Grey, Light Rust, Vermillion, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-19": {
+   "url": "/taktycheskye-ochky-wiley-x-valor-smoke-and-clear/",
+   "name_ua": "Балістичні тактичні окуляри Wiley X Valor, чорна оправа, 2 лінзи: Smoke Grey і C",
+   "brand": "Wiley X",
+   "line": "b3-glasses",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000028273": {
+     "size": "-",
+     "label": "-",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735786",
+       "ident": "BAL-7700000028273",
+       "code": "7700000028273",
+       "name_ru": "Баллистические тактические очки Wiley X Valor, черная оправа, 2 линзы: Smoke Grey и Clear, оригинал",
+       "name_uk": "Балістичні тактичні окуляри Wiley X Valor, чорна оправа, 2 лінзи: Smoke Grey і Clear, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-20": {
+   "url": "/oruzheinyi-remen-viking-tactics-wide-padded-sling-upgrade/2035/",
+   "name_ua": "Двоточковий збройовий ремінь Viking Tactics Wide Padded Sling Upgrade з м'якою н",
+   "brand": "Viking Tactics",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000026477": {
+     "size": "-",
+     "label": "-",
+     "price": 3375,
+     "prom": [
+      {
+       "uid": "3271735787",
+       "ident": "BAL-7700000026477",
+       "code": "7700000026477",
+       "name_ru": "Двухточечный оружейный ремень Viking Tactics Wide Padded Sling Upgrade с накладкой, Coyote Brown, оригинал",
+       "name_uk": "Двоточковий збройовий ремінь Viking Tactics Wide Padded Sling Upgrade з м'якою накладкою, Coyote Brown, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-21": {
+   "url": "/oruzheinyi-remen-viking-tactics-back-pack-sling/12138/",
+   "name_ua": "Двоточковий збройовий ремінь Viking Tactics Back Pack Sling для носіння за спино",
+   "brand": "Viking Tactics",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000097008": {
+     "size": "-",
+     "label": "-",
+     "price": 3555,
+     "prom": [
+      {
+       "uid": "3271735788",
+       "ident": "BAL-2000000097008",
+       "code": "2000000097008",
+       "name_ru": "Двухточечный оружейный ремень Viking Tactics Back Pack Sling для ношения за спиной, мультикам, оригинал",
+       "name_uk": "Двоточковий збройовий ремінь Viking Tactics Back Pack Sling для носіння за спиною, мультикам, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-22": {
+   "url": "/remen-dlia-okhotnycheho-ruzhia-blue-force-gear-hunting-sling/",
+   "name_ua": "Ремінь для мисливської рушниці Blue Force Gear Hunting Sling з антабками в компл",
+   "brand": "Blue Force Gear",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000104300": {
+     "size": "-",
+     "label": "-",
+     "price": 2340,
+     "prom": [
+      {
+       "uid": "3271735789",
+       "ident": "BAL-2000000104300",
+       "code": "2000000104300",
+       "name_ru": "Ремень для охотничьего ружья Blue Force Gear Hunting Sling с антабками в комплекте, черный, оригинал",
+       "name_uk": "Ремінь для мисливської рушниці Blue Force Gear Hunting Sling з антабками в комплекті, чорний, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-23": {
+   "url": "/oruzheinyi-remen-blue-force-gear-vickers-one-sling/10540/",
+   "name_ua": "Двоточковий збройовий ремінь Blue Force Gear Vickers ONE Sling зі швидким регулю",
+   "brand": "Blue Force Gear",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000080277": {
+     "size": "-",
+     "label": "-",
+     "price": 2700,
+     "prom": [
+      {
+       "uid": "3271735790",
+       "ident": "BAL-2000000080277",
+       "code": "2000000080277",
+       "name_ru": "Двухточечный оружейный ремень Blue Force Gear Vickers ONE Sling с быстрой регулировкой, Coyote Brown, оригинал",
+       "name_uk": "Двоточковий збройовий ремінь Blue Force Gear Vickers ONE Sling зі швидким регулюванням, Coyote Brown, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-24": {
+   "url": "/oruzheinyi-odnotochechnyi-remen-blue-force-gear-udc-padded-bungee-single-point-sling/10542/",
+   "name_ua": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором ",
+   "brand": "Blue Force Gear",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000080321": {
+     "size": "-",
+     "label": "-",
+     "price": 4320,
+     "prom": [
+      {
+       "uid": "3271735791",
+       "ident": "BAL-2000000080321",
+       "code": "2000000080321",
+       "name_ru": "Одноточечный оружейный ремень Blue Force Gear UDC Padded Bungee с амортизатором, мультикам, оригинал",
+       "name_uk": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором і накладкою, мультикам, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000080314": {
+     "size": "-",
+     "label": "-",
+     "price": 4320,
+     "prom": [
+      {
+       "uid": "3271735792",
+       "ident": "BAL-2000000080314",
+       "code": "2000000080314",
+       "name_ru": "Одноточечный оружейный ремень Blue Force Gear UDC Padded Bungee с амортизатором, Coyote Brown, оригинал",
+       "name_uk": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором і накладкою, Coyote Brown, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000144207": {
+     "size": "-",
+     "label": "-",
+     "price": 3375,
+     "prom": [
+      {
+       "uid": "3271735793",
+       "ident": "BAL-2000000144207",
+       "code": "2000000144207",
+       "name_ru": "Одноточечный оружейный ремень Blue Force Gear UDC Padded Bungee с амортизатором и накладкой, черный, оригинал",
+       "name_uk": "Одноточковий збройовий ремінь Blue Force Gear UDC Padded Bungee з амортизатором і накладкою, чорний, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-27": {
+   "url": "/zbroiovyi-remin-blue-force-gear-gmt-sling-1.25/",
+   "name_ua": "Двоточковий збройовий ремінь Blue Force Gear GMT Sling 1,25\" зі швидким регулюва",
+   "brand": "Blue Force Gear",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000144238": {
+     "size": "-",
+     "label": "-",
+     "price": 2700,
+     "prom": [
+      {
+       "uid": "3271735794",
+       "ident": "BAL-2000000144238",
+       "code": "2000000144238",
+       "name_ru": "Двухточечный оружейный ремень Blue Force Gear GMT Sling 1,25\" с быстрой регулировкой, мультикам, оригинал",
+       "name_uk": "Двоточковий збройовий ремінь Blue Force Gear GMT Sling 1,25\" зі швидким регулюванням, мультикам, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-28": {
+   "url": "/oruzheinyi-remen-viking-tactics-street-fighter-sling/",
+   "name_ua": "Двоточковий збройовий ремінь Viking Tactics Street Fighter Sling, складаний, мул",
+   "brand": "Viking Tactics",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000097039": {
+     "size": "-",
+     "label": "-",
+     "price": 2925,
+     "prom": [
+      {
+       "uid": "3271735795",
+       "ident": "BAL-2000000097039",
+       "code": "2000000097039",
+       "name_ru": "Двухточечный оружейный ремень Viking Tactics Street Fighter Sling, складной, мультикам, оригинал",
+       "name_uk": "Двоточковий збройовий ремінь Viking Tactics Street Fighter Sling, складаний, мультикам, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-29": {
+   "url": "/zbroiovyi-remin-viking-tactics-sling-no-pad-upgrade-z-metalevymy-priazhkamy/",
+   "name_ua": "Двоточковий збройовий ремінь Viking Tactics Sling Upgrade з металевими пряжками,",
+   "brand": "Viking Tactics",
+   "line": "b3-slings",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000236315": {
+     "size": "-",
+     "label": "-",
+     "price": 2700,
+     "prom": [
+      {
+       "uid": "3271735796",
+       "ident": "BAL-2000000236315",
+       "code": "2000000236315",
+       "name_ru": "Двухточечный ремень Viking Tactics Sling No Pad Upgrade, металлические пряжки, Coyote Brown, оригинал",
+       "name_uk": "Двоточковий збройовий ремінь Viking Tactics Sling Upgrade з металевими пряжками, без накладки, Coyote Brown, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-30": {
+   "url": "/ecwcs-gen-iii-level-5-soft-shell-oryhinal-ssha-shtany-small-regular/",
+   "name_ua": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, ори",
+   "brand": "Tennier",
+   "line": "b3-ecwcs",
+   "vg": 612017,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000123622": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735797",
+       "ident": "BAL-2000000123622",
+       "code": "2000000123622",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, S/L, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, S/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123530": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735798",
+       "ident": "BAL-2000000123530",
+       "code": "2000000123530",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, S/R, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, S/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123660": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735799",
+       "ident": "BAL-2000000123660",
+       "code": "2000000123660",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, L/L, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123684": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735800",
+       "ident": "BAL-2000000123684",
+       "code": "2000000123684",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XL/L, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XL/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000181028": {
+     "size": "XS/R",
+     "label": "X-Small Regular",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735801",
+       "ident": "BAL-2000000181028",
+       "code": "2000000181028",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XS/R, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XS/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123653": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735802",
+       "ident": "BAL-2000000123653",
+       "code": "2000000123653",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, L/R, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123646": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735803",
+       "ident": "BAL-2000000123646",
+       "code": "2000000123646",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, M/L, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, M/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000181011": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735804",
+       "ident": "BAL-2000000181011",
+       "code": "2000000181011",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XS/S, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XS/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123639": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735805",
+       "ident": "BAL-2000000123639",
+       "code": "2000000123639",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, M/R, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123677": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 10125,
+     "price_fixed": 10599,
+     "prom": [
+      {
+       "uid": "3271735806",
+       "ident": "BAL-2000000123677",
+       "code": "2000000123677",
+       "name_ru": "Софтшел штаны Tennier ECWCS Gen III Level 5 Soft Shell армии США, мультикам, XL/R, оригинал",
+       "name_uk": "Софтшел штани Tennier ECWCS Gen III Level 5 Soft Shell армії США, мультикам, XL/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-31": {
+   "url": "/shtany-ecwcs-gen-iii-level-5-soft-shell-acu/",
+   "name_ua": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, оригінал",
+   "brand": "(leave as Import uses for US Army contract items)",
+   "line": "b3-ecwcs",
+   "vg": 612018,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000012012": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735807",
+       "ident": "BAL-7700000012012",
+       "code": "7700000012012",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, M/R, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000249469": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735808",
+       "ident": "BAL-2000000249469",
+       "code": "2000000249469",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, S/S, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, S/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "7700000012029": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735809",
+       "ident": "BAL-7700000012029",
+       "code": "7700000012029",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, M/L, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, M/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "7700000012050": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735810",
+       "ident": "BAL-7700000012050",
+       "code": "7700000012050",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, L/L, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "7700000011985": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735811",
+       "ident": "BAL-7700000011985",
+       "code": "7700000011985",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, S/R, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, S/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "7700000012043": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735812",
+       "ident": "BAL-7700000012043",
+       "code": "7700000012043",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, L/R, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000242767": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735813",
+       "ident": "BAL-2000000242767",
+       "code": "2000000242767",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, S/L, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, S/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000256535": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 4500,
+     "prom": [
+      {
+       "uid": "3271735814",
+       "ident": "BAL-2000000256535",
+       "code": "2000000256535",
+       "name_ru": "Софтшел штаны ECWCS Gen III Level 5 Soft Shell армии США, пиксель ACU, XL/L, оригинал",
+       "name_uk": "Софтшел штани ECWCS Gen III Level 5 Soft Shell армії США, піксель ACU, XL/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-32": {
+   "url": "/ecwcs-gen-iii-level-5-soft-shell-oryhinal-ssha-komplekt-small-regular/",
+   "name_ua": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + шт",
+   "brand": "Tennier",
+   "line": "b3-ecwcs",
+   "vg": 612019,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000172217": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735815",
+       "ident": "BAL-2000000172217",
+       "code": "2000000172217",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, S/L, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, S/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172200": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735816",
+       "ident": "BAL-2000000172200",
+       "code": "2000000172200",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, S/R, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, S/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172262": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735817",
+       "ident": "BAL-2000000172262",
+       "code": "2000000172262",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, XL/R, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, XL/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172279": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735818",
+       "ident": "BAL-2000000172279",
+       "code": "2000000172279",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, XL/L, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, XL/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172224": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735819",
+       "ident": "BAL-2000000172224",
+       "code": "2000000172224",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, M/L, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, M/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172255": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735820",
+       "ident": "BAL-2000000172255",
+       "code": "2000000172255",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, L/L, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172248": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735821",
+       "ident": "BAL-2000000172248",
+       "code": "2000000172248",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, L/R, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172231": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735822",
+       "ident": "BAL-2000000172231",
+       "code": "2000000172231",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, M/R, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000187730": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 20700,
+     "price_fixed": 22199,
+     "prom": [
+      {
+       "uid": "3271735823",
+       "ident": "BAL-2000000187730",
+       "code": "2000000187730",
+       "name_ru": "Софтшел комплект Tennier ECWCS Gen III Level 5 армии США (куртка + штаны), мультикам, S/S, оригинал",
+       "name_uk": "Софтшел комплект Tennier ECWCS Gen III Level 5 Soft Shell армії США (куртка + штани), мультикам, S/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-33": {
+   "url": "/kurtka-ecwcs-gen-iii-level-5-soft-shell-oryhinal-ssha-scorpion-w2-ocp-lr/",
+   "name_ua": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армії США, Scorpion W2 (OCP), ор",
+   "brand": "(leave as Import uses for US Army contract items)",
+   "line": "b3-ecwcs",
+   "vg": 612020,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000222813": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 11700,
+     "price_fixed": 12199,
+     "prom": [
+      {
+       "uid": "3271735824",
+       "ident": "BAL-2000000222813",
+       "code": "2000000222813",
+       "name_ru": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армии США, Scorpion W2 (OCP), L/R, оригинал",
+       "name_uk": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армії США, Scorpion W2 (OCP), L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000250281": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 11700,
+     "price_fixed": 12199,
+     "prom": [
+      {
+       "uid": "3271735825",
+       "ident": "BAL-2000000250281",
+       "code": "2000000250281",
+       "name_ru": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армии США, Scorpion W2 (OCP), L/L, оригинал",
+       "name_uk": "Софтшел куртка ECWCS Gen III Level 5 Soft Shell армії США, Scorpion W2 (OCP), L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-34": {
+   "url": "/shtany-ecwcs-gen-iii-level-6-acu/",
+   "name_ua": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, оригінал",
+   "brand": "(leave as Import uses for US Army contract items)",
+   "line": "b3-ecwcs",
+   "vg": 612021,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000004921": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 3600,
+     "prom": [
+      {
+       "uid": "3271735826",
+       "ident": "BAL-2000000004921",
+       "code": "2000000004921",
+       "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, M/R, оригинал",
+       "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000249537": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 3600,
+     "prom": [
+      {
+       "uid": "3271735827",
+       "ident": "BAL-2000000249537",
+       "code": "2000000249537",
+       "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, L/R, оригинал",
+       "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000043463": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 3600,
+     "prom": [
+      {
+       "uid": "3271735828",
+       "ident": "BAL-2000000043463",
+       "code": "2000000043463",
+       "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, S/R, оригинал",
+       "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, S/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000249520": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 3600,
+     "prom": [
+      {
+       "uid": "3271735829",
+       "ident": "BAL-2000000249520",
+       "code": "2000000249520",
+       "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, L/L, оригинал",
+       "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000058665": {
+     "size": "M/L",
+     "label": "Medium Long",
+     "price": 3600,
+     "prom": [
+      {
+       "uid": "3271735830",
+       "ident": "BAL-2000000058665",
+       "code": "2000000058665",
+       "name_ru": "Мембранные штаны ECWCS Gen III Level 6 Gore-Tex армии США, пиксель ACU, M/L, оригинал",
+       "name_uk": "Мембранні штани ECWCS Gen III Level 6 Gore-Tex армії США, піксель ACU, M/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-35": {
+   "url": "/ecwcs-gen-iii-level-6-gore-tex-komplekt-oryhinal-ssha-small-long/",
+   "name_ua": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + ш",
+   "brand": "Tennier",
+   "line": "b3-ecwcs",
+   "vg": 612022,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000172330": {
+     "size": "S/L",
+     "label": "Small Long",
+     "price": 21600,
+     "price_fixed": 23199,
+     "prom": [
+      {
+       "uid": "3271735831",
+       "ident": "BAL-2000000172330",
+       "code": "2000000172330",
+       "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, S/L, оригинал",
+       "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, S/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172361": {
+     "size": "XL/L",
+     "label": "X-Large Long",
+     "price": 21600,
+     "price_fixed": 23199,
+     "prom": [
+      {
+       "uid": "3271735832",
+       "ident": "BAL-2000000172361",
+       "code": "2000000172361",
+       "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, XL/L, оригинал",
+       "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, XL/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000197265": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 21600,
+     "price_fixed": 23199,
+     "prom": [
+      {
+       "uid": "3271735833",
+       "ident": "BAL-2000000197265",
+       "code": "2000000197265",
+       "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, M/R, оригинал",
+       "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000172347": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 21600,
+     "price_fixed": 23199,
+     "prom": [
+      {
+       "uid": "3271735834",
+       "ident": "BAL-2000000172347",
+       "code": "2000000172347",
+       "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, L/L, оригинал",
+       "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000256702": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 21600,
+     "price_fixed": 23199,
+     "prom": [
+      {
+       "uid": "3271735835",
+       "ident": "BAL-2000000256702",
+       "code": "2000000256702",
+       "name_ru": "Комплект Tennier ECWCS Gen III Level 6 Gore-Tex армии США (куртка + штаны), мультикам, XS/S, оригинал",
+       "name_uk": "Мембранний комплект Tennier ECWCS Gen III Level 6 Gore-Tex армії США (куртка + штани), мультикам, XS/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-36": {
+   "url": "/ecwcs-gen-ii-level-6-gore-tex-acu-oryhinal-ssha-kurtka-large-regular/",
+   "name_ua": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, оригінал",
+   "brand": "(leave as Import uses for US Army contract items)",
+   "line": "b3-ecwcs",
+   "vg": 612023,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000174075": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735836",
+       "ident": "BAL-2000000174075",
+       "code": "2000000174075",
+       "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, M/R, оригинал",
+       "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000213927": {
+     "size": "M/S",
+     "label": "Medium Short",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735837",
+       "ident": "BAL-2000000213927",
+       "code": "2000000213927",
+       "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, M/S, оригинал",
+       "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, M/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "7700000025784": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735838",
+       "ident": "BAL-7700000025784",
+       "code": "7700000025784",
+       "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, L/R, оригинал",
+       "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000256450": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735839",
+       "ident": "BAL-2000000256450",
+       "code": "2000000256450",
+       "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, XS/S, оригинал",
+       "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, XS/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000256443": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735840",
+       "ident": "BAL-2000000256443",
+       "code": "2000000256443",
+       "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, S/S, оригинал",
+       "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, S/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000224824": {
+     "size": "L/S",
+     "label": "Large Short",
+     "price": 6750,
+     "prom": [
+      {
+       "uid": "3271735841",
+       "ident": "BAL-2000000224824",
+       "code": "2000000224824",
+       "name_ru": "Мембранная куртка ECWCS Gen II Level 6 Gore-Tex армии США, пиксель ACU, L/S, оригинал",
+       "name_uk": "Мембранна куртка ECWCS Gen II Level 6 Gore-Tex армії США, піксель ACU, L/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-37": {
+   "url": "/ecwcs-gen-iii-level-6-gore-tex-kurtka-oryhinal-ssha-small-regular/",
+   "name_ua": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, ор",
+   "brand": "Tennier",
+   "line": "b3-ecwcs",
+   "vg": 612024,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000123004": {
+     "size": "L/L",
+     "label": "Large Long",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735842",
+       "ident": "BAL-2000000123004",
+       "code": "2000000123004",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, L/L, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, L/L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000202877": {
+     "size": "XS/R",
+     "label": "X-Small Regular",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735843",
+       "ident": "BAL-2000000202877",
+       "code": "2000000202877",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, XS/R, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, XS/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123080": {
+     "size": "L/R",
+     "label": "Large Regular",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735844",
+       "ident": "BAL-2000000123080",
+       "code": "2000000123080",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, L/R, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, L/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000202860": {
+     "size": "XS/S",
+     "label": "X-Small Short",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735845",
+       "ident": "BAL-2000000202860",
+       "code": "2000000202860",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, XS/S, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, XS/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000122984": {
+     "size": "S/R",
+     "label": "Small Regular",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735846",
+       "ident": "BAL-2000000122984",
+       "code": "2000000122984",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, S/R, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, S/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123097": {
+     "size": "XL/R",
+     "label": "X-Large Regular",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735847",
+       "ident": "BAL-2000000123097",
+       "code": "2000000123097",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, XL/R, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, XL/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000177205": {
+     "size": "S/S",
+     "label": "Small Short",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735848",
+       "ident": "BAL-2000000177205",
+       "code": "2000000177205",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, S/S, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, S/S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000123066": {
+     "size": "M/R",
+     "label": "Medium Regular",
+     "price": 12150,
+     "price_fixed": 12699,
+     "prom": [
+      {
+       "uid": "3271735849",
+       "ident": "BAL-2000000123066",
+       "code": "2000000123066",
+       "name_ru": "Мембранная куртка Tennier ECWCS Gen III Level 6 Gore-Tex армии США, мультикам, M/R, оригинал",
+       "name_uk": "Мембранна куртка Tennier ECWCS Gen III Level 6 Gore-Tex армії США, мультикам, M/R, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-38": {
+   "url": "/uteplennaia-kurtka-snugpak-sj6/",
+   "name_ua": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, о",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612025,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000119823": {
+     "size": "L",
+     "label": "Large",
+     "price": 8933,
+     "price_fixed": 9999,
+     "prom": [
+      {
+       "uid": "3271735850",
+       "ident": "BAL-2000000119823",
+       "code": "2000000119823",
+       "name_ru": "Утепленная тактическая куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, L, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000119816": {
+     "size": "M",
+     "label": "Medium",
+     "price": 8933,
+     "price_fixed": 9999,
+     "prom": [
+      {
+       "uid": "3271735851",
+       "ident": "BAL-2000000119816",
+       "code": "2000000119816",
+       "name_ru": "Утепленная тактическая куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, M, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, M, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000154978": {
+     "size": "S",
+     "label": "Small",
+     "price": 8933,
+     "price_fixed": 9999,
+     "prom": [
+      {
+       "uid": "3271735852",
+       "ident": "BAL-2000000154978",
+       "code": "2000000154978",
+       "name_ru": "Утепленная тактическая куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, S, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak SJ6 Softie WGTE, мультикам, комфорт до −5 °C, S, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-39": {
+   "url": "/snugpak-arrowhead-uteplena-kurtka-medium/",
+   "name_ua": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, ор",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612026,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000109879": {
+     "size": "M",
+     "label": "Medium",
+     "price": 8550,
+     "price_fixed": 8978,
+     "prom": [
+      {
+       "uid": "3271735854",
+       "ident": "BAL-2000000109879",
+       "code": "2000000109879",
+       "name_ru": "Утепленная тактическая куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, M, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, M, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000109886": {
+     "size": "L",
+     "label": "Large",
+     "price": 8550,
+     "price_fixed": 8978,
+     "prom": [
+      {
+       "uid": "3271735855",
+       "ident": "BAL-2000000109886",
+       "code": "2000000109886",
+       "name_ru": "Утепленная тактическая куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, L, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000119724": {
+     "size": "S",
+     "label": "Small",
+     "price": 8550,
+     "price_fixed": 8978,
+     "prom": [
+      {
+       "uid": "3271735856",
+       "ident": "BAL-2000000119724",
+       "code": "2000000119724",
+       "name_ru": "Утепленная тактическая куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, S, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak Arrowhead WGTE, мультикам, комфорт до −5 °C, S, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-40": {
+   "url": "/zymova-kurtka-snugpak-sj12/17835/",
+   "name_ua": "Зимова тактична куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, о",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612027,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000154305": {
+     "size": "M",
+     "label": "Medium",
+     "price": 11633,
+     "price_fixed": 14899,
+     "prom": [
+      {
+       "uid": "3271735857",
+       "ident": "BAL-2000000154305",
+       "code": "2000000154305",
+       "name_ru": "Зимняя тактическая куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, M, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, M, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000154312": {
+     "size": "L",
+     "label": "Large",
+     "price": 11633,
+     "price_fixed": 14899,
+     "prom": [
+      {
+       "uid": "3271735858",
+       "ident": "BAL-2000000154312",
+       "code": "2000000154312",
+       "name_ru": "Зимняя тактическая куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, L, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak SJ12 Softie WGTE, мультикам, комфорт до −15 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-41": {
+   "url": "/uteplennaia-kurtka-snugpak-spearhead/",
+   "name_ua": "Зимова тактична куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, ори",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612028,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000117270": {
+     "size": "M",
+     "label": "Medium",
+     "price": 10418,
+     "price_fixed": 12999,
+     "prom": [
+      {
+       "uid": "3271735859",
+       "ident": "BAL-2000000117270",
+       "code": "2000000117270",
+       "name_ru": "Зимняя тактическая куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, M, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, M, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000117287": {
+     "size": "L",
+     "label": "Large",
+     "price": 10418,
+     "price_fixed": 12999,
+     "prom": [
+      {
+       "uid": "3271735860",
+       "ident": "BAL-2000000117287",
+       "code": "2000000117287",
+       "name_ru": "Зимняя тактическая куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, L, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak Spearhead WGTE, мультикам, комфорт до −10 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-42": {
+   "url": "/zymova-kurtka-snugpak-sj3/17866/",
+   "name_ua": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, ор",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612029,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000154367": {
+     "size": "L",
+     "label": "Large",
+     "price": 8865,
+     "price_fixed": 9599,
+     "prom": [
+      {
+       "uid": "3271735861",
+       "ident": "BAL-2000000154367",
+       "code": "2000000154367",
+       "name_ru": "Утепленная тактическая куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, L, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000154350": {
+     "size": "M",
+     "label": "Medium",
+     "price": 8865,
+     "price_fixed": 9599,
+     "prom": [
+      {
+       "uid": "3271735862",
+       "ident": "BAL-2000000154350",
+       "code": "2000000154350",
+       "name_ru": "Утепленная тактическая куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, M, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, M, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000154374": {
+     "size": "XL",
+     "label": "X-Large",
+     "price": 8865,
+     "price_fixed": 9599,
+     "prom": [
+      {
+       "uid": "3271735863",
+       "ident": "BAL-2000000154374",
+       "code": "2000000154374",
+       "name_ru": "Утепленная тактическая куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, XL, оригинал",
+       "name_uk": "Утеплена тактична куртка Snugpak SJ3 Softie WGTE, мультикам, комфорт до 0 °C, XL, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-43": {
+   "url": "/zymova-kurtka-snugpak-tomahawk-wgte/17870/",
+   "name_ua": "Зимова тактична куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, ориг",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612030,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000154411": {
+     "size": "L",
+     "label": "Large",
+     "price": 12735,
+     "price_fixed": 14799,
+     "prom": [
+      {
+       "uid": "3271735864",
+       "ident": "BAL-2000000154411",
+       "code": "2000000154411",
+       "name_ru": "Зимняя тактическая куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, L, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000154428": {
+     "size": "XL",
+     "label": "X-Large",
+     "price": 12735,
+     "price_fixed": 14799,
+     "prom": [
+      {
+       "uid": "3271735865",
+       "ident": "BAL-2000000154428",
+       "code": "2000000154428",
+       "name_ru": "Зимняя тактическая куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, XL, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak Tomahawk WGTE, мультикам, комфорт до −15 °C, XL, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-44": {
+   "url": "/zymniaia-kurtka-snugpak-sj9/14116/",
+   "name_ua": "Зимова тактична куртка Snugpak SJ9 Softie WGTE, мультикам, комфорт до −10 °C, ор",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612031,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000119670": {
+     "size": "L",
+     "label": "Large",
+     "price": 10553,
+     "price_fixed": 11199,
+     "prom": [
+      {
+       "uid": "3271735866",
+       "ident": "BAL-2000000119670",
+       "code": "2000000119670",
+       "name_ru": "Зимняя тактическая куртка Snugpak SJ9 Softie WGTE, мультикам, комфорт до −10 °C, L, оригинал",
+       "name_uk": "Зимова тактична куртка Snugpak SJ9 Softie WGTE, мультикам, комфорт до −10 °C, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "b3-45": {
+   "url": "/zymovi-shtany-snugpak-parallax-pants-wgte/",
+   "name_ua": "Утеплені тактичні штани Snugpak Parallax WGTE на підтяжках, мультикам, комфорт д",
+   "brand": "Snugpak",
+   "line": "b3-snugpak",
+   "vg": 612032,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000187563": {
+     "size": "M",
+     "label": "Medium",
+     "price": 7020,
+     "price_fixed": 11199,
+     "prom": [
+      {
+       "uid": "3271735867",
+       "ident": "BAL-2000000187563",
+       "code": "2000000187563",
+       "name_ru": "Утепленные тактические штаны Snugpak Parallax WGTE на подтяжках, мультикам, комфорт до −5 °C, M, оригинал",
+       "name_uk": "Утеплені тактичні штани Snugpak Parallax WGTE на підтяжках, мультикам, комфорт до −5 °C, M, оригінал",
+       "in_csv": false
       }
      ]
     }
