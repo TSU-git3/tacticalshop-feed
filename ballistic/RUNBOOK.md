@@ -24,7 +24,7 @@ Leight, Sordin, Earmor; same «prom» structure and selling-price rule as ESS). 
 swatches (FDE, Multicam, black, Battle Brown, Multicam Black + sold-out Kryptek 2000000027937 and pink 2000000050874 — those two
 show under «not on Prom», expected); the Tacti-Grip page also shows black 2000000111414 (1 pc, not on Prom — expected). Patriot,
 Pro-X Neckband and M32 PLUS are one page each with swatches. Not in stock.xml, not in Rozetka. One-row link test: p3270707847
-(Razor Slim FDE), pushed 11 Nov 2026 ~15:00 Kyiv; the other 23 get «in_csv»: true after Prom's next pull is checked.
+(Razor Slim FDE), pushed 11 Nov 2026 ~15:00 Kyiv, passed (Prom 16:05 London: 90 of 90, no duplicate); all 24 in the CSV since 11 Nov 2026 19:08 Kyiv.
 
 Schedule (owner, 25 Oct 2026: same time frame as the Kiborg/Militex checks): starts 03:35, 07:35, 11:35, 15:35, 19:35,
 23:35 Kyiv — 8 minutes after the Kiborg BIG/SMALL start (xx:27), which usually pushes by ~xx:30 — and MUST be pushed by

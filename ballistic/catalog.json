@@ -1440,7 +1440,7 @@
        "code": "GWP-RSEM-MCC",
        "name_ru": "Активные тактические наушники Walker's Razor Slim, мультикам (Multicam Green), NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim, мультикам (Multicam Green), NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1456,7 +1456,7 @@
        "code": "GWP-RSEM",
        "name_ru": "Активные тактические наушники Walker's Razor Slim, черные, NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim, чорні, NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1472,7 +1472,7 @@
        "code": "GWP-RSEM-BB",
        "name_ru": "Активные тактические наушники Walker's Razor Slim, коричневые (Battle Brown), NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim, коричневі (Battle Brown), NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1488,7 +1488,7 @@
        "code": "GWP-RSEM-MCCG",
        "name_ru": "Активные тактические наушники Walker's Razor Slim, Multicam Black, NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim, Multicam Black, NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1515,7 +1515,7 @@
        "code": "GWP-RSEQM-CMO",
        "name_ru": "Активные тактические наушники Walker's Razor Slim Quad, 4 микрофона, Realtree Xtra, NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim Quad, 4 мікрофони, Realtree Xtra, NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1542,7 +1542,7 @@
        "code": "GWP-RSEMFS-PUN",
        "name_ru": "Активные тактические наушники Walker's Razor Slim Punisher, черные, NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim Punisher, чорні, NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1569,7 +1569,7 @@
        "code": "GWP-RSEMRC",
        "name_ru": "Активные тактические наушники Walker's Razor Rechargeable с аккумулятором, черные, NRR 21 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Rechargeable з акумулятором, чорні, NRR 21 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1596,7 +1596,7 @@
        "code": "GWP-RSEMPAT-ODG",
        "name_ru": "Активные тактические наушники Walker's Razor Slim Patriot, олива (OD Green), NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim Patriot, олива (OD Green), NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1612,7 +1612,7 @@
        "code": "GWP-RSEMPAT-FDE",
        "name_ru": "Активные тактические наушники Walker's Razor Slim Patriot, койот (FDE), NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim Patriot, койот (FDE), NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1628,7 +1628,7 @@
        "code": "GWP-RSEMPAT",
        "name_ru": "Активные тактические наушники Walker's Razor Slim Patriot, черные, NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Slim Patriot, чорні, NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1655,7 +1655,7 @@
        "code": "R-02526",
        "name_ru": "Активные тактические наушники Howard Leight Impact Sport, мультикам (MultiCam), NRR 22 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Howard Leight Impact Sport, мультикам (MultiCam), NRR 22 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1682,7 +1682,7 @@
        "code": "R-01526",
        "name_ru": "Активные тактические наушники Howard Leight Impact Sport, олива, NRR 22 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Howard Leight Impact Sport, олива, NRR 22 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1709,7 +1709,7 @@
        "code": "303006-10P",
        "name_ru": "Активные тактические наушники Sordin Supreme T2, кожаное оголовье, зеленые, SNR 29 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Sordin Supreme T2, шкіряне оголів'я, зелені, SNR 29 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1736,7 +1736,7 @@
        "code": "76302-X-06-S",
        "name_ru": "Активные тактические наушники Sordin Supreme Pro-X Neckband под шлем, камуфляж, SNR 24 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X Neckband під шолом, камуфляж, SNR 24 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1752,7 +1752,7 @@
        "code": "76302-X-S",
        "name_ru": "Активные тактические наушники Sordin Supreme Pro-X Neckband под шлем, зеленые, SNR 24 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X Neckband під шолом, зелені, SNR 24 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1779,7 +1779,7 @@
        "code": "74502-06-S",
        "name_ru": "Активные тактические наушники Sordin Supreme Pro-X SFA, кожаное оголовье, зеленые, SNR 31 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X SFA, шкіряне оголів'я, зелені, SNR 31 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1806,7 +1806,7 @@
        "code": "74302-X/L-S",
        "name_ru": "Активные тактические наушники Sordin Supreme Pro-X Slim, кожаное оголовье, зеленые, SNR 27 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X Slim, шкіряне оголів'я, зелені, SNR 27 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1833,7 +1833,7 @@
        "code": "75302-X-S",
        "name_ru": "Активные тактические наушники Sordin Supreme Pro-X, зеленые, SNR 28 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Sordin Supreme Pro-X, зелені, SNR 28 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1860,7 +1860,7 @@
        "code": "75332-S",
        "name_ru": "Активные тактические наушники с микрофоном Sordin Supreme MIL CC, черные, SNR 26 дБ, оригинал",
        "name_uk": "Активні тактичні навушники з мікрофоном Sordin Supreme MIL CC, чорні, SNR 26 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1887,7 +1887,7 @@
        "code": "GWP-RSEMRH-MCCG",
        "name_ru": "Активные тактические наушники Walker's Razor Tacti-Grip, Multicam Black, NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Tacti-Grip, Multicam Black, NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1903,7 +1903,7 @@
        "code": "GWP-RSEMRH-MFDE",
        "name_ru": "Активные тактические наушники Walker's Razor Tacti-Grip, койот (FDE), NRR 23 дБ, оригинал",
        "name_uk": "Активні тактичні навушники Walker's Razor Tacti-Grip, койот (FDE), NRR 23 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -1930,7 +1930,7 @@
        "code": "M32PLUS-FG",
        "name_ru": "Активные тактические наушники с микрофоном Earmor M32 PLUS, зеленые (Foliage Green), NRR 22 дБ, оригинал",
        "name_uk": "Активні тактичні навушники з мікрофоном Earmor M32 PLUS, зелені (Foliage Green), NRR 22 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -1946,7 +1946,7 @@
        "code": "M32PLUS-CB",
        "name_ru": "Активные тактические наушники с микрофоном Earmor M32 PLUS, койот (Coyote Brown), NRR 22 дБ, оригинал",
        "name_uk": "Активні тактичні навушники з мікрофоном Earmor M32 PLUS, койот (Coyote Brown), NRR 22 дБ, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
