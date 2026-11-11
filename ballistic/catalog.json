@@ -1,5 +1,5 @@
 {
- "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed.",
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings).",
  "products": {
   "14261": {
    "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
@@ -930,6 +930,478 @@
    },
    "in_csv": false,
    "price_fixed": 1099
+  },
+  "ess-suppr-2x": {
+   "url": "/ballystycheskye-ochky-ess-crossbow-suppressor-2x/",
+   "name_ua": "ESS Crossbow Suppressor 2X",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000049984": {
+     "size": "2 лінзи",
+     "label": "2 лінзи",
+     "price": 5850,
+     "price_fixed": 5850,
+     "prom": [
+      {
+       "uid": "2246116560",
+       "ident": "",
+       "code": "740-0475",
+       "name_ru": "Баллистические тактические очки ESS Crossbow Suppressor 2X, черная оправа, 2 линзы: Clear и Copper, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow Suppressor 2X, чорна оправа, 2 лінзи: Clear і Copper, оригінал",
+       "in_csv": true
+      }
+     ]
+    }
+   }
+  },
+  "ess-suppr-one-copper": {
+   "url": "/ballystycheskye-ochky-ess-crossbow-suppressor-s-mednoi-lynzoi/",
+   "name_ua": "ESS Crossbow Suppressor One, мідна лінза",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000037318": {
+     "size": "Copper",
+     "label": "Copper",
+     "price": 3150,
+     "price_fixed": 3150,
+     "prom": [
+      {
+       "uid": "1656578734",
+       "ident": "1656578734",
+       "code": "740-0472",
+       "name_ru": "Баллистические тактические очки ESS Crossbow Suppressor One, черная оправа, медная линза Copper, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow Suppressor One, чорна оправа, мідна лінза Copper, оригінал",
+       "in_csv": false
+      },
+      {
+       "uid": "1822849679",
+       "ident": "1822849679",
+       "code": "740-0426&740-0450",
+       "name_ru": "Баллистические тактические очки ESS Crossbow Suppressor One, черная оправа, медная линза Copper, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow Suppressor One, чорна оправа, мідна лінза Copper, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-suppr-one-clear": {
+   "url": "/ballystycheskye-ochky-ess-crossbow-suppressor-s-prozrachnoi-lynzoi/",
+   "name_ua": "ESS Crossbow Suppressor One, прозора лінза",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000097985": {
+     "size": "Clear",
+     "label": "Clear",
+     "price": 3150,
+     "price_fixed": 3699,
+     "prom": [
+      {
+       "uid": "1819598900",
+       "ident": "1819598900",
+       "code": "740-0425&740-0450",
+       "name_ru": "Баллистические тактические очки ESS Crossbow Suppressor One, черная оправа, прозрачная линза Clear, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow Suppressor One, чорна оправа, прозора лінза Clear, оригінал",
+       "in_csv": false
+      },
+      {
+       "uid": "2254892405",
+       "ident": "",
+       "code": "EE9007-13",
+       "name_ru": "Баллистические тактические очки ESS Crossbow Suppressor One, черная оправа, прозрачная линза Clear, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow Suppressor One, чорна оправа, прозора лінза Clear, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-crossbow-3ls": {
+   "url": "/komplekt-ballystycheskykh-ochkov-ess-crossbow/",
+   "name_ua": "ESS Crossbow 3LS",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000037806": {
+     "size": "3 лінзи",
+     "label": "3 лінзи",
+     "price": 6435,
+     "price_fixed": 7299,
+     "prom": [
+      {
+       "uid": "2564894087",
+       "ident": "",
+       "code": "ESS CBW3LS BLK/HC",
+       "name_ru": "Баллистические тактические очки ESS Crossbow 3LS, черная оправа, 3 линзы: Clear, Smoke Gray и Yellow, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow 3LS, чорна оправа, 3 лінзи: Clear, Smoke Gray і Yellow, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-cdi-max": {
+   "url": "/ballystycheskyi-komplekt-ochkov-ess-cdi-protective-glasses/",
+   "name_ua": "ESS CDI Max",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000079189": {
+     "size": "Terrain Tan",
+     "label": "Terrain Tan",
+     "price": 5400,
+     "price_fixed": 5400,
+     "prom": [
+      {
+       "uid": "2556391715",
+       "ident": "",
+       "code": "740-0457",
+       "name_ru": "Баллистические тактические очки ESS CDI Max, оправа Terrain Tan, 2 линзы: Clear и Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS CDI Max, оправа Terrain Tan, 2 лінзи: Clear і Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000134123": {
+     "size": "Black",
+     "label": "Black",
+     "price": 5175,
+     "price_fixed": 5175,
+     "prom": [
+      {
+       "uid": "3270555765",
+       "ident": "BAL-2000000134123",
+       "code": "2000000134123",
+       "name_ru": "Баллистические тактические очки ESS CDI Max, черная оправа, 2 линзы: Clear и Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS CDI Max, чорна оправа, 2 лінзи: Clear і Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-ice-smoke": {
+   "url": "/ochky-ess-ice-s-temnoi-lynzoi/",
+   "name_ua": "ESS ICE One, лінза Smoke Gray",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000022424": {
+     "size": "Smoke Gray",
+     "label": "Smoke Gray",
+     "price": 2250,
+     "price_fixed": 2250,
+     "prom": [
+      {
+       "uid": "1873817477",
+       "ident": "1873817477",
+       "code": "ESS ICE SGR SET",
+       "name_ru": "Баллистические тактические очки ESS ICE One, темная линза Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS ICE One, темна лінза Smoke Gray, оригінал",
+       "in_csv": false
+      },
+      {
+       "uid": "1764494436",
+       "ident": "1764494436",
+       "code": "740-0440",
+       "name_ru": "Баллистические тактические очки ESS ICE One, темная линза Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS ICE One, темна лінза Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-suppr-2x-plus": {
+   "url": "/ballystycheskye-ochky-ess-crossbow-suppressor-2x/3445/",
+   "name_ua": "ESS Crossbow Suppressor 2X+ Deluxe",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000008219": {
+     "size": "3 лінзи",
+     "label": "3 лінзи",
+     "price": 7425,
+     "price_fixed": 7425,
+     "prom": [
+      {
+       "uid": "1674391951",
+       "ident": "1674391951",
+       "code": "740-0388",
+       "name_ru": "Баллистические тактические очки ESS Crossbow Suppressor 2X+ Deluxe, черная оправа, 3 линзы, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow Suppressor 2X+ Deluxe, чорна оправа, 3 лінзи, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-ice-clear": {
+   "url": "/ochky-ess-ice-s-prozrachnoi-lynzoi/",
+   "name_ua": "ESS ICE One, прозора лінза",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000037875": {
+     "size": "Clear",
+     "label": "Clear",
+     "price": 2250,
+     "price_fixed": 2250,
+     "prom": [
+      {
+       "uid": "2394153240",
+       "ident": "",
+       "code": "740-0005",
+       "name_ru": "Баллистические тактические очки ESS ICE One, прозрачная линза Clear, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS ICE One, прозора лінза Clear, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-crossbow-photochromic": {
+   "url": "/balistychni-okuliary-ess-crossbow-z-fotokhromnoiu-linzoiu/",
+   "name_ua": "ESS Crossbow One, фотохромна лінза",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000134062": {
+     "size": "Photochromic",
+     "label": "Photochromic",
+     "price": 10800,
+     "price_fixed": 10800,
+     "prom": [
+      {
+       "uid": "2300995795",
+       "ident": "",
+       "code": "740-0452&740-0503",
+       "name_ru": "Баллистические тактические очки ESS Crossbow One, черная оправа, фотохромная линза Photochromic, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossbow One, чорна оправа, фотохромна лінза Photochromic, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-ice-strap": {
+   "url": "/remeshok-strakhovochnyi-dlia-ochkov-ess-ice/",
+   "name_ua": "ESS ремінець страхувальний",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "7700000022462": {
+     "size": "—",
+     "label": "—",
+     "price": 405,
+     "price_fixed": 405,
+     "prom": [
+      {
+       "uid": "1949286403",
+       "ident": "1949286403",
+       "code": "740-0565",
+       "name_ru": "Ремешок страховочный эластичный для очков ESS, оригинал",
+       "name_uk": "Ремінець страхувальний еластичний для окулярів ESS, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-rollbar-apel": {
+   "url": "/ballystycheskye-ochky-ess-rollbar-apel/",
+   "name_ua": "ESS Rollbar APEL",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000035437": {
+     "size": "Smoke Gray",
+     "label": "Smoke Gray",
+     "price": 4275,
+     "price_fixed": 4275,
+     "prom": [
+      {
+       "uid": "3270555759",
+       "ident": "BAL-2000000035437",
+       "code": "2000000035437",
+       "name_ru": "Баллистические тактические очки ESS Rollbar APEL, черная оправа, темная линза Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Rollbar APEL, чорна оправа, темна лінза Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-5b-polarized": {
+   "url": "/balistychni-okuliary-ess-5b-z-poliaryzovanoiu-linzoiu/",
+   "name_ua": "ESS 5B Polarized",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000222288": {
+     "size": "Polarized Mirrored Gray",
+     "label": "Polarized Mirrored Gray",
+     "price": 8325,
+     "price_fixed": 8325,
+     "prom": [
+      {
+       "uid": "3270555760",
+       "ident": "BAL-2000000222288",
+       "code": "2000000222288",
+       "name_ru": "Тактические солнцезащитные очки ESS 5B с поляризацией, черная оправа, линза Mirrored Gray, оригинал",
+       "name_uk": "Тактичні сонцезахисні окуляри ESS 5B з поляризацією, чорна оправа, лінза Mirrored Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-5b": {
+   "url": "/ballystycheskye-ochky-ess-5b-sunglass/",
+   "name_ua": "ESS 5B",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000074603": {
+     "size": "Terrain Tan",
+     "label": "Terrain Tan",
+     "price": 5175,
+     "price_fixed": 5175,
+     "prom": [
+      {
+       "uid": "3270555761",
+       "ident": "BAL-2000000074603",
+       "code": "2000000074603",
+       "name_ru": "Баллистические тактические очки ESS 5B, оправа Terrain Tan, темная линза Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS 5B, оправа Terrain Tan, темна лінза Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-crowbar": {
+   "url": "/komplekt-balistychnykh-okuliariv-ess-crowbar-silver-logo-z-temnoiu-ta-prozoroiu-linzamy/",
+   "name_ua": "ESS Crowbar Silver Logo",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000222028": {
+     "size": "2 лінзи",
+     "label": "2 лінзи",
+     "price": 5400,
+     "price_fixed": 5400,
+     "prom": [
+      {
+       "uid": "3270555762",
+       "ident": "BAL-2000000222028",
+       "code": "2000000222028",
+       "name_ru": "Баллистические тактические очки ESS Crowbar Silver Logo, черная оправа, 2 линзы: Clear и Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crowbar Silver Logo, чорна оправа, 2 лінзи: Clear і Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-crossblade": {
+   "url": "/balistychni-okuliary-ess-crossblade-z-temnoiu-linzoiu/",
+   "name_ua": "ESS Crossblade One",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000223582": {
+     "size": "Smoke Gray",
+     "label": "Smoke Gray",
+     "price": 3150,
+     "price_fixed": 3699,
+     "prom": [
+      {
+       "uid": "3270555763",
+       "ident": "BAL-2000000223582",
+       "code": "2000000223582",
+       "name_ru": "Баллистические тактические очки ESS Crossblade One, черная оправа, темная линза Smoke Gray, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Crossblade One, чорна оправа, темна лінза Smoke Gray, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "ess-credence": {
+   "url": "/balistychni-okuliary-ess-credence-z-linzoiu-mirrored-brass/",
+   "name_ua": "ESS Credence",
+   "brand": "ESS",
+   "line": "ess",
+   "vg": null,
+   "pics": [],
+   "in_xml": false,
+   "sizes": {
+    "2000000223926": {
+     "size": "Mirrored Brass",
+     "label": "Mirrored Brass",
+     "price": 5850,
+     "price_fixed": 5850,
+     "prom": [
+      {
+       "uid": "3270555764",
+       "ident": "BAL-2000000223926",
+       "code": "2000000223926",
+       "name_ru": "Баллистические тактические очки ESS Credence, оправа Carbon Gray, зеркальная линза Mirrored Brass, оригинал",
+       "name_uk": "Балістичні тактичні окуляри ESS Credence, оправа Carbon Gray, дзеркальна лінза Mirrored Brass, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
   }
  }
 }

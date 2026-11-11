@@ -16,6 +16,10 @@ discounted) and the cheapest of them is above our РРЦ, we sell just under the
 never below РРЦ. Targets live in ballistic/market_prices.json (written by `python3 ballistic/market.py`, re-checked twice
 a week); every run applies price = max(РРЦ of the size, listing target, catalog price_fixed).
 Fixed price (owner, 30 Oct 2026): catalog «price_fixed» (ECWCS/PCU braces 1,099 ₴) — never below РРЦ.
+ESS glasses (owner, 10–11 Nov 2026; catalog «line»: «ess»): one product per Ballistic page, sizes = articles (frame colour);
+size-level «price_fixed» = the selling price set by the Prom-median rule (Import project); size-level «prom» = the Prom
+listings of that article (one article can be two reopened twin listings), matched by Унікальний_ідентифікатор;
+«in_xml»: false keeps a product out of stock.xml (HugeProfit) until the owner decides; not in Rozetka scope.
 
   python3 ballistic/build_ballistic.py prices        -> re-applies РРЦ + market targets to state, CSV and stock.xml (no Ballistic read)
 """
@@ -92,7 +96,15 @@ def write_csv(cat, state):
                 nal, kil = ('!' if (q is not None and q > READY_MIN) else '+'), ('' if q is None else str(q))
             else:
                 nal, kil = '-', '0'
-            rows.append([art, sz['name_ru'], sz['name_uk'], uids.get(art, ''), 'BAL-' + art, str(p['vg']), str(price), 'UAH', 'шт.', nal, kil])
+            vg = '' if p.get('vg') is None else str(p['vg'])
+            if 'prom' in sz:
+                # ESS (11 Nov 2026): one Ballistic article -> one or more Prom listings (reopened twins), each matched by
+                # its Унікальний_ідентифікатор; listing-level in_csv=false keeps it out until the one-row link test passes.
+                for L in sz['prom']:
+                    if L.get('in_csv', True):
+                        rows.append([L['code'], L['name_ru'], L['name_uk'], L['uid'], L['ident'], vg, str(price), 'UAH', 'шт.', nal, kil])
+                continue
+            rows.append([art, sz['name_ru'], sz['name_uk'], uids.get(art, ''), 'BAL-' + art, vg, str(price), 'UAH', 'шт.', nal, kil])
     with open(os.path.join(REPO, 'prom', 'ballistic_stock.csv'), 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, quoting=csv.QUOTE_ALL)
         w.writerow(HDR)
@@ -123,7 +135,7 @@ def build(raw):
         for art, s in p['sizes'].items():
             if art not in got:
                 st = list(old.get(art, ['-', 0, s['price']]))
-                st[2] = sell_price(s['price'], pid, targets, p.get('price_fixed'))
+                st[2] = sell_price(s['price'], pid, targets, s.get('price_fixed', p.get('price_fixed')))
                 state[art] = st
                 missing.append(f'{art} ({p["name_ua"][:40]}…, {s["size"]}) — not read this run, last value kept')
                 continue
@@ -136,7 +148,7 @@ def build(raw):
                 prices.append(f'{art} {s["size"]}: {price} → {rrp}')
                 price = int(rrp)
                 s['price'] = price
-            sp = sell_price(price, pid, targets, p.get('price_fixed'))
+            sp = sell_price(price, pid, targets, s.get('price_fixed', p.get('price_fixed')))
             if old.get(art) and old[art][2] != sp:
                 prices.append(f'{art} {s["size"]}: selling price {old[art][2]} → {sp} (РРЦ {price}' + (f', market target {targets[pid]})' if pid in targets else ')'))
             state[art] = [a, q, sp]
@@ -169,7 +181,7 @@ def reprice():
     for pid, p in cat.items():
         for art, s in p['sizes'].items():
             if art in st_all['state']:
-                sp = sell_price(s['price'], pid, targets, p.get('price_fixed'))
+                sp = sell_price(s['price'], pid, targets, s.get('price_fixed', p.get('price_fixed')))
                 if st_all['state'][art][2] != sp:
                     ch.append(f'{art} {s["size"]}: {st_all["state"][art][2]} → {sp}')
                     st_all['state'][art][2] = sp

@@ -388,6 +388,8 @@ def ballistic_offers():
         return []
     out = []
     for pid, p in bcat.items():
+        if not p.get('in_xml', True):
+            continue  # ESS glasses (11 Nov 2026): Prom CSV only until the owner decides on HugeProfit
         for code, s in p['sizes'].items():
             a, q, price = bst.get(code, ['-', 0, s['price']])
             avail = 'true' if a == '+' else 'false'

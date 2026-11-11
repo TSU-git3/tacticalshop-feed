@@ -10,6 +10,15 @@ Braces (owner, 30 Oct 2026): «Оригінальні підтяжки ECWCS і 
 «Схожа модель» links and return the same article (harmless). in_csv=false until the owner confirms the Excel import.
 
 
+ESS glasses (owner, 10–11 Nov 2026): 16 Ballistic pages (catalog keys ess-*), 17 articles, 20 Prom listings (ESS Suppressor One
+copper / clear and ICE One smoke each have two Prom «twin» listings of one article). Each article's Prom listings sit in the
+catalog size field «prom» (Унікальний_ідентифікатор + that listing's own Код_товару / Ідентифікатор_товару / names); the CSV
+writes one row per listing. Selling price = max(РРЦ, size «price_fixed») — price_fixed is the Prom-median price set by the
+Import project; this run never changes it. The CDI Max page holds Tan and Black (colour swatches, read since 11 Nov); the 5B page
+also shows a black frame that is not on Prom (it is reported under «not on Prom» — that is expected). ESS is NOT in stock.xml
+(«in_xml»: false) and NOT in Rozetka. Listings enter prom/ballistic_stock.csv only with «in_csv»: true (one-row link test
+first: p2246116560, 11 Nov 2026).
+
 Schedule (owner, 25 Oct 2026: same time frame as the Kiborg/Militex checks): starts 03:35, 07:35, 11:35, 15:35, 19:35,
 23:35 Kyiv — 8 minutes after the Kiborg BIG/SMALL start (xx:27), which usually pushes by ~xx:30 — and MUST be pushed by
 04:00, 08:00, 12:00, 16:00, 20:00, 00:00 (the same delivery times as Kiborg). If the push is rejected, follow step 6

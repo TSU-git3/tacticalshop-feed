@@ -25,9 +25,14 @@ window.__BAL = {done: false, lines: [], errors: []};
       const id = form.getAttribute('data-action').match(/load-modification\/(\d+)/)[1];
       const props = {};
       form.querySelectorAll('input[type=hidden][name^="param["]').forEach(i => { props[i.name.slice(6, -1)] = {cur: i.value, opts: []}; });
-      form.querySelectorAll('[data-value]').forEach(b => {
-        const m = (b.getAttribute('onclick') || '').match(/j-mod-prop-([a-z0-9_]+)/i);
-        if (m && props[m[1]]) props[m[1]].opts.push({v: b.dataset.value, l: b.textContent.trim().split('\n')[0].trim()});
+      // size buttons carry data-value; colour swatches (ESS, 11 Nov 2026) only onclick «$("#j-mod-prop-color").val("28")»
+      form.querySelectorAll('[data-value], [onclick*="j-mod-prop-"]').forEach(b => {
+        const oc = b.getAttribute('onclick') || '';
+        const m = oc.match(/j-mod-prop-([a-z0-9_]+)/i);
+        if (!m || !props[m[1]]) return;
+        const v = b.dataset.value || (oc.match(/\.val\(\s*["']([^"']+)["']/) || [])[1];
+        if (!v || props[m[1]].opts.some(o => o.v === v)) return;
+        props[m[1]].opts.push({v, l: b.textContent.trim().split('\n')[0].trim() || b.title || v});
       });
       for (const k in props) if (!props[k].opts.some(o => o.v === props[k].cur)) props[k].opts.push({v: props[k].cur, l: 'CUR'});
       const keys = Object.keys(props);
