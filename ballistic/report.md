@@ -1,12 +1,12 @@
-# Ballistic stock check 2026-11-12 03:48 Kyiv
+# Ballistic stock check 2026-11-12 07:50 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 138, «+» 53, «-» 24
 
 ## Stock changes since last run
-2000000252667 Зимовий тактичний комплект Carinthia MIG 4.0 …, XXL: ['+', 2, 25875] → ['+', 1]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
-2000000130675 Large: selling price 6975 → 7200 (РРЦ 6975)
+none
 
 ## Not read this run
 none
