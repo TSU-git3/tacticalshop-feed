@@ -1,10 +1,10 @@
-# Stock refresh 2026-11-12 03:28 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-11-12 07:29 (Kyiv) — BIG check
 
 - Offers: 1021; status counts: {'5': 329, '+': 351, '3': 340, '-': 1}
-- get_product lookups: 186; skipped as out of stock by sweep: 34
+- get_product lookups: 331; skipped as out of stock by sweep: 212
 - Changed since last run: 0
-- On MyDrop but out of stock (no size with stock): 41
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- On MyDrop but out of stock (no size with stock): 286
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
 
@@ -60,4 +60,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
