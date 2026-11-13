@@ -1,13 +1,13 @@
-# Ballistic market check 2026-11-10 13:17 Kyiv
+# Ballistic market check 2026-11-13 13:27 Kyiv
 
 Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ → cheapest −1 %, rounded up to …99 (below the cheapest); never below РРЦ.
 
 ## 14261 Зимова тактична куртка Tennier ECWCS Gen III Level 7 Parka армії США, сіра
-РРЦ 13950 → selling target: РРЦ (only 0 other seller(s) with this model + colour in stock)
+РРЦ 13950 → selling target: РРЦ (only 1 other seller(s) with this model + colour in stock)
+- 13400 US military store (p3265922759) Парка зимова оригінал Tennier ECWCS Gen III L
 
 ## 16728 Зимові тактичні штани Tennier ECWCS Gen III Level 7 армії США, мультикам
-РРЦ 10350 → selling target: 10599 (cheapest competitor 10695 (4 sellers) −1 % → …99 = 10599)
-- 10695 Громовержець (p3268923314) Зимові штани Tennier ECWCS Gen III level 7 Mu
+РРЦ 10350 → selling target: 10799 (cheapest competitor 10830 (3 sellers) −1 % → …99 = 10799)
 - 10830 "Vartovy" - інтерн (p2937581246) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - 11532 ТМ EKOSTAR (p3158037624) Зимові штани Tennier ECWCS Gen III level 7 Mu
 - 11638 ЕКОБОКС (p3163858640) Зимові штани Tennier ECWCS Gen III level 7 Mu
@@ -26,7 +26,7 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 РРЦ 22999 → selling target: РРЦ (cheapest competitor 19600 ≤ our РРЦ 22999)
 - 19600 Usa-Ukraine-ua (p2853185899) Комплект куртка+штани Tennier Industries ECWC
 - 22500 FORSTEP (p3120901040) Зимовий костюм Tennier Gen III ECWCS level 7 
-- 24050 "Vartovy" - інтерн (p2937581288) Зимовий комплект Tennier ECWCS Gen III level 
+- 24050 "Vartovy" - інтерн (p2937581289) Зимовий комплект Tennier ECWCS Gen III level 
 - 24186 Каратель (p2913413228) Зимовий комплект Tennier ECWCS Gen III level 
 
 ## 16720 Зимова тактична куртка Tennier ECWCS Gen III Level 7 армії США, мультикам
@@ -51,7 +51,7 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - 15500 Monolit (p2798285500) Зимовий тактичний комплект Carinthia MIG 4.0,
 - 19975 Интернет- магазин  (p2858589556) Комплект зимовий Carinthia MIG 4.0. Оригінал
 - 20000 Флеш Оригінал (p2600181441) Комплект зимовий Carinthia MIG 4.0, Розмір: S
-- 28385 Каратель (p3191823616) Комплект зимовий Carinthia MIG 4.0, Olive, Sm
+- 27060 "Vartovy" - інтерн (p3004863592) Комплект зимовий Carinthia MIG 4.0, Olive, Me
 - colour not in name: 28831 ТМ EKOSTAR (p3158037657) Комплект зимовий Carinthia MIG 4.0 (ЕКОБОКС)
 - colour not in name: 29095 ЕКОБОКС (p3163858673) Комплект зимовий Carinthia MIG 4.0 EKOBOX
 
@@ -63,15 +63,15 @@ Rule: ≥2 other sellers, same model + colour, in stock; cheapest above РРЦ �
 - 21320 Yarshop_ua (p2452787725) Куртка Карентія Carinthia MIG 4.0 Мультикам 1
 - 21997 Rechovyk (p3215390072) Куртка Carinthia MIG 4.0 зимова, MultiCam
 - 22000 MilitaryStrong (p2503826993) Тактична зимова куртка Карінтія Carinthia MIG
-- 22000 Tactical Shop in U (p2548603889) Куртка Carinthia MIG 4.0 зимова, MultiCam, M
-- 22000 Драйв Сенс (p3208612866) Куртка Carinthia MIG 4.0 зимова, MultiCam, 2X
+- 22000 Вартовий (туризм,  (p3155896384) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
 - 22000 Націоналіст (p3155896950) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
 - 22000 Піхотинець (p3259294934) Куртка Carinthia MIG 4.0 зимова, MultiCam, S 
+- 24000 Військторг Гайдама (p1945552064) Куртка зимова Carinthia MIG 4.0 G-Loft Jacket
 - colour not in name: 21380 "Воєнторг Роздріб/ (p2829962423) Куртка Carinthia MIG 4.0 зимова, Зимовий каму
-- colour not in name: 21380 Bayraktar 4.5.0 (p2829961682) Куртка Carinthia MIG 4.0 зимова, Зимовий каму
 - colour not in name: 21380 СТАЛЕВИЙ КРОК (p3195430043) Куртка Carinthia MIG 4.0 зимова, Зимовий каму
 - colour not in name: 21950 Contractor.UA (p2804566261) Куртка Carinthia MIG 4.0 G-Loft
 - colour not in name: 23100 Каспер (p3067294546) Куртка зимовий камуфляж Carinthia MIG 4.0
+- colour not in name: 23415 FitHub of clothes (p3272715731) Куртка чоловіча Carinthia MIG 4.0 зимова, Зим
 
 ## 27502 Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий
 РРЦ 23175 → selling target: РРЦ (cheapest competitor 21950 ≤ our РРЦ 23175)
