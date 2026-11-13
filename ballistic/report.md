@@ -1,9 +1,9 @@
-# Ballistic stock check 2026-11-13 16:46 Kyiv
+# Ballistic stock check 2026-11-13 19:47 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 137, «+» 52, «-» 26
 
 ## Stock changes since last run
-none
+2000000123097 Мембранна куртка Tennier ECWCS Gen III Level …, XL/R: ['+', 2, 12699] → ['+', 1]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
