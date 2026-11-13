@@ -1,52 +1,19 @@
-# Stock refresh 2026-11-13 19:28 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-11-13 23:28 (Kyiv) — BIG check
 
-- Offers: 1021; status counts: {'5': 322, '+': 357, '3': 341, '-': 1}
-- get_product lookups: 192; skipped as out of stock by sweep: 33
-- Changed since last run: 37
-- On MyDrop but out of stock (no size with stock): 46
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- Offers: 1021; status counts: {'5': 321, '+': 361, '3': 338, '-': 1}
+- get_product lookups: 330; skipped as out of stock by sweep: 213
+- Changed since last run: 4
+- On MyDrop but out of stock (no size with stock): 287
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
 
 ## Changes
 
-- 2205-0121-00: 3 None → + 12
-- 2202-6331-00: + 366 → + 363
-- 2202-6356-00: + 5 → + 4
-- 1003-0123-00: + 1 → 3 None
-- 1003-0125-00: + 10 → + 7
-- 2101-0121-00: + 3 → + 5
-- 20325-К: 5 None → + None
-- 20505-ЛО: 5 None → + 1
-- 20225-М: + 1 → + 2
-- 20305-М: 5 None → + 1
-- 2404-0101-M: + 2 → + 11
-- 2311-0121-00: 3 None → + 16
-- 2312-0121-00: 3 None → + 18
-- 5703-0612-L: + 6 → + 5
-- 5703-0612-M: + 3 → + 2
-- 2401-0121-M: + 6 → + 5
-- 2401-0121-XL: + 11 → + 10
-- 2401-0124-XL: + 7 → + 6
-- 110102-2-К: + 1 → 3 None
-- 111430-2-К: + 6 → + 5
-- 2321-0121-00: + 341 → + 338
-- 3201-0122-00: 3 None → + 6
-- 2201-0121-00: + 66 → + 65
-- 2606-0211-09: + 4 → + 12
-- 2606-0214-11: + 23 → + 22
-- 0305-0201-00: + 4 → 3 None
-- 2601-0212-00: + 1 → + 7
-- 3205-0110-00: + 5 → + 4
-- 66003: + None → 3 None
-- 66002: + None → 3 None
-- 66001: + None → 3 None
-- 60603-2-К: + None → 3 None
-- 87001-2-К: + 1 → 3 None
-- 87002-2-К: + 1 → 3 None
-- 17042-2-К: + 2 → + 3
-- 17056-2-К: + 3 → + 2
-- 17057-2-К: + 3 → + 2
+- 20200-ЗМ-О: 5 None → + None
+- 115522-2-К: 3 None → + 1
+- 111440-2-К: 3 None → + 1
+- 2801-0211-00: 3 None → + 1
 
 ## Kits in stock from their parts (kits.json)
 
@@ -96,4 +63,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
