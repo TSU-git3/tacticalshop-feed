@@ -81,7 +81,7 @@ Outputs (same data):
 6. **Publish.** Delete `ballistic/raw.txt`. `git pull --rebase` first; if `stock.xml` conflicts (a Kiborg run pushed
    meanwhile), take theirs (`git checkout --theirs stock.xml`), re-run `python3 ballistic/build_ballistic.py csv` and
    `python3 -c "import sys;sys.path.insert(0,'ballistic');import build_ballistic as b;b.rebuild_stock_xml()"` (rewrites ballistic.xml and stock.xml).
-   `git add stock.xml ballistic.xml prom/prom_live.json prom/ballistic_stock.csv prom/prom_stock.csv ballistic/state.json ballistic/catalog.json ballistic/report.md` and `git add -A rozetka/`,
+   `git add stock.xml ballistic.xml prom/prom_live.json prom/ballistic_stock.csv prom/prom_stock.csv ballistic/state.json ballistic/catalog.json ballistic/cost.json refresh/cost.json ballistic/report.md` and `git add -A rozetka/`,
    commit «Ballistic stock <date time Kyiv>», push to `main`.
 7. **Close** the tab you opened. **Report** in 2–4 lines: codes read, stock and price changes, sizes on Ballistic that
    are not on Prom, anything aborted.
@@ -96,4 +96,4 @@ Outputs (same data):
   anything else → «-» (unusual statuses are listed in report.md).
 - A size that appears on Ballistic but is not in `ballistic/catalog.json` is only reported — new rows need a Prom import first.
 - `ballistic/uid_map.json` = article → Prom Унікальний_ідентифікатор; filled from the owner's export after the first import.
-- Nothing private in this public repo: no partner prices, no account data.
+- **Buy prices (owner, 14 Nov 2026 — replaces «no partner prices in this repo»):** the owner wants his buy price (собівартість) in the HugeProfit XMLs and chose to publish it in this public repo. The collector reads the price shown before «РРЦ» (or the single price on pages without РРЦ) as the 6th field of each line; `build` keeps it in `ballistic/cost.json` (an article not read keeps its last value) and `ballistic.xml` carries it as `<netprice>` when it is below the selling price. Still nothing else private: no account data, no order data.

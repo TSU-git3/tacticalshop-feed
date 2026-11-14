@@ -30,6 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 CATP, STATEP, UIDP = (os.path.join(HERE, n) for n in ('catalog.json', 'state.json', 'uid_map.json'))
 MARKETP = os.path.join(HERE, 'market_prices.json')
+COSTP = os.path.join(HERE, 'cost.json')
 READY_MIN = 2
 HDR = ['Код_товару', 'Назва_позиції', 'Назва_позиції_укр', 'Унікальний_ідентифікатор', 'Ідентифікатор_товару', 'ID_групи_різновидів',
        'Ціна', 'Валюта', 'Одиниця_виміру', 'Наявність', 'Кількість']
@@ -37,6 +38,13 @@ HDR = ['Код_товару', 'Назва_позиції', 'Назва_пози�
 
 def load(p):
     return json.load(open(p, encoding='utf-8'))
+
+
+def load_costs():
+    try:
+        return dict(load(COSTP).get('cost', {}))
+    except (OSError, ValueError):
+        return {}
 
 
 def now_kyiv():
@@ -71,10 +79,10 @@ def parse_raw(path):
     got = {}
     for ln in lines.strip().splitlines():
         parts = ln.strip().split('|')
-        if len(parts) != 5 or not parts[1] or parts[1] == 'null':
+        if len(parts) not in (5, 6) or not parts[1] or parts[1] == 'null':
             continue
-        pid, art, label, status, rrp = parts
-        got[art] = (pid, label, status, rrp)
+        pid, art, label, status, rrp = parts[:5]
+        got[art] = (pid, label, status, rrp, parts[5] if len(parts) == 6 else '')
     return got, [e for e in errors.strip().splitlines() if e.strip()]
 
 
@@ -135,6 +143,7 @@ def build(raw):
     if len(found) < 0.8 * len(codes):
         sys.exit(f'ABORT: only {len(found)} of {len(codes)} Ballistic codes read (signed out? site changed?) — nothing changed. Errors: {errors[:10]}')
     state, changes, prices, missing, odd = {}, [], [], [], []
+    costs = load_costs()
     targets = market_targets()
     for pid, p in cat.items():
         for art, s in p['sizes'].items():
@@ -144,7 +153,9 @@ def build(raw):
                 state[art] = st
                 missing.append(f'{art} ({p["name_ua"][:40]}…, {s["size"]}) — not read this run, last value kept')
                 continue
-            _, label, status, rrp = got[art]
+            _, label, status, rrp, cost = got[art]
+            if cost.isdigit() and int(cost) > 0:
+                costs[art] = int(cost)
             a, q = to_state(status)
             if a == '-' and not status.startswith('Розпродано'):
                 odd.append(f'{art} {s["size"]}: Ballistic status «{status}» → treated as out of stock')
@@ -161,13 +172,14 @@ def build(raw):
                 changes.append(f'{art} {p["name_ua"][:45]}…, {s["size"]}: {old.get(art)} → {[a, q]}')
     known = set(codes)
     new_sizes = [f'{v[0]} {art} «{v[1]}» {v[2]}' for art, v in got.items() if art not in known]
+    json.dump({'_note': 'Ballistic article -> buy price (the price shown to the signed-in account before «РРЦ»); owner 14 Nov 2026: goes into ballistic.xml as <netprice>.', 'cost': {a: costs[a] for a in sorted(costs) if a in known}}, open(COSTP, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     json.dump(cat_all, open(CATP, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump({'checked': now_kyiv(), 'state': state}, open(STATEP, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     rows = write_csv(cat, state)
     rebuild_stock_xml()
     cnt = {k: sum(1 for r in rows if r[HDR.index('Наявність')] == k) for k in ('!', '+', '-')}
     rep = [f'# Ballistic stock check {now_kyiv()} Kyiv', '',
-           f'Codes: {len(codes)} · read: {len(found)} · CSV: «!» {cnt["!"]}, «+» {cnt["+"]}, «-» {cnt["-"]}', '',
+           f'Codes: {len(codes)} · read: {len(found)} · CSV: «!» {cnt["!"]}, «+» {cnt["+"]}, «-» {cnt["-"]} · buy prices known: {sum(1 for a in codes if a in costs)}', '',
            '## Stock changes since last run', *(changes or ['none']), '',
            '## Price changes (Ballistic РРЦ / market target)', *(prices or ['none']), '',
            '## Not read this run', *(missing or ['none']), '',

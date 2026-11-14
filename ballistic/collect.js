@@ -13,7 +13,10 @@ window.__BAL = {done: false, lines: [], errors: []};
     const a = t.match(/Артикул:\s*(\S+)/);
     const p = t.match(/([\d ]+)грн\s*\n?РРЦ:\s*([\d ]+)грн/);
     const st = t.match(/(В наявності(?::\s*\d+)?|Розпродано|Немає в наявності|Під замовлення[^\n]*|Очікується[^\n]*|Закінчився)\s*\n?Артикул:/);
-    return {art: a && a[1], status: st ? st[1] : '?', rrp: p ? p[2].replace(/\s/g, '') : ''};
+    // buy price (owner, 14 Nov 2026): the price shown before «РРЦ»; pages without РРЦ (Snugpak clearance) show one price
+    let cost = p ? p[1] : '';
+    if (!p) { const i = t.indexOf('Артикул:'); const m = (i >= 0 ? t.slice(i) : t).match(/(\d[\d ]*)грн/) || t.match(/(\d[\d ]*)грн/); cost = m ? m[1] : ''; }
+    return {art: a && a[1], status: st ? st[1] : '?', rrp: p ? p[2].replace(/\s/g, '') : '', cost: cost.replace(/\s/g, '')};
   };
   for (const [pid, u] of URLS) {
     try {
@@ -21,7 +24,7 @@ window.__BAL = {done: false, lines: [], errors: []};
       const d = P2(h);
       const form = d.querySelector('form[data-action*="load-modification"]');
       const base = info(txt(h));
-      if (!form) { window.__BAL.lines.push([pid, base.art, 'ONE', base.status, base.rrp].join('|')); await sleep(1500); continue; }
+      if (!form) { window.__BAL.lines.push([pid, base.art, 'ONE', base.status, base.rrp, base.cost].join('|')); await sleep(1500); continue; }
       const id = form.getAttribute('data-action').match(/load-modification\/(\d+)/)[1];
       const props = {};
       form.querySelectorAll('input[type=hidden][name^="param["]').forEach(i => { props[i.name.slice(6, -1)] = {cur: i.value, opts: []}; });
@@ -45,7 +48,7 @@ window.__BAL = {done: false, lines: [], errors: []};
         const j = await r.json();
         if (j.status === 'OK') {
           const x = info(txt(j.response.html.map(y => y.content).join('\n')));
-          window.__BAL.lines.push([pid, x.art, o.l, x.status, x.rrp].join('|'));
+          window.__BAL.lines.push([pid, x.art, o.l, x.status, x.rrp, x.cost].join('|'));
         } else window.__BAL.errors.push(pid + ' ' + o.l + ' HTTP ' + (j.response && j.response.code));
         await sleep(1200);
       }

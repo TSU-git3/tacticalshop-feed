@@ -54,6 +54,51 @@ TYPE_GROUPS = {
 }
 
 
+# ---- Buy prices (owner, 14 Nov 2026: «add our buy price to the xml (собівартість)», in the public XML by his decision) ----
+# refresh/cost.json = MyDrop product id -> drop price (what the shop pays). Filled for free from the sweeps (`plan`) and
+# from the look-up lines (`build`, key "drop"); a product not seen in a run keeps its last value. HugeProfit reads the
+# buy price from the XML tag <netprice> (tested 14 Nov 2026 with a dummy product).
+COST_PATH = os.path.join(ROOT, 'cost.json')
+
+
+def load_cost():
+    try:
+        return json.load(open(COST_PATH, encoding='utf-8'))
+    except (OSError, ValueError):
+        return {'drop': {}}
+
+
+def save_cost(cost, new):
+    """Merge {product id: drop price} into cost.json; returns how many values changed."""
+    ch = 0
+    ours = set(PIDS.get('pids', {})) | set(PIDS.get('map', {}).values()) | set(PIDS.get('parent', {}).values())
+    for pid, v in new.items():
+        if str(pid) not in ours:
+            continue   # the sweeps list the supplier's whole catalogue; keep only our products
+        try:
+            v = float(v)
+        except (TypeError, ValueError):
+            continue
+        if v <= 0:
+            continue
+        v = int(v) if v == int(v) else v
+        if cost['drop'].get(str(pid)) != v:
+            cost['drop'][str(pid)] = v
+            ch += 1
+    if ch:
+        cost['_note'] = 'MyDrop product id -> drop price (buy price), from sweeps and look-ups; see refresh/build_feed.py'
+        json.dump(cost, open(COST_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
+    return ch
+
+
+def netprice_for(code, price, cost):
+    """Buy price for one of our codes, or None. Never guessed: only the drop price of the code's own MyDrop product,
+    and only when it is below the selling price (a supplier typo like 17500 for a 2000 item is left out)."""
+    pid = PIDS.get('map', {}).get(code) or PIDS.get('parent', {}).get(code)
+    d = cost['drop'].get(str(pid)) if pid else None
+    return d if d and 0 < d < price else None
+
+
 def type_groups(s):
     s = s.lower().replace('c', 'с')          # Latin c in some MyDrop titles («Cумка»)
     return {g for g, rx in TYPE_GROUPS.items() if re.search(rx, s)}
@@ -89,7 +134,7 @@ def name_check(cmap, pmap):
     return (bad or ['- none']) + ([''] + ['Not checkable (MyDrop title has no type word):'] + unclear if unclear else [])
 
 
-def sweep_flags(max_age_h=4, parents=None, titles=None):
+def sweep_flags(max_age_h=4, parents=None, titles=None, drops=None):
     """product_id -> in_stock flag, from search_products results saved to files this run.
     If `parents` is a dict, it is filled with product_id -> parent sku."""
     flags = {}
@@ -114,14 +159,18 @@ def sweep_flags(max_age_h=4, parents=None, titles=None):
                             titles[str(it['product_id'])] = it['title']
                         if parents is not None and it.get('sku'):
                             parents[str(it['product_id'])] = str(it['sku']).strip()
+                        if drops is not None and it.get('drop_price'):
+                            drops[str(it['product_id'])] = it['drop_price']
             except Exception:
                 continue
     return flags
 
 
 def plan():
-    parents, titles = {}, {}
-    flags = sweep_flags(parents=parents, titles=titles)
+    parents, titles, drops = {}, {}, {}
+    flags = sweep_flags(parents=parents, titles=titles, drops=drops)
+    if drops:
+        print(f'buy prices from sweeps: {len(drops)} products, {save_cost(load_cost(), drops)} changed')
     if titles:
         try:
             old_t = json.load(open(TITLES_PATH, encoding='utf-8'))
@@ -191,6 +240,7 @@ def build():
     small = todo.get('mode') == 'small' 
     sizes = {}            # sku -> (stock, pid)
     looked = set()
+    lookup_drops = {}
     raw = os.path.join(ROOT, 'stock_raw.jsonl')
     for line in open(raw, encoding='utf-8'):
         line = line.strip()
@@ -198,6 +248,8 @@ def build():
             continue
         d = json.loads(line)
         looked.add(str(d['pid']))
+        if d.get('drop'):
+            lookup_drops[str(d['pid'])] = d['drop']
         if d.get('sku'):
             PIDS.setdefault('parent', {})
             if str(d['sku']).strip() in PRODUCTS:
@@ -257,6 +309,8 @@ def build():
     PIDS['parent'] = pmap
     json.dump(PIDS, open(PIDS_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     json.dump({k: list(v) for k, v in result.items()}, open(os.path.join(ROOT, 'last_state.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    if lookup_drops:
+        print(f'buy prices from look-ups: {len(lookup_drops)} products, {save_cost(load_cost(), lookup_drops)} changed')
     write_xml(result)
     now = datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
     cnt = {}
@@ -419,6 +473,7 @@ def write_xml(result):
     out = xml_head(now, cat_lines)
     live = load_live()
     groups = live_groups(live)
+    cost = load_cost()
     try:
         umap = json.load(open(os.path.join(os.path.dirname(ROOT), 'prom', 'uid_map.json'), encoding='utf-8'))['map']
     except (OSError, ValueError, KeyError):
@@ -441,6 +496,9 @@ def write_xml(result):
         o += [f'<picture>{escape(u)}</picture>' for u in (lpics or p['pics'])]
         if q is not None:
             o.append(f'<quantity_in_stock>{q}</quantity_in_stock>')
+        net = netprice_for(code, p['price'], cost)
+        if net:
+            o.append(f'<netprice>{net}</netprice>')
         o.append(f'<param name="Наявність Prom">{escape(status)}</param>')
         if uid:
             o.append(f'<param name="Prom ID">{escape(uid)}</param>')
@@ -475,6 +533,10 @@ def write_ballistic_xml():
         buid = json.load(open(os.path.join(bdir, 'uid_map.json'), encoding='utf-8')).get('map', {})
     except (OSError, ValueError):
         buid = {}
+    try:
+        bcost = json.load(open(os.path.join(bdir, 'cost.json'), encoding='utf-8')).get('cost', {})
+    except (OSError, ValueError):
+        bcost = {}
     live = load_live()
     groups = live_groups(live)
     fallback = '157945845' if '157945845' in live['cats'] else BAL_FALLBACK_CAT[0]   # Prom group «Зимовий одяг (Level 7)»
@@ -520,6 +582,9 @@ def write_ballistic_xml():
                 o.append(f'<quantity_in_stock>{q}</quantity_in_stock>')
             elif a != '+':
                 o.append('<quantity_in_stock>0</quantity_in_stock>')
+            net = bcost.get(code)
+            if net and 0 < net < price:
+                o.append(f'<netprice>{net}</netprice>')   # buy price -> HugeProfit «Собівр.» (owner, 14 Nov 2026)
             o.append(f'<param name="Наявність Prom">{escape(status)}</param>')
             if listings:
                 o.append('<param name="Prom ID">' + escape(', '.join(u for u, _, _ in listings)) + '</param>')
