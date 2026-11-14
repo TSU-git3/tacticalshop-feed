@@ -390,6 +390,12 @@ def with_size(name, token, siblings, sizes=None):
     return name
 
 
+def hp_name(name):
+    """HugeProfit drops the typographic minus «−» (U+2212) from names on import — «комфорт до −5 °C» arrived as
+    «до 5 °C» on 14 Snugpak products (owner's HugeProfit export, 14 Nov 2026). Write a plain hyphen-minus instead."""
+    return name.replace('\u2212', '-')
+
+
 def xml_head(now, cat_lines):
     return ['<?xml version="1.0" encoding="UTF-8"?>', f'<yml_catalog date="{now}">', '<shop>',
             '<name>Tactical Shop Ukraine</name>', '<company>Tactical Shop Ukraine</company>', '<url>https://tacticalshop.com.ua</url>',
@@ -429,7 +435,7 @@ def write_xml(result):
         lname, lpics = live_name_pics(live, uid) if uid else (None, None)
         if lname and live['items'][uid][5]:
             lname = with_size(lname, code.rsplit('-', 1)[-1] if '-' in code else '', groups.get(live['items'][uid][5], []), SIZES)
-        o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(lname or p["name"])}</name>',
+        o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(hp_name(lname or p["name"]))}</name>',
              f'<price>{p["price"]}</price>', '<currencyId>UAH</currencyId>', f'<categoryId>{p["cat"]}</categoryId>',
              f'<vendor>{escape(p["vendor"])}</vendor>', f'<vendorCode>{escape(code)}</vendorCode>']
         o += [f'<picture>{escape(u)}</picture>' for u in (lpics or p['pics'])]
@@ -506,7 +512,7 @@ def write_ballistic_xml():
             used.add(cat)
             avail = 'true' if a == '+' else 'false'
             status = 'в наявності' if a == '+' else 'немає в наявності'
-            o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(name)}</name>',
+            o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(hp_name(name))}</name>',
                  f'<price>{price}</price>', '<currencyId>UAH</currencyId>', f'<categoryId>{cat}</categoryId>',
                  f'<vendor>{escape(vendor)}</vendor>', f'<vendorCode>{escape(code)}</vendorCode>']
             o += [f'<picture>{escape(u)}</picture>' for u in (lpics or p.get('pics') or [])]
