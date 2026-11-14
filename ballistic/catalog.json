@@ -710,7 +710,8 @@
      "name_uk": "Вогнестійкий зимовий тактичний комплект Carinthia FR: куртка SLJ + штани FJT, оливковий, XL, оригінал"
     }
    },
-   "in_csv": false
+   "in_csv": false,
+   "hp_xml": false
   },
   "29895": {
    "url": "/vohnestiika-taktychna-zymova-kurtka-carinthia-fr-slj/29895/",
@@ -757,7 +758,8 @@
      "name_uk": "Вогнестійка зимова тактична куртка Carinthia FR SLJ, оливкова, XL, оригінал"
     }
    },
-   "in_csv": false
+   "in_csv": false,
+   "hp_xml": false
   },
   "braces-fg": {
    "url": "/oryhynalnye-podtiazhky-ecwcs-y-pcu/2375/",

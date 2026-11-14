@@ -477,6 +477,8 @@ def write_ballistic_xml():
         by_code.setdefault(it[0], []).append(uid)
     offers, used = [], set()
     for pid, p in bcat.items():
+        if not p.get('hp_xml', True):
+            continue   # owner, 14 Nov 2026: Carinthia FR set / FR jacket (27502, 29895) are not on Prom -> not in the XML
         for code, s in p['sizes'].items():
             a, q, price = bst.get(code, ['-', 0, s['price']])
             if 'prom' in s:

@@ -42,7 +42,8 @@ Outputs (same data):
   gets its own listing, even if we already have the same product» — Ballistic stock must never merge with our own stock in
   HugeProfit). Params: «Prom ID» (two IDs for twin listings), «Код товару Prom» when it differs from the article.
   Written by `refresh/build_feed.py` `write_ballistic_xml()`, called from `build` / `prices` here. The old «in_xml» flag is
-  no longer read.
+  no longer read. A product with «hp_xml»: false stays out of ballistic.xml (owner, 14 Nov 2026: the Carinthia FR set 27502 and
+  FR jacket 29895 — never imported to Prom; remove the flag when they are listed).
 - `stock.xml` — Kiborg / Militex only since 14 Nov 2026 (no Ballistic offers); this run still rewrites it (stock unchanged)
   so it carries fresh Prom names and photos.
 - Names, photos, Prom IDs and categories in both XMLs = the shop's listings as Prom shows them now: `prom/prom_live.json`,
