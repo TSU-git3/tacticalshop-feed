@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Stock refresh for stock.xml (Tactical Shop Ukraine, Kiborg/Militex via MyDrop).
 
+Two HugeProfit links since 14 Nov 2026 (owner): stock.xml = Kiborg / Militex only; ballistic.xml = the Ballistic supplier
+(write_ballistic_xml, called by ballistic/build_ballistic.py). Names, photos and «Prom ID» in both come from
+prom/prom_live.json (the shop's own Prom feed; `promjs` / `promlive`); prices and stock from the supplier checks.
+
 Usage (run from the repo root):
   python3 refresh/build_feed.py plan    -> reads today's MyDrop search results saved by Claude Code,
                                            writes refresh/todo.json = product ids that need get_product
@@ -327,23 +331,92 @@ def save_parts_state(pstate):
     json.dump(pstate, open(PARTS_STATE_PATH, 'w', encoding='utf-8'), ensure_ascii=False)
 
 
+# ---- Prom live data (owner, 14 Nov 2026: the HugeProfit XMLs carry the CURRENT Prom names, photos and Prom IDs) ----
+# prom/prom_live.json = what the shop's own Prom product feed shows for our listings: Prom ID -> Код_товару, UA name,
+# photo ids, Prom group. Refreshed by the Ballistic run (`promjs` / `promlive`, ballistic/RUNBOOK.md step 2b). Every
+# output falls back to the catalog name / supplier photos for a listing that is not in it.
+PROM_LIVE_PATH = os.path.join(os.path.dirname(ROOT), 'prom', 'prom_live.json')
+IMG = 'https://images.prom.ua/'
+
+
+def load_live():
+    try:
+        return json.load(open(PROM_LIVE_PATH, encoding='utf-8'))
+    except (OSError, ValueError):
+        return {'items': {}, 'cats': {}}
+
+
+def live_name_pics(live, uid):
+    """(name, [photo urls]) as on Prom now, or (None, None) when the listing is not in prom_live.json."""
+    it = live['items'].get(str(uid))
+    if not it:
+        return None, None
+    slug, ids = it[2], it[3]
+    if slug == '*':
+        pics = [IMG + x for x in ids.split(',') if x]
+    else:
+        pics = [IMG + x + '_' + slug for x in ids.split(',') if x]
+    return (it[1] or None), (pics or None)
+
+
+def live_groups(live):
+    """Prom variant group -> names of its listings (to see when a base listing's name leaves its own size out)."""
+    g = {}
+    for it in live['items'].values():
+        if it[5]:
+            g.setdefault(it[5], []).append(it[1])
+    return g
+
+
+SIZES = {'XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', '2XL', '3XL', 'XXXL'}
+
+
+def with_size(name, token, siblings, sizes=None):
+    """Owner's rule (13 Nov 2026): the BASE listing of a size group carries no size in its Prom name («…, мультикам»),
+    its variants do («…, мультикам, M»). In HugeProfit each size is its own product, so the base gets its size back —
+    only when the group's other names prove the pattern (this name + «, X», or «, X» before «, оригінал») and, for
+    Kiborg / Militex codes (sizes=SIZES), only when the code ends in a clothing size and X is one too. Never guessed."""
+    END = ', оригінал'
+    if not token or not name or token in [x.strip() for x in name.split(',')] or (sizes is not None and token not in sizes):
+        return name
+    if name.endswith(END):
+        stem = name[:-len(END)]
+        mid = [x[len(stem) + 2:-len(END)] for x in siblings if x != name and x.startswith(stem + ', ') and x.endswith(END)]
+        if any(m and ',' not in m for m in mid):
+            return stem + ', ' + token + END
+    tails = [x[len(name) + 2:] for x in siblings if x.startswith(name + ', ')]
+    if any(t and ',' not in t and (sizes is None or t in sizes) for t in tails):
+        return name + ', ' + token
+    return name
+
+
+def xml_head(now, cat_lines):
+    return ['<?xml version="1.0" encoding="UTF-8"?>', f'<yml_catalog date="{now}">', '<shop>',
+            '<name>Tactical Shop Ukraine</name>', '<company>Tactical Shop Ukraine</company>', '<url>https://tacticalshop.com.ua</url>',
+            '<currencies><currency id="UAH" rate="1"/></currencies>', '<categories>'] + cat_lines + ['</categories>', '<offers>']
+
+
 def write_xml(result):
+    """stock.xml = Kiborg / Militex ONLY (owner, 14 Nov 2026: Kiborg/Militex and Ballistic are two separate XML links;
+    Ballistic lives in ballistic.xml, written by write_ballistic_xml()). Offer id and vendorCode stay the supplier
+    article (= Prom Код_товару), so HugeProfit keeps matching its products; name and photos = Prom's current ones
+    (prom/prom_live.json); param «Prom ID» = Prom Унікальний_ідентифікатор."""
     now = datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
     cats = CAT['categories']
     used = {str(p['cat']) for p in PRODUCTS.values()}
     used |= {str(cats[c][1]) for c in used if c in cats and cats[c][1]}
-    out = ['<?xml version="1.0" encoding="UTF-8"?>', f'<yml_catalog date="{now}">', '<shop>',
-           '<name>Tactical Shop Ukraine</name>', '<company>Tactical Shop Ukraine</company>', '<url>https://tacticalshop.com.ua</url>',
-           '<currencies><currency id="UAH" rate="1"/></currencies>', '<categories>']
+    cat_lines = []
     for cid in sorted(used, key=lambda x: int(x)):
         if cid in cats:
             n, p = cats[cid]
-            out.append(f'<category id="{cid}"' + (f' parentId="{p}"' if p else '') + f'>{escape(n)}</category>')
-    bal = ballistic_offers()
-    if bal:
-        out.append('<category id="9810">Зимовий одяг Level 7</category>')
-    out += ['</categories>', '<offers>']
-    out += bal
+            cat_lines.append(f'<category id="{cid}"' + (f' parentId="{p}"' if p else '') + f'>{escape(n)}</category>')
+    out = xml_head(now, cat_lines)
+    live = load_live()
+    groups = live_groups(live)
+    try:
+        umap = json.load(open(os.path.join(os.path.dirname(ROOT), 'prom', 'uid_map.json'), encoding='utf-8'))['map']
+    except (OSError, ValueError, KeyError):
+        umap = {}
     for code, p in PRODUCTS.items():
         a, q = result[code]
         if a == '+':
@@ -352,18 +425,204 @@ def write_xml(result):
             avail, status, q = 'true', f'під замовлення {a} дн.', None
         else:
             avail, status, q = 'false', 'немає в наявності', 0
-        o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(p["name"])}</name>',
+        uid = umap.get(code, {}).get('uid', '')
+        lname, lpics = live_name_pics(live, uid) if uid else (None, None)
+        if lname and live['items'][uid][5]:
+            lname = with_size(lname, code.rsplit('-', 1)[-1] if '-' in code else '', groups.get(live['items'][uid][5], []), SIZES)
+        o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(lname or p["name"])}</name>',
              f'<price>{p["price"]}</price>', '<currencyId>UAH</currencyId>', f'<categoryId>{p["cat"]}</categoryId>',
              f'<vendor>{escape(p["vendor"])}</vendor>', f'<vendorCode>{escape(code)}</vendorCode>']
-        o += [f'<picture>{escape(u)}</picture>' for u in p['pics']]
+        o += [f'<picture>{escape(u)}</picture>' for u in (lpics or p['pics'])]
         if q is not None:
             o.append(f'<quantity_in_stock>{q}</quantity_in_stock>')
-        o.append(f'<param name="Наявність Prom">{escape(status)}</param></offer>')
+        o.append(f'<param name="Наявність Prom">{escape(status)}</param>')
+        if uid:
+            o.append(f'<param name="Prom ID">{escape(uid)}</param>')
+        o.append('</offer>')
         out.append(''.join(o))
     out += ['</offers>', '</shop>', '</yml_catalog>']
     open(os.path.join(os.path.dirname(ROOT), 'stock.xml'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
     write_prom_csv(result)
     rozetka_hook()
+
+
+BAL_XML = os.path.join(os.path.dirname(ROOT), 'ballistic.xml')
+BAL_FALLBACK_CAT = ('9810', 'Зимовий одяг Level 7')
+
+
+def write_ballistic_xml():
+    """ballistic.xml — the Ballistic supplier's own XML link for HugeProfit (owner, 14 Nov 2026).
+    EVERY Ballistic article is its own offer, id = vendorCode = the Ballistic article, also where the Prom listing of the
+    same product carries another Код_товару (ESS reopened listings keep our own articles, earmuffs the maker's code):
+    owner — «ALL Ballistic stock gets its own listing (even if we already have the same product)», so Ballistic stock
+    never merges with our own stock of the same model in HugeProfit. The Prom side is shown in params: «Prom ID»
+    (one article can sit on two twin listings) and «Код товару Prom» when it differs from the article.
+    Name, photos and category (= Prom group) come from prom/prom_live.json; price and stock from ballistic/state.json.
+    Called by ballistic/build_ballistic.py (build / prices). Kiborg runs never write this file."""
+    bdir = os.path.join(os.path.dirname(ROOT), 'ballistic')
+    try:
+        bcat = json.load(open(os.path.join(bdir, 'catalog.json'), encoding='utf-8'))['products']
+        bst = json.load(open(os.path.join(bdir, 'state.json'), encoding='utf-8'))['state']
+    except (OSError, ValueError, KeyError):
+        return 0
+    try:
+        buid = json.load(open(os.path.join(bdir, 'uid_map.json'), encoding='utf-8')).get('map', {})
+    except (OSError, ValueError):
+        buid = {}
+    live = load_live()
+    groups = live_groups(live)
+    fallback = '157945845' if '157945845' in live['cats'] else BAL_FALLBACK_CAT[0]   # Prom group «Зимовий одяг (Level 7)»
+    by_code = {}
+    for uid, it in live['items'].items():
+        by_code.setdefault(it[0], []).append(uid)
+    offers, used = [], set()
+    for pid, p in bcat.items():
+        for code, s in p['sizes'].items():
+            a, q, price = bst.get(code, ['-', 0, s['price']])
+            if 'prom' in s:
+                listings = [(L['uid'], L['code'], L.get('name_uk')) for L in s['prom']]
+            else:
+                uids = by_code.get(code, [])
+                uid = uids[0] if len(uids) == 1 else buid.get(code, '')
+                listings = [(uid, code, s.get('name_uk'))] if uid else []
+            lname = lpics = cat = None
+            vendor = ''
+            for uid, _, _ in listings:
+                lname, lpics = live_name_pics(live, uid)
+                if lname:
+                    it = live['items'][str(uid)]
+                    cat, vendor = it[4], (it[6] if len(it) > 6 else '')
+                    if it[5] and len(p['sizes']) > 1:
+                        lname = with_size(lname, s.get('size', ''), groups.get(it[5], []))
+                    break
+            if not vendor:
+                vendor = p['brand'] if not p['brand'].startswith('(') else 'US Army (контрактний виробник)'
+            name = lname or (listings[0][2] if listings and listings[0][2] else None) or s.get('name_uk') \
+                or (p['name_ua'] + ', ' + s['size'] + ', оригінал')
+            if not cat or cat not in live['cats']:
+                cat = fallback
+            used.add(cat)
+            avail = 'true' if a == '+' else 'false'
+            status = 'в наявності' if a == '+' else 'немає в наявності'
+            o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(name)}</name>',
+                 f'<price>{price}</price>', '<currencyId>UAH</currencyId>', f'<categoryId>{cat}</categoryId>',
+                 f'<vendor>{escape(vendor)}</vendor>', f'<vendorCode>{escape(code)}</vendorCode>']
+            o += [f'<picture>{escape(u)}</picture>' for u in (lpics or p.get('pics') or [])]
+            if a == '+' and q is not None:
+                o.append(f'<quantity_in_stock>{q}</quantity_in_stock>')
+            elif a != '+':
+                o.append('<quantity_in_stock>0</quantity_in_stock>')
+            o.append(f'<param name="Наявність Prom">{escape(status)}</param>')
+            if listings:
+                o.append('<param name="Prom ID">' + escape(', '.join(u for u, _, _ in listings)) + '</param>')
+                other = [c for _, c, _ in listings if c != code]
+                if other:
+                    o.append('<param name="Код товару Prom">' + escape(', '.join(dict.fromkeys(other))) + '</param>')
+            o.append('</offer>')
+            offers.append(''.join(o))
+    # categories = the Prom groups of these listings, with their parents
+    lc, cat_ids = live['cats'], set()
+    for c in used:
+        while c and c in lc and c not in cat_ids:
+            cat_ids.add(c)
+            c = lc[c][1]
+    cat_lines = []
+    for c in sorted(cat_ids, key=int):
+        n, par = lc[c]
+        cat_lines.append(f'<category id="{c}"' + (f' parentId="{par}"' if par and par in cat_ids else '') + f'>{escape(n)}</category>')
+    if BAL_FALLBACK_CAT[0] in used:
+        cat_lines.append(f'<category id="{BAL_FALLBACK_CAT[0]}">{escape(BAL_FALLBACK_CAT[1])}</category>')
+    now = datetime.datetime.now(ZoneInfo('Europe/Kyiv')).strftime('%Y-%m-%d %H:%M')
+    out = xml_head(now, cat_lines) + offers + ['</offers>', '</shop>', '</yml_catalog>']
+    open(BAL_XML, 'w', encoding='utf-8').write('\n'.join(out) + '\n')
+    return len(offers)
+
+
+PROMJS = r"""window.__PL={done:false};(async()=>{try{const ids=new Set(__IDS__);const r=await fetch(__FEED__);window.__PL.status=r.status;const t=await r.text();const d=new DOMParser().parseFromString(t,'text/xml');const offs=[...d.querySelectorAll('offer')];window.__PL.total=offs.length;const g=(o,n)=>{const e=o.querySelector(n);return e?e.textContent.replace(/[\t\n\r]+/g,' ').trim():''};const lines=[];for(const o of offs){const v=g(o,'vendor'),vc=g(o,'vendorCode'),id=o.getAttribute('id');if(!(v==='Kiborg'||v==='Militex'||/^\d{13}$/.test(vc)||ids.has(id)))continue;const pics=[...o.querySelectorAll('picture')].map(p=>p.textContent.trim().replace('https://images.prom.ua/',''));const sl=pics.map(p=>p.slice(p.indexOf('_')+1));const same=sl.every(s=>s===sl[0]);const pstr=same?(sl[0]||'')+'\t'+pics.map(p=>p.slice(0,p.indexOf('_'))).join(','):'*\t'+pics.join(',');lines.push([id,vc,o.getAttribute('group_id')||'',g(o,'categoryId'),v,g(o,'name'),pstr].join('\t'))}lines.sort();const cats=[...d.querySelectorAll('category')].map(c=>c.getAttribute('id')+'\t'+(c.getAttribute('parentId')||'')+'\t'+c.textContent.replace(/[\t\n\r]+/g,' ').trim()).sort();const canon='CATS\n'+cats.join('\n')+'\nOFFERS\n'+lines.join('\n')+'\nEND\n';const h=[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canon)))].map(b=>b.toString(16).padStart(2,'0')).join('');window.__PL.n=lines.length;window.__PL.sha=h;if(h==='__SHA__'){window.__PL.msg='PROMLIVE same '+lines.length}else{const txt='DATE\t'+d.documentElement.getAttribute('date')+'\nTOTAL\t'+offs.length+'\n'+canon;const cs=new Blob([txt]).stream().pipeThrough(new CompressionStream('gzip'));const buf=new Uint8Array(await new Response(cs).arrayBuffer());let bin='';for(let i=0;i<buf.length;i+=8192)bin+=String.fromCharCode.apply(null,buf.subarray(i,i+8192));const w=btoa(bin).match(/.{1,100}/g).join('\n');const pad=Math.max(0,115000-w.length);document.documentElement.innerHTML='<body><main><pre>PLSTART\n'+w+'\nPLEND\n'+('pad '.repeat(Math.ceil(pad/4)))+'</pre></main></body>';window.__PL.msg='PROMLIVE changed '+lines.length+' — page ready, read it with get_page_text (max_chars 200000)'}}catch(e){window.__PL.msg='PROMLIVE error '+String(e)}window.__PL.done=true})();'started'"""
+
+
+def promjs():
+    """Print the collector that reads the shop's own Prom product feed in a browser tab on tacticalshop.com.ua.
+    The feed link (it carries the shop's export hash) is NOT kept in this public repo: pass it as the argument."""
+    if len(sys.argv) < 3 or 'products_feed.xml' not in sys.argv[2]:
+        sys.exit('usage: python3 refresh/build_feed.py promjs "<Prom product feed link>"  (the link is in the scheduled task prompt)')
+    url = sys.argv[2]
+    if 'languages=' not in url:
+        url += '&languages=uk'
+    bcat = json.load(open(os.path.join(os.path.dirname(ROOT), 'ballistic', 'catalog.json'), encoding='utf-8'))['products']
+    ids = sorted({L['uid'] for p in bcat.values() for s in p['sizes'].values() for L in s.get('prom', [])
+                  if not re.fullmatch(r'\d{13}', L['code'])})
+    print(PROMJS.replace('__IDS__', json.dumps(ids)).replace('__FEED__', json.dumps(url)).replace('__SHA__', load_live().get('sha', '')))
+
+
+def promlive():
+    """python3 refresh/build_feed.py promlive <file> — <file> = the get_page_text result of the collector page (the saved
+    tool-result file or the text itself). Rewrites prom/prom_live.json. ABORT (nothing changed) when the dump is broken
+    or covers under 95 % of the Prom IDs we know — a short feed must never blank names or photos."""
+    import base64, gzip, hashlib
+    raw = open(sys.argv[2], encoding='utf-8').read()
+    try:
+        arr = json.loads(raw)
+        if isinstance(arr, list):
+            raw = ''.join(x.get('text', '') for x in arr if isinstance(x, dict))
+    except ValueError:
+        pass
+    if 'PLSTART' in raw and 'PLEND' in raw:
+        b = re.sub(r'\s+', '', raw.split('PLSTART', 1)[1].split('PLEND', 1)[0])
+        try:
+            raw = gzip.decompress(base64.b64decode(b)).decode('utf-8')
+        except Exception as e:
+            sys.exit('ABORT: Prom live dump could not be decoded (' + str(e)[:80] + ') — prom_live.json NOT changed.')
+    if 'CATS\n' not in raw or not raw.endswith('END\n') or '\nOFFERS\n' not in raw:
+        sys.exit('ABORT: Prom live dump is incomplete (no CATS / OFFERS / END) — prom_live.json NOT changed.')
+    canon = raw[raw.index('CATS\n'):]
+    date = re.search(r'DATE\t([^\n]*)', raw)
+    cpart, opart = canon[len('CATS\n'):-len('END\n')].split('\nOFFERS\n', 1)
+    cats = {}
+    for ln in cpart.split('\n'):
+        f = ln.split('\t')
+        if len(f) == 3:
+            cats[f[0]] = [f[2], f[1]]
+    items = {}
+    for ln in opart.split('\n'):
+        f = ln.split('\t')
+        if len(f) != 8:
+            continue
+        items[f[0]] = [f[1], f[5], f[6], f[7], f[3], f[2], f[4]]   # code, name, slug, photo ids, Prom group, variant group, vendor
+    old = load_live()
+    umap = json.load(open(os.path.join(os.path.dirname(ROOT), 'prom', 'uid_map.json'), encoding='utf-8'))['map']
+    known = {u['uid'] for u in umap.values()}
+    bcat = json.load(open(os.path.join(os.path.dirname(ROOT), 'ballistic', 'catalog.json'), encoding='utf-8'))['products']
+    known |= {L['uid'] for p in bcat.values() for s in p['sizes'].values() for L in s.get('prom', [])}
+    got = len(known & set(items))
+    if got < 0.95 * len(known):
+        sys.exit(f'ABORT: Prom feed shows only {got} of {len(known)} known listings — prom_live.json NOT changed.')
+    oi = old.get('items', {})
+    names = sum(1 for u, v in items.items() if u in oi and oi[u][1] != v[1])
+    photos = sum(1 for u, v in items.items() if u in oi and (oi[u][2], oi[u][3]) != (v[2], v[3]))
+    new = sum(1 for u in items if u not in oi)
+    gone = sorted(u for u in known if u not in items)
+    for u in gone:
+        if u in oi:
+            items[u] = oi[u]   # not in the feed any more (hidden on Prom?) -> keep the last known name and photos
+    out = ['{', '"_note": "Our listings as the shop\'s own Prom product feed shows them (refresh/build_feed.py promlive). item = Prom ID: [Код_товару, UA name, photo slug, photo ids, Prom group id, variant group, Виробник].",',
+           '"checked": ' + json.dumps((date.group(1) if date else '')) + ',',
+           '"sha": "' + hashlib.sha256(canon.encode('utf-8')).hexdigest() + '",',
+           '"cats": ' + json.dumps(cats, ensure_ascii=False, separators=(',', ':')) + ',', '"items": {']
+    keys = sorted(items)
+    out += [json.dumps(k) + ':' + json.dumps(items[k], ensure_ascii=False, separators=(',', ':')) + (',' if k != keys[-1] else '') for k in keys]
+    out += ['}', '}']
+    open(PROM_LIVE_PATH, 'w', encoding='utf-8').write('\n'.join(out) + '\n')
+    print(f'prom_live.json: {len(items)} listings ({got} of {len(known)} known), names changed {names}, photos changed {photos}, new {new}')
+    if gone:
+        print('Known listings NOT in the Prom feed (hidden or deleted on Prom? they keep their last name/photos): ' + ', '.join(gone[:30]))
+
+
+def restamp():
+    """Rewrite stock.xml (+ Prom CSV, Rozetka) from refresh/last_state.json — after prom_live.json or a rule changed."""
+    prev = json.load(open(os.path.join(ROOT, 'last_state.json'), encoding='utf-8'))
+    write_xml({c: tuple(v) for c, v in prev.items()})
+    print('stock.xml rewritten from last_state.json')
 
 
 def rozetka_hook():
@@ -374,37 +633,6 @@ def rozetka_hook():
         print(build_rozetka.hook())
     except Exception as e:
         print('rozetka: skipped (' + str(e)[:200] + ')')
-
-
-def ballistic_offers():
-    """Ballistic Level 7 offers for stock.xml (owner, 24 Oct 2026: HugeProfit gets this supplier too).
-    Data: ballistic/catalog.json + ballistic/state.json, written by ballistic/build_ballistic.py.
-    Every Kiborg run keeps them as last written; only the Ballistic run changes them."""
-    bdir = os.path.join(os.path.dirname(ROOT), 'ballistic')
-    try:
-        bcat = json.load(open(os.path.join(bdir, 'catalog.json'), encoding='utf-8'))['products']
-        bst = json.load(open(os.path.join(bdir, 'state.json'), encoding='utf-8'))['state']
-    except (OSError, ValueError, KeyError):
-        return []
-    out = []
-    for pid, p in bcat.items():
-        if not p.get('in_xml', True):
-            continue  # ESS glasses (11 Nov 2026): Prom CSV only until the owner decides on HugeProfit
-        for code, s in p['sizes'].items():
-            a, q, price = bst.get(code, ['-', 0, s['price']])
-            avail = 'true' if a == '+' else 'false'
-            status = 'в наявності' if a == '+' else 'немає в наявності'
-            o = [f'<offer id="{escape(code)}" available="{avail}">', f'<name>{escape(p["name_ua"] + ", " + s["size"] + ", оригінал")}</name>',
-                 f'<price>{price}</price>', '<currencyId>UAH</currencyId>', '<categoryId>9810</categoryId>',
-                 f'<vendor>{escape(p["brand"])}</vendor>', f'<vendorCode>{escape(code)}</vendorCode>']
-            o += [f'<picture>{escape(u)}</picture>' for u in p['pics']]
-            if a == '+' and q is not None:
-                o.append(f'<quantity_in_stock>{q}</quantity_in_stock>')
-            elif a != '+':
-                o.append('<quantity_in_stock>0</quantity_in_stock>')
-            o.append(f'<param name="Наявність Prom">{escape(status)}</param></offer>')
-            out.append(''.join(o))
-    return out
 
 
 PROM_DIR = os.path.join(os.path.dirname(ROOT), 'prom')
@@ -546,4 +774,5 @@ def kits():
 
 
 if __name__ == '__main__':
-    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits, 'prom': prom}[sys.argv[1]]()
+    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits, 'prom': prom,
+     'promjs': promjs, 'promlive': promlive, 'restamp': restamp, 'ballistic': lambda: print('ballistic.xml:', write_ballistic_xml(), 'offers')}[sys.argv[1]]()

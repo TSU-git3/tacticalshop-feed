@@ -7,7 +7,7 @@ Ballistic gives no XML; stock is read from the owner's signed-in Ballistic accou
   python3 ballistic/build_ballistic.py js            -> prints the collector JS (paste into javascript_tool)
   python3 ballistic/build_ballistic.py build RAW.txt -> RAW.txt = the get_page_text output of the dump;
                                                        writes ballistic/state.json, ballistic/catalog.json (prices),
-                                                       prom/ballistic_stock.csv, stock.xml, ballistic/report.md
+                                                       prom/ballistic_stock.csv, ballistic.xml, stock.xml, ballistic/report.md
 
 Rules (owner, 24 Oct 2026): price = Ballistic РРЦ for that exact size; in stock with more than 2 units -> «!»
 («Готово до відправки»), 1–2 or no count -> «+», sold out -> «-». Match only by Ballistic article (exact).
@@ -19,7 +19,8 @@ Fixed price (owner, 30 Oct 2026): catalog «price_fixed» (ECWCS/PCU braces 1,09
 ESS glasses (owner, 10–11 Nov 2026; catalog «line»: «ess»): one product per Ballistic page, sizes = articles (frame colour);
 size-level «price_fixed» = the selling price set by the Prom-median rule (Import project); size-level «prom» = the Prom
 listings of that article (one article can be two reopened twin listings), matched by Унікальний_ідентифікатор;
-«in_xml»: false keeps a product out of stock.xml (HugeProfit) until the owner decides; not in Rozetka scope.
+«in_xml» is no longer used (owner, 14 Nov 2026): every Ballistic article goes to ballistic.xml, the supplier's own
+HugeProfit link, as its own offer (SKU = Ballistic article) — stock.xml holds Kiborg / Militex only.
 
   python3 ballistic/build_ballistic.py prices        -> re-applies РРЦ + market targets to state, CSV and stock.xml (no Ballistic read)
 """
@@ -113,9 +114,13 @@ def write_csv(cat, state):
 
 
 def rebuild_stock_xml():
-    """stock.xml holds Kiborg (refresh/last_state.json) + Ballistic offers; build_feed.write_xml adds ours."""
+    """Owner, 14 Nov 2026: two separate HugeProfit links. ballistic.xml = every Ballistic article as its own offer
+    (build_feed.write_ballistic_xml); stock.xml = Kiborg / Militex only — rewritten here too (from
+    refresh/last_state.json, stock unchanged) so it picks up a fresh prom/prom_live.json and the Rozetka hook runs."""
     sys.path.insert(0, os.path.join(REPO, 'refresh'))
     import build_feed
+    n = build_feed.write_ballistic_xml()
+    print(f'ballistic.xml: {n} offers')
     prev = load(os.path.join(REPO, 'refresh', 'last_state.json'))
     build_feed.write_xml({c: tuple(v) for c, v in prev.items()})
 

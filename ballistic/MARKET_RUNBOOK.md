@@ -19,9 +19,9 @@ Owner, 27 Oct 2026: Ballistic Level 7 prices follow the cheapest Prom competitor
 5. `python3 ballistic/market.py apply ballistic/market_raw.txt`. ABORT → change nothing, report. A «blocked by …»
    line → open that offer's page (`/ua/p<id>-<urlText>.html`, urlText from the search JSON), read «Колір», record it in
    colour_checked, run apply again.
-6. `python3 ballistic/build_ballistic.py prices` (re-applies РРЦ + targets to state.json, prom/ballistic_stock.csv, stock.xml).
+6. `python3 ballistic/build_ballistic.py prices` (re-applies РРЦ + targets to state.json, prom/ballistic_stock.csv, ballistic.xml — the Ballistic HugeProfit link since 14 Nov 2026 — and rewrites stock.xml unchanged).
 7. Delete ballistic/market_raw.txt. `git pull --rebase`; on a stock.xml conflict take theirs and re-run step 6.
-   `git add ballistic/market_prices.json ballistic/market_report.md ballistic/state.json prom/ballistic_stock.csv stock.xml`,
+   `git add ballistic/market_prices.json ballistic/market_report.md ballistic/state.json prom/ballistic_stock.csv stock.xml ballistic.xml` and `git add -A rozetka/`,
    commit «Ballistic market prices <date time> Kyiv», push to main. Close the tab.
 8. Report (2–4 lines): targets set/changed (listing, РРЦ → new price, cheapest competitor), blocked listings, aborts.
    Notify the owner only when a selling price changed or the run failed.
