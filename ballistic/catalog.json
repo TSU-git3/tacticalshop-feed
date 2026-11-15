@@ -1566,7 +1566,7 @@
      "size": "Olive Drab",
      "label": "Olive Drab",
      "price": 4050,
-     "price_fixed": 4599,
+     "price_fixed": 4050,
      "prom": [
       {
        "uid": "3270707852",
@@ -1582,7 +1582,7 @@
      "size": "DE",
      "label": "DE",
      "price": 4050,
-     "price_fixed": 4899,
+     "price_fixed": 4050,
      "prom": [
       {
        "uid": "1695296626",
@@ -1598,7 +1598,7 @@
      "size": "Чорний",
      "label": "Чорний",
      "price": 4050,
-     "price_fixed": 4199,
+     "price_fixed": 4050,
      "prom": [
       {
        "uid": "1682664676",
@@ -1652,7 +1652,7 @@
      "size": "Olive",
      "label": "Olive",
      "price": 2925,
-     "price_fixed": 3299,
+     "price_fixed": 2925,
      "prom": [
       {
        "uid": "3270707855",
@@ -1706,7 +1706,7 @@
      "size": "Multicam",
      "label": "Multicam",
      "price": 17100,
-     "price_fixed": 17799,
+     "price_fixed": 17100,
      "prom": [
       {
        "uid": "3270707857",
@@ -1749,7 +1749,7 @@
      "size": "Olive",
      "label": "Olive",
      "price": 20205,
-     "price_fixed": 21099,
+     "price_fixed": 20205,
      "prom": [
       {
        "uid": "3270707859",
@@ -1776,7 +1776,7 @@
      "size": "Olive",
      "label": "Olive",
      "price": 14175,
-     "price_fixed": 14199,
+     "price_fixed": 14175,
      "prom": [
       {
        "uid": "3270707860",
@@ -1900,7 +1900,7 @@
      "size": "Foliage Green",
      "label": "Foliage Green",
      "price": 3555,
-     "price_fixed": 3699,
+     "price_fixed": 3555,
      "prom": [
       {
        "uid": "3270707863",
@@ -2021,7 +2021,7 @@
      "size": "-",
      "label": "-",
      "price": 4050,
-     "price_fixed": 4699,
+     "price_fixed": 4050,
      "prom": [
       {
        "uid": "3271735768",
@@ -2126,7 +2126,7 @@
      "size": "Large",
      "label": "Large",
      "price": 6975,
-     "price_fixed": 7200,
+     "price_fixed": 6975,
      "prom": [
       {
        "uid": "3271735772",
@@ -2283,7 +2283,7 @@
      "size": "-",
      "label": "-",
      "price": 6750,
-     "price_fixed": 7399,
+     "price_fixed": 6750,
      "prom": [
       {
        "uid": "3271735778",
@@ -2310,7 +2310,7 @@
      "size": "-",
      "label": "-",
      "price": 10125,
-     "price_fixed": 10899,
+     "price_fixed": 10125,
      "prom": [
       {
        "uid": "3271735779",
@@ -2337,7 +2337,7 @@
      "size": "-",
      "label": "-",
      "price": 7650,
-     "price_fixed": 7999,
+     "price_fixed": 7650,
      "prom": [
       {
        "uid": "3271735780",
@@ -2364,7 +2364,7 @@
      "size": "-",
      "label": "-",
      "price": 7650,
-     "price_fixed": 7999,
+     "price_fixed": 7650,
      "prom": [
       {
        "uid": "3271735781",
@@ -2417,7 +2417,7 @@
      "size": "-",
      "label": "-",
      "price": 5850,
-     "price_fixed": 6699,
+     "price_fixed": 5850,
      "prom": [
       {
        "uid": "3271735783",
