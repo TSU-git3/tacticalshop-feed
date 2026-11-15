@@ -1,4 +1,4 @@
-# Rozetka feed report — 2026-11-15 21:38 (Kyiv)
+# Rozetka feed report — 2026-11-15 22:32 (Kyiv)
 
 - Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
 - Offers: 328 (245 available); by line {'kib': 259, 'bal': 69}

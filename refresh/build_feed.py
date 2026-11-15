@@ -35,6 +35,15 @@ for _c, _o in PRICE_OVERRIDE.items():
 _K = json.load(open(os.path.join(ROOT, 'kits.json'), encoding='utf-8'))
 KITS = {k: v['parts'] for k, v in _K['kits'].items() if k in PRODUCTS}
 EXTRA_PARTS = _K.get('extra_parts', {})          # part sku (not one of our codes) -> MyDrop product id
+# Sets with a HIDDEN part (owner, 15 Nov 2026: «add the chrome check»): MyDrop shows some parts (covers that are not sold
+# alone, a few packs) only inside the set's page — the connector cannot read them. Such a part is written «h:<MyDrop
+# product id>» in kits.json["web_only"]; its stock comes from refresh/web_parts_state.json, written by the browser check
+# (refresh/WEBPARTS_RUNBOOK.md). That file is used only while it is under WEB_MAX_AGE_H hours old: stale or missing data
+# -> the set keeps its own status (made to order), so a switched-off computer can never leave a set wrongly in stock.
+WEB_SETS = {k: v for k, v in _K.get('web_only', {}).items() if k in PRODUCTS}
+KITS.update({k: v['parts'] for k, v in WEB_SETS.items()})
+WEB_STATE_PATH = os.path.join(ROOT, 'web_parts_state.json')
+WEB_MAX_AGE_H = 8
 EXTRA_PIDS = sorted(set(EXTRA_PARTS.values()))
 PARTS_STATE_PATH = os.path.join(ROOT, 'kit_parts_state.json')
 
@@ -234,6 +243,15 @@ def status_for(code, stock):
     return (NET_DAYS if net else OTHER_DAYS), None
 
 
+def web_line():
+    _p, chg, age, fresh = load_web_parts()
+    if age is None:
+        return f'- Sets with hidden parts ({len(WEB_SETS)}): no browser data — all kept made to order'
+    return (f'- Sets with hidden parts ({len(WEB_SETS)}): browser data {age:.1f} h old — ' +
+            ('used' if fresh else f'STALE (over {WEB_MAX_AGE_H} h), sets kept made to order — is the owner\'s computer on?') +
+            (f'; composition changed, not computed: {" ".join(sorted(chg))}' if chg else ''))
+
+
 def build():
     todo = json.load(open(os.path.join(ROOT, 'todo.json'), encoding='utf-8'))
     out_pids = set(todo['out_of_stock_by_sweep'])
@@ -323,7 +341,8 @@ def build():
            f'- On MyDrop but out of stock (no size with stock): {len(on_md_out)}',
            f'- Codes not found on MyDrop (written as out of stock «-»): {len(unmapped)}',
            f'- Product ids dropped from the list (matched none of our codes): {len(dropped)}',
-           f'- Owner price overrides applied (refresh/price_override.json): {sum(c in PRODUCTS for c in PRICE_OVERRIDE)} of {len(PRICE_OVERRIDE)}', '',
+           f'- Owner price overrides applied (refresh/price_override.json): {sum(c in PRODUCTS for c in PRICE_OVERRIDE)} of {len(PRICE_OVERRIDE)}',
+           web_line(), '',
            '## Changes', ''] + [f'- {c}: {a[0]} {a[1]} → {b[0]} {b[1]}' for c, a, b in changes[:300]] + \
           ['', '## Kits in stock from their parts (kits.json)', ''] + kit_lines + \
           ['', '## Name check — listing type vs MyDrop title (fix any line in bold before it sells)', ''] + name_check(cmap, pmap) + \
@@ -353,6 +372,7 @@ def apply_kits(result, sizes, out_pids=(), looked=()):
             pstate[sku] = list(part_status(sizes[sku][0]))
         elif pid in out_pids or pid in looked:
             pstate[sku] = [OTHER_DAYS, None]      # product out of stock / size not listed
+    wparts, wchanged, _age, _fresh = load_web_parts()
     lines = []
     for kit, parts in KITS.items():
         own = result[kit]
@@ -361,9 +381,14 @@ def apply_kits(result, sizes, out_pids=(), looked=()):
             own = result[kit] = (OTHER_DAYS, None)
         if own[0] == '+' or own[0] == '-':
             continue
-        counts, ok = [], True
+        counts, ok = [], kit not in wchanged
         for sku, n in parts:
-            st = result.get(sku) if sku in PRODUCTS else tuple(pstate.get(sku, ('?', None)))
+            if not ok:
+                break
+            if sku.startswith('h:'):
+                st = tuple(wparts[sku]) if sku in wparts else None      # hidden part: fresh browser data only
+            else:
+                st = result.get(sku) if sku in PRODUCTS else tuple(pstate.get(sku, ('?', None)))
             if not st or st[0] != '+':
                 ok = False
                 break
@@ -379,6 +404,71 @@ def apply_kits(result, sizes, out_pids=(), looked=()):
             result[kit] = ('+', q)
             lines.append(f'- {kit}: + {q if q is not None else "(no number)"}')
     return lines, pstate
+
+
+def load_web_parts():
+    """Hidden-part stock from the browser check -> (parts, codes whose set changed, age in hours or None, fresh?).
+    Parts are returned only while the file is under WEB_MAX_AGE_H hours old."""
+    try:
+        w = json.load(open(WEB_STATE_PATH, encoding='utf-8'))
+        at = datetime.datetime.fromisoformat(w['at'].replace('Z', '+00:00'))
+        age = (datetime.datetime.now(datetime.timezone.utc) - at).total_seconds() / 3600
+    except Exception:
+        return {}, set(), None, False
+    fresh = -0.25 <= age <= WEB_MAX_AGE_H
+    return (w.get('parts', {}) if fresh else {}), set(w.get('changed', [])), age, fresh
+
+
+WEBJS = r"""window.__W={done:false,n:0,err:[],out:''};(async()=>{const S=__SETS__;const H=new Set(__HID__);const parts={};const chg=[];const ids=Object.keys(S);for(const pid of ids){try{const r=await fetch('https://backend.mydrop.com.ua/dropshipper/vendors/9420/products/'+pid,{credentials:'include'});if(r.status!==200){window.__W.err.push(pid);}else{const j=await r.json();const d=j.data||j;const cnt={};for(const c of (d.childProducts||[])){const id=String(c.childProduct.id);cnt[id]=(cnt[id]||0)+1;if(H.has(id)){const z=c.childProduct.sizes||[];parts[id]=z.length===1?(Number(z[0].realCountDropshipper)||0)+(z[0].hiddenStock?'h':''):'x';}}const sig=Object.keys(cnt).sort((a,b)=>a-b).map(k=>k+'*'+cnt[k]).join(',');if(sig!==S[pid])chg.push(pid);}}catch(e){window.__W.err.push(pid);}window.__W.n++;await new Promise(r=>setTimeout(r,600));}const keys=Object.keys(parts).sort((a,b)=>a-b);let sum=0;for(const k of keys){const m=parseInt(parts[k]);if(!isNaN(m))sum+=m;}window.__W.out=['WEBPARTS',new Date().toISOString(),window.__W.n+'/'+ids.length,'err:'+window.__W.err.join('/'),'chg:'+chg.join('/'),'n'+keys.length,'sum'+sum,keys.map(k=>k+':'+parts[k]).join(','),'END'].join('|');window.__W.done=true;})();'started'"""
+
+
+def webjs():
+    """Write refresh/sets_collect.js — the collector the browser check runs on a signed-in mydrop.com.ua page.
+    One request per set page, 0.6 s apart. Regenerate after kits.json["web_only"] changes."""
+    sets = {v['mydrop_set']: v['signature'] for v in WEB_SETS.values()}
+    hid = sorted({s[2:] for v in WEB_SETS.values() for s, _n in v['parts'] if s.startswith('h:')}, key=int)
+    js = WEBJS.replace('__SETS__', json.dumps(sets, separators=(',', ':'))).replace('__HID__', json.dumps(hid, separators=(',', ':')))
+    open(os.path.join(ROOT, 'sets_collect.js'), 'w', encoding='utf-8').write(js + '\n')
+    print(f'refresh/sets_collect.js written: {len(sets)} set pages, {len(hid)} hidden parts, {len(js)} characters')
+
+
+def webparts():
+    """python3 refresh/build_feed.py webparts <file with the collector's output line>
+    Checks the line (all set pages read, part count and checksum) and writes refresh/web_parts_state.json.
+    ABORT = nothing written (the old file ages out by itself after WEB_MAX_AGE_H hours)."""
+    raw = open(sys.argv[2], encoding='utf-8').read()
+    m = re.search(r'WEBPARTS\|([^|]+)\|(\d+)/(\d+)\|err:([^|]*)\|chg:([^|]*)\|n(\d+)\|sum(\d+)\|([^|]*)\|END', re.sub(r'\s+', '', raw))
+    if not m:
+        sys.exit('ABORT: no complete WEBPARTS … END line in the file — web_parts_state.json NOT changed')
+    at, n, total, err, chg, cnt, summ, body = m.groups()
+    by_pid = {v['mydrop_set']: k for k, v in WEB_SETS.items()}
+    err = [e for e in err.split('/') if e]
+    chg = [c for c in chg.split('/') if c]
+    if int(total) != len(WEB_SETS) or int(n) != int(total):
+        sys.exit(f'ABORT: {n} of {total} set pages read, kits.json has {len(WEB_SETS)} — regenerate the collector (webjs) / re-run. NOT changed')
+    if len(err) > 0.1 * len(WEB_SETS):
+        sys.exit(f'ABORT: {len(err)} of {total} set pages failed — signed out of MyDrop? web_parts_state.json NOT changed')
+    parts, odd, s = {}, [], 0
+    for item in [x for x in body.split(',') if x]:
+        pid, val = item.split(':')
+        if val == 'x':
+            odd.append(pid)
+            continue
+        hidden = val.endswith('h')
+        c = int(val.rstrip('h'))
+        s += c
+        parts['h:' + pid] = ['+', None if hidden else c] if c > 0 else [OTHER_DAYS, None]
+    if len(parts) + len(odd) != int(cnt) or s != int(summ):
+        sys.exit(f'ABORT: the line was copied incompletely (parts {len(parts) + len(odd)} of {cnt}, checksum {s} vs {summ}) — NOT changed')
+    need = {p for v in WEB_SETS.values() for p, _n in v['parts'] if p.startswith('h:')}
+    out = {'_about': 'Stock of MyDrop set parts the connector cannot read (hidden products), read from the set pages in a signed-in '
+                     'browser (refresh/WEBPARTS_RUNBOOK.md). build_feed.py uses it only while it is under %d hours old.' % WEB_MAX_AGE_H,
+           'at': at, 'parts': parts, 'changed': sorted(by_pid[c] for c in chg if c in by_pid),
+           'failed_sets': sorted(by_pid[e] for e in err if e in by_pid), 'not_single_size': odd}
+    json.dump(out, open(WEB_STATE_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+    instock = sum(1 for v in parts.values() if v[0] == '+')
+    print(f'web parts {at}: {len(parts)} hidden parts read ({instock} in stock), missing {len(need - set(parts))}; '
+          f'set pages failed {len(err)}; sets whose composition changed {out["changed"] or 0}')
 
 
 def save_parts_state(pstate):
@@ -847,5 +937,5 @@ def kits():
 
 
 if __name__ == '__main__':
-    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits, 'prom': prom,
+    {'plan': plan, 'build': build, 'split': split, 'merge': merge, 'restate': restate, 'kits': kits, 'prom': prom, 'webjs': webjs, 'webparts': webparts,
      'promjs': promjs, 'promlive': promlive, 'restamp': restamp, 'ballistic': lambda: print('ballistic.xml:', write_ballistic_xml(), 'offers')}[sys.argv[1]]()
