@@ -10,11 +10,14 @@ Braces (owner, 30 Oct 2026): «Оригінальні підтяжки ECWCS і 
 «Схожа модель» links and return the same article (harmless). in_csv=false until the owner confirms the Excel import.
 
 
-ESS glasses (owner, 10–11 Nov 2026): 16 Ballistic pages (catalog keys ess-*), 17 articles, 20 Prom listings (ESS Suppressor One
-copper / clear and ICE One smoke each have two Prom «twin» listings of one article). Each article's Prom listings sit in the
+ESS glasses (owner, 10–11 Nov 2026): 16 Ballistic pages (catalog keys ess-*), 17 articles, 17 Prom listings — since the ESS
+split of 15 Nov 2026 every article has its OWN listing (Код_товару = the Ballistic article, Ідентифікатор_товару BAL-<article>;
+new listings p3277386160–169). The 13 older listings that carried our own articles (incl. the three «twin» pairs) left the
+sync on 15 Nov 2026 and are retired by the SEO project — never put them back into a «prom» list (a link row with the
+Наявність column publishes a hidden listing again). Each article's Prom listings sit in the
 catalog size field «prom» (Унікальний_ідентифікатор + that listing's own Код_товару / Ідентифікатор_товару / names); the CSV
-writes one row per listing. Selling price = max(РРЦ, size «price_fixed») — price_fixed is the Prom-median price set by the
-Import project; this run never changes it. The CDI Max page holds Tan and Black (colour swatches, read since 11 Nov); the 5B page
+writes one row per listing. Selling price = max(РРЦ, size «price_fixed») — price_fixed is the price set by the
+Import project (owner's rule of 15 Nov 2026: independent-store median vs Prom median, the lower one, never under РРЦ); this run never changes it. The CDI Max page holds Tan and Black (colour swatches, read since 11 Nov); the 5B page
 also shows a black frame that is not on Prom (it is reported under «not on Prom» — that is expected). ESS is in ballistic.xml
 since 14 Nov 2026 (one offer per Ballistic article; our own ESS stock stays a separate product in HugeProfit) and NOT in Rozetka. Listings enter prom/ballistic_stock.csv only with «in_csv»: true (one-row link test
 first: p2246116560, 11 Nov 2026).
