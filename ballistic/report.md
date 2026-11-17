@@ -1,21 +1,9 @@
-# Ballistic stock check 2026-11-17 19:48 Kyiv
+# Ballistic stock check 2026-11-17 23:48 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 116, «+» 59, «-» 37 · buy prices known: 232
 
 ## Stock changes since last run
-2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 56, 13950] → ['+', 55]
-2000000157702 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 5, 13950] → ['+', 4]
-2000000123189 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 46, 13950] → ['+', 45]
-2000000252643 Зимовий тактичний комплект Carinthia MIG 4.0 …, XL: ['+', 3, 25875] → ['+', 2]
-2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 7, 24099] → ['+', 6]
-2000000221175 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 8, 14799] → ['+', 7]
-2000000249674 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, X-Long: ['+', 5, 1099] → ['+', 4]
-2000000196411 Sordin Supreme Pro-X Neckband…, Multicam: ['+', 5, 17100] → ['+', 4]
-2000000196404 Sordin Supreme Pro-X Neckband…, Olive: ['+', 3, 16650] → ['+', 2]
-2000000203362 Балістичні окуляри Wiley X Saber Advanced, чо…, -: ['+', 2, 4005] → ['+', 1]
-2000000117270 Зимова тактична куртка Snugpak Spearhead WGTE…, M: ['+', 3, 12999] → ['+', 2]
-2000000154367 Утеплена тактична куртка Snugpak SJ3 Softie W…, L: ['+', 2, 9599] → ['+', 1]
-2000000154411 Зимова тактична куртка Snugpak Tomahawk WGTE,…, L: ['+', 2, 14799] → ['+', 1]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
 none
