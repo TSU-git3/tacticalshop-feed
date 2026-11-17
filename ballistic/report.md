@@ -1,9 +1,21 @@
-# Ballistic stock check 2026-11-17 07:48 Kyiv
+# Ballistic stock check 2026-11-17 11:49 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 126, «+» 49, «-» 37 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 125, «+» 50, «-» 37 · buy prices known: 232
 
 ## Stock changes since last run
-none
+2000000069005 Зимові тактичні штани Tennier ECWCS Gen III L…, L/R: ['+', 10, 10799] → ['+', 9]
+2000000148564 Зимові тактичні штани Tennier ECWCS Gen III L…, L/L: ['+', 8, 10499] → ['+', 6]
+2000000065489 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 12, 13499] → ['+', 11]
+2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 38, 1099] → ['+', 36]
+2000000037806 ESS Crossbow 3LS…, 3 лінзи: ['+', 3, 6435] → ['+', 2]
+2000000134062 ESS Crossbow One, фотохромна лінза…, Photochromic: ['+', 2, 10800] → ['+', 1]
+2000000074603 ESS 5B…, Terrain Tan: ['+', 4, 5175] → ['+', 3]
+2000000196404 Sordin Supreme Pro-X Neckband…, Olive: ['+', 4, 16650] → ['+', 3]
+2000000210391 Sordin Supreme Pro-X Slim…, Olive: ['+', 4, 14175] → ['+', 3]
+2000000249537 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, L/R: ['+', 32, 3600] → ['+', 31]
+2000000119823 Утеплена тактична куртка Snugpak SJ6 Softie W…, L: ['+', 5, 9999] → ['+', 4]
+2000000154428 Зимова тактична куртка Snugpak Tomahawk WGTE,…, XL: ['+', 2, 14799] → ['+', 1]
+2000000119670 Зимова тактична куртка Snugpak SJ9 Softie WGT…, L: ['+', 4, 11199] → ['+', 3]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
