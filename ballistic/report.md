@@ -1,9 +1,22 @@
-# Ballistic stock check 2026-11-18 07:48 Kyiv
+# Ballistic stock check 2026-11-18 11:48 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 116, «+» 59, «-» 37 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 115, «+» 59, «-» 38 · buy prices known: 232
 
 ## Stock changes since last run
-none
+2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 55, 13950] → ['+', 54]
+2000000123189 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 45, 13950] → ['+', 44]
+2000000148540 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 37, 10899] → ['+', 36]
+2000000148526 Зимові тактичні штани Tennier ECWCS Gen III L…, S/R: ['+', 20, 10899] → ['+', 18]
+2000000157719 Зимові тактичні штани Tennier ECWCS Gen III L…, L/R: ['+', 27, 10899] → ['+', 26]
+2000000182292 Зимовий комплект Tennier ECWCS Gen III Level …, S/R: ['+', 11, 22999] → ['+', 10]
+2000000182308 Зимовий комплект Tennier ECWCS Gen III Level …, M/R: ['+', 1, 22999] → ['-', 0]
+2000000252643 Зимовий тактичний комплект Carinthia MIG 4.0 …, XL: ['+', 2, 25875] → ['+', 1]
+2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 36, 1099] → ['+', 35]
+2000000244730 Earmor M32 PLUS…, Coyote Brown: ['+', 2, 3555] → ['+', 1]
+2000000174075 Мембранна куртка ECWCS Gen II Level 6 Gore-Te…, M/R: ['+', 13, 6750] → ['+', 14]
+2000000154305 Зимова тактична куртка Snugpak SJ12 Softie WG…, M: ['+', 2, 14899] → ['+', 1]
+2000000117270 Зимова тактична куртка Snugpak Spearhead WGTE…, M: ['+', 2, 12999] → ['+', 1]
+2000000119670 Зимова тактична куртка Snugpak SJ9 Softie WGT…, L: ['+', 3, 11199] → ['+', 2]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
