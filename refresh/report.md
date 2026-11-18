@@ -1,33 +1,40 @@
-# Stock refresh 2026-11-18 11:28 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-11-18 15:29 (Kyiv) — BIG check
 
-- Offers: 1021; status counts: {'5': 330, '+': 354, '3': 336, '-': 1}
-- get_product lookups: 188; skipped as out of stock by sweep: 37
-- Changed since last run: 13
-- On MyDrop but out of stock (no size with stock): 47
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- Offers: 1021; status counts: {'5': 330, '+': 351, '3': 339, '-': 1}
+- get_product lookups: 331; skipped as out of stock by sweep: 212
+- Changed since last run: 19
+- On MyDrop but out of stock (no size with stock): 286
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
-- Sets with hidden parts (112): browser data 32.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
+- Sets with hidden parts (112): browser data 36.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
 
 ## Changes
 
-- 20200-ЗМ-О: + None → 5 None
-- 2202-6331-00: + 391 → + 387
-- 0802-0121-L: + 7 → + 5
-- 20505-ЛО: + 1 → 5 None
-- 20205-М: + 1 → 5 None
-- 2401-0121-M: + 4 → + 2
-- 2611-0121-00: + 13 → + 12
-- 2321-0121-00: + 322 → + 315
-- 3206-0121-00: + 38 → + 35
-- 2302-0121-00: + 10 → + 7
-- 2601-0211-00: + 13 → + 12
-- 2801-0212-00: + 3 → + 2
-- 3008-L: + 7 → + 5
+- 0802-0121-S: + 24 → + 21
+- 20505-ЛО: 5 None → + 1
+- 20810-ЗМ: + 1 → 5 None
+- 5704-0611-XL: + 1 → 3 None
+- 5704-0612-XL: + 1 → 3 None
+- 5704-0614-M: + 1 → + 2
+- 2316-0126-00: + 2 → + 1
+- 2401-0121-M: + 2 → + 7
+- 2401-0121-XL: + 17 → + 15
+- 112201-2-К: + 3 → + 1
+- 111430-2-К: + 4 → 3 None
+- 3206-0121-00: + 35 → + 37
+- 3209-6322-00: + 8 → + 7
+- 0302-0215-00: + 8 → + 9
+- 0305-0122-00: 3 None → + 1
+- 2801-0212-00: + 2 → + 6
+- 1025: 3 None → + 1
+- 17057-2-К: + 2 → 3 None
+- 17056-2-К: + 2 → 3 None
 
 ## Kits in stock from their parts (kits.json)
 
 - 1028: + (no number)
+- 1025: + 1
 - 82001: + 2
 - 82002: + 2
 - 82003: + 2
@@ -71,8 +78,6 @@
 - 83017-2-К: + 1
 - 83019-2-К: + 1
 - 83020-2-К: + 1
-- 17057-2-К: + 2
-- 17056-2-К: + 2
 
 ## Name check — listing type vs MyDrop title (fix any line in bold before it sells)
 
@@ -80,4 +85,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
