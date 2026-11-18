@@ -1,30 +1,15 @@
-# Ballistic stock check 2026-11-18 19:49 Kyiv
+# Ballistic stock check 2026-11-18 23:52 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 112, «+» 61, «-» 39 · buy prices known: 232
+Codes: 234 · read: 233 · CSV: «!» 112, «+» 61, «-» 39 · buy prices known: 232
 
 ## Stock changes since last run
-2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['+', 2, 13950] → ['-', 0]
-2000000144870 Зимова тактична куртка Tennier ECWCS Gen III …, M/L: ['+', 3, 13950] → ['-', 0]
-2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 6, 24099] → ['+', 5]
-2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 35, 1099] → ['+', 34]
-2000000008219 ESS Crossbow Suppressor 2X+ Deluxe…, 3 лінзи: ['+', 3, 7425] → ['+', 2]
-2000000225067 Sordin Supreme T2…, Olive: ['+', 5, 27900] → ['+', 4]
-2000000204635 Earmor M32 PLUS…, Foliage Green: ['+', 5, 3555] → ['+', 4]
-2000000004921 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, M/R: ['+', 52, 3600] → ['+', 51]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
-7700000027771 Regular: 765 → 540
-2000000238562 Short: 765 → 540
-2000000242903 Long: 765 → 540
-2000000249674 X-Long: 765 → 540
-2000000150406 Short: 765 → 540
-2000000150413 Regular: 765 → 540
-2000000150420 Long: 765 → 540
-2000000150437 X-Long: 765 → 540
-7700000027795 Regular: 765 → 540
+none
 
 ## Not read this run
-none
+2000000176819 (Зимові тактичні штани Tennier ECWCS Gen …, XS/S) — not read this run, last value kept
 
 ## Sizes on Ballistic that are not on Prom (need an import)
 ess-5b 2000000222271 «Розпродано» Розпродано
@@ -66,4 +51,5 @@ b3-45 2000000187570 «Large» Розпродано
 none
 
 ## Collector errors
-none
+16856 X-Small Short HTTP 503
+braces-coyote Short HTTP 400
