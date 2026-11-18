@@ -1,39 +1,35 @@
-# Stock refresh 2026-11-18 15:29 (Kyiv) — BIG check
+# Stock refresh 2026-11-18 19:29 (Kyiv) — SMALL check (in-stock items only)
 
-- Offers: 1021; status counts: {'5': 330, '+': 351, '3': 339, '-': 1}
-- get_product lookups: 331; skipped as out of stock by sweep: 212
-- Changed since last run: 19
-- On MyDrop but out of stock (no size with stock): 286
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- Offers: 1021; status counts: {'5': 331, '+': 347, '3': 342, '-': 1}
+- get_product lookups: 185; skipped as out of stock by sweep: 36
+- Changed since last run: 16
+- On MyDrop but out of stock (no size with stock): 46
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
-- Sets with hidden parts (112): browser data 36.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
+- Sets with hidden parts (112): browser data 40.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
 
 ## Changes
 
-- 0802-0121-S: + 24 → + 21
-- 20505-ЛО: 5 None → + 1
-- 20810-ЗМ: + 1 → 5 None
-- 5704-0611-XL: + 1 → 3 None
-- 5704-0612-XL: + 1 → 3 None
-- 5704-0614-M: + 1 → + 2
-- 2316-0126-00: + 2 → + 1
-- 2401-0121-M: + 2 → + 7
-- 2401-0121-XL: + 17 → + 15
-- 112201-2-К: + 3 → + 1
-- 111430-2-К: + 4 → 3 None
-- 3206-0121-00: + 35 → + 37
-- 3209-6322-00: + 8 → + 7
-- 0302-0215-00: + 8 → + 9
-- 0305-0122-00: 3 None → + 1
-- 2801-0212-00: + 2 → + 6
-- 1025: 3 None → + 1
-- 17057-2-К: + 2 → 3 None
-- 17056-2-К: + 2 → 3 None
+- 2202-6344-00: + 2 → + 12
+- 111440-2-К: + 2 → + 1
+- 20305-ЛО: + 1 → 5 None
+- 20408-ХЛ: + 7 → + 12
+- 20225-ЗМ: + 18 → + 10
+- 20225-М: + 2 → + 1
+- 2316-0121-00: + 72 → + 71
+- 2316-0126-00: + 1 → 3 None
+- 2805-0203-00: + 7 → + 11
+- 2401-0121-M: + 7 → + 15
+- 113038-2-К: + 4 → + 3
+- 2611-0122-00: + 11 → + 10
+- 3206-0121-00: + 37 → + 36
+- 111530: + 13 → + 10
+- 0305-0201-00: + 1 → 3 None
+- 1028: + None → 3 None
 
 ## Kits in stock from their parts (kits.json)
 
-- 1028: + (no number)
 - 1025: + 1
 - 82001: + 2
 - 82002: + 2
@@ -85,4 +81,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
