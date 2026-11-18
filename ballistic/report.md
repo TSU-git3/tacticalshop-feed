@@ -1,25 +1,27 @@
-# Ballistic stock check 2026-11-18 15:49 Kyiv
+# Ballistic stock check 2026-11-18 19:49 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 114, «+» 61, «-» 37 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 112, «+» 61, «-» 39 · buy prices known: 232
 
 ## Stock changes since last run
-2000000157702 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 4, 13950] → ['+', 2]
-2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['-', 0, 13950] → ['+', 2]
-2000000148540 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 36, 10899] → ['+', 35]
-2000000027920 Walker's Razor Slim…, DE: ['+', 9, 3375] → ['+', 8]
-2000000172361 Мембранний комплект Tennier ECWCS Gen III Lev…, XL/L: ['+', 10, 23199] → ['+', 9]
-2000000172347 Мембранний комплект Tennier ECWCS Gen III Lev…, L/L: ['+', 2, 23199] → ['+', 1]
+2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['+', 2, 13950] → ['-', 0]
+2000000144870 Зимова тактична куртка Tennier ECWCS Gen III …, M/L: ['+', 3, 13950] → ['-', 0]
+2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 6, 24099] → ['+', 5]
+2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 35, 1099] → ['+', 34]
+2000000008219 ESS Crossbow Suppressor 2X+ Deluxe…, 3 лінзи: ['+', 3, 7425] → ['+', 2]
+2000000225067 Sordin Supreme T2…, Olive: ['+', 5, 27900] → ['+', 4]
+2000000204635 Earmor M32 PLUS…, Foliage Green: ['+', 5, 3555] → ['+', 4]
+2000000004921 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, M/R: ['+', 52, 3600] → ['+', 51]
 
 ## Price changes (Ballistic РРЦ / market target)
-7700000027771 Regular: 900 → 765
-2000000238562 Short: 900 → 765
-2000000242903 Long: 900 → 765
-2000000249674 X-Long: 900 → 765
-2000000150406 Short: 900 → 765
-2000000150413 Regular: 900 → 765
-2000000150420 Long: 900 → 765
-2000000150437 X-Long: 900 → 765
-7700000027795 Regular: 900 → 765
+7700000027771 Regular: 765 → 540
+2000000238562 Short: 765 → 540
+2000000242903 Long: 765 → 540
+2000000249674 X-Long: 765 → 540
+2000000150406 Short: 765 → 540
+2000000150413 Regular: 765 → 540
+2000000150420 Long: 765 → 540
+2000000150437 X-Long: 765 → 540
+7700000027795 Regular: 765 → 540
 
 ## Not read this run
 none
