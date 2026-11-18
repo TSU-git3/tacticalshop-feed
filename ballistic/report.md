@@ -1,25 +1,25 @@
-# Ballistic stock check 2026-11-18 11:48 Kyiv
+# Ballistic stock check 2026-11-18 15:49 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 115, «+» 59, «-» 38 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 114, «+» 61, «-» 37 · buy prices known: 232
 
 ## Stock changes since last run
-2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 55, 13950] → ['+', 54]
-2000000123189 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 45, 13950] → ['+', 44]
-2000000148540 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 37, 10899] → ['+', 36]
-2000000148526 Зимові тактичні штани Tennier ECWCS Gen III L…, S/R: ['+', 20, 10899] → ['+', 18]
-2000000157719 Зимові тактичні штани Tennier ECWCS Gen III L…, L/R: ['+', 27, 10899] → ['+', 26]
-2000000182292 Зимовий комплект Tennier ECWCS Gen III Level …, S/R: ['+', 11, 22999] → ['+', 10]
-2000000182308 Зимовий комплект Tennier ECWCS Gen III Level …, M/R: ['+', 1, 22999] → ['-', 0]
-2000000252643 Зимовий тактичний комплект Carinthia MIG 4.0 …, XL: ['+', 2, 25875] → ['+', 1]
-2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 36, 1099] → ['+', 35]
-2000000244730 Earmor M32 PLUS…, Coyote Brown: ['+', 2, 3555] → ['+', 1]
-2000000174075 Мембранна куртка ECWCS Gen II Level 6 Gore-Te…, M/R: ['+', 13, 6750] → ['+', 14]
-2000000154305 Зимова тактична куртка Snugpak SJ12 Softie WG…, M: ['+', 2, 14899] → ['+', 1]
-2000000117270 Зимова тактична куртка Snugpak Spearhead WGTE…, M: ['+', 2, 12999] → ['+', 1]
-2000000119670 Зимова тактична куртка Snugpak SJ9 Softie WGT…, L: ['+', 3, 11199] → ['+', 2]
+2000000157702 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 4, 13950] → ['+', 2]
+2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['-', 0, 13950] → ['+', 2]
+2000000148540 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 36, 10899] → ['+', 35]
+2000000027920 Walker's Razor Slim…, DE: ['+', 9, 3375] → ['+', 8]
+2000000172361 Мембранний комплект Tennier ECWCS Gen III Lev…, XL/L: ['+', 10, 23199] → ['+', 9]
+2000000172347 Мембранний комплект Tennier ECWCS Gen III Lev…, L/L: ['+', 2, 23199] → ['+', 1]
 
 ## Price changes (Ballistic РРЦ / market target)
-none
+7700000027771 Regular: 900 → 765
+2000000238562 Short: 900 → 765
+2000000242903 Long: 900 → 765
+2000000249674 X-Long: 900 → 765
+2000000150406 Short: 900 → 765
+2000000150413 Regular: 900 → 765
+2000000150420 Long: 900 → 765
+2000000150437 X-Long: 900 → 765
+7700000027795 Regular: 900 → 765
 
 ## Not read this run
 none
