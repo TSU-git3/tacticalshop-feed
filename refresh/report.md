@@ -1,23 +1,16 @@
-# Stock refresh 2026-11-17 23:29 (Kyiv) — BIG check
+# Stock refresh 2026-11-18 03:29 (Kyiv) — SMALL check (in-stock items only)
 
 - Offers: 1021; status counts: {'5': 327, '+': 357, '3': 336, '-': 1}
-- get_product lookups: 331; skipped as out of stock by sweep: 212
-- Changed since last run: 7
-- On MyDrop but out of stock (no size with stock): 286
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- get_product lookups: 188; skipped as out of stock by sweep: 37
+- Changed since last run: 0
+- On MyDrop but out of stock (no size with stock): 47
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
-- Sets with hidden parts (112): browser data 20.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
+- Sets with hidden parts (112): browser data 24.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
 
 ## Changes
 
-- 110111-2-К: 3 None → + 1
-- 111530-2-К: 3 None → + 2
-- 0305-0201-00: 3 None → + 1
-- 2801-0211-00: 3 None → + 1
-- 2801-0212-00: 3 None → + 3
-- 1028: 3 None → + None
-- 17040-2-К: 3 None → + 1
 
 ## Kits in stock from their parts (kits.json)
 
@@ -74,4 +67,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
