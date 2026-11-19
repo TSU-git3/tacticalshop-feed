@@ -1,6 +1,6 @@
-# Ballistic stock check 2026-11-18 23:52 Kyiv
+# Ballistic stock check 2026-11-19 03:49 Kyiv
 
-Codes: 234 · read: 233 · CSV: «!» 112, «+» 61, «-» 39 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 112, «+» 61, «-» 39 · buy prices known: 232
 
 ## Stock changes since last run
 none
@@ -9,7 +9,7 @@ none
 none
 
 ## Not read this run
-2000000176819 (Зимові тактичні штани Tennier ECWCS Gen …, XS/S) — not read this run, last value kept
+none
 
 ## Sizes on Ballistic that are not on Prom (need an import)
 ess-5b 2000000222271 «Розпродано» Розпродано
@@ -51,5 +51,4 @@ b3-45 2000000187570 «Large» Розпродано
 none
 
 ## Collector errors
-16856 X-Small Short HTTP 503
-braces-coyote Short HTTP 400
+none
