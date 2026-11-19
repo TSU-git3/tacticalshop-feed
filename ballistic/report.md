@@ -1,16 +1,33 @@
-# Ballistic stock check 2026-11-19 11:49 Kyiv
+# Ballistic stock check 2026-11-19 15:49 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 113, «+» 61, «-» 38 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 120, «+» 54, «-» 38 · buy prices known: 232
 
 ## Stock changes since last run
-2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 54, 13950] → ['+', 56]
-2000000157702 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 2, 13950] → ['+', 3]
-2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['-', 0, 13950] → ['+', 2]
-2000000211206 Зимова тактична куртка Tennier ECWCS Gen III …, M/R: ['+', 13, 14799] → ['+', 14]
-2000000238562 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 13, 1099] → ['+', 12]
+2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['+', 2, 13950] → ['+', 3]
+2000000070919 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 15, 10899] → ['+', 14]
+2000000148526 Зимові тактичні штани Tennier ECWCS Gen III L…, S/R: ['+', 18, 10899] → ['+', 20]
+2000000148564 Зимові тактичні штани Tennier ECWCS Gen III L…, L/L: ['+', 6, 10899] → ['+', 8]
+2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 5, 24099] → ['+', 4]
+2000000215341 Зимова тактична куртка Carinthia MIG 4.0 G-Lo…, S: ['+', 4, 24300] → ['+', 5]
+2000000215327 Зимова тактична куртка Carinthia MIG 4.0 G-Lo…, M: ['+', 3, 24300] → ['+', 4]
+2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 34, 1099] → ['+', 36]
+2000000097985 ESS Crossbow Suppressor One, прозора лінза…, Clear: ['+', 4, 3150] → ['+', 7]
+2000000037806 ESS Crossbow 3LS…, 3 лінзи: ['+', 2, 6435] → ['+', 3]
+2000000079189 ESS CDI Max…, Terrain Tan: ['+', 4, 5400] → ['+', 6]
+7700000022462 ESS ремінець страхувальний…, —: ['+', 2, 405] → ['+', 12]
+2000000035437 ESS Rollbar APEL…, Smoke Gray: ['+', 27, 4275] → ['+', 29]
+2000000074603 ESS 5B…, Terrain Tan: ['+', 3, 5175] → ['+', 5]
+2000000223926 ESS Credence…, Mirrored Brass: ['+', 2, 5850] → ['+', 3]
+2000000027920 Walker's Razor Slim…, DE: ['+', 8, 3375] → ['+', 9]
+2000000196404 Sordin Supreme Pro-X Neckband…, Olive: ['+', 2, 16650] → ['+', 3]
+2000000210391 Sordin Supreme Pro-X Slim…, Olive: ['+', 2, 14175] → ['+', 3]
+2000000249537 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, L/R: ['+', 31, 3600] → ['+', 32]
+2000000119823 Утеплена тактична куртка Snugpak SJ6 Softie W…, L: ['+', 3, 9999] → ['+', 4]
+2000000154428 Зимова тактична куртка Snugpak Tomahawk WGTE,…, XL: ['+', 1, 14799] → ['+', 2]
+2000000119670 Зимова тактична куртка Snugpak SJ9 Softie WGT…, L: ['+', 2, 11199] → ['+', 3]
 
 ## Price changes (Ballistic РРЦ / market target)
-none
+2000000184708 XS/R: 8753 → 10350
 
 ## Not read this run
 none
