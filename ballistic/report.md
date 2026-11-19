@@ -1,21 +1,9 @@
-# Ballistic stock check 2026-11-19 19:49 Kyiv
+# Ballistic stock check 2026-11-19 23:48 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 122, «+» 53, «-» 37 · buy prices known: 232
 
 ## Stock changes since last run
-2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 56, 13950] → ['+', 55]
-2000000123189 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 44, 13950] → ['+', 43]
-2000000148540 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 35, 10899] → ['+', 36]
-2000000184708 Зимові тактичні штани Tennier ECWCS Gen III L…, XS/R: ['-', 0, 10899] → ['+', 9]
-2000000184715 Зимові тактичні штани Tennier ECWCS Gen III L…, S/S: ['+', 1, 10899] → ['+', 6]
-2000000148557 Зимові тактичні штани Tennier ECWCS Gen III L…, M/L: ['+', 20, 10899] → ['+', 26]
-2000000157719 Зимові тактичні штани Tennier ECWCS Gen III L…, L/R: ['+', 26, 10899] → ['+', 30]
-2000000148571 Зимові тактичні штани Tennier ECWCS Gen III L…, XL/R: ['+', 7, 10899] → ['+', 17]
-2000000148588 Зимові тактичні штани Tennier ECWCS Gen III L…, XL/L: ['+', 8, 10899] → ['+', 17]
-2000000238562 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 12, 1099] → ['+', 11]
-2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 36, 1099] → ['+', 45]
-2000000150420 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Long: ['+', 60, 1099] → ['+', 61]
-2000000203416 Балістична маска Wiley X Spear, оправа Tan, 3…, -: ['+', 6, 6750] → ['+', 5]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
 none
