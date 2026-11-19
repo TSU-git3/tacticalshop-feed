@@ -1,40 +1,20 @@
-# Stock refresh 2026-11-19 19:29 (Kyiv) — SMALL check (in-stock items only)
+# Stock refresh 2026-11-19 23:29 (Kyiv) — BIG check
 
-- Offers: 1021; status counts: {'5': 328, '+': 360, '3': 332, '-': 1}
-- get_product lookups: 188; skipped as out of stock by sweep: 46
-- Changed since last run: 24
-- On MyDrop but out of stock (no size with stock): 60
-- Codes not found on MyDrop (written as out of stock «-»): 0
+- Offers: 1021; status counts: {'5': 328, '+': 364, '3': 328, '-': 1}
+- get_product lookups: 331; skipped as out of stock by sweep: 212
+- Changed since last run: 4
+- On MyDrop but out of stock (no size with stock): 287
+- Codes not found on MyDrop (written as out of stock «-»): 1
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
-- Sets with hidden parts (112): browser data 64.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
+- Sets with hidden parts (112): browser data 68.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
 
 ## Changes
 
-- 2202-6331-00: + 382 → + 384
-- 2202-6321-00: + 90 → + 89
-- 0802-0123-L: + 1 → 3 None
-- 20205-МБ: 5 None → + 1
-- 20205-ЗМ: 5 None → + 1
-- 20505-ЗМ: 5 None → + 1
-- 2404-0101-L: + 15 → + 16
-- 2316-0121-00: + 71 → + 73
-- 2316-0122-00: + 21 → + 20
-- 2401-0121-XL: + 13 → + 10
-- 2611-0121-00: + 12 → + 11
-- 2611-0123-00: + 3 → + 2
-- 110102: + 1 → 3 None
-- 2812-0123-00: + 4 → + 3
-- 2201-0121-00: + 61 → + 63
-- 2307-0121-00: 3 None → + 9
-- 2803-0122-00: + 8 → + 7
-- 2801-0212-00: + 13 → + 14
-- 3205-0110-00: + 4 → + 3
-- 3007-L: + 1 → 3 None
-- 87000: + 1 → 3 None
-- 87001: + 1 → 3 None
-- 87002: + 1 → 3 None
-- 4105: + 15 → + 16
+- 111430-2-К: 3 None → + 6
+- 2801-0211-00: 3 None → + 8
+- 17057-2-К: 3 None → + 3
+- 17056-2-К: 3 None → + 3
 
 ## Kits in stock from their parts (kits.json)
 
@@ -92,7 +72,9 @@
 - 83019-2-К: + 1
 - 83020-2-К: + 1
 - 17056: + 1
+- 17057-2-К: + 3
 - 17057: + 1
+- 17056-2-К: + 3
 
 ## Name check — listing type vs MyDrop title (fix any line in bold before it sells)
 
@@ -100,4 +82,4 @@
 
 ## Not found on MyDrop
 
-
+2808-0116-00
