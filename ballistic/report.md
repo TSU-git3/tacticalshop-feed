@@ -1,21 +1,9 @@
-# Ballistic stock check 2026-11-20 19:48 Kyiv
+# Ballistic stock check 2026-11-20 23:48 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 124, «+» 50, «-» 38 · buy prices known: 232
 
 ## Stock changes since last run
-2000000157702 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 3, 13950] → ['+', 2]
-2000000123172 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['+', 3, 13950] → ['+', 2]
-2000000070919 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 14, 10350] → ['+', 15]
-2000000065489 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 11, 14399] → ['+', 10]
-2000000252650 Зимовий тактичний комплект Carinthia MIG 4.0 …, S: ['+', 8, 25875] → ['+', 7]
-2000000224800 Зимовий комплект Tennier ECWCS Gen III Level …, M/R: ['+', 10, 23599] → ['+', 7]
-2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 1, 23599] → ['-', 0]
-2000000238562 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 13, 1099] → ['+', 11]
-2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 44, 1099] → ['+', 42]
-2000000150437 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, X-Long: ['+', 26, 1099] → ['+', 27]
-2000000027913 Walker's Razor Patriot…, Olive Drab: ['+', 5, 4050] → ['+', 4]
-7700000022479 Балістичні тактичні окуляри Revision Sawfly, …, Regular: ['+', 13, 2700] → ['+', 12]
-2000000123646 Софтшел штани Tennier ECWCS Gen III Level 5 S…, M/L: ['+', 9, 10599] → ['+', 8]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
 none
