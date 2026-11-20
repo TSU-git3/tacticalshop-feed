@@ -1,16 +1,44 @@
-# Stock refresh 2026-11-20 07:29 (Kyiv) — BIG check
+# Stock refresh 2026-11-20 11:29 (Kyiv) — SMALL check (in-stock items only)
 
-- Offers: 1021; status counts: {'5': 328, '+': 364, '3': 328, '-': 1}
-- get_product lookups: 331; skipped as out of stock by sweep: 212
-- Changed since last run: 0
-- On MyDrop but out of stock (no size with stock): 287
-- Codes not found on MyDrop (written as out of stock «-»): 1
+- Offers: 1021; status counts: {'5': 328, '+': 346, '3': 346, '-': 1}
+- get_product lookups: 187; skipped as out of stock by sweep: 46
+- Changed since last run: 28
+- On MyDrop but out of stock (no size with stock): 58
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 30 of 30
-- Sets with hidden parts (112): browser data 76.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
+- Sets with hidden parts (112): browser data 80.2 h old — STALE (over 8 h), sets kept made to order — is the owner's computer on?
 
 ## Changes
 
+- 110107: + 1 → 3 None
+- 20505-АК: 5 None → + 1
+- 20505-ЗМ: + 1 → 5 None
+- 0807-0122-S: + 2 → + 1
+- 112516-2-К: + 1 → 3 None
+- 111430-2-К: + 6 → + 4
+- 2308-0124-XL: + None → 3 None
+- 3207-6370-00: + 5 → + 2
+- 2306-0124-00: + 37 → + 36
+- 111430: + 2 → 3 None
+- 2606-0121-09: + 6 → + 11
+- 2801-0214-00: + 4 → + 3
+- 55000: + None → 3 None
+- 82004-2-К: + 1 → 3 None
+- 82001-2-К: + 1 → 3 None
+- 82002-2-К: + 1 → 3 None
+- 82003-2-К: + 1 → 3 None
+- 82007-2-К: + 1 → 3 None
+- 82006-2-К: + 1 → 3 None
+- 90000: + 1 → 3 None
+- 90001: + 1 → 3 None
+- 90002: + 1 → 3 None
+- 90003: + 1 → 3 None
+- 17034-2-К: + 1 → 3 None
+- 17056: + 1 → 3 None
+- 17057-2-К: + 3 → + 2
+- 17057: + 1 → 3 None
+- 17056-2-К: + 3 → + 2
 
 ## Kits in stock from their parts (kits.json)
 
@@ -22,7 +50,6 @@
 - 45001: + (no number)
 - 45002: + (no number)
 - 45008: + (no number)
-- 55000: + (no number)
 - 55003: + (no number)
 - 82006: + 1
 - 82007: + 3
@@ -31,22 +58,12 @@
 - 3008-L: + 5
 - 3006-M: + 1
 - 8037: + (no number)
-- 82004-2-К: + 1
-- 82001-2-К: + 1
-- 82002-2-К: + 1
-- 82003-2-К: + 1
-- 82007-2-К: + 1
-- 82006-2-К: + 1
 - 86000-2-К: + 3
 - 86001-2-К: + 3
 - 87000-2-К: + 1
 - 87001-2-К: + 1
 - 87002-2-К: + 1
 - 89000-2-К: + 2
-- 90000: + 1
-- 90001: + 1
-- 90002: + 1
-- 90003: + 1
 - 92000: + 1
 - 92001: + 1
 - 92002: + 1
@@ -55,7 +72,6 @@
 - 4104: + 2
 - 17030-2-К: + 2
 - 17034: + 3
-- 17034-2-К: + 1
 - 17037: + 1
 - 17040: + 2
 - 17040-2-К: + 1
@@ -67,10 +83,8 @@
 - 83017-2-К: + 1
 - 83019-2-К: + 1
 - 83020-2-К: + 1
-- 17056: + 1
-- 17057-2-К: + 3
-- 17057: + 1
-- 17056-2-К: + 3
+- 17057-2-К: + 2
+- 17056-2-К: + 2
 
 ## Name check — listing type vs MyDrop title (fix any line in bold before it sells)
 
@@ -78,4 +92,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00
+
