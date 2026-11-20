@@ -22,6 +22,10 @@ Owner, 27 Oct 2026: Ballistic Level 7 prices follow the cheapest Prom competitor
 6. `python3 ballistic/build_ballistic.py prices` (re-applies РРЦ + targets to state.json, prom/ballistic_stock.csv, ballistic.xml — the Ballistic HugeProfit link since 14 Nov 2026 — and rewrites stock.xml unchanged).
 7. Delete ballistic/market_raw.txt. `git pull --rebase`; on a stock.xml conflict take theirs and re-run step 6.
    `git add ballistic/market_prices.json ballistic/market_report.md ballistic/state.json prom/ballistic_stock.csv stock.xml ballistic.xml` and `git add -A rozetka/`,
-   commit «Ballistic market prices <date time> Kyiv», push to main. Close the tab.
+   commit «Ballistic market prices <date time> Kyiv», push to main. Close every tab you opened (also after an early stop — see Rules).
 8. Report (2–4 lines): targets set/changed (listing, РРЦ → new price, cheapest competitor), blocked listings, aborts.
    Notify the owner only when a selling price changed or the run failed.
+
+## Rules
+
+- **Browser tabs (owner, 20 Nov 2026: close each Chrome tab when you are done with it, so tabs don't pile up):** note the id of every tab you open. Close each tab as soon as you no longer need it, and before the report close every tab you opened that is still open — also when the run stops early (extension error after a tab was opened, ABORT, signed out, a script error, a timeout). Tab ids can change during a long run (16 Nov 2026): call tabs_context_mcp first and close your tabs by id or by URL. Never close a tab you didn't open. Close a helper tab only when no collector is still running in another tab (16 Nov 2026: closing one tab once dropped the whole tab group with the running collector).

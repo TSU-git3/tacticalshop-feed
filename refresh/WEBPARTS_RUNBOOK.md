@@ -36,12 +36,13 @@ applies the fresh data. The whole run takes about 4 minutes and must be pushed b
      «copied incompletely» → read the line again (step 4) and retry once.
 6. **Publish.** Delete `refresh/webparts_raw.txt`. `git add refresh/web_parts_state.json` — **only this file** — commit
    «MyDrop hidden parts <date time Kyiv>», push to `main` (`git pull --rebase` first if the push is rejected; never force-push).
-7. **Close** the tab you opened. **Report** in 2 lines: parts read / in stock, set pages failed, sets whose composition
+7. **Close** every tab you opened (also after an early stop — see Rules). **Report** in 2 lines: parts read / in stock, set pages failed, sets whose composition
    changed. If the script lists changed sets, send a push notification «MyDrop changed the set(s) <codes> — they stay
    made to order until re-mapped in the Import chat».
 
 ## Rules
 
+- **Browser tabs (owner, 20 Nov 2026: close each Chrome tab when you are done with it, so tabs don't pile up):** note the id of every tab you open. Close each tab as soon as you no longer need it, and before the report close every tab you opened that is still open — also when the run stops early (extension error after a tab was opened, ABORT, signed out, a script error, a timeout). Tab ids can change during a long run (16 Nov 2026): call tabs_context_mcp first and close your tabs by id or by URL. Never close a tab you didn't open. Close a helper tab only when no collector is still running in another tab (16 Nov 2026: closing one tab once dropped the whole tab group with the running collector).
 - This run writes `refresh/web_parts_state.json` and nothing else. It never runs `build`, `kits`, `plan` or `webjs`, never
   edits `kits.json`, `stock.xml`, `prom/*`, `ballistic/*` or any other file — the Kiborg run at xx:27 applies the data.
 - Read only on MyDrop: no orders, no settings, no other pages than the collector's requests.

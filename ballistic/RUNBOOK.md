@@ -86,11 +86,12 @@ Outputs (same data):
    `python3 -c "import sys;sys.path.insert(0,'ballistic');import build_ballistic as b;b.rebuild_stock_xml()"` (rewrites ballistic.xml and stock.xml).
    `git add stock.xml ballistic.xml prom/prom_live.json prom/ballistic_stock.csv prom/prom_stock.csv ballistic/state.json ballistic/catalog.json ballistic/cost.json refresh/cost.json ballistic/report.md` and `git add -A rozetka/`,
    commit «Ballistic stock <date time Kyiv>», push to `main`.
-7. **Close** the tab you opened. **Report** in 2–4 lines: codes read, stock and price changes, sizes on Ballistic that
+7. **Close** every tab you opened (also after an early stop — see Rules). **Report** in 2–4 lines: codes read, stock and price changes, sizes on Ballistic that
    are not on Prom, anything aborted.
 
 ## Rules
 
+- **Browser tabs (owner, 20 Nov 2026: close each Chrome tab when you are done with it, so tabs don't pile up):** note the id of every tab you open. Close each tab as soon as you no longer need it, and before the report close every tab you opened that is still open — also when the run stops early (extension error after a tab was opened, ABORT, signed out, a script error, a timeout). Tab ids can change during a long run (16 Nov 2026): call tabs_context_mcp first and close your tabs by id or by URL. Never close a tab you didn't open. Close a helper tab only when no collector is still running in another tab (16 Nov 2026: closing one tab once dropped the whole tab group with the running collector).
 - Match only by Ballistic article (= our Код_товару; Prom Ідентифікатор_товару `BAL-<article>`). Never guess.
 - Price = Ballistic «РРЦ» for that exact size (owner, 24 Oct 2026) — never the partner price shown next to it.
   Since 27 Oct 2026 (owner): selling price = max(РРЦ, market target from `ballistic/market_prices.json`) — the target
