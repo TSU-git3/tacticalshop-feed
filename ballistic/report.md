@@ -1,19 +1,9 @@
-# Ballistic stock check 2026-11-21 19:49 Kyiv
+# Ballistic stock check 2026-11-21 23:48 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 122, «+» 49, «-» 41 · buy prices known: 232
 
 ## Stock changes since last run
-2000000211206 Зимова тактична куртка Tennier ECWCS Gen III …, M/R: ['+', 13, 14799] → ['+', 12]
-7700000027771 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 70, 1099] → ['+', 69]
-2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 42, 1099] → ['+', 41]
-2000000027920 Walker's Razor Slim…, DE: ['+', 9, 3375] → ['+', 8]
-2000000203317 Балістичні окуляри Wiley X Saber Advanced, чо…, -: ['+', 6, 2925] → ['+', 5]
-2000000172200 Софтшел комплект Tennier ECWCS Gen III Level …, S/R: ['+', 10, 22199] → ['+', 9]
-2000000004921 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, M/R: ['+', 51, 3600] → ['+', 21]
-2000000249537 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, L/R: ['+', 32, 3600] → ['+', 17]
-2000000172330 Мембранний комплект Tennier ECWCS Gen III Lev…, S/L: ['+', 14, 23199] → ['+', 13]
-2000000174075 Мембранна куртка ECWCS Gen II Level 6 Gore-Te…, M/R: ['+', 14, 6750] → ['-', 0]
-7700000025784 Мембранна куртка ECWCS Gen II Level 6 Gore-Te…, L/R: ['+', 4, 6750] → ['-', 0]
+none
 
 ## Price changes (Ballistic РРЦ / market target)
 none
