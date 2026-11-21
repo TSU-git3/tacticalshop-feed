@@ -1,9 +1,9 @@
-# Ballistic stock check 2026-11-21 07:58 Kyiv
+# Ballistic stock check 2026-11-21 11:50 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 124, «+» 50, «-» 38 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 124, «+» 49, «-» 39 · buy prices known: 232
 
 ## Stock changes since last run
-none
+2000000256535 Софтшел штани ECWCS Gen III Level 5 Soft Shel…, XL/L: ['+', 1, 4500] → ['-', 0]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
