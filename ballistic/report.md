@@ -1,9 +1,11 @@
-# Ballistic stock check 2026-11-22 11:49 Kyiv
+# Ballistic stock check 2026-11-22 15:48 Kyiv
 
-Codes: 234 · read: 234 · CSV: «!» 122, «+» 49, «-» 41 · buy prices known: 232
+Codes: 234 · read: 234 · CSV: «!» 122, «+» 48, «-» 42 · buy prices known: 232
 
 ## Stock changes since last run
-none
+7700000027771 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 69, 1099] → ['+', 68]
+2000000150406 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 57, 1099] → ['+', 56]
+2000000172347 Мембранний комплект Tennier ECWCS Gen III Lev…, L/L: ['+', 1, 23199] → ['-', 0]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
