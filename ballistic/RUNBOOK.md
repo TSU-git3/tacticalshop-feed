@@ -13,7 +13,8 @@ Braces (owner, 30 Oct 2026): «Оригінальні підтяжки ECWCS і 
 Thermal sets (owner, 23 Nov 2026): Rothco ECWCS Gen III Level II Mid-Weight (key thermo-rothco-l2, variant group 612033,
 p3286842506–509, owner's fixed price 5,439 = size «price_fixed») and XGO Heavyweight Phase 4 FR (thermo-xgo-ph4-fr, 612034,
 p3286842510–511, РРЦ) — Prom group «Термобілизна» 159043166; sizes in «prom» lists as for ESS. Link test: only p3286842506
-was in_csv at first (one-row test) — the Import project sets the rest true after Prom's next pull is checked. Not in market.py.
+was in_csv at first (one-row test); owner, 23 Nov 2026 ~23:10 Kyiv: «all 6 into the Prom CSV now» (test skipped) → all 6
+listings in prom/ballistic_stock.csv (218 rows). Not in market.py, not on Rozetka.
 
 ESS glasses (owner, 10–11 Nov 2026): 16 Ballistic pages (catalog keys ess-*), 17 articles, 17 Prom listings — since the ESS
 split of 15 Nov 2026 every article has its OWN listing (Код_товару = the Ballistic article, Ідентифікатор_товару BAL-<article>;

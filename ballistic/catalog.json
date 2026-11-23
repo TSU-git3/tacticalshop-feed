@@ -4060,7 +4060,7 @@
        "code": "2000000217772",
        "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, S, оригинал",
        "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, S, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -4076,7 +4076,7 @@
        "code": "2000000218465",
        "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, L, оригинал",
        "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -4092,7 +4092,7 @@
        "code": "2000000217796",
        "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, XL, оригинал",
        "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, XL, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
@@ -4117,7 +4117,7 @@
        "code": "2000000258294",
        "name_ru": "Комплект огнестойкого термобелья XGO Heavyweight Phase 4 FR (кофта + штаны), Tan, оригинал",
        "name_uk": "Комплект вогнестійкої термобілизни XGO Heavyweight Phase 4 FR (кофта + штани), Tan, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     },
@@ -4132,7 +4132,7 @@
        "code": "2000000258300",
        "name_ru": "Комплект огнестойкого термобелья XGO Heavyweight Phase 4 FR (кофта + штаны), Tan, L, оригинал",
        "name_uk": "Комплект вогнестійкої термобілизни XGO Heavyweight Phase 4 FR (кофта + штани), Tan, L, оригінал",
-       "in_csv": false
+       "in_csv": true
       }
      ]
     }
