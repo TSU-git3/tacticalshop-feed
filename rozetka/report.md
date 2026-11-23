@@ -1,4 +1,4 @@
-# Rozetka feed report — 2026-11-23 15:29 (Kyiv)
+# Rozetka feed report — 2026-11-23 18:20 (Kyiv)
 
 - Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
 - Offers: 328 (225 available); by line {'kib': 259, 'bal': 69}
@@ -19,7 +19,7 @@
 - BAL2000000144870: 14999 (override (listing); Prom 13950)
 - BAL2000000144894: 14999 (override (listing); Prom 13950)
 - BAL2000000144900: 14999 (override (listing); Prom 13950)
-- BAL2000000144917: 14999 (override (listing); Prom 13500)
+- BAL2000000144917: 14999 (override (listing); Prom 13950)
 - BAL2000000219271: 14999 (override (listing); Prom 13499)
 - BAL2000000219288: 14999 (override (listing); Prom 13500)
 - BAL2000000211206: 14999 (override (listing); Prom 14799)
