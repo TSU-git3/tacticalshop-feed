@@ -1,5 +1,5 @@
 {
- "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings). | Batch 3 (owner, 11 Nov 2026): Revision / Wiley X glasses, Viking Tactics / Blue Force Gear slings, ECWCS Level 5/6, Snugpak — keys b3-*, one product per Ballistic page; glasses sizes Small/Large of Sawfly clear and Large of StingerHawk clear+amber are separate Ballistic pages (b3-1s, b3-1l, b3-5l); UDC colours on one page (b3-24). Snugpak shows no РРЦ: size «price» = Ballistic price, «price_fixed» = Prom-median price. in_xml false, not in Rozetka.",
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings). | Batch 3 (owner, 11 Nov 2026): Revision / Wiley X glasses, Viking Tactics / Blue Force Gear slings, ECWCS Level 5/6, Snugpak — keys b3-*, one product per Ballistic page; glasses sizes Small/Large of Sawfly clear and Large of StingerHawk clear+amber are separate Ballistic pages (b3-1s, b3-1l, b3-5l); UDC colours on one page (b3-24). Snugpak shows no РРЦ: size «price» = Ballistic price, «price_fixed» = Prom-median price. in_xml false, not in Rozetka. | Thermal sets (owner, 23 Nov 2026): Rothco ECWCS Gen III Level II Mid-Weight (key thermo-rothco-l2, vg 612033, price_fixed 5439 = owner's price) and XGO Heavyweight Phase 4 FR (thermo-xgo-ph4-fr, vg 612034, РРЦ) — group «Термобілизна»; not in market.py; not in Rozetka.",
  "products": {
   "14261": {
    "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
@@ -4019,6 +4019,120 @@
        "name_ru": "Утепленные тактические штаны Snugpak Parallax WGTE на подтяжках, мультикам, комфорт до −5 °C, M, оригинал",
        "name_uk": "Утеплені тактичні штани Snugpak Parallax WGTE на підтяжках, мультикам, комфорт до −5 °C, M, оригінал",
        "in_csv": true
+      }
+     ]
+    }
+   }
+  },
+  "thermo-rothco-l2": {
+   "url": "/rothco-komplekt-termobilyzny-ecwcs-gen-iii-level-ii-mid-weight-m/",
+   "name_ua": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот",
+   "brand": "Rothco",
+   "line": "thermo",
+   "vg": 612033,
+   "pics": [],
+   "sizes": {
+    "2000000217789": {
+     "size": "M",
+     "label": "Medium",
+     "price": 5175,
+     "price_fixed": 5439,
+     "prom": [
+      {
+       "uid": "3286842506",
+       "ident": "BAL-2000000217789",
+       "code": "2000000217789",
+       "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, оригинал",
+       "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, оригінал",
+       "in_csv": true
+      }
+     ]
+    },
+    "2000000217772": {
+     "size": "S",
+     "label": "Small",
+     "price": 5175,
+     "price_fixed": 5439,
+     "prom": [
+      {
+       "uid": "3286842507",
+       "ident": "BAL-2000000217772",
+       "code": "2000000217772",
+       "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, S, оригинал",
+       "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, S, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000218465": {
+     "size": "L",
+     "label": "Large",
+     "price": 5175,
+     "price_fixed": 5439,
+     "prom": [
+      {
+       "uid": "3286842508",
+       "ident": "BAL-2000000218465",
+       "code": "2000000218465",
+       "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, L, оригинал",
+       "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, L, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000217796": {
+     "size": "XL",
+     "label": "X-Large",
+     "price": 5175,
+     "price_fixed": 5439,
+     "prom": [
+      {
+       "uid": "3286842509",
+       "ident": "BAL-2000000217796",
+       "code": "2000000217796",
+       "name_ru": "Комплект термобелья Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штаны), койот, XL, оригинал",
+       "name_uk": "Комплект термобілизни Rothco ECWCS Gen III Level 2 Mid-Weight (кофта + штани), койот, XL, оригінал",
+       "in_csv": false
+      }
+     ]
+    }
+   }
+  },
+  "thermo-xgo-ph4-fr": {
+   "url": "/termokomplekt-xgo-heavyweight-phase-4-fr/",
+   "name_ua": "Комплект вогнестійкої термобілизни XGO Heavyweight Phase 4 FR (кофта + штани), Tan",
+   "brand": "XGO",
+   "line": "thermo",
+   "vg": 612034,
+   "pics": [],
+   "sizes": {
+    "2000000258294": {
+     "size": "M",
+     "label": "Medium",
+     "price": 5175,
+     "prom": [
+      {
+       "uid": "3286842510",
+       "ident": "BAL-2000000258294",
+       "code": "2000000258294",
+       "name_ru": "Комплект огнестойкого термобелья XGO Heavyweight Phase 4 FR (кофта + штаны), Tan, оригинал",
+       "name_uk": "Комплект вогнестійкої термобілизни XGO Heavyweight Phase 4 FR (кофта + штани), Tan, оригінал",
+       "in_csv": false
+      }
+     ]
+    },
+    "2000000258300": {
+     "size": "L",
+     "label": "Large",
+     "price": 5175,
+     "prom": [
+      {
+       "uid": "3286842511",
+       "ident": "BAL-2000000258300",
+       "code": "2000000258300",
+       "name_ru": "Комплект огнестойкого термобелья XGO Heavyweight Phase 4 FR (кофта + штаны), Tan, L, оригинал",
+       "name_uk": "Комплект вогнестійкої термобілизни XGO Heavyweight Phase 4 FR (кофта + штани), Tan, L, оригінал",
+       "in_csv": false
       }
      ]
     }
