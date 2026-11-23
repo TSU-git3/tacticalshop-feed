@@ -1,15 +1,9 @@
-# Ballistic stock check 2026-11-22 19:49 Kyiv
+# Ballistic stock check 2026-11-23 07:49 Kyiv
 
 Codes: 234 · read: 234 · CSV: «!» 122, «+» 48, «-» 42 · buy prices known: 232
 
 ## Stock changes since last run
-2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 39, 13950] → ['+', 38]
-2000000157702 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 2, 13950] → ['+', 1]
-7700000027771 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 68, 1099] → ['+', 69]
-2000000150406 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 56, 1099] → ['+', 57]
-2000000091549 Walker's Razor Slim Quad…, Camouflage: ['+', 7, 4500] → ['+', 6]
-2000000117324 Walker's Razor Patriot…, Чорний: ['+', 2, 4050] → ['+', 3]
-2000000172248 Софтшел комплект Tennier ECWCS Gen III Level …, L/R: ['+', 3, 22199] → ['+', 2]
+2000000150406 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 57, 1099] → ['+', 56]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
