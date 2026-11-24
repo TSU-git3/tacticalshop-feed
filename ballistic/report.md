@@ -1,9 +1,15 @@
-# Ballistic stock check 2026-11-24 07:49 Kyiv
+# Ballistic stock check 2026-11-24 11:49 Kyiv
 
 Codes: 240 · read: 240 · CSV: «!» 127, «+» 49, «-» 42 · buy prices known: 238
 
 ## Stock changes since last run
-none
+2000000182292 Зимовий комплект Tennier ECWCS Gen III Level …, S/R: ['+', 8, 22999] → ['+', 7]
+2000000065489 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 9, 14399] → ['+', 8]
+2000000214993 Зимовий тактичний комплект Carinthia MIG 4.0 …, M: ['-', 0, 25875] → ['+', 1]
+2000000252667 Зимовий тактичний комплект Carinthia MIG 4.0 …, XXL: ['+', 1, 25875] → ['-', 0]
+2000000238562 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 11, 1099] → ['+', 10]
+2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 39, 1099] → ['+', 40]
+2000000097985 ESS Crossbow Suppressor One, прозора лінза…, Clear: ['+', 7, 3150] → ['+', 6]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
