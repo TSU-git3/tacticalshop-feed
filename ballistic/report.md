@@ -1,4 +1,4 @@
-# Ballistic stock check 2026-11-24 03:49 Kyiv
+# Ballistic stock check 2026-11-24 07:49 Kyiv
 
 Codes: 240 · read: 240 · CSV: «!» 127, «+» 49, «-» 42 · buy prices known: 238
 
