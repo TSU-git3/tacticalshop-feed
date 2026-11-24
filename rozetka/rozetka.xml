@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-11-24 11:49">
+<yml_catalog date="2026-11-24 13:15">
 <shop>
 <name>Tactical Shop Ukraine</name>
 <company>Tactical Shop Ukraine</company>
@@ -9950,7 +9950,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000065489" available="true">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -9984,7 +9984,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000212340" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10018,7 +10018,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000184722" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10052,7 +10052,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000066561" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10086,7 +10086,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000065885" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10120,7 +10120,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000065908" available="true">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10154,7 +10154,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000066035" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10188,7 +10188,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000066059" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10222,7 +10222,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000069647" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10256,7 +10256,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000065496" available="true">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
@@ -10290,7 +10290,7 @@
 Капюшон: Так</param>
 </offer>
 <offer id="BAL2000000069494" available="false">
-<price>15439</price>
+<price>15009</price>
 <currencyId>UAH</currencyId>
 <categoryId>4674402</categoryId>
 <picture>https://raw.githubusercontent.com/TSU-git3/tacticalshop-images/main/rozetka/bal612005.jpg</picture>
