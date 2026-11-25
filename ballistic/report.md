@@ -1,12 +1,25 @@
-# Ballistic stock check 2026-11-25 07:47 Kyiv
+# Ballistic stock check 2026-11-25 11:48 Kyiv
 
-Codes: 240 · read: 240 · CSV: «!» 135, «+» 50, «-» 33 · buy prices known: 238
+Codes: 240 · read: 240 · CSV: «!» 135, «+» 49, «-» 34 · buy prices known: 238
 
 ## Stock changes since last run
-none
+2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 18, 13950] → ['+', 17]
+2000000123189 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 9, 13950] → ['+', 8]
+2000000182322 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 14, 22999] → ['+', 13]
+2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 2, 23599] → ['-', 0]
+2000000217789 Комплект термобілизни Rothco ECWCS Gen III Le…, M: ['+', 8, 5439] → ['+', 7]
+2000000258294 Комплект вогнестійкої термобілизни XGO Heavyw…, M: ['+', 5, 5175] → ['+', 6]
+2000000258300 Комплект вогнестійкої термобілизни XGO Heavyw…, L: ['+', 5, 5175] → ['+', 6]
 
 ## Price changes (Ballistic РРЦ / market target)
-none
+2000000172156 S/L: 22999 → 23220
+2000000172156 S/L: selling price 22999 → 23220 (РРЦ 23220)
+2000000182322 L/R: 22999 → 23220
+2000000182322 L/R: selling price 22999 → 23220 (РРЦ 23220)
+2000000182445 L/L: 22950 → 23220
+2000000182445 L/L: selling price 22950 → 23220 (РРЦ 23220)
+2000000246239 XL/L: 22999 → 23220
+2000000246239 XL/L: selling price 22999 → 23220 (РРЦ 23220)
 
 ## Not read this run
 none
