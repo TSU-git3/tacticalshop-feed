@@ -1,9 +1,17 @@
-# Ballistic stock check 2026-11-26 07:49 Kyiv
+# Ballistic stock check 2026-11-26 11:49 Kyiv
 
 Codes: 240 · read: 240 · CSV: «!» 138, «+» 44, «-» 36 · buy prices known: 238
 
 ## Stock changes since last run
-none
+2000000252667 Зимовий тактичний комплект Carinthia MIG 4.0 …, XXL: ['-', 0, 25875] → ['+', 1]
+2000000222004 Зимова тактична куртка Tennier ECWCS Gen III …, S/R: ['+', 9, 14799] → ['+', 8]
+2000000215327 Зимова тактична куртка Carinthia MIG 4.0 G-Lo…, M: ['+', 5, 24300] → ['+', 4]
+2000000027920 Walker's Razor Slim…, DE: ['+', 7, 3375] → ['+', 6]
+2000000123639 Софтшел штани Tennier ECWCS Gen III Level 5 S…, M/R: ['+', 1, 10599] → ['-', 0]
+2000000197265 Мембранний комплект Tennier ECWCS Gen III Lev…, M/R: ['+', 6, 23199] → ['+', 5]
+2000000218465 Комплект термобілизни Rothco ECWCS Gen III Le…, L: ['+', 7, 5439] → ['+', 6]
+2000000258294 Комплект вогнестійкої термобілизни XGO Heavyw…, M: ['+', 6, 5175] → ['+', 5]
+2000000258300 Комплект вогнестійкої термобілизни XGO Heavyw…, L: ['+', 6, 5175] → ['+', 5]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
