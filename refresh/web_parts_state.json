@@ -1,6 +1,6 @@
 {
 "_about": "Stock of MyDrop set parts the connector cannot read (hidden products), read from the set pages in a signed-in browser (refresh/WEBPARTS_RUNBOOK.md). build_feed.py uses it only while it is under 8 hours old.",
-"at": "2026-11-26T17:15:09.763Z",
+"at": "2026-11-26T21:14:40.356Z",
 "parts": {
 "h:393377": [
 "3",
@@ -248,6 +248,8 @@ null
 ]
 },
 "changed": [],
-"failed_sets": [],
+"failed_sets": [
+"17023"
+],
 "not_single_size": []
 }
