@@ -1,9 +1,11 @@
-# Ballistic stock check 2026-11-27 07:48 Kyiv
+# Ballistic stock check 2026-11-27 11:50 Kyiv
 
 Codes: 240 · read: 240 · CSV: «!» 143, «+» 43, «-» 32 · buy prices known: 238
 
 ## Stock changes since last run
-none
+2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 31, 13950] → ['+', 30]
+7700000027771 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 67, 1099] → ['+', 66]
+2000000203416 Балістична маска Wiley X Spear, оправа Tan, 3…, -: ['+', 7, 6750] → ['+', 6]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
