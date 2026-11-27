@@ -1,10 +1,11 @@
-# Rozetka feed report — 2026-11-27 19:48 (Kyiv)
+# Rozetka feed report — 2026-11-27 22:00 (Kyiv)
 
 - Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
-- Offers: 328 (237 available); by line {'kib': 259, 'bal': 69}
-- Names without SEO entry (provisional): 0; offers without any photo: 0; with SEO clean main photo: 74
+- Offers: 139 (48 available); by line {'kib': 70, 'bal': 69}
+- Names without SEO entry (provisional): 0; offers without any photo: 0; with SEO clean main photo: 69
 - No description: 0; fewer than 3 params: 0; missing stock row: 0
 - Left out by excluded Rozetka categories ['290826', '4674292', '1100234', '4675899']: 456
+- Left out by config exclude_offers (owner 27 Nov 2026, 404 cards deleted on Rozetka): 189
 - Source snapshot: 2455db61-export-products-08-11-26_19-30-13.xlsx (2026-11-08 19:45); skipped at snapshot: 347
 
 ## Price overrides
