@@ -1,14 +1,49 @@
-# Ballistic stock check 2026-11-27 11:50 Kyiv
+# Ballistic stock check 2026-11-27 16:55 Kyiv
 
-Codes: 240 · read: 240 · CSV: «!» 143, «+» 43, «-» 32 · buy prices known: 238
+Codes: 240 · read: 240 · CSV: «!» 146, «+» 42, «-» 30 · buy prices known: 238
 
 ## Stock changes since last run
-2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 31, 13950] → ['+', 30]
-7700000027771 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 67, 1099] → ['+', 66]
-2000000203416 Балістична маска Wiley X Spear, оправа Tan, 3…, -: ['+', 7, 6750] → ['+', 6]
+2000000144887 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 30, 13950] → ['+', 25]
+2000000211251 Зимова тактична куртка Tennier ECWCS Gen III …, XS/R: ['+', 4, 13950] → ['+', 3]
+2000000123189 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 9, 13950] → ['+', 11]
+2000000144900 Зимова тактична куртка Tennier ECWCS Gen III …, XL/R: ['+', 7, 13950] → ['+', 2]
+2000000070919 Зимові тактичні штани Tennier ECWCS Gen III L…, M/R: ['+', 14, 10350] → ['+', 13]
+2000000070858 Зимові тактичні штани Tennier ECWCS Gen III L…, S/L: ['+', 4, 10350] → ['+', 1]
+2000000069005 Зимові тактичні штани Tennier ECWCS Gen III L…, L/R: ['+', 9, 10350] → ['+', 4]
+2000000157719 Зимові тактичні штани Tennier ECWCS Gen III L…, L/R: ['+', 15, 10699] → ['+', 5]
+2000000148571 Зимові тактичні штани Tennier ECWCS Gen III L…, XL/R: ['+', 17, 10699] → ['+', 12]
+2000000182322 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['+', 14, 23220] → ['+', 25]
+2000000246222 Зимовий комплект Tennier ECWCS Gen III Level …, XL/R: ['-', 0, 22999] → ['+', 5]
+2000000065489 Зимова тактична куртка Tennier ECWCS Gen III …, L/R: ['+', 18, 13999] → ['+', 13]
+2000000066561 Зимова тактична куртка Tennier ECWCS Gen III …, S/S: ['+', 9, 13999] → ['+', 8]
+2000000065908 Зимова тактична куртка Tennier ECWCS Gen III …, S/L: ['+', 3, 13999] → ['-', 0]
+2000000066035 Зимова тактична куртка Tennier ECWCS Gen III …, M/R: ['+', 46, 13999] → ['+', 45]
+2000000252643 Зимовий тактичний комплект Carinthia MIG 4.0 …, XL: ['+', 1, 25875] → ['+', 4]
+2000000224817 Зимовий комплект Tennier ECWCS Gen III Level …, L/R: ['-', 0, 23599] → ['+', 2]
+7700000027771 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 66, 1099] → ['+', 68]
+2000000238562 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Short: ['+', 9, 1099] → ['+', 11]
+2000000249674 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, X-Long: ['+', 2, 1099] → ['+', 3]
+2000000150420 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Long: ['+', 63, 1099] → ['+', 65]
+2000000049984 ESS Crossbow Suppressor 2X…, 2 лінзи: ['+', 6, 5850] → ['+', 7]
+2000000097985 ESS Crossbow Suppressor One, прозора лінза…, Clear: ['+', 5, 3150] → ['+', 6]
+2000000091549 Walker's Razor Slim Quad…, Camouflage: ['+', 6, 4500] → ['+', 5]
+2000000027913 Walker's Razor Patriot…, Olive Drab: ['+', 4, 4050] → ['+', 3]
+2000000196411 Sordin Supreme Pro-X Neckband…, Multicam: ['+', 4, 17100] → ['+', 6]
+2000000196404 Sordin Supreme Pro-X Neckband…, Olive: ['+', 3, 16650] → ['+', 4]
+2000000210391 Sordin Supreme Pro-X Slim…, Olive: ['+', 4, 14175] → ['+', 5]
+2000000204635 Earmor M32 PLUS…, Foliage Green: ['+', 3, 3555] → ['+', 4]
+2000000244730 Earmor M32 PLUS…, Coyote Brown: ['+', 3, 3555] → ['+', 4]
+2000000172231 Софтшел комплект Tennier ECWCS Gen III Level …, M/R: ['+', 1, 22199] → ['+', 2]
+2000000004921 Мембранні штани ECWCS Gen III Level 6 Gore-Te…, M/R: ['+', 51, 3600] → ['+', 50]
+2000000154978 Утеплена тактична куртка Snugpak SJ6 Softie W…, S: ['-', 0, 9999] → ['+', 1]
+2000000109879 Утеплена тактична куртка Snugpak Arrowhead WG…, M: ['+', 2, 8978] → ['+', 3]
+2000000117270 Зимова тактична куртка Snugpak Spearhead WGTE…, M: ['+', 2, 12999] → ['+', 3]
+2000000154367 Утеплена тактична куртка Snugpak SJ3 Softie W…, L: ['+', 2, 9599] → ['+', 3]
+2000000154411 Зимова тактична куртка Snugpak Tomahawk WGTE,…, L: ['+', 2, 14799] → ['+', 3]
 
 ## Price changes (Ballistic РРЦ / market target)
-none
+2000000246222 XL/R: 22999 → 23220
+2000000246222 XL/R: selling price 22999 → 23220 (РРЦ 23220)
 
 ## Not read this run
 none
