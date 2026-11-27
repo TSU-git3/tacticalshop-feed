@@ -1,4 +1,4 @@
-# Ballistic stock check 2026-11-26 23:49 Kyiv
+# Ballistic stock check 2026-11-27 03:50 Kyiv
 
 Codes: 240 · read: 240 · CSV: «!» 143, «+» 43, «-» 32 · buy prices known: 238
 
@@ -6,7 +6,8 @@ Codes: 240 · read: 240 · CSV: «!» 143, «+» 43, «-» 32 · buy prices know
 none
 
 ## Price changes (Ballistic РРЦ / market target)
-none
+2000000182292 S/R: 22999 → 23220
+2000000182292 S/R: selling price 22999 → 23220 (РРЦ 23220)
 
 ## Not read this run
 none
