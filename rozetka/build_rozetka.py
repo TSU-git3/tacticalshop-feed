@@ -662,7 +662,9 @@ def build(draft=None):
             issues.append(f'{oid}: {err} — left out'); continue
         if cat in CFG.get('exclude_categories', []):          # owner 9 Nov 2026: banned / unwanted on Rozetka
             stats['excluded_cat'] = stats.get('excluded_cat', 0) + 1; continue
-        kind = 'clothing' if (line == 'bal' or CFG['kib_groups'].get(s['group_ru'], {}).get('clothing')) else 'gear'
+        if oid in CFG.get('exclude_offers', {}).get('ids', []):   # owner 27 Nov 2026: 404 on Rozetka, cards deleted
+            stats['excluded_offer'] = stats.get('excluded_offer', 0) + 1; continue
+        kind ='clothing' if (line == 'bal' or CFG['kib_groups'].get(s['group_ru'], {}).get('clothing')) else 'gear'
         price = rz_price(prom_price, line, kind)
         why = 'formula'
         if oid in ovr.get('offers', {}):
@@ -734,6 +736,7 @@ def write_report(stats, issues, offers, ready, target, src):
          f'- Names without SEO entry (provisional): {stats["provisional_names"]}; offers without any photo: {stats["no_main_photo"]}; with SEO clean main photo: {stats["clean_main"]}',
          f'- No description: {stats["no_desc"]}; fewer than 3 params: {stats["few_params"]}; missing stock row: {stats["no_stock_row"]}',
          f'- Left out by excluded Rozetka categories {CFG.get("exclude_categories", [])}: {stats.get("excluded_cat", 0)}',
+         f'- Left out by config exclude_offers (owner 27 Nov 2026, 404 cards deleted on Rozetka): {stats.get("excluded_offer", 0)}',
          f'- Source snapshot: {src["meta"]["export"]} ({src["meta"]["built"]}); skipped at snapshot: {len(src["meta"]["skipped"])}', '']
     ov = [x for x in offers if x[4] != 'formula']
     if ov:
