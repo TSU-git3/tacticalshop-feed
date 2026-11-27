@@ -1,7 +1,7 @@
-# Rozetka feed report — 2026-11-27 22:00 (Kyiv)
+# Rozetka feed report — 2026-11-27 23:29 (Kyiv)
 
 - Feed: written to rozetka/rozetka.xml; ready to publish: **yes**
-- Offers: 139 (48 available); by line {'kib': 70, 'bal': 69}
+- Offers: 139 (49 available); by line {'kib': 70, 'bal': 69}
 - Names without SEO entry (provisional): 0; offers without any photo: 0; with SEO clean main photo: 69
 - No description: 0; fewer than 3 params: 0; missing stock row: 0
 - Left out by excluded Rozetka categories ['290826', '4674292', '1100234', '4675899']: 456
