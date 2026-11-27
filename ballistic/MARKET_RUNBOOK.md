@@ -1,6 +1,9 @@
 # Ballistic market-price check — runbook (twice a week)
 
 Owner, 27 Oct 2026: Ballistic Level 7 prices follow the cheapest Prom competitor when it sits above our РРЦ.
+Owner, 27 Nov 2026: the same rule covers the Carinthia Defence 6 / Defence 4 sleeping bags (market.py keys 23877 / 23878,
+kind «sleeping_bag»; Tropen, liners, bivy covers and combo sets are other products). Defence 6 is made only in olive
+(carinthia.eu), so a Defence 6 offer without a colour in its name can be recorded as «olive» in colour_checked.
 - Same model + colour only (maker's name in the offer, or the offer uses our Ballistic article as its SKU); in stock
   («Готово до відправки» / «В наявності»); new (no б/у / уцінка); at least 2 other sellers.
 - Cheapest of them above our РРЦ → our price = cheapest −1 %, rounded UP to the next …99 (owner, 27 Oct 2026), still below the cheapest. Never below РРЦ

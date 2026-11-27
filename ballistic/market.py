@@ -25,12 +25,15 @@ QUERIES = ['tennier level 7', 'level 7 ecwcs', 'tennier ecwcs gen iii level 7 pa
            'куртка level 7 мультикам', 'куртка level 7 койот', 'штани level 7 сірі', 'штани level 7 мультикам',
            'комплект level 7 сірий', 'комплект level 7 койот', 'комплект level 7', 'carinthia mig 4.0',
            'carinthia mig 4.0 комплект', 'carinthia mig 4.0 multicam', 'carinthia fr', 'carinthia slj',
-           'зимова куртка carinthia', 'level 7 parka', 'level 7 trousers']
+           'зимова куртка carinthia', 'level 7 parka', 'level 7 trousers',
+           'carinthia defence 6', 'carinthia defence 4', 'спальник carinthia defence', 'спальний мішок carinthia defence']
 COLOURS = {'grey': r'сір|сер[ыий]|grey|gray|urban', 'multicam': r'мульти|multi\s?cam',
            'coyote': r'койот|coyote', 'olive': r'олив|olive|зелен'}
 KIND = {'jacket': [r'куртк|parka|парка|jacket', r'комплект|костюм|штан|брюк|trouser|pants|\bset\b'],
         'trousers': [r'штан|брюк|trouser|pants', r'комплект|костюм|куртк|parka|jacket'],
-        'set': [r'комплект|костюм|\bset\b|куртка\s*\+\s*штани', None]}
+        'set': [r'комплект|костюм|\bset\b|куртка\s*\+\s*штани', None],
+        # owner, 27 Nov 2026: Carinthia Defence sleeping bags; Tropen / liner / bivy / combo sets are other products
+        'sleeping_bag': [r'спальн|спальник|sleeping|schlafsack', r'tropen|вкладиш|вкладыш|liner|bivy|бівак|бивак|чохол|чехол|\+|комплект|систем']}
 # Same model = the maker's name is in the offer (or the offer uses our Ballistic article as SKU). Generic «ECWCS Gen III
 # Level 7» offers without «Tennier» (other contractors, PrimaLoft surplus, Helikon/North copies) are NOT the same model.
 TENNIER = r'tennier.*(level|layer|левел)\s*7|(level|layer|левел)\s*7.*tennier'
@@ -41,6 +44,9 @@ LISTINGS = {  # Ballistic page id -> (kind, model regex, colour)
     '27294': ('jacket', TENNIER, 'coyote'), '26345': ('set', CARINTHIA_MIG, 'olive'), '26425': ('jacket', CARINTHIA_MIG, 'multicam'),
     '27502': ('set', r'carinthia.*(slj|fjt|flame|вогнест|\bfr\b)', 'olive'),
     '29895': ('jacket', r'carinthia.*(slj|flame|вогнест|\bfr\b)', 'olive'),
+    # owner, 27 Nov 2026 («Carinthia auto rule»): Defence 6 is made only in olive (carinthia.eu), Defence 4 also in multicam etc.
+    '23877': ('sleeping_bag', r'(carinthia|карентія|карінтія|каринтия|каринтія).*defen[cs]e\s*6', 'olive'),
+    '23878': ('sleeping_bag', r'(carinthia|карентія|карінтія|каринтия|каринтія).*defen[cs]e\s*4(?!\s*\d)', 'olive'),
 }
 EXCLUDE = r'б/у|б\.у\.|вживан|уцінк|уценк|second|level\s*[56]\b|\bhig\b|ecig|isg|esg'
 

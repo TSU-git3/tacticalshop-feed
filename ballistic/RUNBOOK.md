@@ -16,6 +16,12 @@ p3286842510–511, РРЦ) — Prom group «Термобілизна» 159043166
 was in_csv at first (one-row test); owner, 23 Nov 2026 ~23:10 Kyiv: «all 6 into the Prom CSV now» (test skipped) → all 6
 listings in prom/ballistic_stock.csv (218 rows). Not in market.py, not on Rozetka.
 
+Sleeping bags (owner, 27 Nov 2026): Carinthia Defence 6 (catalog key 23877 = Ballistic page id, article 2000000181615,
+p3292762301) and Defence 4 (23878, article 2000000181608, p3292762302) — one size L each, standalone listings (vg null) in
+the Prom group «Спальні мішки та спальні системи армії США MSS» 137122692 (marketplace category 180303, 1 %). Both in
+prom/ballistic_stock.csv from the start (owner: «add to prom and csv», no one-row test) and in ballistic.xml. Price =
+Carinthia auto rule: max(РРЦ, market target) — they are in ballistic/market.py (kind «sleeping_bag»). Not on Rozetka.
+
 ESS glasses (owner, 10–11 Nov 2026): 16 Ballistic pages (catalog keys ess-*), 17 articles, 17 Prom listings — since the ESS
 split of 15 Nov 2026 every article has its OWN listing (Код_товару = the Ballistic article, Ідентифікатор_товару BAL-<article>;
 new listings p3277386160–169). The 13 older listings that carried our own articles (incl. the three «twin» pairs) left the
