@@ -1,5 +1,5 @@
 {
- "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings). | Batch 3 (owner, 11 Nov 2026): Revision / Wiley X glasses, Viking Tactics / Blue Force Gear slings, ECWCS Level 5/6, Snugpak — keys b3-*, one product per Ballistic page; glasses sizes Small/Large of Sawfly clear and Large of StingerHawk clear+amber are separate Ballistic pages (b3-1s, b3-1l, b3-5l); UDC colours on one page (b3-24). Snugpak shows no РРЦ: size «price» = Ballistic price, «price_fixed» = Prom-median price. in_xml false, not in Rozetka. | Thermal sets (owner, 23 Nov 2026): Rothco ECWCS Gen III Level II Mid-Weight (key thermo-rothco-l2, vg 612033, price_fixed 5439 = owner's price) and XGO Heavyweight Phase 4 FR (thermo-xgo-ph4-fr, vg 612034, РРЦ) — group «Термобілизна»; not in market.py; not in Rozetka. | Sleeping bags (owner, 27 Nov 2026): Carinthia Defence 6 (key 23877, article 2000000181615) and Defence 4 (23878, 2000000181608) — standalone listings (vg null) in the Prom group «Спальні мішки та спальні системи армії США MSS» 137122692; price = Carinthia auto rule (market.py, cheapest rival −1 %, never under РРЦ); both in_csv from the start (owner: «add to prom and csv»); not in Rozetka.",
+ "note": "Ballistic (ballistic.com.ua) Level 7 products on Prom. Prices = Ballistic RRP (owner, 24 Oct 2026). Codes = Ballistic article (Код_товару); Prom Ідентифікатор_товару = BAL-<code>. | sizes[*].name_ru/name_uk = names as imported to Prom (Prom refuses link rows without Назва_позиції, 25 Oct 2026); in_csv=false keeps a listing out of prom/ballistic_stock.csv until its Excel import is confirmed (FR 27502/29895). | price_fixed = owner's fixed selling price (braces 1099, 30 Oct 2026); selling price = max(РРЦ, market target, price_fixed). Braces stay in_csv=false until their Excel import is confirmed. | ESS glasses (owner, 10–11 Nov 2026): keys ess-*, one product per Ballistic page, sizes = articles (frame colour); size price_fixed = selling price from the Prom-median rule; size «prom» = Prom listings of that article (twins), matched by Унікальний_ідентифікатор, listing in_csv=false until the one-row link test passes; in_xml=false (not in stock.xml); vg null (standalone listings). | Batch 3 (owner, 11 Nov 2026): Revision / Wiley X glasses, Viking Tactics / Blue Force Gear slings, ECWCS Level 5/6, Snugpak — keys b3-*, one product per Ballistic page; glasses sizes Small/Large of Sawfly clear and Large of StingerHawk clear+amber are separate Ballistic pages (b3-1s, b3-1l, b3-5l); UDC colours on one page (b3-24). Snugpak shows no РРЦ: size «price» = Ballistic price, «price_fixed» = Prom-median price. in_xml false, not in Rozetka. | Thermal sets (owner, 23 Nov 2026): Rothco ECWCS Gen III Level II Mid-Weight (key thermo-rothco-l2, vg 612033, price_fixed 5439 = owner's price) and XGO Heavyweight Phase 4 FR (thermo-xgo-ph4-fr, vg 612034, РРЦ) — group «Термобілизна»; not in market.py; not in Rozetka. | Sleeping bags (owner, 27 Nov 2026): Carinthia Defence 6 (key 23877, article 2000000181615) and Defence 4 (23878, 2000000181608) — standalone listings (vg null) in the Prom group «Спальні мішки та спальні системи армії США MSS» 137122692; price = Carinthia auto rule (market.py, cheapest rival −1 %, never under РРЦ) — owner 27 Nov 2026 18:54 London: raise to 11,199 (Defence 6) / 10,499 (Defence 4) = size price_fixed (the market check can raise above it, never lower it); both in_csv from the start (owner: «add to prom and csv»); not in Rozetka.",
  "products": {
   "14261": {
    "url": "/ecwcs-gen-iii-level-7-parka-oryhinal-ssha-zymova-taktychna-kurtka-small-regular/",
@@ -4159,7 +4159,8 @@
        "name_uk": "Зимовий військовий спальний мішок Carinthia Defence 6, олива, до −18 °C, L",
        "in_csv": true
       }
-     ]
+     ],
+     "price_fixed": 11199
     }
    }
   },
@@ -4184,7 +4185,8 @@
        "name_uk": "Зимовий військовий спальний мішок Carinthia Defence 4, олива, до −15 °C, L",
        "in_csv": true
       }
-     ]
+     ],
+     "price_fixed": 10499
     }
    }
   }
