@@ -1,11 +1,11 @@
-# Ballistic stock check 2026-11-28 03:49 Kyiv
+# Ballistic stock check 2026-11-28 07:49 Kyiv
 
 Codes: 242 · read: 242 · CSV: «!» 146, «+» 44, «-» 30 · buy prices known: 240
 
 ## Stock changes since last run
-2000000246222 Зимовий комплект Tennier ECWCS Gen III Level …, XL/R: ['+', 4, 23220] → ['+', 5]
-2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 40, 1099] → ['+', 39]
-2000000172361 Мембранний комплект Tennier ECWCS Gen III Lev…, XL/L: ['+', 10, 23199] → ['+', 9]
+2000000150413 Тактичні підтяжки для штанів ECWCS і PCU (Lev…, Regular: ['+', 39, 1099] → ['+', 40]
+2000000172361 Мембранний комплект Tennier ECWCS Gen III Lev…, XL/L: ['+', 9, 23199] → ['+', 10]
+7700000025784 Мембранна куртка ECWCS Gen II Level 6 Gore-Te…, L/R: ['+', 4, 6750] → ['+', 3]
 
 ## Price changes (Ballistic РРЦ / market target)
 none
