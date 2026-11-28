@@ -1,24 +1,42 @@
-# Stock refresh 2026-11-28 07:29 (Kyiv) — BIG check
+# Stock refresh 2026-11-28 11:29 (Kyiv) — SMALL check (in-stock items only)
 
-- Offers: 1021; status counts: {'5': 317, '+': 406, '3': 295, '-': 3}
-- get_product lookups: 332; skipped as out of stock by sweep: 207
-- Changed since last run: 0
-- On MyDrop but out of stock (no size with stock): 287
-- Codes not found on MyDrop (written as out of stock «-»): 3
+- Offers: 1021; status counts: {'5': 317, '+': 404, '3': 297, '-': 3}
+- get_product lookups: 205; skipped as out of stock by sweep: 69
+- Changed since last run: 18
+- On MyDrop but out of stock (no size with stock): 96
+- Codes not found on MyDrop (written as out of stock «-»): 0
 - Product ids dropped from the list (matched none of our codes): 0
 - Owner price overrides applied (refresh/price_override.json): 0 of 0
 - Sets with hidden parts (112): browser data 0.2 h old — used
 
 ## Changes
 
+- 2202-6331-00: + 438 → + 437
+- 2311-0121-00: + 27 → + 26
+- 2401-0121-XL: + 25 → + 24
+- 2321-0121-00: + 304 → + 301
+- 2201-0121-00: + 54 → + 53
+- 2306-0122-00: + 1 → 3 None
+- 112516: + 2 → + 1
+- 111530: + 8 → + 6
+- 110302: + 1 → 3 None
+- 0305-0122-00: + 9 → + 8
+- 2801-0211-00: + 44 → + 43
+- 1025: + 9 → + 8
+- 82001: + 2 → + 1
+- 82002: + 2 → + 1
+- 82003: + 2 → + 1
+- 82004: + 2 → + 1
+- 82007: + 2 → + 1
+- 17034: + 2 → + 1
 
 ## Kits in stock from their parts (kits.json)
 
-- 1025: + 9
-- 82001: + 2
-- 82002: + 2
-- 82003: + 2
-- 82004: + 2
+- 1025: + 8
+- 82001: + 1
+- 82002: + 1
+- 82003: + 1
+- 82004: + 1
 - 45000: + (no number)
 - 45001: + (no number)
 - 45003: + (no number)
@@ -31,7 +49,7 @@
 - 66002: + (no number)
 - 66003: + (no number)
 - 60600: + (no number)
-- 82007: + 2
+- 82007: + 1
 - 3008-S: + 19
 - 3011-S: + 3
 - 3008-M: + 7
@@ -52,7 +70,7 @@
 - 92003: + 1
 - 4105: + 11
 - 4104: + 10
-- 17034: + 2
+- 17034: + 1
 - 17037: + 1
 - 17040: + 1
 - 17042: + 1
@@ -115,4 +133,4 @@
 
 ## Not found on MyDrop
 
-2808-0116-00 1028 0305-0201-00
+
